@@ -1,7 +1,7 @@
 baseURL = "https://johnsiu.com"
 title = "[JS]"
 
-theme = "binario"
+theme = "Binario"
 languageCode = "en-us"
 paginate = "24"
 paginatepath = "blog"
@@ -68,6 +68,7 @@ disqusShortname = "https-johnsiu-com"
 
 [Params.Adsense]
   ads_id = "ca-pub-8176479711832264"
+	ads_auto = true
   ads_slot_top = "2063139251"
   ads_slot_bot = "1923538454"
 
