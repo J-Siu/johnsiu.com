@@ -4,15 +4,19 @@ date: 2015-11-18T18:47:44Z
 tags: ["osx", "kvm"]
 title: "OS X direct connect to KVM client desktop"
 ---
+
+Recently I have been experimenting with a tiny KVM setup. Everything is good till I want to use my Mac Mini to connect to the client desktop.
 <!--more-->
 
-Recently I have been experimenting with a tiny KVM setup. Eventhing is good till I want to use my Mac Mini to connect to the client desktop. I spend so much time trying and the most successful setup is through Linux running inside VirtualBox. However that seems overkill and take up a lot of resource on the Mac Mini. I continue to push with other solution and finally come up with a satisfying setup.
+I spend so much time trying and the most successful setup is through Linux running inside VirtualBox.
 
-# Issue with OS X connecting to KVM client
+However that seems overkill and take up a lot of resource on the Mac Mini. I continue to push with other solution and finally come up with a satisfying setup.
+
+### Issue with OS X connecting to KVM client
 
 The most common way to KVM client running graphical interface is through KVM manager. Though that will work locally on the KVM host out of the box, it proves to be difficult even from another Linux server, and require alot of research and tweeking for people new to KVM. However there is a easy solution for OS X.
 
-# Home-brew, XQuartz and virt-viewer
+### Home-brew, XQuartz and virt-viewer
 
 Homebrew allow Linux package to be installed and ran on OS X system. Follow instruction on [Homebrew](http://brew.sh) home page to install Homebrew.
 

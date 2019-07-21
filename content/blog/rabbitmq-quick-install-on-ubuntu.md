@@ -4,11 +4,11 @@ date: 2015-11-26T11:12:59Z
 tags: ["linux", "ubuntu", "rabbitmq", "php", "amqp"]
 title: "RabbitMQ Quick Install on Ubuntu"
 ---
-<!--more-->
-
-**Note**: Before installation, hostname/IP must be configure properly in `/etc/hosts` or resolvable through DNS.
 
 - Install RabbitMQ
+
+**Note**: Before installation, hostname/IP must be configure properly in `/etc/hosts` or resolvable through DNS.
+<!--more-->
 
 ```sh
 sudo apt-get install rabbitmq-server`
@@ -47,8 +47,8 @@ sudo rabbitmqctl set_user_tags <username> administrator
 **Note**: RabbitMQ come with default guest account
 
 ```js
-Username: guest  
-Password: guest  
+Username: guest
+Password: guest
 ```
 
 You may want to disable/delete this account

@@ -5,9 +5,10 @@ description: "A simple timer service for Angular 2, base on RxJS."
 tags: ["javascript", "angular", "typescript"]
 title: "Angular2 Simple Timer Service"
 ---
-<!--more-->
 
 `ng2-simple-timer` is a simple timer service for Angular 2, base on RxJS.
+
+<!--more-->
 
 Name/ID(string) base API. RxJS object not exposed.
 
@@ -152,5 +153,5 @@ this.st.unsubscribe(this.timerId);
 
 ### Example
 
-- GitHub: [ng2-simple-timer-example](https://github.com/J-Siu/ng2-simple-timer-example)  
+- GitHub: [ng2-simple-timer-example](https://github.com/J-Siu/ng2-simple-timer-example)
 - Plunker: [Angular2 Simple Timer Example](http://embed.plnkr.co/HaTd8q/)

@@ -4,6 +4,9 @@ date: 2016-10-13T22:55:00Z
 tags: ["vps", "server", "gogs", "git"]
 title: "Personal Git Server in a VPS"
 ---
+
+__GitLab CE__ and __Gogs__
+
 <!--more-->
 
 ## GitLab CE
@@ -32,7 +35,7 @@ What make __Gogs__ so attractive? Extremely low resource requirement! Following 
 
 Lets look at their resource consumption while idling in my vps.
 
-__GitLab CE__
+### GitLab CE Resources
 
 |%CPU|%MEM|VSZ|RSS|COMMAND|
 |---:|---:|---:|---:|---|
@@ -44,7 +47,7 @@ __GitLab CE__
 
 GitLab CE has 6 processes, and I already tuned them to the bare minimum. I excluded __mySQL__ (which is required), as it is also used by __WordPress__.
 
-__Gogs__
+### Gogs Resources
 
 |%CPU|%MEM|VSZ|RSS|COMMAND|
 |---:|---:|---:|---:|---|

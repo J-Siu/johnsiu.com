@@ -5,24 +5,24 @@ date: 2016-10-11T02:49:35Z
 tags: ["javascript", "angular", "expressjs", "typescript"]
 description: "Expressjs api handler (NOT middleware) that work with simple-api-client-ng2, an Angular 2 api service."
 ---
-<!--more-->
 
 [simple-api-express](https://github.com/J-Siu/simple-api-express) is an expressjs api handler (NOT middleware) that work with [simple-api-client-ng2](https://github.com/J-Siu/simple-api-client-ng2), an Angular 2 api service.
+<!--more-->
 
 ### Index
 
 - [Install](#install)
 - [Usage Flow](#usage-flow)
 - [API](#api)- [constructor](#constructor)
- - [debug](#debug)
- - [list](#list)
- - [register](#register)
- - [registerObject](#registerobject)
- - [response](#response)
- - [handler](#handler)
+  - [debug](#debug)
+  - [list](#list)
+  - [register](#register)
+  - [registerObject](#registerobject)
+  - [response](#response)
+  - [handler](#handler)
 - [Error Handleing](#error-handleing)
- - [404 Not Found](#404-not-found)
- - [Callback throw](#callback-throw)
+  - [404 Not Found](#404-not-found)
+  - [Callback throw](#callback-throw)
 - [Example](#example)
 
 ### Install
@@ -216,7 +216,7 @@ When `handle()` is called with an non-exist api url, it will throw an error, whi
 
 #### Callback throw
 
-When `response()` is called, and the invoked api callback throw an error, which will be passed to remote client.  
+When `response()` is called, and the invoked api callback throw an error, which will be passed to remote client.
 
 The remote client, using [simple-api-client-ng2](https://github.com/J-Siu/simple-api-client-ng2), will throw an exception with the error.
 
@@ -235,7 +235,6 @@ res.json(result);
 ```
 
 The remote client, using [simple-api-client-ng2](https://github.com/J-Siu/simple-api-client-ng2), will throw an exception with the error.
-
 
 ### Example
 

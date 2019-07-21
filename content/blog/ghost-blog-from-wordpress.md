@@ -5,9 +5,9 @@ description: "Ghost Blog from WordPress Migration"
 tags: ["ghost", "nodejs", "blog"]
 title: "Ghost Blog from WordPress"
 ---
-<!--more-->
 
 Last October I moved my git server from __[GitLab CE](https://about.gitlab.com/features/#community)__ to __[GoGs](https://gogs.io)__. I also planned to move my blog from __[WordPress](https://wordpress.com)__ to __[Ghost Blog](https://ghost.org)__ at the same time, but was delayed by the heavy load at work, until now.
+<!--more-->
 
 ## WordPress - King of Blog for the Mass
 
@@ -21,7 +21,7 @@ __Ghost__ started as a __[KickStarter Project](https://www.kickstarter.com/proje
 
 What make __Ghost__ attractive for me?
 
-Ghost, as a NodeJS application, is a web server by itself, that eliminated the needed for standalone web server like lighttpd or apache. Besides MySQL, it also support __[sqlite3](http://sqlite.org)__, an embedded light weight database library. I don't need standalone database. 
+Ghost, as a NodeJS application, is a web server by itself, that eliminated the needed for standalone web server like lighttpd or apache. Besides MySQL, it also support __[sqlite3](http://sqlite.org)__, an embedded light weight database library. I don't need standalone database.
 
 And again, numbers talk ...
 

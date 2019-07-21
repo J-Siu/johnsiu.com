@@ -4,13 +4,15 @@ date: 2012-12-07T04:29:48Z
 tags: ["linux", "postfix", "smtp", "tweaking", "vps"]
 title: "Tiny VPS Postfix"
 ---
+
+Finally running my own website, hosting my own blog, having my own server to do whatever I want with it.
 <!--more-->
 
-## Minimalistic and Compromise
-
-Finally running my own website, hosting my own blog, having my own server to do whatever I want with it. It is so tempting and logical to setup my own email service running on it. Sending and receiving email with my own server, my own email address with my own domain name … So exciting!!
+It is so tempting and logical to setup my own email service running on it. Sending and receiving email with my own server, my own email address with my own domain name … So exciting!!
 
 But wait … Do I really want to do that??
+
+## Minimalistic and Compromise
 
 I have more than enough personal email addresses and already looking for ways to merge them.
 

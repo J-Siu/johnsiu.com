@@ -4,11 +4,9 @@ date: 2016-10-13T22:30:00Z
 tags: ["lighttpd", "url.redirect", "mod_redirect", "permalink", "blog", "wordpress"]
 title: "Lighttpd url.redirect and changing WordPress permalink structure"
 ---
-<!--more-->
-
-## Changing Permalink Structure
 
 I used to use the __`Date and Name`__ permalink structure for my blog:
+<!--more-->
 
 ```txt
 https://johnsiu.com/index.php/2016/10/13/sample-post/

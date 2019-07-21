@@ -4,15 +4,15 @@ date: 2015-11-20T01:20:42Z
 tags: ["rabbitmq", "php", "amqp"]
 title: "RabbitMQ PHP-AMQP RPC Example - Server"
 ---
-<!--more-->
 
 This is Part 2 of PHP-AMQP RPC implementation.
+<!--more-->
 
 I didn’t spend as much time as the client to implement command line option for the server.
 
-# PHP-AMQP RPC Server
+### PHP-AMQP RPC Server
 
-**JS-amqp-rpc-server.php**
+#### JS-amqp-rpc-server.php
 
 ```php
 <?php

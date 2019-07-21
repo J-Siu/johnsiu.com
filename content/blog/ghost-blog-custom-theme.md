@@ -4,9 +4,11 @@ date: 2017-03-13T04:16:54Z
 tags: ["ghost", "theme", "blog"]
 title: "Ghost Blog Custom Theme"
 ---
+
+Though I move my blog to __[Ghost](//ghost.org)__ in __[last month](//johnsiu.com/ghost-blog-from-wordpress)__, I am not satisfy with the default  __[Casper](//github.com/TryGhost/Casper)__ theme come with Ghost.
 <!--more-->
 
-Though I move my blog to __[Ghost](//ghost.org)__ in __[last month](//johnsiu.com/ghost-blog-from-wordpress)__, I am not satisfy with the default  __[Casper](//github.com/TryGhost/Casper)__ theme come with Ghost. With work load at job under control, I finally have time to customize it to my liking this weekend and deployed it in this site.
+With work load at job under control, I finally have time to customize it to my liking this weekend and deployed it in this site.
 
 ##### Highlight of Customization
 

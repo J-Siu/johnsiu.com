@@ -5,9 +5,9 @@ date: 2016-02-20T06:49:38Z
 tags: ["linux", "ubuntu", "systemd"]
 title: "How to configure Systemd Journal Remote"
 ---
-<!--more-->
 
 This one is actually simple, online examples are correct and only need to touch one configuration file.
+<!--more-->
 
 ### System Info
 
@@ -22,7 +22,7 @@ This one is actually simple, online examples are correct and only need to touch 
 Use following command to install systemd-journal-remote
 
 ```sh
-sudo apt-get install systemd-journal-remote  
+sudo apt-get install systemd-journal-remote
 ```
 
 Edit */etc/systemd/journal-upload.conf*.

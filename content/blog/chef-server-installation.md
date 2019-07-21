@@ -4,9 +4,9 @@ title: "Chef Server Installation"
 date: 2018-09-30T23:08:41-04:00
 tags: ["chef"]
 ---
-<!--more-->
 
 This serve as a starting point for installing [Chef](https://chef.io) server on local machines.
+<!--more-->
 
 ## Reference
 
@@ -97,7 +97,7 @@ DK includes all client commands with extra as shown in following table.
 Install client:
 
 ```sh
-sudo dpkg -i chef_14.5.33-1_amd64.deb 
+sudo dpkg -i chef_14.5.33-1_amd64.deb
 ```
 
 Install DK:

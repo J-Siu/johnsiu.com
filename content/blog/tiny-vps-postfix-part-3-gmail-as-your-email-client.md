@@ -4,17 +4,15 @@ date: 2013-04-15T11:20:30Z
 tags: ["gmail", "linux", "postfix", "vps", "smtp"]
 title: "Tiny VPS Postfix - Part 3 - GMail as Email Client"
 ---
-<!--more-->
-
-## One service to rule them all
 
 In [Tiny VPS Postfix](https://johnsiu.com/index.php/2012/12/06/tiny-vps-postfix/ "Tiny VPS Postfix") I set up a minimalistic postfix server, which will forward all email to an external email.
+<!--more-->
 
 In [Part 2](https://johnsiu.com/index.php/2013/04/15/tiny-vps-postfix-part-2-non-linux-outgoing-smtp-account/ "Tiny VPS Postfix – Part 2 – Non-Linux Outgoing SMTP Account") I set up postfix with sasldb to enable smtp authentication for outgoing email.
 
 Then what about web-base email service? Is there one that can handle both so I don’t have to use additional email client to handle outgoing emails?
 
-## Yes. GMail
+## One service to rule them all - GMail
 
 Assuming you already setup your email alias to your GMail account, then there is nothing to do on server-side. Just follow the step below to set up GMail to use your server as outgoing smtp gateway.
 
@@ -30,20 +28,17 @@ Click **Accounts and Import** then **Add another email address you own**. I alre
 
 ![](https://i2.wp.com/farm9.staticflickr.com/8246/8651574124_7f057cee25.jpg?resize=500%2C269)
 
-
 ### Step 3
 
 Enter the email address and name. Remove check mark for **Treat as an alias**.
 
 ![](https://i1.wp.com/farm9.staticflickr.com/8536/8650475631_0a146f5010_z.jpg?resize=579%2C257)
 
-
 ### Step 4
 
 Check mark **Send through your.domain SMTP servers**. Then enter your server address, username and password.
 
 ![](https://i0.wp.com/farm9.staticflickr.com/8109/8651573886_e8f9e04aff_z.jpg?resize=579%2C367)
-
 
 ### Step 5
 

@@ -4,9 +4,10 @@ date: 2012-12-10T10:18:16Z
 tags: ["lighttpd", "linux", "vps"]
 title: "Tiny VPS Lighttpd Single Site Multiple Domains"
 ---
-<!--more-->
 
-![Lighttpd](https://i1.wp.com/www.lighttpd.net/light_logo_170px.png) I own [**johnsiu.com**](http://johnsiu.com), [**johnsiu.org**](http://johnsiu.org), [**johnsiu.info**](http://johnsiu.info), [**johnsiu.net**](http://johnsiu.net). They all point to this server. That is already setup in dns. But I want all of them, with or with www, redirect to [**http://johnsiu.com**](http://johnsiu.com/). Lighttpd give you an easy way to do it.
+ I own [**johnsiu.com**](http://johnsiu.com), [**johnsiu.org**](http://johnsiu.org), [**johnsiu.info**](http://johnsiu.info), [**johnsiu.net**](http://johnsiu.net) and they all point to this server.
+ <!--more-->
+ That is already setup in dns. But I want all of them, with or with www, redirect to [**http://johnsiu.com**](http://johnsiu.com/). Lighttpd give you an easy way to do it.
 
 In ***/etc/lighttpd/lighttpd.conf***, I added the following section
 

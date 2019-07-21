@@ -4,9 +4,9 @@ date: 2016-10-11T02:14:51Z
 tags: ["javascript", "typescript", "angular"]
 title: "Angular2 Simple Global Variable Service"
 ---
-<!--more-->
 
 `ng2-simple-global` a simple global variable service for Angular 2.
+<!--more-->
 
 ## Index
 
@@ -28,7 +28,7 @@ npm install ng2-simple-global
 
 `ng2-simple-global` is implemented as Angular 2 injectable service name **SimpleGlobal**.
 
-**For module using SimpleGlobal**
+#### For module using SimpleGlobal
 
 Add `SimpleGlobal` into module providers.
 
@@ -40,7 +40,7 @@ import { SimpleGlobal } from 'ng2-simple-global';
 })
 ```
 
-**For each child component using SimpleGlobal**
+#### For each child component using SimpleGlobal
 
 ```ts
 import {SimpleGlobal} from 'ng2-simple-global';
@@ -77,7 +77,7 @@ export class ChildComponent {
 }
 ```
 
-Treat `SimpleGlobal` instance as a global object and create/assign additional attributes freely,  
+Treat `SimpleGlobal` instance as a global object and create/assign additional attributes freely,
  and it will be accessible to all component using the service.
 
 ## Repository

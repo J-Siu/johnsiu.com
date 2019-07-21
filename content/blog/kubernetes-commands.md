@@ -4,9 +4,9 @@ title: "Some Kubernetes Commands"
 date: 2018-09-30T23:39:45-04:00
 tags: ["kubernetes"]
 ---
-<!--more-->
 
 Here are some [Kubernetes](https://k8s.io) commands.
+<!--more-->
 
 ---
 

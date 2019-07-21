@@ -4,9 +4,9 @@ date: 2016-10-11T04:57:04Z
 tags: ["javascript", "typescript", "angular"]
 title: "Angular 2 Simple MQ Service"
 ---
-<!--more-->
-
 `ng2-simple-mq` is a simple message queue for Angular 2 inter-component communication base on RxJS.
+
+<!--more-->
 
 Name/ID(string) base API. RxJS object not exposed.
 
@@ -109,9 +109,9 @@ If `lazy = true`(default), queue `name` will be created automatically if not exi
 
 Return true if successful.
 
-Return false if any of following is true:  
- – `lazy = false`, and queue `name` does not exist.  
- – `name` is undefined.  
+Return false if any of following is true:
+ – `lazy = false`, and queue `name` does not exist.
+ – `name` is undefined.
  – `msg` is undefined.
 
 ```ts
@@ -128,9 +128,9 @@ If `lazy = true`(default), queue `name` will be created automatically if not exi
 
 Return subscription id if successful.
 
-Return empty string if any of following is true:  
- – `lazy = false`, and queue `name` does not exist.  
- – `name` is undefined.  
+Return empty string if any of following is true:
+ – `lazy = false`, and queue `name` does not exist.
+ – `name` is undefined.
  – `callback` is undefined.
 
 Either use Lambda(fat arrow) in typescript to pass in callback or bind `this` to another variable in javascript, else `this` scope will be lost.

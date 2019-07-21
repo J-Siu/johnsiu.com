@@ -4,13 +4,13 @@ date: 2017-03-13T07:00:18Z
 tags: ["ghost", "https", "nodejs", "blog", "http2", "spdy"]
 title: "Ghost Https index.js in GitHub"
 ---
+
+In an earlier __[post](/ghost-blog-self-hosted-with-https-using-nodejs-only/)__ I talk about running __[Ghost Blog](//ghost.org)__ with https using nodejs only.
 <!--more-->
 
 > Update 2017/03/16 - Code in this post work for Ghost 0.11.4 but not 0.11.7.
 >
 >If you are running Ghost 0.11.7 or later, please check the latest version from my GitHub repository. Link provided at the end of post.
-
-In an earlier __[post](/ghost-blog-self-hosted-with-https-using-nodejs-only/)__ I talk about running __[Ghost Blog](//ghost.org)__ with https using nodejs only.
 
 Since then I have enhanced it according to my need. Replaced the `https` package with `spdy` to support http2.
 

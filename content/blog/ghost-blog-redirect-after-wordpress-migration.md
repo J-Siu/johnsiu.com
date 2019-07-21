@@ -5,11 +5,9 @@ description: "Configure url redirection for Ghost after migrating from WordPress
 tags: ["ghost", "nodejs", "permalink", "blog"]
 title: "Ghost Blog Redirect Configuration for WordPress Migration"
 ---
-<!--more-->
-
-### Permalink Structure Changed
 
 In my earlier post [Lighttpd url.redirect and changing WordPress permalink structure](https://johnsiu.com/lighttpd-url-redirect-and-changing-wordpress-permalink-structure/), I talk about the issue when permalink structure is changed.
+<!--more-->
 
 When migrating from WordPress to Ghost, the permalink structure is changed again, from
 
@@ -55,6 +53,6 @@ The above will take care of the following redirects:
 
 * https://johnsiu.com/index.php/YYYY/MM/DD/&lt;post&gt;/ to https://johnsiu.com/&lt;post&gt;/
 * https://johnsiu.com/index.php/catagory/&lt;tag&gt;/ to https://johnsiu.com/tag/&lt;tag&gt;/
-* https://johnsiu.com/index.php/&lt;post&gt;/ to https://johnsiu.com/&lt;post&gt;/ 
+* https://johnsiu.com/index.php/&lt;post&gt;/ to https://johnsiu.com/&lt;post&gt;/
 
 **Done!! ^.^**

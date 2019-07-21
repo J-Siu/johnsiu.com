@@ -4,20 +4,20 @@ date: 2016-10-11T02:26:54Z
 tags: ["javascript", "typescript", "angular"]
 title: "Angular2 Simple API Client Service"
 ---
-<!--more-->
 
 [simple-api-client-ng2](https://github.com/J-Siu/simple-api-client-ng2) is an Angular 2 api service, which work with [simple-api-express](https://github.com/J-Siu/simple-api-express), an expressjs api handler.
+<!--more-->
 
 ## Index
 
 - [Install](#install)
 - [Usage Flow](#usage-flow)
- - [Import into Angular 2 application (typescript)](#import-into-angular-2-application-typescript)
+  - [Import into Angular 2 application (typescript)](#import-into-angular-2-application-typescript)
 - [API](#api)
- - [SimpleApiClient.get](#simpleapiclientget)
- - [SimpleApiClient.list](#simpleapiclientlist)
- - [SimpleApiObj.call](#simpleapiobjcall)
- - [SimpleApiObj.setErrorHandler](#simpleapiobjseterrorhandler)
+  - [SimpleApiClient.get](#simpleapiclientget)
+  - [SimpleApiClient.list](#simpleapiclientlist)
+  - [SimpleApiObj.call](#simpleapiobjcall)
+  - [SimpleApiObj.setErrorHandler](#simpleapiobjseterrorhandler)
 - [Error Handling](#error-handling)
 - [Example](#example)
 
@@ -33,7 +33,7 @@ npm install simple-api-client-ng2
 
 `simple-api-client-ng2` is implemented as Angular 2 injectable service name **SimpleApiClient**.
 
-**For module using SimpleApiClient**
+#### For module using SimpleApiClient
 
 Add `SimpleApiClient` into module providers:
 
@@ -45,7 +45,7 @@ import { SimpleApiClient } from 'simple-api-client-ng2';
 })
 ```
 
-**For each child component using SimpleApiClient**
+#### For each child component using SimpleApiClient
 
 ```ts
 import {SimpleApiClient, SimpleApiObj} from 'simple-api-client-ng2';
@@ -101,7 +101,6 @@ this.apiObject = this.api.get('/demo');
 ### Error Handling
 
 For detail example on error handling, please refer to [error.component.ts](https://github.com/J-Siu/simple-api-example-ng2-express/blob/master/public/app/error.component.ts) contain in full example below.
-
 
 ## Example
 

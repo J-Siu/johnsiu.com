@@ -4,15 +4,15 @@ date: 2015-11-20T01:24:46Z
 tags: ["rabbitmq", "php", "amqp"]
 title: "RabbitMQ PHP-AMQP RPC Example - Setup & Include"
 ---
-<!--more-->
 
 This is Part 3 of PHP-AMQP RPC implementation.
+<!--more-->
 
 This part give you the include file and RabbitMQ setup I am using.
 
-# PHP-AMQP RPC Setup
+### PHP-AMQP RPC Setup
 
-**JS-amqp-setup.php**
+#### JS-amqp-setup.php
 
 ```php
 <?php
@@ -59,9 +59,9 @@ $co->disconnect();
 ?>
 ```
 
-# PHP-AMQP RPC Include
+### PHP-AMQP RPC Include
 
-**JS-amqp-include.php**
+#### JS-amqp-include.php
 
 ```php
 <?php

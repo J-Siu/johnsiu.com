@@ -4,15 +4,15 @@ date: 2013-04-15T04:24:05Z
 tags: ["linux", "ubuntu", "smtp", "vps", "postfix"]
 title: "Tiny VPS Postfix - Part 2 - Non-Linux Outgoing SMTP Account"
 ---
+
+In the last part I show a minimal setup of Postfix. It allow incoming emails to be forwarded to specific external email address(es).
 <!--more-->
 
 ## Replying email with my own domain
 
-In the last part I show a minimal setup of Postfix. It allow incoming emails to be forwarded to specific external email address(es).
+However, there are situations we would like to reply or sent with our own domain. Especially with today tighter email security setup, relaying through others email server (eg. your isp) will likely have your email flagged as spam, if not outright rejected.
 
-However, there are situations we would like to reply or sent with our own domain. Especially with today tighter email security setup, relaying through others email server (eg. your isp) will likely have your email flaged as spam, if not outright rejected.
-
-It will be way over kill to setup postfixadmin and mysql for a few email addresses. On the other hand, it is undesirable (at least for me) to setup a local Linux account on the VPS just for sending email.
+It will be way over kill to setup `postfixadmin` and `mysql` for a few email addresses. On the other hand, it is undesirable (at least for me) to setup a local Linux account on the VPS just for sending email.
 
 So is there a simple way to setup smtp authentication with postfix without using Linux account?
 
@@ -55,7 +55,7 @@ The actual sasldb file is located at **/etc/sasldb2**. Make sure it has the foll
 
 `-rw-rw---- 1 postfix sasl sasldb2`
 
-### What if sasldb doesn’t seesm to work?
+### What if sasldb doesn’t seesm to work
 
 Then it is likely that your postfix is run with chroot. Just copy sasldb2 to the chrooted /etc/
 

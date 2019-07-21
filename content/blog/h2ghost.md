@@ -4,9 +4,11 @@ date: 2017-04-08T15:17:58Z
 tags: ["ghost", "http2", "spdy", "https", "blog", "nodejs", "proxy"]
 title: "H2Ghost - The Revamped Ghost HTTP2/S Solution"
 ---
+
+[__H2Ghost__](//github.com/J-Siu/h2ghost) is a http2/https front end for [Ghost Blog](//ghost.org)
 <!--more-->
 
-[__H2Ghost__](//github.com/J-Siu/h2ghost) is a http2/https front end for [Ghost Blog](//ghost.org), either via proxy or using Ghost's rootApp directly, providing an Node.js alternative to Nginx or Apache. It is a complete replacement of [ghost-https-indexjs](//github.com/J-Siu/ghost-https-indexjs)(discontinued) and [Ghost Https Nodejs Proxy](//github.com/J-Siu/ghost-https-nodejs-proxy)(renamed to this project).
+It work either via proxy or using Ghost's rootApp directly, providing an Node.js alternative to Nginx or Apache. It is a complete replacement of [ghost-https-indexjs](//github.com/J-Siu/ghost-https-indexjs)(discontinued) and [Ghost Https Nodejs Proxy](//github.com/J-Siu/ghost-https-nodejs-proxy)(renamed to this project).
 
 It can be used as Ghost Blog start up wrapper.
 

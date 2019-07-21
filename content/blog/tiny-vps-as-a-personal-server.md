@@ -4,9 +4,11 @@ date: 2012-12-02T06:59:25Z
 tags: ["lighttpd", "linux", "mysql", "tweaking", "vps"]
 title: "Tiny VPS as a personal server"
 ---
+
+[VPS (Virtual Private Server)](http://en.wikipedia.org/wiki/Virtual_private_server) is getting more and more affordable today, even for personal use.
 <!--more-->
 
-[VPS (Virtual Private Server)](http://en.wikipedia.org/wiki/Virtual_private_server "VPS (Virtual Private Server)") is getting more and more affordable today, even for personal use. It is cheaper than getting a new machine (or old one), running it year round at home, hoping the power never go off and the hard driver never die. So I decided to get one for myself and this is my little journey of setting it up.
+It is cheaper than getting a new machine (or old one), running it year round at home, hoping the power never go off and the hard driver never die. So I decided to get one for myself and this is my little journey of setting it up.
 
 ## Picking a provider …
 
@@ -17,7 +19,7 @@ title: "Tiny VPS as a personal server"
 - WordPress for this blog
 - Apache Web Server
 - MySQL for WordPress
-- [Collectd](http://collectd.org/) with [CollectdWeb ](http://collectdweb.appspot.com/)for performance monitoring
+- [Collectd](http://collectd.org/) with [CollectdWeb](http://collectdweb.appspot.com/)for performance monitoring
 - fail2ban for ssh protection
 - sendmail/postfix for email handling
 
