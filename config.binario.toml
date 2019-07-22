@@ -21,7 +21,7 @@ disqusShortname = "https-johnsiu-com"
 
 [Params]
   description = "Tech - Business Tool, Personal Toys" # Site Description. Used in meta description
-  copyright = "2012-2019 Copyright" # Copyright holder, otherwise will use .Site.Title
+  #copyright = "" # Copyright holder, otherwise will use .Site.Title
   opengraph = true # Enable OpenGraph if true
   twitter_cards = true # Enable Twitter Cards if true
   columns = 3 # Set the number of cards columns. Possible values: 1, 2, 3
