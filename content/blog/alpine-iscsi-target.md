@@ -103,7 +103,7 @@ o- / ......................................................... [...]
 
 ##### Target
 
-We have to create and iSCSI target:
+We have to create an iSCSI target:
 
 ```zsh
 /> iscsi/ create
