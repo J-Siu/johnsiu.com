@@ -50,9 +50,9 @@ create_new_repo(){
 }
 ```
 
-The only difference between gogs and github is gogs need `/api/v1` in its url, while github uses `api` sub-domain.
+The only difference between gogs and github is the `URL`. Gogs need `/api/v1` in its url, while github uses `api` sub-domain. Uncomment the one you want to use.
 
-Add the function in `.zshrc` and use as follow:
+Add function in `.zshrc` and use as follow:
 
 ```zsh
 create_new_repo <repo_name>
