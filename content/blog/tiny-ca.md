@@ -5,7 +5,7 @@ author: "John Siu"
 title: "Tiny CA - OpenSSL-CA"
 description: "Create a tiny CA"
 tags: ["openssl","ca","certificate","authority"]
-draft: true
+draft: false
 ---
 Bite the bullet and create a tiny CA for local network.
 <!--more-->
