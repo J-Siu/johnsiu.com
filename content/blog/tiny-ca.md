@@ -23,6 +23,8 @@ As browsers are getting more secure and packed with more safeguards to prevent m
 
 The result is a simple script with a openssl config file that will generate a CA and a wildcard certificate.
 
+GitHub: [tiny_ca](https://github.com/J-Siu/tiny_ca)
+
 > ***WARNING:*** This is intended for testing/throw-away environment. Don't use it for production.
 
 #### Usage
