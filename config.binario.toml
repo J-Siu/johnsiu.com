@@ -8,8 +8,8 @@ paginatepath = "blog"
 tag_dir = "tag"
 pluralizeListTitles=false
 
-# ygmentsCodefences=true
-# pygmentsStyle="colorful"
+pygmentsCodefences=true
+pygmentsStyle="Chroma"
 
 googleAnalytics = "UA-36805525-1" # optional
 disqusShortname = "https-johnsiu-com"
