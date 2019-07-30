@@ -99,7 +99,12 @@ Data Base Updated
 ```
 
 Install CA certificate into browser.
+
 Install server certificate and key into webserver.
+
+> **Notes**
+>
+> Most modern browsers will not accept wildcard certificate for TLD (top level domain). For example `*.local`, `*.com`, will not work.
 
 ### Reference
 
