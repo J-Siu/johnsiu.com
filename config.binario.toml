@@ -98,3 +98,8 @@ disqusShortname = "https-johnsiu-com"
 
 [permalinks]
   post = "/blog/:filename/"
+
+[menu]
+[[menu.main]]
+name="Cheat Sheet"
+url="/cheatsheet"
