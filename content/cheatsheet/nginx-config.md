@@ -31,7 +31,7 @@ location ~ "^/index.php/(.*)$" { return 301 https://johnsiu.com/blog/$1; }```
 This is mainly use to redirect Ghost permalink, which has no prefix, to Hugo formate.
 
 ```apache
-location /<uri> { return 301 https://johnsiu.com/blog/<uri>; }
+location /<post> { return 301 https://johnsiu.com/blog/<post>; }
 ```
 
 #### Multiple Domains Redirect
