@@ -4,7 +4,7 @@ date: 2019-07-30T22:01:30-04:00
 author: "John Siu"
 title: "Mac OS Commands"
 description: "Mac OS command cheat sheet."
-tags: ["macos","cheat sheet"]
+tags: ["macos","apple","cheat sheet"]
 draft: false
 ---
 Some Mac OS commands.
