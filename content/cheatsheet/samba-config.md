@@ -40,9 +40,7 @@ force directory mode = 0700
 
 #### Disable NetBIOS
 
-Comment out `nmbd` related options:
-
-`/etc/conf.d/samba` (Alpine Linux):
+Comment out `nmbd` related options in `/etc/conf.d/samba` (Alpine Linux):
 
 ```sh
 # Add "winbindd" to daemon_list if you want start winbind from here as well
