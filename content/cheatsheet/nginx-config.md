@@ -4,7 +4,7 @@ date: 2019-07-31T00:30:22-04:00
 author: "John Siu"
 title: "Nginx Config"
 description: "Some nginx config."
-tags: ["nginx","cheat sheet","redirect","rewrite"]
+tags: ["nginx","cheat sheet","redirect","rewrite","permalink"]
 draft: false
 ---
 Some quick nginx config.
@@ -28,7 +28,7 @@ location ~ "^/index.php/(.*)$" { return 301 https://johnsiu.com/blog/$1; }```
 
 #### Ghost Permalink Redirect
 
-This is mainly use to redirect Ghost permalink, which has no prefix, to Hugo formate.
+This is mainly use to redirect Ghost permalink, which has no prefix, to Hugo format.
 
 ```apache
 location /<post> { return 301 https://johnsiu.com/blog/<post>; }
