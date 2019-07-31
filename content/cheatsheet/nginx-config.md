@@ -1,0 +1,49 @@
+---
+type: "Cheat Sheet"
+date: 2019-07-31T00:30:22-04:00
+author: "John Siu"
+title: "Nginx Config"
+description: "Some nginx config."
+tags: ["nginx","cheat sheet","redirect","rewrite"]
+draft: false
+---
+Some quick nginx config.
+<!--more-->
+
+#### WordPress Permalink Redirect
+
+Regex string must be put inside double quote.
+
+##### /index.php/YYYY/MM/DD/\<post\> to /blog/\<post\>
+
+```apache
+location ~ "^/index.php/\d{4}/\d{2}/\d{2}/(.*)$" { return 301 https://johnsiu.com/blog/$1; }
+```
+
+##### /index.php/\<post\> to /blog/\<post\>
+
+```apache
+location ~ "^/index.php/(.*)$" { return 301 https://johnsiu.com/blog/$1; }```
+```
+
+#### Ghost Permalink Redirect
+
+This is mainly use to redirect Ghost permalink, which has no prefix, to Hugo formate.
+
+```apache
+location /<uri> { return 301 https://johnsiu.com/blog/<uri>; }
+```
+
+#### Multiple Domains Redirect
+
+Redirect all traffic hitting nginx to `<your domain>`. Not affect domain defined in other server block.
+
+```apache
+server {
+  listen  80;
+  server_name _;
+  return 302 https://<your domain>$request_uri;
+}
+```
+
+`302`(temporary) is used instead of `301`(permanent) in case you want to use those domains in the future.
