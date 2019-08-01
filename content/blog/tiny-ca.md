@@ -32,15 +32,14 @@ GitHub: [tiny_ca](https://github.com/J-Siu/tiny_ca)
 ```zsh
 git clone https://github.com/J-Siu/tiny_ca.git
 cd tiny_ca
-# Change line 1 of cert-gen.sh if you want to use domain other than local.local.
-cert-gen.sh
+chmod u+x cert-gen.sh
+./cert-gen.sh # Change line 1 if using domain other than local.local.
 ```
 
 #### Output
 
 ```zsh
 --- Prepare directory
-./cert-gen.sh: line 22: Certificate: not found
 --- Generate Root Key
 Generating a RSA private key
 ......................................................+++++
