@@ -23,7 +23,13 @@ launchctl load <plist file> # Start service
 launchctl unload <plist file> # Stop service
 ```
 
-##### System Service Files
+##### System Service Location
 
 - `/Library/LaunchDaemons/`
 - `/System/Library/LaunchDaemons/`
+
+#### Change Hostname
+
+```sh
+sudo scutil --set HostName <hostname>
+```
