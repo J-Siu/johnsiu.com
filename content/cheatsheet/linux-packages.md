@@ -16,11 +16,15 @@ Linux packages I used.
 
 ```sh
 apk add \
-  dropbear \        # ssh daemon.
-  openssh-client \  # scp support. dropbear-scp only work for incoming.
+  dropbear \        # Pick this over openssh during system install.
+  openssh-client \  # ssh, scp, sftp, ssh-keygen, etc.
   avahi \           # mDNS support.
+  avahi-tools \     # avahi-browse, etc.
   dbus \            # avahi dependency.
-  sudo              # sudoer.
+  sudo \
+  rsync \
+  e2fsprogs-extra \ # ext4 fs tools.
+  zsh               # Zsh shell.
 ```
 
 #### File Sharing
@@ -36,17 +40,22 @@ apk add \
 apk add \
   alsa-utils \    # Linux sound support.
   ffmpeg \        # Audio codec support.
-  mpeg123 \       # Audio player.
+  mpg123 \        # Audio player.
   mpd \           # Music Player Daemon.
   mpc             # mpd cli client.
 ```
 
+### Network Tools
+
+- [avahi-alias](https://github.com/airtonix/avahi-aliases) - Allow multiple avahi cname aliases.
+
 ### Development
 
-- [gogs](https://gogs.io) - WebGui Git repository.
+- [gogs](https://gogs.io) - Web gui git repository.
 
 ```sh
 apk add \
-  git \ # Git
-  zsh   # zsh shell
+  git \        # Git.
+  bash \       # Require on gogs server.
+  build-base   # gcc, g++, libc-dev, etc. System compiler tool chain.
 ```
