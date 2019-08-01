@@ -1,3 +1,7 @@
-# Hugo Blog Repo
+# JS Blog: Tech - Business Tool, Personal Toys
 
-### Personal blog https://johnsiu.com/
+|||
+|---|---|
+URL|https://johnsiu.com/
+Platform|[Hugo](https://gohugo.io/)
+Theme|[Binario](https://github.com/J-Siu/Binario) with AdSense
