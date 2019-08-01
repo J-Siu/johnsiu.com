@@ -99,4 +99,18 @@ $ du -sh 10G.txt
 0       10G.txt
 ```
 
-Ref: https://wiki.archlinux.org/index.php/Sparse_file
+Ref: [Sparse file wikipedia](https://wiki.archlinux.org/index.php/Sparse_file)
+
+#### Rsync
+
+```sh
+rsync -vahpt --size-only --stats --del <source> <target>
+```
+
+`<source>` is put/sync INTO `<target>` directory, not replacing `<target>`.
+
+#### Curl skip certificate checking
+
+```sh
+curl -k ... # Use -k to skip certificate check.
+```
