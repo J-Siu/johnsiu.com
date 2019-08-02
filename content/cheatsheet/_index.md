@@ -1,3 +1,4 @@
 ---
-Title: "Cheet Sheet"
+Title: "Cheat Sheet"
+tags: ["cheat sheet"]
 ---
