@@ -2,6 +2,8 @@
 type: "blog"
 title: "Chef Server Installation"
 date: 2018-09-30T23:08:41-04:00
+description: "Chef server installation walk through."
+author: "John Siu"
 tags: ["chef"]
 ---
 
