@@ -1,7 +1,7 @@
 ---
 type: "blog"
 date: 2016-10-13T03:33:00Z
-tags: ["lighttpd", "url.rewrite", "mode_rewrite", "wordpress", "jetpack", "mod_rewrite"]
+tags: ["lighttpd", "url.rewrite", "wordpress", "jetpack", "mod_rewrite"]
 title: "Lighttpd url.rewrite for latest WordPress Jetpack"
 ---
 
