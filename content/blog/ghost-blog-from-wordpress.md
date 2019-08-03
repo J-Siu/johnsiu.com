@@ -54,11 +54,12 @@ __Beyond the Numbers__
 
 WordPress requires full LAMP stack, database(MySql/MariaDB), web server (Lighttpd, or more commonly Apache, which use even more resource).
 
-Ghost on the other hand, only require NodeJS. So 2 less packages to maintain and configure. Moreover, 1 process[^n] vs 7 processes [^n][^n].
+Ghost on the other hand, only require NodeJS. So 2 less packages to maintain and configure. Moreover, 1 process[^1] vs 7 processes [^2].
 
 The resource difference may not be that impressive in tables above. However, base on my own observation, lighttpd and php-fpm tend to hold on a bit more memory over time. Additionally, memory usage reported by `free` is much higher before the switch, __500Mb+(before) vs 235Mb(now)__.
 
 __PS:__
-[^n]: I customized Ghost index.js to support HTTPS with a single node instance, which is not official supported by the Ghost development team. I will talk about it in a later post.
-[^n]: Number of processes for MySQL depends on setup, it can be reduced to one.
-[^n]: PHP-FPM pool can be reduced to one, I choose to use two. It can be completely eliminated if cgi mode is used in Lighttpd. In Apache, mod_php  embedded the php interpreter within Apache process, but Apache itself use more resources than lighttpd.
+
+[^1]: I customized Ghost index.js to support HTTPS with a single node instance, which is not official supported by the Ghost development team. I will talk about it in a later post.
+
+[^2]: Number of processes for MySQL depends on setup, it can be reduced to one. PHP-FPM pool can be reduced to one, I choose to use two. It can be completely eliminated if cgi mode is used in Lighttpd. In Apache, mod_php  embedded the php interpreter within Apache process, but Apache itself use more resources than lighttpd.
