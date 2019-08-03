@@ -18,6 +18,6 @@ I end up with a lot of 404 errors in the `access.log` like the following one:
 
 To solve the issue I start exploring [Lighttpd url.rewrite](https://redmine.lighttpd.net/projects/1/wiki/docs_modrewrite). After some research and a few tries, I finally come up with a working configuration:
 
-```ini
+```lighttpd
 url.rewrite-if-not-file = ("^/(.*)$" => "/index.php/$1")
 ```

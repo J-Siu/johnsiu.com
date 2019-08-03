@@ -34,7 +34,7 @@ Log was set to minimum when I was using h2ghost. But once I switched to Nginx, [
 
 To *save* those requests, I need to implement redirect/rewrite again, just like old times. Luckily the [regex from my old Lighttpd](/blog/lighttpd-url-redirect-and-changing-wordpress-permalink-structure/) still works.
 
-```conf
+```apache
 # /index.php/YYYY/MM/DD/<article> to /blog/<article>
 location ~ "^/index.php/\d{4}/\d{2}/\d{2}/(.*)$" { return 301 https://johnsiu.com/blog/$1; }
 # /index.php/<article> to /blog/<article>

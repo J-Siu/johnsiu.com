@@ -32,6 +32,6 @@ Solution? __[Lighttpd Url.redirect](https://redmine.lighttpd.net/projects/1/wiki
 
 Since __`Date and Name`__ permalink format is well structured, the redirect rules is easy:
 
-```js
+```lighttpd
 url.redirect = ("^/index.php/\d{4}/\d{2}/\d{2}/(.*)$" => "/index.php/$1")
 ```
