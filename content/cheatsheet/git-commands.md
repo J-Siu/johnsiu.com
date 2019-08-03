@@ -11,90 +11,90 @@ Some git commands.
 <!--more-->
 #### Push master
 
-  ```sh
-  git push -u origin master
-  git push -u <name> master
-  ```
+```sh
+git push -u origin master
+git push -u <name> master
+```
 
 #### Remote show
 
-  ```sh
-  git remote -v
-  ```
+```sh
+git remote -v
+```
 
 #### Remote remote
 
-  ```sh
-  git remote remove origin
-  git remote remove <name>
-  ```
+```sh
+git remote remove origin
+git remote remove <name>
+```
 
 #### Add/stage
 
-  ```sh
-  git add . # Add everything in current dir tree. This include sub-dir recursively.
-  git add <file/dir>...
-  ```
+```sh
+git add . # Add everything in current dir tree. This include sub-dir recursively.
+git add <file/dir>...
+```
 
 #### Remove from stage
 
-  ```sh
-  git rm <file/dir>...
-  ```
+```sh
+git rm <file/dir>...
+```
 
 #### Commit staged changes
 
-  ```sh
-  git commit -m '<comment>'
-  git commit -a # Commit all staged files.
-  git commit <file/dir> # Commit files directly even not staged.
-  ```
+```sh
+git commit -m '<comment>'
+git commit -a # Commit all staged files.
+git commit <file/dir> # Commit files directly even not staged.
+```
 
 #### Tag
 
-  ```sh
-  git tag # List tags
-  git tag <version> # Light weight tag
-  git tag -a v0.1 -m "Version 0.1"
-  git tag -a <version> -m '<comment>'
-  git show <version> # Show tagged commit
-  ```
+```sh
+git tag # List tags
+git tag <version> # Light weight tag
+git tag -a v0.1 -m "Version 0.1"
+git tag -a <version> -m '<comment>'
+git show <version> # Show tagged commit
+```
 
 #### Push tag
 
-  ```sh
-  git push --tags
-  ```
+```sh
+git push --tags
+```
 
 #### Submodule add
 
-  ```sh
-  submodule add https://github.com/J-Siu/binario themes/binario
-  submodule add <url> <path>
-  ```
+```sh
+submodule add https://github.com/J-Siu/binario themes/binario
+submodule add <url> <path>
+```
 
 #### Submodule update
 
-  ```sh
-  git submodule update --recursive --remote
-  ```
+```sh
+git submodule update --recursive --remote
+```
 
 #### Status
 
-  ```sh
-  git status
-  ```
+```sh
+git status
+```
 
 #### Log show
 
-  ```sh
-  git log
-  git reflog
-  ```
+```sh
+git log
+git reflog
+```
 
 #### Revert
 
-  ```sh
-  git revert b68bc59
-  git revert <ref#>
-  ```
+```sh
+git revert b68bc59
+git revert <ref#>
+```
