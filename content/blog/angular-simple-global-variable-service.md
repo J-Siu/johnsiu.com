@@ -1,20 +1,19 @@
 ---
-type: "blog"
-date: 2016-10-11T02:14:51Z
-tags: ["javascript", "typescript", "angular"]
-title: "Angular2 Simple Global Variable Service"
+type: blog
+date: 2016-10-11T02:14:51.000Z
+tags:
+    - javascript
+    - typescript
+    - angular
+title: 'Angular Simple Global Variable Service'
+aliases:
+    - /a-simple-global-variable-service-for-angular-2
+    - /blog/a-simple-global-variable-service-for-angular-2
+    - /index.php/a-simple-global-variable-service-for-angular-2
 ---
 
-`ng2-simple-global` a simple global variable service for Angular 2.
+`ng2-simple-global` a simple global variable service for Angular.
 <!--more-->
-
-## Index
-
-- [Install](#install)
-- [Usage](#usage)
-- [API](#API)
-- [Repository](#Repository)
-- [Example](#example)
 
 ## Install
 
@@ -24,9 +23,9 @@ npm install ng2-simple-global
 
 ## Usage
 
-### Import into Angular 2 application (typescript)
+### Import into Angular application (typescript)
 
-`ng2-simple-global` is implemented as Angular 2 injectable service name **SimpleGlobal**.
+`ng2-simple-global` is implemented as Angular injectable service name **SimpleGlobal**.
 
 #### For module using SimpleGlobal
 

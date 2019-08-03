@@ -1,30 +1,25 @@
 ---
-type: "blog"
-date: 2016-10-11T04:18:35Z
-description: "A simple timer service for Angular 2, base on RxJS."
-tags: ["javascript", "angular", "typescript"]
-title: "Angular2 Simple Timer Service"
+type: blog
+date: 2016-10-11T04:18:35.000Z
+description: 'Angular Simple Time Service'
+tags:
+    - javascript
+    - angular
+    - typescript
+title: 'Angular Simple Timer Service'
+aliases:
+    - /angular-simple-timer-service
+    - /angular2-simple-timer-service
+    - /blog/angular2-simple-timer-service
+    - /index.php/angular-simple-timer-service
+    - /index.php/angular2-simple-timer-service
 ---
 
-`ng2-simple-timer` is a simple timer service for Angular 2, base on RxJS.
+`ng2-simple-timer` is a simple timer service for Angular, base on RxJS.
 
 <!--more-->
 
 Name/ID(string) base API. RxJS object not exposed.
-
-### Index
-
-- [Install](#install)
-- [Usage](#usage)
-- [Import into Angular 2 RC5 application (typescript)](#import-into-angular-2-rc5-application-typescript)
-- [API](#api)
- - [newTimer](#newtimername-string-sec-number-boolean)
- - [delTimer](#deltimername-string-boolean)
- - [getTimer](#gettimer-string)
- - [getSubscription](#getsubscription-string)
- - [subscribe](#subscribename-string-callback-any-void-string)
- - [unsubscribe](#unsubscribeid-string-boolean)
-- [Example](#example)
 
 ### Install
 
@@ -34,9 +29,9 @@ npm install ng2-simple-timer
 
 ### Usage
 
-#### Import into Angular 2 RC5 application (typescript)
+#### Import into Angular RC5 application (typescript)
 
-`ng2-simple-timer` is implemented as Angular 2 injectable service name **SimpleTimer**.
+`ng2-simple-timer` is implemented as Angular injectable service name **SimpleTimer**.
 
 **For module using SimpleTimer**
 

@@ -3,6 +3,9 @@ type: "blog"
 date: 2017-04-08T15:17:58Z
 tags: ["ghost", "http2", "spdy", "https", "blog", "nodejs", "proxy"]
 title: "H2Ghost - The Revamped Ghost HTTP2/S Solution"
+aliases:
+    - /h2ghost
+    - /index.php/h2ghost
 ---
 
 [__H2Ghost__](//github.com/J-Siu/h2ghost) is a http2/https front end for [Ghost Blog](//ghost.org)

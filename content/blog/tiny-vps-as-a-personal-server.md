@@ -3,6 +3,9 @@ type: "blog"
 date: 2012-12-02T06:59:25Z
 tags: ["lighttpd", "linux", "mysql", "tweaking", "vps"]
 title: "Tiny VPS as a personal server"
+aliases:
+    - /tiny-vps-as-a-personal-server
+    - /index.php/tiny-vps-as-a-personal-server
 ---
 
 [VPS (Virtual Private Server)](http://en.wikipedia.org/wiki/Virtual_private_server) is getting more and more affordable today, even for personal use.

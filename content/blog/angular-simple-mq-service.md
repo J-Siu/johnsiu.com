@@ -2,30 +2,21 @@
 type: "blog"
 date: 2016-10-11T04:57:04Z
 tags: ["javascript", "typescript", "angular"]
-title: "Angular 2 Simple MQ Service"
+title: "Angular Simple MQ Service"
+aliases:
+    - /angular-simple-mq-service
+    - /angular2-simple-mq-service
+    - /blog/angular2-simple-mq-service
+    - /index.php/angular-simple-mq-service
+    - /index.php/angular2-simple-mq-service
 ---
-`ng2-simple-mq` is a simple message queue for Angular 2 inter-component communication base on RxJS.
+`ng2-simple-mq` is a simple message queue for Angular inter-component communication base on RxJS.
 
 <!--more-->
 
 Name/ID(string) base API. RxJS object not exposed.
 
 (This pacakge does not communicate with RabbitMQ or any other message queue software/service.)
-
-# Index
-
-- [Install](#install)
-- [Usage](#usage)
-- [Import into Angular 2 application (typescript)](#import-into-angular-2-application-typescript)
-- [API](#api)
- - [newQueue](#newqueuename-string-boolean)
- - [delQueue](#delqueuename-string-boolean)
- - [getQueue](#getqueue-string)
- - [getSubscription](#getsubscription-string)
- - [publish](#publishname-string-msg-any-lazy-true-boolean)
- - [subscribe](#subscribename-string-callback-any-void-lazy-true-string)
- - [unsubscribe](#unsubscribeid-string-boolean)
-- [Example](#example)
 
 ## Install
 
@@ -35,9 +26,9 @@ npm install ng2-simple-mq
 
 ## Usage
 
-### Import into Angular 2 application (typescript)
+### Import into Angular application (typescript)
 
-`ng2-simple-mq` is implemented as Angular 2 injectable service name **SimpleMQ**.
+`ng2-simple-mq` is implemented as Angular injectable service name **SimpleMQ**.
 
 **For module using SimpleMQ**
 

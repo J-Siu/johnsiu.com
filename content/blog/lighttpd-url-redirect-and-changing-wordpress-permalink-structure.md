@@ -3,6 +3,9 @@ type: "blog"
 date: 2016-10-13T22:30:00Z
 tags: ["lighttpd", "url.redirect", "mod_redirect", "permalink", "blog", "wordpress"]
 title: "Lighttpd url.redirect and changing WordPress permalink structure"
+aliases:
+    - /lighttpd-url-redirect-and-changing-wordpress-permalink-structure
+    - /index.php/lighttpd-url-redirect-and-changing-wordpress-permalink-structure
 ---
 
 I used to use the __`Date and Name`__ permalink structure for my blog:

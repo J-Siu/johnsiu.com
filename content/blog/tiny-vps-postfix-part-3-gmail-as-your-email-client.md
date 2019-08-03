@@ -3,6 +3,9 @@ type: "blog"
 date: 2013-04-15T11:20:30Z
 tags: ["gmail", "linux", "postfix", "vps", "smtp"]
 title: "Tiny VPS Postfix - Part 3 - GMail as Email Client"
+aliases:
+    - /tiny-vps-postfix-part-3-gmail-as-your-email-client
+    - /index.php/tiny-vps-postfix-part-3-gmail-as-your-email-client
 ---
 
 In [Tiny VPS Postfix](https://johnsiu.com/index.php/2012/12/06/tiny-vps-postfix/ "Tiny VPS Postfix") I set up a minimalistic postfix server, which will forward all email to an external email.

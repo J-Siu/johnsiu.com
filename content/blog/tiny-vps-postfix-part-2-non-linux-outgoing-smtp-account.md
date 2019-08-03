@@ -3,6 +3,9 @@ type: "blog"
 date: 2013-04-15T04:24:05Z
 tags: ["linux", "ubuntu", "smtp", "vps", "postfix"]
 title: "Tiny VPS Postfix - Part 2 - Non-Linux Outgoing SMTP Account"
+aliases:
+    - /tiny-vps-postfix-part-2-non-linux-outgoing-smtp-account
+    - /index.php/tiny-vps-postfix-part-2-non-linux-outgoing-smtp-account
 ---
 
 In the last part I show a minimal setup of Postfix. It allow incoming emails to be forwarded to specific external email address(es).

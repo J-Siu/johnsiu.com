@@ -3,6 +3,9 @@ type: "blog"
 date: 2017-03-13T07:00:18Z
 tags: ["ghost", "https", "nodejs", "blog", "http2", "spdy"]
 title: "Ghost Https index.js in GitHub"
+aliases:
+    - /ghost-https-index-js-in-github
+    - /index.php/ghost-https-index-js-in-github
 ---
 
 In an earlier __[post](/ghost-blog-self-hosted-with-https-using-nodejs-only/)__ I talk about running __[Ghost Blog](//ghost.org)__ with https using nodejs only.

@@ -3,6 +3,9 @@ type: "blog"
 date: 2017-04-08T15:12:12Z
 tags: ["ghost", "http2", "https", "proxy", "blog"]
 title: "Let Ghost be Ghost"
+aliases:
+    - /let-ghost-be-ghost
+    - /index.php/let-ghost-be-ghost
 ---
 
 

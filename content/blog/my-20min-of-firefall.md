@@ -3,6 +3,9 @@ type: "blog"
 date: 2012-12-08T17:35:18Z
 tags: ["FireFall", "game", "mmorpg"]
 title: "My 20min of FireFall"
+aliases:
+    - /my-20min-of-firefall
+    - /index.php/my-20min-of-firefall
 ---
 
 I am never good at point and shoot game. But after seeing FireFall trailer and game play video on YouTube, I signed up for their beta test.

@@ -3,6 +3,9 @@ type: "blog"
 date: 2012-12-07T04:29:48Z
 tags: ["linux", "postfix", "smtp", "tweaking", "vps"]
 title: "Tiny VPS Postfix"
+aliases:
+    - /tiny-vps-postfix
+    - /index.php/tiny-vps-postfix
 ---
 
 Finally running my own website, hosting my own blog, having my own server to do whatever I want with it.

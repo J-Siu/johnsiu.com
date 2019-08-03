@@ -4,26 +4,13 @@ title: "Simple API handler for node.js / expressjs"
 date: 2016-10-11T02:49:35Z
 tags: ["javascript", "angular", "expressjs", "typescript"]
 description: "Expressjs api handler (NOT middleware) that work with simple-api-client-ng2, an Angular 2 api service."
+aliases:
+    - /simple-api-handler-for-node-js-expressjs
+    - /index.php/simple-api-handler-for-node-js-expressjs
 ---
 
 [simple-api-express](https://github.com/J-Siu/simple-api-express) is an expressjs api handler (NOT middleware) that work with [simple-api-client-ng2](https://github.com/J-Siu/simple-api-client-ng2), an Angular 2 api service.
 <!--more-->
-
-### Index
-
-- [Install](#install)
-- [Usage Flow](#usage-flow)
-- [API](#api)- [constructor](#constructor)
-  - [debug](#debug)
-  - [list](#list)
-  - [register](#register)
-  - [registerObject](#registerobject)
-  - [response](#response)
-  - [handler](#handler)
-- [Error Handleing](#error-handleing)
-  - [404 Not Found](#404-not-found)
-  - [Callback throw](#callback-throw)
-- [Example](#example)
 
 ### Install
 

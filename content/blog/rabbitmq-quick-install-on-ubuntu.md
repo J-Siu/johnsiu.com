@@ -3,6 +3,9 @@ type: "blog"
 date: 2015-11-26T11:12:59Z
 tags: ["linux", "ubuntu", "rabbitmq", "php", "amqp"]
 title: "RabbitMQ Quick Install on Ubuntu"
+aliases:
+    - /rabbitmq-quick-install-on-ubuntu
+    - /index.php/rabbitmq-quick-install-on-ubuntu
 ---
 
 - Install RabbitMQ

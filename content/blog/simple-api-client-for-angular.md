@@ -2,24 +2,14 @@
 type: "blog"
 date: 2016-10-11T02:26:54Z
 tags: ["javascript", "typescript", "angular"]
-title: "Angular2 Simple API Client Service"
+title: "Angular Simple API Client Service"
+aliases:
+    - /simple-api-client-for-angular
+    - /index.php/simple-api-client-for-angular
 ---
 
-[simple-api-client-ng2](https://github.com/J-Siu/simple-api-client-ng2) is an Angular 2 api service, which work with [simple-api-express](https://github.com/J-Siu/simple-api-express), an expressjs api handler.
+[simple-api-client-ng2](https://github.com/J-Siu/simple-api-client-ng2) is an Angular api service, which work with [simple-api-express](https://github.com/J-Siu/simple-api-express), an expressjs api handler.
 <!--more-->
-
-## Index
-
-- [Install](#install)
-- [Usage Flow](#usage-flow)
-  - [Import into Angular 2 application (typescript)](#import-into-angular-2-application-typescript)
-- [API](#api)
-  - [SimpleApiClient.get](#simpleapiclientget)
-  - [SimpleApiClient.list](#simpleapiclientlist)
-  - [SimpleApiObj.call](#simpleapiobjcall)
-  - [SimpleApiObj.setErrorHandler](#simpleapiobjseterrorhandler)
-- [Error Handling](#error-handling)
-- [Example](#example)
 
 ## Install
 
@@ -29,9 +19,9 @@ npm install simple-api-client-ng2
 
 ## Usage Flow
 
-### Import into Angular 2 application (typescript)
+### Import into Angular application (typescript)
 
-`simple-api-client-ng2` is implemented as Angular 2 injectable service name **SimpleApiClient**.
+`simple-api-client-ng2` is implemented as Angular injectable service name **SimpleApiClient**.
 
 #### For module using SimpleApiClient
 
