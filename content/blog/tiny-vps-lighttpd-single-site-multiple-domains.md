@@ -6,6 +6,7 @@ title: "Tiny VPS Lighttpd Single Site Multiple Domains"
 aliases:
     - /tiny-vps-lighttpd-single-site-multiple-domains
     - /index.php/tiny-vps-lighttpd-single-site-multiple-domains
+    - /index.php/2012/12/10/tiny-vps-lighttpd-single-site-multiple-domains
 ---
 
  I own [**johnsiu.com**](http://johnsiu.com), [**johnsiu.org**](http://johnsiu.org), [**johnsiu.info**](http://johnsiu.info), [**johnsiu.net**](http://johnsiu.net) and they all point to this server.

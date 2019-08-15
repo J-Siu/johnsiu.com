@@ -7,6 +7,7 @@ title: "Ghost Blog Redirect Configuration for WordPress Migration"
 aliases:
     - /ghost-blog-redirect-after-wordpress-migration
     - /index.php/ghost-blog-redirect-after-wordpress-migration
+    - /index.php/2017/02/08/ghost-blog-redirect-after-wordpress-migration
 ---
 
 In my earlier post [Lighttpd url.redirect and changing WordPress permalink structure](https://johnsiu.com/lighttpd-url-redirect-and-changing-wordpress-permalink-structure/), I talk about the issue when permalink structure is changed.

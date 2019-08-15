@@ -7,6 +7,7 @@ title: "Ghost Blog from WordPress"
 aliases:
     - /ghost-blog-from-wordpress
     - /index.php/ghost-blog-from-wordpress
+    - /index.php/2017/02/07/ghost-blog-from-wordpress
 ---
 
 Last October I moved my git server from __[GitLab CE](https://about.gitlab.com/features/#community)__ to __[GoGs](https://gogs.io)__. I also planned to move my blog from __[WordPress](https://wordpress.com)__ to __[Ghost Blog](https://ghost.org)__ at the same time, but was delayed by the heavy load at work, until now.

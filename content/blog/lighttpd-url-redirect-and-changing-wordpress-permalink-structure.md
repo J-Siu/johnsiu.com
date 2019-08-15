@@ -6,6 +6,7 @@ title: "Lighttpd url.redirect and changing WordPress permalink structure"
 aliases:
     - /lighttpd-url-redirect-and-changing-wordpress-permalink-structure
     - /index.php/lighttpd-url-redirect-and-changing-wordpress-permalink-structure
+    - /index.php/2016/10/13/lighttpd-url-redirect-and-changing-wordpress-permalink-structure
 ---
 
 I used to use the __`Date and Name`__ permalink structure for my blog:

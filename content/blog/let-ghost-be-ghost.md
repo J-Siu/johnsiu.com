@@ -6,6 +6,7 @@ title: "Let Ghost be Ghost"
 aliases:
     - /let-ghost-be-ghost
     - /index.php/let-ghost-be-ghost
+    - /index.php/2017/04/08/let-ghost-be-ghost
 ---
 
 

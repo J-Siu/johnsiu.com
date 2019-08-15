@@ -7,6 +7,7 @@ description: "Expressjs api handler (NOT middleware) that work with simple-api-c
 aliases:
     - /simple-api-handler-for-node-js-expressjs
     - /index.php/simple-api-handler-for-node-js-expressjs
+    - /index.php/2016/10/11/simple-api-handler-for-node-js-expressjs
 ---
 
 [simple-api-express](https://github.com/J-Siu/simple-api-express) is an expressjs api handler (NOT middleware) that work with [simple-api-client-ng2](https://github.com/J-Siu/simple-api-client-ng2), an Angular 2 api service.

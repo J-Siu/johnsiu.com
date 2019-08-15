@@ -6,6 +6,7 @@ title: "Before and After :D"
 aliases:
     - /before-and-after-d
     - /index.php/before-and-after-d
+    - /index.php/2017/02/27/before-and-after-d
 ---
 
 Found this photo in my photo stream. It was taken more than a year ago behind my computer desk. Networking guys, look familiar?

@@ -6,6 +6,7 @@ title: "Angular Simple API Client Service"
 aliases:
     - /simple-api-client-for-angular
     - /index.php/simple-api-client-for-angular
+    - /index.php/2016/10/11/simple-api-client-for-angular
 ---
 
 [simple-api-client-ng2](https://github.com/J-Siu/simple-api-client-ng2) is an Angular api service, which work with [simple-api-express](https://github.com/J-Siu/simple-api-express), an expressjs api handler.

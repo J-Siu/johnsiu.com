@@ -6,6 +6,7 @@ title: "Tiny VPS as a personal server"
 aliases:
     - /tiny-vps-as-a-personal-server
     - /index.php/tiny-vps-as-a-personal-server
+    - /index.php/2012/12/02/tiny-vps-as-a-personal-server
 ---
 
 [VPS (Virtual Private Server)](http://en.wikipedia.org/wiki/Virtual_private_server) is getting more and more affordable today, even for personal use.

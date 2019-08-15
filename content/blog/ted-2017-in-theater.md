@@ -6,6 +6,7 @@ title: "TED 2017 in Theater"
 aliases:
     - /ted-2017-in-theater
     - /index.php/ted-2017-in-theater
+    - /index.php/2017/03/11/ted-2017-in-theater
 ---
 
 **[TED Talk 2017](http://www.ted.com)** is hosted in Vancover, Canada. But you can see it live in cinema this year on 4/24, 4/25 and 4/30.

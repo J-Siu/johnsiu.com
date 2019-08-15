@@ -6,6 +6,7 @@ title: "SCRUM (PSM-I) Done!!"
 aliases:
     - /scrum-psm-i-done
     - /index.php/scrum-psm-i-done
+    - /index.php/2017/02/25/scrum-psm-i-done
 ---
 
 Want to do this for awhile, and finally get it done.

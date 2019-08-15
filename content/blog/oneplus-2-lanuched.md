@@ -6,6 +6,7 @@ title: "OnePlus 2 Lanuched"
 aliases:
     - /oneplus-2-lanuched
     - /index.php/oneplus-2-lanuched
+    - /index.php/2015/07/28/oneplus-2-lanuched
 ---
 
 Oneplus officially launched their 2nd generation phone last night. Review is not out yet, but it look beautiful in their VR launch video and in the product site.

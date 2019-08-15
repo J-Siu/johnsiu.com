@@ -6,6 +6,7 @@ title: "Tiny VPS MySQL"
 aliases:
     - /tiny-vps-mysql
     - /index.php/tiny-vps-mysql
+    - /index.php/2012/12/06/tiny-vps-mysql
 ---
 
 The fun of a tiny vps is tweaking everything to use less resource, just do the bare minimum, but at the same time, do what you want it to do.

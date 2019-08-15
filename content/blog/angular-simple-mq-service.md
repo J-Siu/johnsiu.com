@@ -9,6 +9,8 @@ aliases:
     - /blog/angular2-simple-mq-service
     - /index.php/angular-simple-mq-service
     - /index.php/angular2-simple-mq-service
+    - /index.php/2016/10/11/angular-simple-mq-service
+    - /index.php/2016/10/11/angular2-simple-mq-service
 ---
 `ng2-simple-mq` is a simple message queue for Angular inter-component communication base on RxJS.
 

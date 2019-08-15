@@ -6,6 +6,7 @@ title: "Personal Git Server in a VPS"
 aliases:
     - /personal-git-server-in-a-vps
     - /index.php/personal-git-server-in-a-vps
+    - /index.php/2016/10/13/personal-git-server-in-a-vps
 ---
 
 __GitLab CE__ and __Gogs__

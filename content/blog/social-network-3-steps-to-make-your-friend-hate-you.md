@@ -6,6 +6,7 @@ title: "Social Network - 3 Steps to make your friend hate you"
 aliases:
     - /social-network-3-steps-to-make-your-friend-hate-you
     - /index.php/social-network-3-steps-to-make-your-friend-hate-you
+    - /index.php/2017/04/10/social-network-3-steps-to-make-your-friend-hate-you
 ---
 
 Careful ...

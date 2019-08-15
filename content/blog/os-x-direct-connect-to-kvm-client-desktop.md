@@ -6,6 +6,7 @@ title: "OS X direct connect to KVM client desktop"
 aliases:
     - /os-x-direct-connect-to-kvm-client-desktop
     - /index.php/os-x-direct-connect-to-kvm-client-desktop
+    - /index.php/2015/11/18/os-x-direct-connect-to-kvm-client-desktop
 ---
 
 Recently I have been experimenting with a tiny KVM setup. Everything is good till I want to use my Mac Mini to connect to the client desktop.

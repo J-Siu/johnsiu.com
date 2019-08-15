@@ -6,6 +6,7 @@ title: "H2Ghost - The Revamped Ghost HTTP2/S Solution"
 aliases:
     - /h2ghost
     - /index.php/h2ghost
+    - /index.php/2017/04/08/h2ghost
 ---
 
 [__H2Ghost__](//github.com/J-Siu/h2ghost) is a http2/https front end for [Ghost Blog](//ghost.org)
