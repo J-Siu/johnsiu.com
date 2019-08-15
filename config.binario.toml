@@ -5,7 +5,7 @@ theme = "Binario"
 languageCode = "en-us"
 paginate = "24"
 paginatepath = "blog"
-tag_dir = "tag"
+enableGitInfo = true
 pluralizeListTitles=false
 
 pygmentsCodefences=true
