@@ -17,13 +17,14 @@ Mac OS packages I use.
 ### Development
 
 - [VSCode](https://github.com/microsoft/vscode) - IDE.
+- [Meld](https://github.com/yousseb/meld) - Graphical merge/diff tool.
 - Xcode - IDE.
 
 ### Media
 
 - [Cantata](https://github.com/cdrummond/cantata) - Graphical mpd client.
 - [mpc](https://github.com/MusicPlayerDaemon/mpc) - Command line mpd client.
-- iTunes - Music player.
 - [LyricsX](https://github.com/ddddxxx/LyricsX) - iTunes lyrics plugin.
-- Final Cut Pro X - Video Editing.
 - [VLC](https://github.com/videolan/vlc) - Media player.
+- Final Cut Pro X - Video Editing.
+- iTunes - Music player.
