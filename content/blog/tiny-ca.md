@@ -12,16 +12,16 @@ Bite the bullet and create a tiny CA for local network.
 
 ### Background
 
-As browsers are getting more secure and packed with more safeguards to prevent malicious actors from doing their biddings, they are becoming much less friendly with self-signed certificates. This become a pain in small lab and other wall-offed network. While using http for non-prod/testing can be the solution, it is not ideal and may create other issues.
+As browsers are getting more secure and packed with more safeguards to prevent malicious actors from doing their biddings, they become less friendly with self-signed certificates. This is a pain in small labs and other wall off networks. While using http for non-prod/testing can be a solution, it is not ideal and can create other issues.
 
 ### Goals
 
-- Create the simplest CA setup that can be recreated and throw away at wish.
+- Create the simplest CA setup that can be recreated and thrown away at wish.
 - Create one wildcard server certificate for any servers in the network.
 
 ### Fast Forward
 
-The result is a simple script with a openssl config file that will generate a CA and a wildcard certificate.
+The result is a simple script with an openssl config file that will generate a CA and a wildcard certificate.
 
 GitHub: [tiny_ca](https://github.com/J-Siu/tiny_ca)
 
