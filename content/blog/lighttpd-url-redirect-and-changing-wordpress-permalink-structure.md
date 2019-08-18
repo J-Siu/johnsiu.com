@@ -1,7 +1,7 @@
 ---
 type: "blog"
 date: 2016-10-13T22:30:00Z
-tags: ["lighttpd", "url.redirect", "mod_redirect", "permalink", "blog", "wordpress"]
+tags: ["lighttpd", "url.redirect", "mod_redirect", "permalink", "blog", "wordpress","migrate"]
 title: "Lighttpd url.redirect and changing WordPress permalink structure"
 aliases:
     - /lighttpd-url-redirect-and-changing-wordpress-permalink-structure

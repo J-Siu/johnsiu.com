@@ -4,7 +4,7 @@ date: 2019-07-30T00:14:48-04:00
 author: "John Siu"
 title: "Nginx URL Redirect For Old WordPress Permalink"
 description: "Nginx URL redirect for old WordPress Permalink in the internet."
-tags: ["nginx","url","redirect","permalink","blog"]
+tags: ["nginx","url","redirect","permalink","blog","migrate"]
 draft: false
 ---
 Seems URL rewrite/redirect is a never ending story.

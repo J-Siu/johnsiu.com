@@ -2,7 +2,7 @@
 type: "blog"
 date: 2017-02-07T18:21:11Z
 description: "Ghost Blog from WordPress Migration"
-tags: ["ghost", "nodejs", "blog"]
+tags: ["ghost", "nodejs", "blog","migrate"]
 title: "Ghost Blog from WordPress"
 aliases:
     - /ghost-blog-from-wordpress

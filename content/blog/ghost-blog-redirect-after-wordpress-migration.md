@@ -2,7 +2,7 @@
 type: "blog"
 date: 2017-02-08T08:00:44Z
 description: "Configure url redirection for Ghost after migrating from WordPress."
-tags: ["ghost", "nodejs", "permalink", "blog"]
+tags: ["ghost", "nodejs", "permalink", "blog", "migrate"]
 title: "Ghost Blog Redirect Configuration for WordPress Migration"
 aliases:
     - /ghost-blog-redirect-after-wordpress-migration
