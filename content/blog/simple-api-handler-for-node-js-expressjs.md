@@ -1,16 +1,16 @@
 ---
 type: "blog"
-title: "Simple API handler for node.js / expressjs"
+title: "Simple API handler for node.js / ExpressJS"
 date: 2016-10-11T02:49:35Z
 tags: ["javascript", "angular", "expressjs", "typescript"]
-description: "Expressjs api handler (NOT middleware) that work with simple-api-client-ng2, an Angular 2 api service."
+description: "ExpressJS api handler (NOT middleware) that work with simple-api-client-ng2, an Angular api service."
 aliases:
     - /simple-api-handler-for-node-js-expressjs
     - /index.php/simple-api-handler-for-node-js-expressjs
     - /index.php/2016/10/11/simple-api-handler-for-node-js-expressjs
 ---
 
-[simple-api-express](https://github.com/J-Siu/simple-api-express) is an expressjs api handler (NOT middleware) that work with [simple-api-client-ng2](https://github.com/J-Siu/simple-api-client-ng2), an Angular 2 api service.
+[simple-api-express](https://github.com/J-Siu/simple-api-express) is an ExpressJS api handler (NOT middleware) that work with [simple-api-client-ng2](https://github.com/J-Siu/ng2-simple-api-lib), an Angular api service.
 <!--more-->
 
 ### Install
@@ -21,7 +21,7 @@ npm install simple-api-express
 
 ### Usage Flow
 
-`simple-api-express` depends on expressjs middleware bodyParser for json body decode.
+`simple-api-express` depends on ExpressJS middleware bodyParser for json body decode.
 
 ```javascript
 const express = require('express');
@@ -63,7 +63,7 @@ Use express post and `SimpleApi.response()` to handle incoming api request:
 app.post(path.join(apiDemoUrl, '*'), (req, res) => apiDemo.response(req, res))
 ```
 
-`SimpleApi.handler()` can be use if additioanl action(eg: customing response header or error page) is required before reply:
+`SimpleApi.handler()` can be use if additional action(eg: customizing response header or error page) is required before reply:
 
 ```js
 // Post request + API handler
@@ -127,7 +127,7 @@ Output:
 `register(url:string,callback)` register a callback function to `url`
 
 - `url` : Api url path after baseUrl. The resulting url for the api is baseUrl/url.
-- `callback` : a function that take a single argunment as api parameter, and return a result.
+- `callback` : a function that take a single argument as api parameter, and return a result.
 
 ```js
 apiDemo.register('echo2',param => 'echo2:' + param);
@@ -137,7 +137,7 @@ apiDemo.register('echo2',param => 'echo2:' + param);
 
 `registerObject(object)` register all functions of an object as api callbacks.
 
-All functions of the object should take a single argunment as api parameter, and return a result.
+All functions of the object should take a single argument as api parameter, and return a result.
 
 The function name will be used api url.
 
@@ -170,7 +170,7 @@ IT WILL NOT send out the result.
 
 IT IS NOT a expressjs post handler function. It needed to be called INSIDE the post handler function.
 
-Api handler can be use if additioanl action(eg: customing response header or error page) is required:
+Api handler can be use if additional action(eg: customizing response header or error page) is required:
 
 ```js
 // Post request + API handler
@@ -192,7 +192,7 @@ app.post(path.join(apiDemoUrl, '*'), (req, res) => {
 })
 ```
 
-### Error Handleing
+### Error Handling
 
 There are two types of error.
 
@@ -226,6 +226,41 @@ The remote client, using [simple-api-client-ng2](https://github.com/J-Siu/simple
 
 ### Example
 
-A detail example for both [simple-api-express](https://github.com/J-Siu/simple-api-express) and [simple-api-client-ng2](https://github.com/J-Siu/simple-api-client-ng2).
+A detail example for how [simple-api-express](https://github.com/J-Siu/simple-api-express) and [simple-api-client-ng2](https://github.com/J-Siu/simple-api-client-ng2) work is in:
 
-- [simple-api-example-ng2-express](https://github.com/J-Siu/simple-api-example-ng2-express)
+- [ng2-simple-api-lib](https://github.com/J-Siu/ng2-simple-api-lib)
+
+### Repository
+
+- [simple-api-express](https://github.com/J-Siu/simple-api-express)
+
+### Contributors
+
+- [John Sing Dao Siu](https://github.com/J-Siu)
+
+### Changelog
+
+- 1.2.0
+  - Publish to NPM.
+- 1.2.1
+  - Fix Readme.md typo
+- 1.2.2
+  - Update package.json
+  - Update Readme.md
+- 4.0.0
+  - Match ExpressJS major version
+  - README.md clean up
+  - package.json clean up
+  - simple-api.ts uses typescript import
+
+### License
+
+The MIT License
+
+Copyright (c) 2019
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
