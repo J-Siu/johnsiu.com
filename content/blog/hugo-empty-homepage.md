@@ -23,15 +23,15 @@ Output:
 Hugo Static Site Generator v0.57.1/extended darwin/amd64 BuildDate: unknown
 ```
 
-If it show > v0.57.x, then it properly is the cause. As Hugo team introduce some breaking changes when upgrading from <0.56.x to 0.57.x. [^1] [^2]
+If it show > v0.57.x, then it properly is the cause. As Hugo team introduce some breaking changes when upgrading to 0.57.x. [^1] [^2]
 
 ### Quick Fix
 
-New features is great but keeping the site up and running is more important.
+New features are great but keeping the site up and running is more important.
 
 It is easy fix for linux, just install hugo 0.56.3 with package manager of your distro.
 
-It is a bit messy on Mac with Homebrew. Following is the steps for rolling back on Mac using Homebrew:
+However it is a bit messy on Mac with Homebrew. Following is the steps for rolling back on Mac using Homebrew:
 
 ```sh
 brew uninstall hugo
@@ -40,7 +40,7 @@ git checkout 89a374 hugo.rb
 brew install hugo
 ```
 
-> If your brew formula path is different, check below for how to locate it.
+> If you have a different brew formula path, check below for how to locate it.
 
 Now your Hugo is rollback to 0.56.3. Switch to your hugo site directory and everything should back to normal.
 
@@ -52,7 +52,7 @@ To find the exact location of `hugo.rb`.
 mdfind hugo.rb
 ```
 
-If youhave brew recent version, it should show path as follow:
+If you have brew recent version, it should show path as follow:
 
 ```sh
 /usr/local/Homebrew/Library/Taps/homebrew/homebrew-core/Formula/hugo.rb
