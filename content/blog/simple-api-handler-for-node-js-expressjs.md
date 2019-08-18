@@ -206,7 +206,7 @@ When `handle()` is called with an non-exist api url, it will throw an error, whi
 
 When `response()` is called, and the invoked api callback throw an error, which will be passed to remote client.
 
-The remote client, using [simple-api-client-ng2](https://github.com/J-Siu/simple-api-client-ng2), will throw an exception with the error.
+The remote client, using [simple-api-client-ng2](https://github.com/J-Siu/ng2-simple-api-lib), will throw an exception with the error.
 
 When `handle()` is called, and the invoked api callback throw an error, the error can be inspected from the result object.
 
@@ -222,11 +222,11 @@ if(result.error) {
 res.json(result);
 ```
 
-The remote client, using [simple-api-client-ng2](https://github.com/J-Siu/simple-api-client-ng2), will throw an exception with the error.
+The remote client, using [simple-api-client-ng2](https://github.com/J-Siu/ng2-simple-api-lib), will throw an exception with the error.
 
 ### Example
 
-A detail example for how [simple-api-express](https://github.com/J-Siu/simple-api-express) and [simple-api-client-ng2](https://github.com/J-Siu/simple-api-client-ng2) work is in:
+A detail example for how [simple-api-express](https://github.com/J-Siu/simple-api-express) and [simple-api-client-ng2](https://github.com/J-Siu/ng2-simple-api-lib) work is in:
 
 - [ng2-simple-api-lib](https://github.com/J-Siu/ng2-simple-api-lib)
 
