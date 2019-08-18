@@ -75,7 +75,7 @@ Date:   Thu Aug 1 15:37:59 2019 +0000
     hugo: update 0.56.3 bottle.
 ```
 
-The commit string (SHA-1 checksum) is `89a37417b5efc8054fad9a0ea95f48f944b36f6e`. We use the first 6 character it to check out:
+The commit string (SHA-1 checksum) is `89a37417b5efc8054fad9a0ea95f48f944b36f6e`. We use the first 6 characters of it for check out:
 
 ```sh
 git check out 89a374 hugo.rb
