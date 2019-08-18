@@ -11,7 +11,7 @@ Use Hugo front matter aliases to handle migration from other platform such as Gh
 <!--more-->
 ### Background
 
-I have multiple posts about using mod_rewrite / redirect in various web servers to handle difference in base usr when migrating from one blog platform to another. Following are a few examples:
+I have multiple posts about using mod_rewrite / redirect in various web servers to handle difference in base url when migrating from one blog platform to another. Following are a few examples:
 
 From|URL|To|URL|Http Server|Rules
 ---|---|---|---|---|---
