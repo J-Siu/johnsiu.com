@@ -5,7 +5,7 @@ author: "John Siu"
 title: "Hugo Empty Homepage"
 description: "Hugo empty homepage or wrong post list after upgrade."
 tags: ["hugo","mac","apple","brew","rollback"]
-draft: true
+draft: false
 ---
 Hugo empty homepage or wrong post list after upgrading to 0.57.x.
 <!--more-->
