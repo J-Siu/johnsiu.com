@@ -1,5 +1,6 @@
 ---
 Title: "Cheat Sheet"
 tags: ["cheat sheet"]
-description: "Cheat sheets"
+description: "There are lots of cheat sheets on the internet for all kind of topics and different formats. However many of them are either too extensive or too short. That is why I creating my own."
 ---
+There are lots of cheat sheets on the internet for all kind of topics and different formats. However many of them are either too extensive or too short. That is why I creating my own.
