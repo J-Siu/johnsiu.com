@@ -7,11 +7,15 @@ title: "Angular Simple MQ Service"
 aliases:
     - /angular-simple-mq-service
     - /angular2-simple-mq-service
+    - /angular-2-simple-mq-service
     - /blog/angular2-simple-mq-service
+    - /blog/angular-2-simple-mq-service
     - /index.php/angular-simple-mq-service
     - /index.php/angular2-simple-mq-service
+    - /index.php/angular-2-simple-mq-service
     - /index.php/2016/10/11/angular-simple-mq-service
     - /index.php/2016/10/11/angular2-simple-mq-service
+    - /index.php/2016/10/11/angular-2-simple-mq-service
 ---
 A message queue service for Angular inter-component communication base on RxJS.
 <!--more-->
