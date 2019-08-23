@@ -33,3 +33,19 @@ launchctl unload <plist file> # Stop service
 ```sh
 sudo scutil --set HostName <hostname>
 ```
+
+#### Mouse Speed
+
+- Get Current
+
+```sh
+defaults read -g com.apple.mouse.scaling
+```
+
+- Set New value
+
+```sh
+defaults write -g com.apple.mouse.scaling your_mouse_speed
+```
+
+> May need reboot.
