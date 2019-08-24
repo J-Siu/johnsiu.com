@@ -14,7 +14,7 @@ Misc. Ubuntu commands.
 > If you don't know what they are ...
 
 ```sh
-apt remove cloud-* snapd whiptail unattended-upgrades
+apt remove cloud-* snapd whiptail unattended-upgrades ubuntu-advantage-tools
 ```
 
 #### Get Version

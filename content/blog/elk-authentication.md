@@ -2,12 +2,12 @@
 type: "blog"
 date: 2019-08-21T03:08:51-04:00
 author: "John Siu"
-title: "Elastic Stack / ELK X-Pack Authentication"
+title: "Elastic Stack / ELK X-Pack Basic Authentication"
 description: "Enable Elastic Stack / ELK X-Pack Authentication in Ubuntu"
 tags: ["elastic-stack","elk","ubuntu"]
 draft: false
 ---
-Enable Elastic Stack / ELK X-Pack Authentication in Ubuntu.
+Enable Elastic Stack / ELK X-Pack Basic Authentication in Ubuntu.
 <!--more-->
 > Instructions/paths here assume Elastic Stack is installed with official 7.x repository. See [previous post](/blog/elk-ubuntu/).
 
