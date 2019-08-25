@@ -186,6 +186,8 @@ audio_output {
 }
 ```
 
+> Must add `<user>` to group `audio`, else mpd cannot connect to alsa device.
+
 ### Result
 
 MPD features is cut to the bare minimum, a music player that can be control remotely from my main desktop with GUI or cli, and from my phone. CPU usage remain ~2% when playing on my 10yrs old laptop.
