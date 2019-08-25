@@ -9,40 +9,40 @@ draft: false
 ---
 Some git commands.
 <!--more-->
-#### Push master
+#### Push Master
 
 ```sh
 git push -u origin master
 git push -u <name> master
 ```
 
-#### Remote show
+#### Remote Show
 
 ```sh
 git remote -v
 ```
 
-#### Remote remote
+#### Remote Remove
 
 ```sh
 git remote remove origin
 git remote remove <name>
 ```
 
-#### Add/stage
+#### Add/Stage
 
 ```sh
 git add . # Add everything in current dir tree. This include sub-dir recursively.
 git add <file/dir>...
 ```
 
-#### Remove from stage
+#### Remove From Stage
 
 ```sh
 git rm <file/dir>...
 ```
 
-#### Commit staged changes
+#### Commit Staged Changes
 
 ```sh
 git commit -m '<comment>'
@@ -66,14 +66,14 @@ git show <version> # Show tagged commit
 git push --tags
 ```
 
-#### Submodule add
+#### Submodule Add
 
 ```sh
 submodule add https://github.com/J-Siu/binario themes/binario
 submodule add <url> <path>
 ```
 
-#### Submodule update
+#### Submodule Update
 
 ```sh
 git submodule update --recursive --remote
@@ -97,4 +97,18 @@ git reflog
 ```sh
 git revert b68bc59
 git revert <ref#>
+```
+
+#### Config User
+
+```sh
+git config --global user.name "<Full Name>"
+git config --global user.email "<email>"
+```
+
+#### Config List
+
+```sh
+git config -l
+git config --global -l
 ```
