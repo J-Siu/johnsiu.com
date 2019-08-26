@@ -30,8 +30,8 @@ apk add build-base boost ninja boost-dev meson
 apk add alsa-lib-dev sqlite-dev ffmpeg-dev
 ```
 
-|Library|Usage|
-|-|-|
+Library|Usage
+---|---
 `alsa-lib-dev`|Linux Alsa sound system. This is for sound output.
 `ffmpeg-dev`|This take care of 99% of audio file playback.
 `sqlite-dev`|For mpd song database.
