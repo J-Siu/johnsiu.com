@@ -67,7 +67,7 @@ meson . output/release \
   -Ddsd=false \
   -Dhttpd=false \
   -Dneighbor=false \
-  -Drecorder=false
+  -Drecorder=false \
   -Dtest=false \
   -Dwave_encoder=false \
   -Dadplug=disabled \
@@ -149,7 +149,7 @@ apk del build-base boost ninja boost-dev meson alsa-lib-dev sqlite-dev ffmpeg-de
 Basically the non-dev version used during compilation.
 
 ```zsh
-apk add alsa-utils sqlite ffmpeg
+apk add sqlite-libs alsa-lib alsa-utils ffmpeg
 ```
 
 > ***`alsa-utils`***
