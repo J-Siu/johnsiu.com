@@ -4,7 +4,7 @@ date: 2019-07-21T18:15:55-04:00
 author: "John Siu"
 title: "Alpine KVM"
 description: "Install and manage KVM on a remote Alpine server."
-tags: ["Alpine", "KVM"]
+tags: ["alpine","linux","kvm","osx","macos"]
 draft: false
 ---
 Setup libvirt/KVM on a remote [Alpine Linux](https://alpinelinux.org/about/) server. Connect `virsh`/`virt-manager` from local machine to Alpine server. Alpine server is assumed to have no GUI capability. All steps are done through remote connection.
@@ -91,60 +91,4 @@ virsh -c qemu+ssh://user@hostname/system net-list --all
 
 #### MacOS
 
-Use [brew](https://brew.sh/) and install `libvirt` and [homebrew-virt-manager](https://github.com/jeffreywildman/homebrew-virt-manager)
-
-```sh
-brew tap jeffreywildman/homebrew-virt-manager
-brew install virt-manager virt-viewer libvirt
-```
-
-We have to append `?socket=/var/run/libvirt/libvirt-sock` to the connection string:
-
-```sh
-virt-manager -c 'qemu+ssh://user@hostname/system?socket=/var/run/libvirt/libvirt-sock'
-
-virsh -c 'qemu+ssh://user@hostname/system?socket=/var/run/libvirt/libvirt-sock'
-
-virsh -c 'qemu+ssh://user@hostname/system?socket=/var/run/libvirt/libvirt-sock' net-list --all
-```
-
-## Bonus
-
-If you want to manage KVM from a Mac and using `zsh`, add following to the end of `.zshrc`:
-
-```zsh
-kvm(){
-  REMOTE=$1
-  shift
-  virsh -c "qemu+ssh://${REMOTE}/system?socket=/var/run/libvirt/libvirt-sock" $@
-}
-
-kvm-list(){
-  kvm $1 "list --all"
-}
-
-kvm-stop(){
-  kvm $1 shutdown $2
-}
-
-kvm-start(){
-  kvm $1 start $2
-}
-
-kvm-manager(){
-  nohup virt-manager -c "qemu+ssh://$1/system?socket=/var/run/libvirt/libvirt-sock" &
-}
-```
-
-Usage:
-
-```zsh
-kvm user@hostname # virsh connect to remote host and enter interactive mode
-kvm user@hostname list --all # virsh connect to remote host and do 'list --all'
-
-kvm-list user@hostname # same as above
-kvm-stop user@hostname vm-name # virsh connect to remote host and shutdown vm-name
-kvm-start user@hostname vm-name # virsh connect to remote host and start vm-name
-
-kvm-manager user@hostname # start virt-manager connect to remote host
-```
+Check out [MacOS Connect to KVM Client Desktop](/blog/macos-kvm-remote-connect/) for running virt-manager to remote manage and connect KVM on MacOS.
