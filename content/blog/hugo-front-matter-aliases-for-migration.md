@@ -85,7 +85,7 @@ aliases:
 ...
 ```
 
-I end up copy&paste them into my post one by one. Only 43 after all. The result is I can removed all web server rules except one.
+I copy & paste them into my post one by one. Only 43 after all. The result is I can removed all web server rules except one.
 
 #### Pro
 
@@ -99,69 +99,33 @@ The site is 100% static with no dependency on redirect rules!
 
 #### Con
 
-The public directory became flooded with static directories:
+The __public__ directory became flooded with static directories:
 
 ```txt
-public
-├── 404.html
-├── a-simple-global-variable-service-for-angular-2
-├── ads.txt
-├── angular-simple-mq-service
-├── angular-simple-timer-service
-├── angular2-simple-mq-service
-├── angular2-simple-timer-service
-├── apple-touch-icon.png
-├── before-and-after-d
-├── blog
-├── categories
-├── cheatsheet
-├── css
-├── favicon.ico
-├── ghost-blog-custom-theme
-├── ghost-blog-from-wordpress
-├── ghost-blog-redirect-after-wordpress-migration
+public/
+├── a-simple-global-variable-service-for-angular-2/
+├── angular-simple-mq-service/
+├── angular2-simple-timer-service/
+├── apple-touch-icon.png/
+├── before-and-after-d/
+├── ghost-blog-custom-theme/
+├── ghost-blog-from-wordpress/
+├── ghost-blog-redirect-after-wordpress-migration/
 ├── ghost-blog-self-hosted-with-https-using-nodejs-only
-├── ghost-https-index-js-in-github
-├── h2ghost
-├── how-to-configure-systemd-journal-remote
-├── icons
-├── img
-├── index.html
-├── index.php
-├── index.xml
-├── js
-├── let-ghost-be-ghost
-├── lighttpd-url-redirect-and-changing-wordpress-permalink-structure
-├── lighttpd-url-rewrite-for-latest-wordpress-jetpack
-├── manifest.json
-├── my-20min-of-firefall
-├── oneplus-2-lanuched
-├── os-x-direct-connect-to-kvm-client-desktop
-├── personal-git-server-in-a-vps
-├── rabbitmq-php-amqp-rpc-example-client
-├── rabbitmq-php-amqp-rpc-example-server
-├── rabbitmq-php-amqp-rpc-example-setup-include
-├── rabbitmq-quick-install-on-ubuntu
-├── robots.txt
-├── scrum-psm-i-done
-├── simple-api-client-for-angular
-├── simple-api-handler-for-node-js-expressjs
-├── sitemap.xml
-├── social-network-3-steps-to-make-your-friend-hate-you
-├── tag
-├── tags
-├── ted-2017-in-theater
-├── tiny-vps-as-a-personal-server
-├── tiny-vps-lighttpd-single-site-multiple-domains
-├── tiny-vps-mysql
-├── tiny-vps-postfix
-├── tiny-vps-postfix-part-2-non-linux-outgoing-smtp-account
-└── tiny-vps-postfix-part-3-gmail-as-your-email-client
+├── ghost-https-index-js-in-github/
+├── h2ghost/
+├── how-to-configure-systemd-journal-remote/
+├── let-ghost-be-ghost/
+├── lighttpd-url-redirect-and-changing-wordpress-permalink-structure/
+├── lighttpd-url-rewrite-for-latest-wordpress-jetpack/
+...
 ```
+
+But those are generated automatically and not my working directory, which is __content__.
 
 ### Conclusion
 
-I decided the PRO out weighted the CON in the long run and created front matter aliases for all my post before 2018.
+I decided the PRO out weighted the CON in the long run and only a one time effort.
 
 The switch freed my site from web server dependency and can move between different kind of hosting environment with ease.
 
