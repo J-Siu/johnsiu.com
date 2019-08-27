@@ -3,12 +3,12 @@ type: "blog"
 date: 2019-07-23T00:00:00-04:00
 author: "John Siu"
 title: "Alpine iSCSI Target"
-description: ""
-tags: ["alpine","iscsi"]
+description: "Sharing a file base iSCSI disk from Alpine."
+tags: ["alpine","linux","iscsi"]
 draft: false
 ---
 
-Lets share a file base iSCSI disk from Alpine.
+Sharing a file base iSCSI disk from Alpine.
 <!--more-->
 
 ### The `targetcli`

@@ -4,7 +4,7 @@ date: 2019-08-03T00:10:20-04:00
 author: "John Siu"
 title: "Alpine BackupPC 4 With Nginx"
 description: "Install BackupPC 4.x on Alpine Linux with Nginx"
-tags: ["alpine","backuppc","nginx"]
+tags: ["alpine","linux","backuppc","nginx"]
 draft: false
 ---
 Deploying BackupPC 4.x on Alpine require some efforts.
