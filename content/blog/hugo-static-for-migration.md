@@ -14,13 +14,15 @@ Use Hugo __static__ section to handle migration from other platform such as Ghos
 
 I have multiple posts about using mod_rewrite / redirect in various web servers to handle difference in base usr when migrating from one blog platform to another.
 
-But what about __/index.php__ and __/index.php/tag__(from WordPress) or __/tag__(from Ghost) themselves. They are actually generating lot of 404 in web server log.
+But what about __/index.php__ and __/index.php/tag__(from WordPress) or __/tag__(from Ghost). They are generating lot of 404 in web server log.
+
+Old URL|New URL
+---|---
+/index.php|/
+/index.php/tag|/tags
+/tag|/tags
 
 ### Use Hugo /static/
-
-__/index.php__ should be redirected to __/__.
-
-__/index.php/tag__ and __/tag__ should be redirected to __/tags__.
 
 You can create web server rules to handle them. But that is another 2 or 4 rules, depending on web server used and other rules already in place. And yes, they may conflict each other!
 
