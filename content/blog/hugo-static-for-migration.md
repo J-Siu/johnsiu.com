@@ -7,22 +7,22 @@ description: "Use Hugo static section to handle migration from other platform su
 tags: ["hugo","redirect","migrate"]
 draft: false
 ---
-Use Hugo static section to handle migration from other platform such as Ghost or WordPress.
+Use Hugo __static__ section to handle migration from other platform such as Ghost or WordPress.
 <!--more-->
 
 ### Background
 
 I have multiple posts about using mod_rewrite / redirect in various web servers to handle difference in base usr when migrating from one blog platform to another.
 
-But what about `/index.php` or `/tag` themselves. I never pay attention to them until recently.
+But what about __/index.php__ and __/index.php/tag__(from WordPress) or __/tag__(from Ghost) themselves. They are actually generating lot of 404 in web server log.
 
 ### Use Hugo /static
 
-`/index.php` should be redirected to `/`.
+__/index.php__ should be redirected to __/__.
 
-`/tag` should be redirected to `/tags`.
+__/index.php/tag__ and __/tag__ should be redirected to __/tags__.
 
-You can create rules to handle them. But that is another 2 or 4 rules, depending on web server used and other rules already in place. And yes, they may conflict each other!
+You can create web server rules to handle them. But that is another 2 or 4 rules, depending on web server used and other rules already in place. And yes, they may conflict each other!
 
 Luckily with Hugo there is a simpler solution then fiddling with web server rules. Your Hugo site directory tree should look similar to below:
 
@@ -36,19 +36,17 @@ Luckily with Hugo there is a simpler solution then fiddling with web server rule
 └── themes/
 ```
 
-Inside the `static` directory, create directory `index.php` and directory `tag`:
+#### /index.php
+
+Inside the __static__ directory, create directory __index.php__:
 
 ```sh
-├── static/
-    ├── index.php/
-    │   └── index.html
-    └── tag/
+└── static/
+    └── index.php/
         └── index.html
 ```
 
-Create `index.html` in each of them with following content:
-
-`index.php/index.html`:
+Create __index.php/index.html__:
 
 ```html
 <!DOCTYPE html>
@@ -65,7 +63,20 @@ Create `index.html` in each of them with following content:
 </html>
 ```
 
-`tag/index.html`:
+#### __/index.php/tag__ and __/tag__
+
+Inside the __static__ directory, create directory __index.php/tag__ and __tag__:
+
+```sh
+└── static/
+    ├── index.php/
+    │   └── tag/
+    │       └── index.html
+    └── tag/
+        └── index.html
+```
+
+Create __index.php/tag/index.html__ and __tag/index.html__:
 
 ```html
 <!DOCTYPE html>
@@ -82,4 +93,6 @@ Create `index.html` in each of them with following content:
 </html>
 ```
 
-They will be deployed into your `public` folder automatically when compiling the site. No web server rules required.
+### Conclusion
+
+The __static__ will be deployed into your __public__ folder automatically when compiling the site. No web server rules required. This removes another layer of web server dependency from your site.
