@@ -1,23 +1,25 @@
 ---
 type: "blog"
 date: 2016-10-11T04:57:04Z
-tags: ["javascript", "typescript", "angular"]
-description: "A message queue service for Angular inter-component communication base on RxJS."
+author: "John Siu"
 title: "Angular Simple MQ Service"
+description: "ng2-simple-mq is a message queue service for Angular inter-component communication base on RxJS."
+tags: ["angular","service","ng2-simple-mq"]
 aliases:
-    - /angular-simple-mq-service
-    - /angular2-simple-mq-service
-    - /angular-2-simple-mq-service
-    - /blog/angular2-simple-mq-service
-    - /blog/angular-2-simple-mq-service
-    - /index.php/angular-simple-mq-service
-    - /index.php/angular2-simple-mq-service
-    - /index.php/angular-2-simple-mq-service
-    - /index.php/2016/10/11/angular-simple-mq-service
-    - /index.php/2016/10/11/angular2-simple-mq-service
-    - /index.php/2016/10/11/angular-2-simple-mq-service
+  - /blog/ng2-simple-mq
+  - /angular-simple-mq-service
+  - /angular2-simple-mq-service
+  - /angular-2-simple-mq-service
+  - /blog/angular2-simple-mq-service
+  - /blog/angular-2-simple-mq-service
+  - /index.php/angular-simple-mq-service
+  - /index.php/angular2-simple-mq-service
+  - /index.php/angular-2-simple-mq-service
+  - /index.php/2016/10/11/angular-simple-mq-service
+  - /index.php/2016/10/11/angular2-simple-mq-service
+  - /index.php/2016/10/11/angular-2-simple-mq-service
 ---
-A message queue service for Angular inter-component communication base on RxJS.
+__ng2-simple-mq__ is a message queue service for Angular inter-component communication base on RxJS.
 <!--more-->
 
 Name/ID(string) base API. RxJS object not exposed.

@@ -1,20 +1,19 @@
 ---
 type: blog
 date: 2016-10-11T02:14:51.000Z
-tags:
-    - javascript
-    - typescript
-    - angular
+author: "John Siu"
 title: 'Angular Simple Global Variable Service'
-description: "A global variable service for Angular."
+description: "ng2-simple-global is a global variable service for Angular."
+tags: ["angular","service","ng2-simple-global"]
 aliases:
-    - /a-simple-global-variable-service-for-angular-2
-    - /blog/a-simple-global-variable-service-for-angular-2
-    - /index.php/a-simple-global-variable-service-for-angular-2
-    - /index.php/2016/10/11/a-simple-global-variable-service-for-angular-2
+  - /blog/ng2-simple-global
+  - /a-simple-global-variable-service-for-angular-2
+  - /blog/a-simple-global-variable-service-for-angular-2
+  - /index.php/a-simple-global-variable-service-for-angular-2
+  - /index.php/2016/10/11/a-simple-global-variable-service-for-angular-2
 ---
 
-A global variable service for Angular.
+__ng2-simple-global__ is a global variable service for Angular.
 <!--more-->
 
 > __ng2-simple-global__ uses Angular CLI starting 8.2.0. New repository https://github.com/J-Siu/ng2-simple-global-lib/ contains both library and example.
