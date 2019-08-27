@@ -16,7 +16,7 @@ I have multiple posts about using mod_rewrite / redirect in various web servers 
 
 But what about __/index.php__ and __/index.php/tag__(from WordPress) or __/tag__(from Ghost) themselves. They are actually generating lot of 404 in web server log.
 
-### Use Hugo /static
+### Use Hugo /static/
 
 __/index.php__ should be redirected to __/__.
 
@@ -36,7 +36,7 @@ Luckily with Hugo there is a simpler solution then fiddling with web server rule
 └── themes/
 ```
 
-#### /index.php
+#### /index.php/
 
 Inside the __static__ directory, create directory __index.php__:
 
@@ -63,7 +63,7 @@ Create __index.php/index.html__:
 </html>
 ```
 
-#### __/index.php/tag__ and __/tag__
+#### /index.php/tag/ and /tag/
 
 Inside the __static__ directory, create directory __index.php/tag__ and __tag__:
 
