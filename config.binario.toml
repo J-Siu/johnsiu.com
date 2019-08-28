@@ -16,7 +16,7 @@ disqusShortname = "https-johnsiu-com"
 
 [Author] # Used in authorbox
   name = "John Siu"
-  bio = ""
+  bio = "Minimize the Effort, Maximize the Effect!"
   avatar = ""
 
 [Params]
@@ -44,11 +44,11 @@ disqusShortname = "https-johnsiu-com"
 
 [Params.Social]
   #email = "example@example.com"
-  #facebook = "username"
+  facebook = "john.siu.714"
   twitter = "JohnSiuCom"
   #telegram = "username"
   #instagram = "username"
-  #pinterest = "username"
+  pinterest = "johnsdsiu"
   #vk = "username"
   linkedin = "john-sing-dao-siu"
   github = "J-Siu"
@@ -104,5 +104,11 @@ disqusShortname = "https-johnsiu-com"
     name="Cheat Sheet"
     url="/cheatsheet"
   [[menu.main]]
+    name="Tags"
+    url="/tags"
+  [[menu.main]]
     name="Links"
     url="/page/links/"
+  [[menu.main]]
+    name="About"
+    url="/page/about/"
