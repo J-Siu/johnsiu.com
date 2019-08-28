@@ -1,7 +1,7 @@
 ---
 type: "blog"
 date: 2012-12-02T06:59:25Z
-tags: ["lighttpd", "linux", "mysql", "tweaking", "vps"]
+tags: ["lighttpd", "ubuntu", "mysql", "vps"]
 title: "Tiny VPS as a personal server"
 aliases:
     - /tiny-vps-as-a-personal-server

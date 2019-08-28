@@ -11,6 +11,8 @@ draft: false
 It is easy to install Docker in Alpine as packages are readily available. But what about Docker-Machine without VirtualBox?
 <!--more-->
 
+---
+
 ### Install Docker Machine
 
 Following [official instruction](https://docs.docker.com/machine/install-machine/) work perfectly:

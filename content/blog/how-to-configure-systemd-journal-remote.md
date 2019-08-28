@@ -2,7 +2,7 @@
 type: "blog"
 
 date: 2016-02-20T06:49:38Z
-tags: ["linux", "ubuntu", "systemd"]
+tags: ["ubuntu", "systemd"]
 title: "How to configure Systemd Journal Remote"
 aliases:
     - /how-to-configure-systemd-journal-remote

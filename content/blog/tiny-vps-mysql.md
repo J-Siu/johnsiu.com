@@ -1,7 +1,7 @@
 ---
 type: "blog"
 date: 2012-12-05T11:17:51Z
-tags: ["linux", "mysql", "vps"]
+tags: ["ubuntu", "mysql", "vps"]
 title: "Tiny VPS MySQL"
 aliases:
     - /tiny-vps-mysql

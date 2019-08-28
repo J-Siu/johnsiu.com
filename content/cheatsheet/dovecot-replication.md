@@ -4,36 +4,38 @@ date: 2019-08-23T00:33:33-04:00
 author: "John Siu"
 title: "Dovecot Virtual Mailbox, Replication with Postfix"
 description: "Configure dovecot virtual mailbox, replication with postfix."
-tags: ["dovecot","postfix"]
+tags: ["dovecot","postfix","howto"]
 draft: true
 ---
 Configure dovecot virtual mailbox, replication with postfix.
 <!--more-->
-===
-Hightlight:
-===
+
+---
+
+### Highlight
 
 HA / Active/Active:
--	Use Dovecot replication, no share storage(NFS) required.
--	User db need to be sync manually on both side
 
-===
-Configure Postfix/Dovecot integration
-===
+- Use Dovecot replication, no share storage(eg. NFS) required.
+- User db need to be sync manually on both side
+
+### Configure Postfix/Dovecot integration
 
 Install dovecot
 Create local id vmail(uid:5000,gid:5000)
 
 Create /etc/dovecot/user.db
 
-Create user vmail
+#### Create user vmail
+
+```sh
 groupadd -g 5000 vmail
 useradd -m -u 5000 -g 5000 -d /var/vmail vmail
+```
 
----
-/etc/dovecot/conf.d/10-master.conf
----
+#### /etc/dovecot/conf.d/10-master.conf
 
+```conf
 service imap-login {
   inet_listener imap {
     port = 143
@@ -66,10 +68,11 @@ service auth {
 service auth-worker {
   user = $default_internal_user
 }
+```
 
----
-10-mail.conf
----
+#### /etc/dovecot/conf.d/10-mail.conf
+
+```conf
 mail_plugins = $mail_plugins notify replication
 mail_location = maildir:~/maildir
 namespace inbox {
@@ -98,11 +101,11 @@ namespace inbox {
     special_use = \Junk
   }
 }
+```
 
----
-/etc/dovecot/conf.d/10-auth.conf
----
+#### /etc/dovecot/conf.d/10-auth.conf
 
+```conf
 auth_mechanisms = plain
 disable_plaintext_auth = no
 passdb {
@@ -114,19 +117,19 @@ userdb {
   default_fields = uid=vmail gid=vmail home=/var/vmail/%u
   args = username_format=%u /etc/dovecot/user.db
 }
+```
 
----
-/etc/dovecot/conf.d/10-logging.conf
----
+#### /etc/dovecot/conf.d/10-logging.conf
 
+```conf
 log_path = /var/log/dovecot.log
 info_log_path = /var/log/dovecot-info.log
 mail_debug = no
+```
 
----
-local.conf
----
+#### /etc/dovecot/conf.d/local.conf
 
+```conf
 # Doveadm (used by sync service)
 service doveadm {
   inet_listener {
@@ -149,23 +152,23 @@ service aggregator {
     mode = 0660
   }
 }
+```
 
----
-90-plugin.conf
----
+#### /etc/dovecot/conf.d/90-plugin.conf
 
+```conf
 plugin {
   mail_replica = tcp:<hostname/ip>:<doveadm_port>
 }
+```
 
-===
-POSTFIX
-===
+### POSTFIX
 
----
-In /etc/postfix/main.cf, add following:
----
+#### /etc/postfix/main.cf
 
+Add following:
+
+```postfix
 # relayhost = [<hostname/ip>]:25
 
 #Dovecot
@@ -176,13 +179,15 @@ smtpd_sasl_auth_enable = yes
 virtual_mailbox_domains = <domain>
 #virtual_alias_maps = hash:/etc/postfix/virtual
 virtual_transport = lmtp:inet:127.0.0.1:<dovecot_lmtp_port>
+```
 
----
-/etc/postfix/master.cf
----
+#### /etc/postfix/master.cf
+
+```postfix
 # Enable submission
 submission inet n       -       n       -       -       smtpd
   -o smtpd_sasl_type=dovecot
   -o smtpd_sasl_auth_enable=yes
   -o milter_macro_daemon_name=ORIGINATING
   -o smtpd_client_restrictions=permit_sasl_authenticated,reject
+```

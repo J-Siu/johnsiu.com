@@ -2,11 +2,13 @@
 type: "blog"
 title: "Kubernetes RBAC"
 date: 2018-10-01T00:08:21-04:00
-tags: ["kubernetes"]
+tags: ["kubernetes","rbac"]
 ---
 
 [Kubernetes](https://k8s.io) user setup (certification-based authentication) and RBAC setup of the same user.
 <!--more-->
+
+---
 
 ## Reference
 

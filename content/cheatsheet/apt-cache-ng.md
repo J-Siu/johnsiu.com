@@ -4,7 +4,7 @@ date: 2019-08-23T00:39:48-04:00
 author: "John Siu"
 title: "apt-cache-ng"
 description: ""
-tags: ["apt-cache-ng","ubuntu"]
+tags: ["apt-cache-ng","ubuntu","how-to"]
 draft: true
 ---
 <!--more-->

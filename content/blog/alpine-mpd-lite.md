@@ -4,11 +4,13 @@ date: 2019-07-27T02:32:48-04:00
 author: "John Siu"
 title: "My Alpine MPD (Music Player Daemon) Lite"
 description: "Compiling my own MPD, a lite version"
-tags: ["alpine","linux","mpd"]
+tags: ["alpine","mpd"]
 draft: false
 ---
 Didn't get my hand dirty for a long time.
 <!--more-->
+
+---
 
 > Music Player Daemon (MPD) is a flexible, powerful, server-side application for playing music. Through plugins and libraries it can play a variety of sound files while being controlled by its network protocol. - (https://www.musicpd.org/)
 

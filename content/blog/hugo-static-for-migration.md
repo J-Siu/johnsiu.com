@@ -4,11 +4,13 @@ date: 2019-08-17T20:58:45-04:00
 author: "John Siu"
 title: "Hugo Static for Migration"
 description: "Use Hugo static section to handle migration from other platform such as Ghost or WordPress."
-tags: ["hugo","redirect","migrate"]
+tags: ["hugo","blog","redirect","permalink","migrate"]
 draft: false
 ---
 Use Hugo __static__ section to handle migration from other platform such as Ghost or WordPress.
 <!--more-->
+
+---
 
 ### Background
 

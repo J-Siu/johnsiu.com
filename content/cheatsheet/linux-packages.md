@@ -4,7 +4,7 @@ date: 2019-07-30T12:52:01-04:00
 author: "John Siu"
 title: "Linux Packages"
 description: "Linux packages I used."
-tags: ["alpine","linux"]
+tags: ["alpine"]
 draft: false
 ---
 Linux packages I used.

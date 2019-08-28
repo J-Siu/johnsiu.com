@@ -4,12 +4,14 @@ date: 2019-08-13T11:13:25-04:00
 author: "John Siu"
 title: "Docker on Mac"
 description: "Running Docker on Mac OS"
-tags: ["docker","mac","apple"]
+tags: ["docker","macos"]
 draft: false
 ---
 Running Docker on Mac and create first container.
 <!--more-->
 There are multiple ways to install docker on Mac. We will use [Homebrew for Mac](https://brew.sh/).
+
+---
 
 ### Get Homebrew
 

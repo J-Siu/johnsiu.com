@@ -1,7 +1,7 @@
 ---
 type: "blog"
 date: 2012-12-10T10:18:16Z
-tags: ["lighttpd", "linux", "vps"]
+tags: ["lighttpd", "ubuntu", "vps"]
 title: "Tiny VPS Lighttpd Single Site Multiple Domains"
 aliases:
     - /tiny-vps-lighttpd-single-site-multiple-domains

@@ -1,7 +1,7 @@
 ---
 type: "blog"
 date: 2012-12-07T04:29:48Z
-tags: ["linux", "postfix", "smtp", "tweaking", "vps"]
+tags: ["ubuntu", "postfix", "smtp", "vps"]
 title: "Tiny VPS Postfix"
 aliases:
     - /tiny-vps-postfix

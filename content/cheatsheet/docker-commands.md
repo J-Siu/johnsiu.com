@@ -3,14 +3,24 @@ type: "Cheat Sheet"
 date: 2019-07-30T18:06:06-04:00
 author: "John Siu"
 title: "Docker Commands"
-description: "Docker command cheat sheet."
+description: "Docker misc."
 tags: ["docker","cheat sheet"]
 draft: true
 ---
+Docker misc.
 <!--more-->
-# Docker
 
-## Install
+---
+
+### Install
+
+#### Alpine
+
+```sh
+apk add docker docker-compose
+```
+
+#### Ubuntu
 
 ```sh
 apt install apt-transport-https ca-certificates curl gnupg-agent software-properties-common
@@ -20,33 +30,26 @@ apt update
 apt install docker-ce docker-ce-cli containerd.io
 ```
 
-Allow non-root user to manage docker:
-`Ubuntu`
+---
+
+### Non-root
 
 ```sh
 sudo adduser <user> docker
 ```
 
-## Create Image
+---
 
-1. Create dockerfile
+### Import/Export Image
 
-## Private Repository
-
-## Images
-
-`Run image`
-
-`Moving image manually between servers`
-
-Method 1
+#### Manual
 
 ```sh
-docker save -o <path for generated tar file> <image name>
-docker load -i <path to image tar file>
+docker save -o <output tar> <image name>
+docker load -i <tar file>
 ```
 
-Method 2
+#### Push
 
 Push from source to target.
 
@@ -60,12 +63,8 @@ OR
 docker save <image> | bzip2 | pv | ssh user@host 'bunzip2 | docker load'
 ```
 
-Pull from source
+#### Pull
 
 ```sh
 ssh target_server 'docker save image:latest | bzip2' | pv | bunzip2 | docker load
 ```
-
-## Services
-
-docker-compose.yml

@@ -4,11 +4,13 @@ date: 2019-07-21T16:47:21-04:00
 author: "John Siu"
 title: "Alpine Linux"
 description: "Random notes from a long time Ubuntu / Red Hat user whose Alpine installation count is going up."
-tags: ["alpine","linux"]
+tags: ["alpine"]
 draft: false
 ---
 Random notes from a long time Ubuntu / Red Hat user whose Alpine installation count is going up.
 <!--more-->
+
+---
 
 [Alpine Linux](https://alpinelinux.org/about/) initial released in 2005. From [Wikipedia page](https://en.wikipedia.org/wiki/Alpine_Linux):
 

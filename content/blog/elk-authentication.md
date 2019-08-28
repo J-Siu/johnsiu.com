@@ -11,6 +11,8 @@ Enable Elastic Stack / ELK X-Pack Basic Authentication in Ubuntu.
 <!--more-->
 > Instructions/paths here assume Elastic Stack is installed with official 7.x repository. See [previous post](/blog/elk-ubuntu/).
 
+---
+
 ### Stop Filebeat / Kibana
 
 Once authentication is enable, all services will need to authenticate with elasticsearch. Stop them until all configurations are done.

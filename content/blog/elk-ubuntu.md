@@ -10,6 +10,8 @@ draft: false
 Install ELK / Elastic Stack in Ubuntu.
 <!--more-->
 
+---
+
 ### Preparation
 
 Use official Elastic Stack 7.x repository:

@@ -1,7 +1,7 @@
 ---
 type: "blog"
 date: 2013-04-15T04:24:05Z
-tags: ["linux", "ubuntu", "smtp", "vps", "postfix"]
+tags: ["ubuntu", "smtp", "vps", "postfix"]
 title: "Tiny VPS Postfix - Part 2 - Non-Linux Outgoing SMTP Account"
 aliases:
     - /tiny-vps-postfix-part-2-non-linux-outgoing-smtp-account

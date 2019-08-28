@@ -4,11 +4,13 @@ date: 2019-07-21T18:15:55-04:00
 author: "John Siu"
 title: "Alpine KVM"
 description: "Install and manage KVM on a remote Alpine server."
-tags: ["alpine","linux","kvm","osx","macos"]
+tags: ["alpine","kvm","osx","macos","how-to"]
 draft: false
 ---
 Setup libvirt/KVM on a remote [Alpine Linux](https://alpinelinux.org/about/) server. Connect `virsh`/`virt-manager` from local machine to Alpine server. Alpine server is assumed to have no GUI capability. All steps are done through remote connection.
 <!--more-->
+
+---
 
 ## Install KVM
 
