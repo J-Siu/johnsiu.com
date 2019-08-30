@@ -10,6 +10,8 @@ draft: false
 Misc. Linux commands.
 <!--more-->
 
+---
+
 #### Current directory
 
 ```sh
@@ -17,6 +19,8 @@ echo ${PWD##*/}
 ```
 
 #### Find x-days before and action
+
+> In actuality, it should be (x-1).
 
 ```sh
 /bin/find <path> -maxdepth 1 -mtime +<x> -type f -name "<pattern>" -exec rm -f {} \;
@@ -38,6 +42,12 @@ chage -d YYYY-MM-DD <user>
 
 ```sh
 chage -I -1 -m 0 -M 99999 -E -1 <user>
+```
+
+#### iptable ban ip
+
+```sh
+iptable -A INPUT -s <IP> -j DROP
 ```
 
 #### Fail2ban ban ip manually
