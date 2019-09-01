@@ -12,7 +12,7 @@ Setup Gogs using official docker image.
 
 ### Image
 
-Docker Hub: gogs/gogs[^1]
+Docker Hub: __gogs/gogs__[^1]
 
 #### Mappings
 
@@ -28,17 +28,17 @@ $MY_GOGS_WEB_PORT|3000/tcp|Gogs http listening port
 
 #### $MY_GOGS_DIR
 
-Create a directory for Gogs persistent storage. We will use __/var/lib/gogs__ as our Gogs persistent storage.
+Create a directory for Gogs persistent storage. We will use __/var/lib/my_gogs__ as our Gogs persistent storage.
 
 ```sh
-mkdir -p /var/lib/gogs
+mkdir -p /var/lib/my_gogs
 ```
 
-In this case __$MY_GOGS_DIR__=/var/lib/gogs, you can create the directory in other location.
+In this case __$MY_GOGS_DIR__=/var/lib/my_gogs, you can create the directory in other location.
 
 #### $MY_GOGS_SSH_PORT
 
-Gogs uses standard ssh port 22 inside container. We will map it to 22222 in this example.
+Gogs uses standard ssh port 22 inside container. We will map it to 22222 in the host for this example.
 
 In this case __$MY_GOGS_SSH_PORT__=22222, you can use other port as long as it does not conflict with other services running.
 
@@ -49,6 +49,16 @@ In this case __$MY_GOGS_SSH_PORT__=22222, you can use other port as long as it d
 Gogs web interface uses port 3000 inside container. We will map it to port 3000 on the host.
 
 In this case __$MY_GOGS_WEB_PORT__=3000, again, you can use other port as long as it does not conflict with other services running.
+
+#### Preparation Summary
+
+Variable|Value
+---|---
+$MY_GOGS_DIR|/var/lib/my_gogs
+$MY_GOGS_SSH_PORT|22222
+$MY_GOGS_WEB_PORT|3000
+
+---
 
 ### Setup
 
@@ -74,7 +84,7 @@ docker run option|Usage
 Let just plug in all the values manually for now:
 
 ```sh
-docker run --rm -v /var/lib/gogs:/data -p 3000:3000 -p 22222:22 gogs/gogs
+docker run --rm -v /var/lib/my_gogs:/data -p 3000:3000 -p 22222:22 gogs/gogs
 ```
 
 Output:
@@ -98,10 +108,10 @@ Aug 31 17:52:27 sshd[28]: Server listening on 0.0.0.0 port 22.
 2019/08/31 17:52:27 [ INFO] Listen: http://0.0.0.0:3000
 ```
 
-If you check __/var/lib/gogs__, sub-directories are created:
+If you check __/var/lib/my_gogs__, sub-directories are created:
 
 ```sh
-/var/lib/gogs/
+/var/lib/my_gogs/
 ├── git/
 ├── gogs/
 │   ├── conf/
@@ -130,7 +140,7 @@ Once you click __Install Gogs__:
 
 ![Done](https://raw.githubusercontent.com/J-Siu/johnsiu.com/master/static/img/gogs-02.png)
 
-The config file is located at __${MY_GOGS_DIR}/gogs/conf/app.ini__. In this example the path will be __/var/lib/gogs/gogs/conf/app.ini__.
+The config file is located at __${MY_GOGS_DIR}/gogs/conf/app.ini__. In this example the path will be __/var/lib/my_gogs/gogs/conf/app.ini__.
 
 Most of the values should not be changed except __ROOT_URL__ in __[server]__ section:
 
@@ -168,6 +178,8 @@ Aug 31 18:46:24 sshd[28]: Server listening on 0.0.0.0 port 22.
 
 Stop it with ctrl-c.
 
+---
+
 ### Compose
 
 Gogs configuration is done. But we don't want to enter the long train of options every time restarting Gogs or after server reboot. This is where __docker-compose__ comes in.
@@ -176,20 +188,20 @@ Let create the two necessary files below.
 
 #### .env
 
-Create __/var/lib/gogs/.env__:
+Create __/var/lib/my_gogs/.env__:
 
 ```ini
 MY_GOGS_TAG=latest
-MY_GOGS_DIR=/var/lib/gogs
+MY_GOGS_DIR=/var/lib/my_gogs
 MY_GOGS_SSH_PORT=22222
 MY_GOGS_WEB_PORT=3000
 ```
 
-> __MY_GOGS_TAG__: You use specific version other than __latest__. List of valid version is in __gogs/gogs__ docker tags page[^2].
+> __MY_GOGS_TAG__: You can use specific version other than __latest__. List of valid version is in __gogs/gogs__ docker tags page[^2].
 
 #### docker-compose.yml
 
-Create __/var/lib/gogs/docker-compose.yml__:
+Create __/var/lib/my_gogs/docker-compose.yml__:
 
 ```yml
 version: '3'
@@ -207,7 +219,7 @@ services:
 #### Start
 
 ```sh
-cd /var/lib/gogs
+cd /var/lib/my_gogs
 docker-compose up -d
 ```
 
@@ -240,7 +252,7 @@ Starting gogs_gogs_1 ... done
 Check status with __ps__
 
 ```sh
-cd /var/lib/gogs/
+cd /var/lib/my_gogs/
 docker-compose ps
 ```
 
@@ -255,7 +267,7 @@ gogs_gogs_1   /app/gogs/docker/start.sh  ...   Up      0.0.0.0:22222->22/tcp, 0.
 #### Stop
 
 ```sh
-cd /var/lib/gogs/
+cd /var/lib/my_gogs/
 docker-compose stop
 ```
 
