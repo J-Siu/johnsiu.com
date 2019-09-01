@@ -16,6 +16,6 @@ Want to do this for awhile, and finally get it done.
 
 ### Scrum Master I (PSM-I)
 
-![PSMI Cert](https://c1.staticflickr.com/3/2589/32258004184_4169ff0af7_k.jpg)
+![PSMI Cert](https://raw.githubusercontent.com/J-Siu/johnsiu.com/master/static/img/scrum.jpg)
 
 Time to celebrate!! ^.^

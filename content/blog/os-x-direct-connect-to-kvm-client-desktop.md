@@ -42,7 +42,7 @@ Use following command to start the viewer
 
 Once it is started, you can even pin it to the dock. Problem solved!!!
 
-![remote-viewer](https://c1.staticflickr.com/6/5692/23107488582_00513261de_z.jpg)
+![remote-viewer](https://raw.githubusercontent.com/J-Siu/johnsiu.com/master/static/img/remote-viewer.png)
 
 ### MacOS Mojave
 

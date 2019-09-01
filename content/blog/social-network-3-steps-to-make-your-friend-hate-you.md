@@ -20,4 +20,4 @@ Careful ...
 
 Wait for result, LOL!!
 
-![LOL](https://c1.staticflickr.com/3/2844/33946421145_4595a408e4_h.jpg)
+![LOL](https://raw.githubusercontent.com/J-Siu/johnsiu.com/master/static/img/social.jpg)

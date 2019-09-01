@@ -26,28 +26,28 @@ Assuming you already setup your email alias to your GMail account, then there is
 
 Login GMail, click the “gear” icon on the upper right, then click **Settings**.
 
-![Step 1](https://i2.wp.com/farm9.staticflickr.com/8520/8650475865_5c9095a544.jpg?resize=257%2C263)
+![Step 1](https://raw.githubusercontent.com/J-Siu/johnsiu.com/master/static/img/GmailStep1.png)
 
 #### Step 2
 
 Click **Accounts and Import** then **Add another email address you own**. I already have js@johnsiu.com setup. I will just create another one in next step.
 
-![Step 2](https://i2.wp.com/farm9.staticflickr.com/8246/8651574124_7f057cee25.jpg?resize=500%2C269)
+![Step 1](https://raw.githubusercontent.com/J-Siu/johnsiu.com/master/static/img/GmailStep2.png)
 
 #### Step 3
 
 Enter the email address and name. Remove check mark for **Treat as an alias**.
 
-![Step 3](https://i1.wp.com/farm9.staticflickr.com/8536/8650475631_0a146f5010_z.jpg?resize=579%2C257)
+![Step 1](https://raw.githubusercontent.com/J-Siu/johnsiu.com/master/static/img/GmailStep3.png)
 
 #### Step 4
 
 Check mark **Send through your.domain SMTP servers**. Then enter your server address, username and password.
 
-![Step 4](https://i0.wp.com/farm9.staticflickr.com/8109/8651573886_e8f9e04aff_z.jpg?resize=579%2C367)
+![Step 1](https://raw.githubusercontent.com/J-Siu/johnsiu.com/master/static/img/GmailStep4.png)
 
 #### Step 5
 
 If the server test passed, when composing email, you will see something like following, but with your own domain email address.
 
-![Step 5](https://i2.wp.com/farm9.staticflickr.com/8241/8652031864_bd0ff9259b.jpg?resize=366%2C177)
+![Step 1](https://raw.githubusercontent.com/J-Siu/johnsiu.com/master/static/img/GmailStep5.png)

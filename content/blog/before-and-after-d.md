@@ -15,13 +15,13 @@ Found this photo in my photo stream. It was taken more than a year ago behind my
 
 ***July 2015 ...***
 
-![Before](https://c1.staticflickr.com/1/724/32717385575_10910dd8a5_z.jpg)
+![Before](https://raw.githubusercontent.com/J-Siu/johnsiu.com/master/static/img/before-and-after-01.jpg)
 
 #### After
 
 ***Now!!***
 
-![After](https://c1.staticflickr.com/3/2813/33010069641_af7c0ece10_z.jpg)
+![After](https://raw.githubusercontent.com/J-Siu/johnsiu.com/master/static/img/before-and-after-02.jpg)
 
 #### How was it done?
 

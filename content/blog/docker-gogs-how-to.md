@@ -16,7 +16,7 @@ Docker Hub: gogs/gogs[^1]
 
 #### Mappings
 
-Host|Container|Usage
+Host|Inside Container|Usage
 ---|---|---
 $MY_GOGS_DIR|/data|Gogs persistent storage(configuration, data, log)
 $MY_GOGS_SSH_PORT|22/tcp|Gogs ssh listening port
@@ -38,7 +38,7 @@ In this case __$MY_GOGS_DIR__=/var/lib/gogs, you can create the directory in oth
 
 #### $MY_GOGS_SSH_PORT
 
-Gogs use standard ssh port 22 inside container. We will map it to 22222 in this example.
+Gogs uses standard ssh port 22 inside container. We will map it to 22222 in this example.
 
 In this case __$MY_GOGS_SSH_PORT__=22222, you can use other port as long as it does not conflict with other services running.
 
@@ -46,7 +46,7 @@ In this case __$MY_GOGS_SSH_PORT__=22222, you can use other port as long as it d
 
 #### $MY_GOGS_WEB_PORT
 
-Gogs web interface use port 3000 inside container. We will map it to port 3000 on the host.
+Gogs web interface uses port 3000 inside container. We will map it to port 3000 on the host.
 
 In this case __$MY_GOGS_WEB_PORT__=3000, again, you can use other port as long as it does not conflict with other services running.
 
@@ -122,13 +122,13 @@ Keep it running for now and go to next step.
 
 #### Configuration
 
-Open your browser to __http://localhost:3000__ and fill out the form as follow:
+Open your browser to __http://\<hostname/ip\>:3000__ and fill out the form as follow:
 
-![Install](https://live.staticflickr.com/65535/48654618998_f55f83a8d2_o.png)
+![Install](https://raw.githubusercontent.com/J-Siu/johnsiu.com/master/static/img/gogs-01.png)
 
 Once you click __Install Gogs__:
 
-![Done](https://live.staticflickr.com/65535/48654618843_792882cff0_o.png)
+![Done](https://raw.githubusercontent.com/J-Siu/johnsiu.com/master/static/img/gogs-02.png)
 
 The config file is located at __${MY_GOGS_DIR}/gogs/conf/app.ini__. In this example the path will be __/var/lib/gogs/gogs/conf/app.ini__.
 
@@ -170,7 +170,7 @@ Stop it with ctrl-c.
 
 ### Compose
 
-Gogs configuration is done. But we don't want to enter the long train of options every time restarting Gogs or after server reboot. This is where __docker-compose__ come in.
+Gogs configuration is done. But we don't want to enter the long train of options every time restarting Gogs or after server reboot. This is where __docker-compose__ comes in.
 
 Let create the two necessary files below.
 

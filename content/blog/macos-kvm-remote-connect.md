@@ -75,7 +75,7 @@ spice://192.168.0.10:5901
 
 > **Note** If you are not using ssh tunnel for spice port, then you have to configure the client __Display Spice__ to listen on __All Interfaces__.
 
-![remote-viewer](https://c1.staticflickr.com/6/5692/23107488582_00513261de_z.jpg)
+![remote-viewer](https://raw.githubusercontent.com/J-Siu/johnsiu.com/master/static/img/remote-viewer.png)
 
 ### Bonus - ZSH Functions
 
