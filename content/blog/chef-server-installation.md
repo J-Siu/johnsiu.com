@@ -4,7 +4,7 @@ title: "Chef Server Installation"
 date: 2018-09-30T23:08:41-04:00
 description: "Chef server installation walk through."
 author: "John Siu"
-tags: ["chef"]
+tags: ["chef","how-to"]
 ---
 
 This serve as a starting point for installing [Chef](https://chef.io) server on local machines.

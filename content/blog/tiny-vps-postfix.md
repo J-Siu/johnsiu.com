@@ -1,12 +1,12 @@
 ---
 type: "blog"
 date: 2012-12-07T04:29:48Z
-tags: ["ubuntu", "postfix", "smtp", "vps"]
+tags: ["tiny","ubuntu", "postfix", "smtp", "vps"]
 title: "Tiny VPS Postfix"
 aliases:
-    - /tiny-vps-postfix
-    - /index.php/tiny-vps-postfix
-    - /index.php/2012/12/06/tiny-vps-postfix
+  - /tiny-vps-postfix
+  - /index.php/tiny-vps-postfix
+  - /index.php/2012/12/06/tiny-vps-postfix
 ---
 
 Finally running my own website, hosting my own blog, having my own server to do whatever I want with it.
@@ -16,7 +16,7 @@ It is so tempting and logical to setup my own email service running on it. Sendi
 
 But wait … Do I really want to do that??
 
-## Minimalistic and Compromise
+### Minimalistic and Compromise
 
 I have more than enough personal email addresses and already looking for ways to merge them.
 
@@ -26,7 +26,7 @@ Do I really want another email account setup on my phone, my desktop, or have to
 
 No. Lets take a step back and think again.
 
-## What is really needed … for now?
+### What is really needed … for now?
 
 My WordPress blog, the only public website for now, is able to send directly to my personal email. So it does not need an email address.
 
@@ -36,15 +36,15 @@ What about a few email addresses under my domain? Hmm … alias/forward them to 
 
 So I actually don’t need real email account on this tiny box. But I do need a email server that can handle all the forwarding, with minimal setup!
 
-## Minimal Alias/Forward only Email Server
+### Minimal Alias/Forward only Email Server
 
 Dealing with postfix daily at work, it is a no-brainer to use it here too. And I only have to change 2 configuration files.
 
-**/etc/postfix/main.cf**
+#### /etc/postfix/main.cf
 
 The standard *main.cf* come with Ubuntu is quite complete.
 
-Modify line 29, 33 according to site setup. Then add line 41 to 57 for basic spam protection and close off [open relay](http://en.wikipedia.org/wiki/Open_mail_relay "Open Relay"). You really don’t want to be an open relay!
+Modify line 29, 33 according to site setup. Then add line 41 to 57 for basic spam protection and close off [open relay](http://en.wikipedia.org/wiki/Open_mail_relay). You really don’t want to be an open relay!
 
 Remember to Change **MY-HOSTNAME** at line 29 and **MY-DOMAIN** to your own domain at line 33.
 
@@ -108,7 +108,7 @@ reject_rbl_client dnsbl.njabl.org,
 permit
 ```
 
-**/etc/aliases**
+#### /etc/aliases
 
 Again, to forward system messages and additional email addresses, 3 lines of modification and we are done!
 

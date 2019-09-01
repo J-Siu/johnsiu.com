@@ -4,7 +4,7 @@ date: 2019-08-13T11:13:25-04:00
 author: "John Siu"
 title: "Docker on Mac"
 description: "Running Docker on Mac OS"
-tags: ["docker","macos"]
+tags: ["docker","macos","how-to"]
 draft: false
 ---
 Running Docker on Mac and create first container.

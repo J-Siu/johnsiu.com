@@ -20,7 +20,7 @@ Since then I have enhanced it according to my need. Replaced the `https` package
 
 The resulting `index.js` can be divided in two parts.
 
-#### Part 1
+### Part 1
 
 Part 1 contain 99% of the code added to the original Ghost index.js file.
 
@@ -73,7 +73,7 @@ http.createServer(function (req, res) {
 }).listen(80, '0.0.0.0');
 ```
 
-#### Part 2
+### Part 2
 
 Part 2 is mainly the original Ghost `index.js` file with only one line comment out and one line for starting the Ghost with https.
 
@@ -102,7 +102,7 @@ ghost().then(function (ghostServer) {
 });
 ```
 
-#### Conclusion
+### Conclusion
 
 Putting the two parts together give you a drop-in replacement of the original `index.js` file and enable you run Ghost with https without additional packages.
 

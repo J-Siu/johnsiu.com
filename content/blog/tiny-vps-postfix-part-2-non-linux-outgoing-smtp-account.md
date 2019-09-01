@@ -1,18 +1,20 @@
 ---
 type: "blog"
 date: 2013-04-15T04:24:05Z
-tags: ["ubuntu", "smtp", "vps", "postfix"]
+author: "John Siu"
 title: "Tiny VPS Postfix - Part 2 - Non-Linux Outgoing SMTP Account"
+description: "Configuring postfix sasl2 authentication."
+tags: ["tiny","ubuntu","smtp","vps","postfix","sasl2"]
 aliases:
-    - /tiny-vps-postfix-part-2-non-linux-outgoing-smtp-account
-    - /index.php/tiny-vps-postfix-part-2-non-linux-outgoing-smtp-account
-    - /index.php/2013/04/15/tiny-vps-postfix-part-2-non-linux-outgoing-smtp-account
+  - /tiny-vps-postfix-part-2-non-linux-outgoing-smtp-account
+  - /index.php/tiny-vps-postfix-part-2-non-linux-outgoing-smtp-account
+  - /index.php/2013/04/15/tiny-vps-postfix-part-2-non-linux-outgoing-smtp-account
 ---
 
 In the last part I show a minimal setup of Postfix. It allow incoming emails to be forwarded to specific external email address(es).
 <!--more-->
 
-## Replying email with my own domain
+### Replying email with my own domain
 
 However, there are situations we would like to reply or sent with our own domain. Especially with today tighter email security setup, relaying through others email server (eg. your isp) will likely have your email flagged as spam, if not outright rejected.
 
@@ -20,17 +22,17 @@ It will be way over kill to setup `postfixadmin` and `mysql` for a few email add
 
 So is there a simple way to setup smtp authentication with postfix without using Linux account?
 
-## SASLDB to the Rescue
+### SASLDB to the Rescue
 
-To enable smtp authentication with Postfix without Linux account or a database, we can use [sasldb](http://cyrusimap.web.cmu.edu/mediawiki/index.php/Cyrus_SASL#Plugins_.28Auxillary_Property.29 "sasldb"). It is easy to install and configure.
+To enable smtp authentication with Postfix without Linux account or a database, we can use [sasldb](http://cyrusimap.web.cmu.edu/mediawiki/index.php/Cyrus_SASL#Plugins_.28Auxillary_Property.29). It is easy to install and configure.
 
-### Intalling
+#### Installing
 
 `apt-get install sasl2-bin`
 
 This will pull in the required sasl library and command line utilities required to use sasldb.
 
-### Setup Postfix
+#### Setup Postfix
 
 To have postfix to use sasldb, modify **/etc/postfix/sasl/smtpd.conf** as follow
 
@@ -43,7 +45,7 @@ Then restart postfix
 
 `sudo service postfix restart`
 
-### Create sasldb users
+#### Create sasldb users
 
 To create a user in sasldb, use following command
 
@@ -53,18 +55,18 @@ For example, my domain is **johnsiu.com**, and I want to have a new email **test
 
 `saslpasswd2 -c -u johnsiu.com -a smtpauth testing`
 
-### Finalizing
+#### Finalizing
 
 The actual sasldb file is located at **/etc/sasldb2**. Make sure it has the following permission:
 
 `-rw-rw---- 1 postfix sasl sasldb2`
 
-### What if sasldb doesn’t seesm to work
+#### What if sasldb doesn’t seems to work
 
 Then it is likely that your postfix is run with chroot. Just copy sasldb2 to the chrooted /etc/
 
 `cp -a /etc/sasldb2 /var/spool/postfix/etc/`
 
-You will have to do that everytime you modify sasl passowrd, add/del sasl user.
+You will have to do that every time you modify sasl password, add/del sasl user.
 
 Now you should able to configure your email client(Thunderbird, Outlook, etc) to use your VPS as outgoing smtp server.

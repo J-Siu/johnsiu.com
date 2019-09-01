@@ -4,7 +4,7 @@ date: 2019-08-23T00:33:33-04:00
 author: "John Siu"
 title: "Dovecot Virtual Mailbox, Replication with Postfix"
 description: "Configure dovecot virtual mailbox, replication with postfix."
-tags: ["dovecot","postfix","howto"]
+tags: ["dovecot","postfix","how-to"]
 draft: true
 ---
 Configure dovecot virtual mailbox, replication with postfix.

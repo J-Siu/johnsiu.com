@@ -1,17 +1,22 @@
 ---
 type: "blog"
 date: 2016-10-13T22:55:00Z
-tags: ["vps", "server", "gogs", "git"]
-title: "Personal Git Server in a VPS"
+author: "John Siu"
+title: "Tiny VPS Git Server"
+description: "GitLab vs Gogs git server in a VPS."
+tags: ["tiny","vps","gogs","git"]
 aliases:
-    - /personal-git-server-in-a-vps
-    - /index.php/personal-git-server-in-a-vps
-    - /index.php/2016/10/13/personal-git-server-in-a-vps
+  - /personal-git-server-in-a-vps
+  - /blog/personal-git-server-in-a-vps
+  - /index.php/personal-git-server-in-a-vps
+  - /index.php/2016/10/13/personal-git-server-in-a-vps
 ---
 
-__GitLab CE__ and __Gogs__
+__GitLab CE__ and __Gogs__ in VPS.
 
 <!--more-->
+
+---
 
 ## GitLab CE
 

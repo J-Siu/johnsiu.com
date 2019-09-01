@@ -7,8 +7,10 @@ description: "Install and manage KVM on a remote Alpine server."
 tags: ["alpine","kvm","osx","macos","how-to"]
 draft: false
 ---
-Setup libvirt/KVM on a remote [Alpine Linux](https://alpinelinux.org/about/) server. Connect `virsh`/`virt-manager` from local machine to Alpine server. Alpine server is assumed to have no GUI capability. All steps are done through remote connection.
+Setup libvirt/KVM on a remote Alpine Linux server and connect __virsh__/__virt-manager__ from remote.
 <!--more-->
+
+Alpine server is assumed to have no GUI capability. All steps are done through remote connection.
 
 ---
 
@@ -17,9 +19,9 @@ Setup libvirt/KVM on a remote [Alpine Linux](https://alpinelinux.org/about/) ser
 > **Note:**
 >
 > - This part is a streamline version of [Alpine KVM wiki page](https://wiki.alpinelinux.org/wiki/KVM).
-> - No `virt-manager` on remote Alpine server. You only need it on your local machine.
-> - Assume VMs bridge-mode using `macvtap`. `bridge` package not required.
-> - Use `root` or `sudo` for all commands in this section.
+> - No __virt-manager__ on remote Alpine server. You only need it on your local machine.
+> - Assume VMs bridge-mode using __macvtap__. __bridge__ package not required.
+> - Use __root__ or __sudo__ for all commands in this section.
 
 Add KVM packages:
 

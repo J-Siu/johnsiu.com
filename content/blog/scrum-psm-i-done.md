@@ -1,8 +1,10 @@
 ---
 type: "blog"
 date: 2017-02-25T18:19:07Z
-tags: ["scrum", "PSM"]
+author: "John Siu"
 title: "SCRUM (PSM-I) Done!!"
+description: "Passed SCRUM (PSM-I) test."
+tags: ["scrum", "psm"]
 aliases:
     - /scrum-psm-i-done
     - /index.php/scrum-psm-i-done

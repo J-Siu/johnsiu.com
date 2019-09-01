@@ -1,8 +1,10 @@
 ---
 type: "blog"
 date: 2012-12-08T17:35:18Z
-tags: ["FireFall", "game", "mmorpg"]
+author: "John Siu"
 title: "My 20min of FireFall"
+description: "Playing Firefall for 20min on beta."
+tags: ["game","mmorpg"]
 aliases:
     - /my-20min-of-firefall
     - /index.php/my-20min-of-firefall

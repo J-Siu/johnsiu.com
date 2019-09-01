@@ -1,12 +1,14 @@
 ---
 type: "blog"
 date: 2012-12-02T06:59:25Z
-tags: ["lighttpd", "ubuntu", "mysql", "vps"]
+author: "John Siu"
 title: "Tiny VPS as a personal server"
+description: "Tiny VPS as a personal server."
+tags: ["tiny","lighttpd", "ubuntu", "mysql", "vps"]
 aliases:
-    - /tiny-vps-as-a-personal-server
-    - /index.php/tiny-vps-as-a-personal-server
-    - /index.php/2012/12/02/tiny-vps-as-a-personal-server
+  - /tiny-vps-as-a-personal-server
+  - /index.php/tiny-vps-as-a-personal-server
+  - /index.php/2012/12/02/tiny-vps-as-a-personal-server
 ---
 
 [VPS (Virtual Private Server)](http://en.wikipedia.org/wiki/Virtual_private_server) is getting more and more affordable today, even for personal use.
@@ -14,11 +16,11 @@ aliases:
 
 It is cheaper than getting a new machine (or old one), running it year round at home, hoping the power never go off and the hard driver never die. So I decided to get one for myself and this is my little journey of setting it up.
 
-## Picking a provider …
+### Picking a provider …
 
 [CrownCloud](https://crowncloud.net/openvz.html) was my original choice as my colleague is using one. But they ran out of stock. After some googling, I settle with [VPSCheap.net](http://vpscheap.net/) 128M 10G storage plan. I thought if my colleague can do it, I can too … not really …
 
-## What will be running?
+### What will be running?
 
 - WordPress for this blog
 - Apache Web Server
@@ -27,7 +29,7 @@ It is cheaper than getting a new machine (or old one), running it year round at 
 - fail2ban for ssh protection
 - sendmail/postfix for email handling
 
-## Unwrapping the new toy – Setup #1
+### Unwrapping the new toy – Setup #1
 
 As a long time Linux administrator, for years spoiled by servers with multiple gigabyte of ram and huge storage space, my 1st choice of OS for my new toy is Ubuntu 12 64bit. Bad choice!!
 
@@ -37,13 +39,13 @@ The reason, after some investigation, out of memory!! Time for research!!
 
 Setup #1 result : failed …
 
-## Lesson from research – Don’t be greedy!
+### Lesson from research – Don’t be greedy!
 
 - Mysql need a tiny tweak – turn off innodb if not needed
 - Swap apache out with nginx or lighttpd
 - In a small world(box), 64bit is your enemy, 32bit is your friend
 
-## Unwrap again – Setup #2
+### Unwrap again – Setup #2
 
 After some experiments, it is obvious that 128M is not going to give me what I want, even running 32bit OS. Time to upgrade …
 

@@ -4,7 +4,7 @@ date: 2019-08-21T03:08:51-04:00
 author: "John Siu"
 title: "Elastic Stack / ELK X-Pack Basic Authentication"
 description: "Enable Elastic Stack / ELK X-Pack Authentication in Ubuntu"
-tags: ["elastic-stack","elk","ubuntu"]
+tags: ["elastic-stack","elk","ubuntu","how-to"]
 draft: false
 ---
 Enable Elastic Stack / ELK X-Pack Basic Authentication in Ubuntu.

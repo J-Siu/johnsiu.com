@@ -1,12 +1,14 @@
 ---
 type: "blog"
 date: 2012-12-05T11:17:51Z
-tags: ["ubuntu", "mysql", "vps"]
+author: "John Siu"
 title: "Tiny VPS MySQL"
+description: "Tweaking MySQL in a tiny vps to use less resource."
+tags: ["tiny","ubuntu", "mysql", "vps"]
 aliases:
-    - /tiny-vps-mysql
-    - /index.php/tiny-vps-mysql
-    - /index.php/2012/12/05/tiny-vps-mysql
+  - /tiny-vps-mysql
+  - /index.php/tiny-vps-mysql
+  - /index.php/2012/12/05/tiny-vps-mysql
 ---
 
 The fun of a tiny vps is tweaking everything to use less resource, just do the bare minimum, but at the same time, do what you want it to do.

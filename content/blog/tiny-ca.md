@@ -3,12 +3,14 @@ type: "blog"
 date: 2019-07-27T14:48:25-04:00
 author: "John Siu"
 title: "Tiny CA - OpenSSL-CA"
-description: "Create a tiny CA"
-tags: ["openssl","ca","certificate","authority"]
+description: "Creating a tiny CA for local network."
+tags: ["tiny","openssl","ca","certificate","authority"]
 draft: false
 ---
 Bite the bullet and create a tiny CA for local network.
 <!--more-->
+
+---
 
 ### Background
 

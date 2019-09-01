@@ -1,11 +1,14 @@
 ---
 type: "page"
-date: 2019-08-24T16:06:49-04:00
 author: "John Siu"
 title: "Links"
 description: "Links to companies and friends I know personally."
-tags: [""]
 draft: false
+authorbox: true
+comments: false
+mathjax: false
+related: false
+toc: false
 ---
 Links to companies and friends I know personally.
 <!--more-->

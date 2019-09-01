@@ -12,11 +12,11 @@ aliases:
 As of today, the official way for self-hosted __Ghost Blog__ to use HTTPS is to use __[Nginx](http://nginx.org)__ as a front end proxy server. The official guide is __[here](http://support.ghost.org/setup-ssl-self-hosted-ghost/)__.
 <!--more-->
 
-#### My Way ...
+### My Way ...
 
 There are many reasons to use a proxy server in front of NodeJS service such as Ghost. However, it seems overkill in my situation. I come up with 2 ways to just use NodeJS to support HTTPS with __[Ghost 0.11.4](https://ghost.org/developers/)__.
 
-#### Method 1 : Single NodeJS Instance
+### Method 1 : Single NodeJS Instance
 
 Install Ghost and test everything working normally. Then modify `index.js` in Ghost installation root as below
 
@@ -60,17 +60,17 @@ In Ghost installation root, issue following command to install the `https` packa
 npm i https
 ```
 
-__Pros:__
+#### Pros
 
 * Single NodeJS instance.
 * No need to configure and maintain additional software packages, like Nginx, outside of the NodeJS knowledge domain.
 
-__Cons:__
+#### Cons
 
 * Potential security risk as Ghost NodeJS instance has direct access to certificate files.
 * Need to modify and verify each installation or upgrade of Ghost. It may not work in future versions of Ghost.
 
-#### Method 2 : Standalone NodeJS proxy
+### Method 2 : Standalone NodeJS proxy
 
 ```js
 const fs = require('fs');
@@ -99,7 +99,7 @@ https.createServer(httpsOptions, (req, res) => {
 }).listen(443, '0.0.0.0');
 ```
 
-__Pros:__
+#### Pros
 
 * Security risk is lower compare with Method 1 as the proxy can be run under different user than Ghost. Ghost NodeJS instance no longer need nor has access to certificate files.
 
@@ -107,11 +107,11 @@ __Pros:__
 
 * No need to configure and maintain additional software packages, like Nginx, outside of the NodeJS knowledge domain.
 
-__Cons:__
+#### Cons
 
 * Additional NodeJS instance, but should still use less resources than Nginx or other proxy server.
 
-#### Which method and is this for you?
+### Which method and is this for you?
 
 Maybe, or maybe not.
 

@@ -4,7 +4,7 @@ date: 2019-08-18T21:55:28-04:00
 author: "John Siu"
 title: "Elastic Stack / ELK Quick Install - Ubuntu"
 description: "Install Elastic Stack / ELK in Ubuntu"
-tags: ["elastic-stack","elk","ubuntu"]
+tags: ["elastic-stack","elk","ubuntu","how-to"]
 draft: false
 ---
 Install ELK / Elastic Stack in Ubuntu.

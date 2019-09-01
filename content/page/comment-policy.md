@@ -3,8 +3,12 @@ type: "page"
 author: "John Siu"
 title: "Comment Policy"
 description: "Comment Policy"
-tags: ["policy"]
 draft: false
+authorbox: true
+comments: false
+mathjax: false
+related: false
+toc: false
 ---
 <!--more-->
 ### Keep it civil aka don’t be a jerk

@@ -1,17 +1,19 @@
 ---
 type: "blog"
 date: 2017-02-08T08:00:44Z
-description: "Configure url redirection for Ghost after migrating from WordPress."
+description: "Configure URL Redirect For Ghost After Migrating From WordPress."
 tags: ["ghost", "nodejs", "permalink", "blog", "migrate"]
 title: "Ghost Blog Redirect Configuration for WordPress Migration"
 aliases:
-    - /ghost-blog-redirect-after-wordpress-migration
-    - /index.php/ghost-blog-redirect-after-wordpress-migration
-    - /index.php/2017/02/08/ghost-blog-redirect-after-wordpress-migration
+  - /ghost-blog-redirect-after-wordpress-migration
+  - /index.php/ghost-blog-redirect-after-wordpress-migration
+  - /index.php/2017/02/08/ghost-blog-redirect-after-wordpress-migration
 ---
 
-In my earlier post [Lighttpd url.redirect and changing WordPress permalink structure](https://johnsiu.com/lighttpd-url-redirect-and-changing-wordpress-permalink-structure/), I talk about the issue when permalink structure is changed.
+In my earlier post [Lighttpd url.redirect and changing WordPress permalink structure](/blog/lighttpd-url-redirect-and-changing-wordpress-permalink-structure/), I talk about the issue when permalink structure is changed.
 <!--more-->
+
+### New Issue
 
 When migrating from WordPress to Ghost, the permalink structure is changed again, from
 
@@ -55,8 +57,8 @@ The `redirects.json` for my site is as follow
 
 The above will take care of the following redirects:
 
-* https://johnsiu.com/index.php/YYYY/MM/DD/&lt;post&gt;/ to https://johnsiu.com/&lt;post&gt;/
-* https://johnsiu.com/index.php/catagory/&lt;tag&gt;/ to https://johnsiu.com/tag/&lt;tag&gt;/
-* https://johnsiu.com/index.php/&lt;post&gt;/ to https://johnsiu.com/&lt;post&gt;/
+- https://johnsiu.com/index.php/YYYY/MM/DD/\<post\>/ to https://johnsiu.com/\<post\>/
+- https://johnsiu.com/index.php/catagory/\<tag\>/ to https://johnsiu.com/tag/\<tag\>/
+- https://johnsiu.com/index.php/\<post\>/ to https://johnsiu.com/\<post\>/
 
-**Done!! ^.^**
+__Done!! ^.^__

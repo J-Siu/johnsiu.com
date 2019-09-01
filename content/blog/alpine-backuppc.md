@@ -4,7 +4,7 @@ date: 2019-08-03T00:10:20-04:00
 author: "John Siu"
 title: "Alpine BackupPC 4 With Nginx"
 description: "Install BackupPC 4.x on Alpine Linux with Nginx"
-tags: ["alpine","backuppc","nginx"]
+tags: ["alpine","backuppc","nginx","how-to"]
 draft: false
 ---
 Deploying BackupPC 4.x on Alpine require some efforts.
@@ -12,7 +12,7 @@ Deploying BackupPC 4.x on Alpine require some efforts.
 
 ---
 
-### BackupPC 4.x
+### BackupPC 4.X
 
 [BackupPC](https://github.com/backuppc/backuppc) is a Linux base backup software with a web frontend. It support client across Linux, Windows, Mac OS and other UNIX-base system.
 
@@ -89,13 +89,14 @@ perl Makefile.PL
 make install
 ```
 
-##### BackupPC 4.x
+##### BackupPC
 
 ```sh
 wget https://github.com/backuppc/backuppc/releases/download/4.3.1/BackupPC-4.3.1.tar.gz
 cd BackupPC-4.3.1
 perl configure.pl
 ```
+
 > **Note:** Following are settings I choose that will affect configuration files in later part.
 >
     $Conf{TopDir}      = '/home/backuppc/data';
