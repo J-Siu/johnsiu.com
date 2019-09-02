@@ -3,11 +3,11 @@ type: "blog"
 date: 2019-09-01T11:09:21-04:00
 author: "John Siu"
 title: "Docker Private Registry - How To"
-description: "Setup private docker registry using official docker image."
+description: "Setup private docker registry using official registry image."
 tags: ["docker","registry","how-to"]
 draft: false
 ---
-Setup private docker registry using official docker image.
+Setup private docker registry using official registry image.
 <!--more-->
 
 Docker registry is repository of docker images. This image allow us to run a private registry in our own environment.
