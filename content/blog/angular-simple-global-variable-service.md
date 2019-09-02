@@ -10,6 +10,7 @@ aliases:
   - /a-simple-global-variable-service-for-angular-2
   - /blog/a-simple-global-variable-service-for-angular-2
   - /index.php/a-simple-global-variable-service-for-angular-2
+  - /index.php/2016/10/10/a-simple-global-variable-service-for-angular-2
   - /index.php/2016/10/11/a-simple-global-variable-service-for-angular-2
 ---
 

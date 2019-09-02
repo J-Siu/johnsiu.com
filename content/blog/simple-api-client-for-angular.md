@@ -9,6 +9,9 @@ aliases:
   - /blog/simple-api-client-ng2
   - /simple-api-client-for-angular
   - /index.php/simple-api-client-for-angular
+  - /index.php/simple-api-client-for-angular-2
+  - /index.php/2016/10/10/simple-api-client-for-angular
+  - /index.php/2016/10/10/simple-api-client-for-angular-2
   - /index.php/2016/10/11/simple-api-client-for-angular
 ---
 

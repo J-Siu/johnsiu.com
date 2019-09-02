@@ -9,6 +9,7 @@ aliases:
   - /blog/simple-api-express
   - /simple-api-handler-for-node-js-expressjs
   - /index.php/simple-api-handler-for-node-js-expressjs
+  - /index.php/2016/10/10/simple-api-handler-for-node-js-expressjs
   - /index.php/2016/10/11/simple-api-handler-for-node-js-expressjs
 ---
 

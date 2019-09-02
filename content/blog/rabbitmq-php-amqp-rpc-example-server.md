@@ -4,9 +4,10 @@ date: 2015-11-20T01:20:42Z
 tags: ["rabbitmq", "php", "amqp"]
 title: "RabbitMQ PHP-AMQP RPC Example - Server"
 aliases:
-    - /rabbitmq-php-amqp-rpc-example-server
-    - /index.php/rabbitmq-php-amqp-rpc-example-server
-    - /index.php/2015/11/20/rabbitmq-php-amqp-rpc-example-server
+  - /rabbitmq-php-amqp-rpc-example-server
+  - /index.php/rabbitmq-php-amqp-rpc-example-server
+  - /index.php/2015/11/19/rabbitmq-php-amqp-rpc-example-server
+  - /index.php/2015/11/20/rabbitmq-php-amqp-rpc-example-server
 ---
 
 This is Part 2 of PHP-AMQP RPC implementation.

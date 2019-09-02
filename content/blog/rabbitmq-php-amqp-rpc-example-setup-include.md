@@ -4,9 +4,10 @@ date: 2015-11-20T01:24:46Z
 tags: ["rabbitmq", "php", "amqp"]
 title: "RabbitMQ PHP-AMQP RPC Example - Setup & Include"
 aliases:
-    - /rabbitmq-php-amqp-rpc-example-setup-include
-    - /index.php/rabbitmq-php-amqp-rpc-example-setup-include
-    - /index.php/2015/11/20/rabbitmq-php-amqp-rpc-example-setup-include
+  - /rabbitmq-php-amqp-rpc-example-setup-include
+  - /index.php/rabbitmq-php-amqp-rpc-example-setup-include
+  - /index.php/2015/11/19/rabbitmq-php-amqp-rpc-example-setup-include
+  - /index.php/2015/11/20/rabbitmq-php-amqp-rpc-example-setup-include
 ---
 
 This is Part 3 of PHP-AMQP RPC implementation.

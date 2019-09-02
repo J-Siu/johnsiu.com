@@ -4,9 +4,10 @@ author: "John Siu"
 title: "About"
 description: "Something about John Siu"
 aliases:
-  - /author/john/
-  - /author/johnsiu/
-  - /about-me/
+  - /about-me
+  - /author/john
+  - /author/johnsiu
+  - /page/about-me
 draft: false
 authorbox: true
 comments: false
