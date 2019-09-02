@@ -4,7 +4,7 @@ date: 2015-11-18T18:47:44Z
 author: "John Siu"
 title: "OS X direct connect to KVM client desktop"
 description: "OS X connect to KVM with remote-viewer."
-tags: ["macos","osx","kvm","virt-manager","remote-viewer"]
+tags: ["macos","osx","kvm","virt-manager","virt-viewer","remote-viewer"]
 aliases:
     - /os-x-direct-connect-to-kvm-client-desktop
     - /index.php/os-x-direct-connect-to-kvm-client-desktop
