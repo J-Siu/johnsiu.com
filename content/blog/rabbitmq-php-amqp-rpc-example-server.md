@@ -13,6 +13,12 @@ aliases:
 This is Part 2 of PHP-AMQP RPC implementation.
 <!--more-->
 
+### Series Content
+
+1. [Client](/blog/rabbitmq-php-amqp-rpc-example-client/)
+2. [Server](/blog/rabbitmq-php-amqp-rpc-example-server/) <- You are here
+3. [Setup & Include](/blog/rabbitmq-php-amqp-rpc-example-setup-include/)
+
 I didn’t spend as much time as the client to implement command line option for the server.
 
 ### PHP-AMQP RPC Server
