@@ -12,6 +12,12 @@ aliases:
 Finally running my own website, hosting my own blog, having my own server to do whatever I want with it.
 <!--more-->
 
+### Series Content
+
+- Part 1 - [Tiny VPS Postfix](/blog/tiny-vps-postfix/) <- You are here
+- Part 2 - [Non-Linux Outgoing SMTP Account](/blog/tiny-vps-postfix-part-2-non-linux-outgoing-smtp-account/)
+- Part 3 - [GMail As Email Client](/blog/tiny-vps-postfix-part-3-gmail-as-your-email-client/)
+
 It is so tempting and logical to setup my own email service running on it. Sending and receiving email with my own server, my own email address with my own domain name … So exciting!!
 
 But wait … Do I really want to do that??

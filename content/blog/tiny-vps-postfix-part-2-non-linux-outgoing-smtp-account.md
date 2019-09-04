@@ -14,6 +14,12 @@ aliases:
 In the last part I show a minimal setup of Postfix. It allow incoming emails to be forwarded to specific external email address(es).
 <!--more-->
 
+### Series Content
+
+- Part 1 - [Tiny VPS Postfix](/blog/tiny-vps-postfix/)
+- Part 2 - [Non-Linux Outgoing SMTP Account](/blog/tiny-vps-postfix-part-2-non-linux-outgoing-smtp-account/) <- You are here
+- Part 3 - [GMail As Email Client](/blog/tiny-vps-postfix-part-3-gmail-as-your-email-client/)
+
 ### Replying email with my own domain
 
 However, there are situations we would like to reply or sent with our own domain. Especially with today tighter email security setup, relaying through others email server (eg. your isp) will likely have your email flagged as spam, if not outright rejected.

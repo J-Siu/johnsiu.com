@@ -14,6 +14,12 @@ aliases:
 In [Tiny VPS Postfix](/blog/tiny-vps-postfix/) I set up a minimalistic postfix server, which will forward all email to an external email.
 <!--more-->
 
+### Series Content
+
+- Part 1 - [Tiny VPS Postfix](/blog/tiny-vps-postfix/)
+- Part 2 - [Non-Linux Outgoing SMTP Account](/blog/tiny-vps-postfix-part-2-non-linux-outgoing-smtp-account/)
+- Part 3 - [GMail As Email Client](/blog/tiny-vps-postfix-part-3-gmail-as-your-email-client/) <- You are here
+
 In [Part 2](/blog/tiny-vps-postfix-part-2-non-linux-outgoing-smtp-account/) I set up postfix with sasldb to enable smtp authentication for outgoing email.
 
 Then what about web-base email service? Is there one that can handle both so I don’t have to use additional email client to handle outgoing emails?
