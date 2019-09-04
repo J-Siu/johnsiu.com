@@ -44,10 +44,23 @@ chage -d YYYY-MM-DD <user>
 chage -I -1 -m 0 -M 99999 -E -1 <user>
 ```
 
+#### Lock/Unlock Account
+
+```sh
+passwd -l <user>  # Lock
+passwd -u <user>  # Unlock
+
+usermod -L <user> # Lock
+usermod -U <user> # Unlock
+
+pam_tally2 -r -u <user> # Reset fail login count
+```
+
 #### iptable ban ip
 
 ```sh
 iptable -A INPUT -s <IP> -j DROP
+ip6table -A INPUT -s <IP> -j DROP
 ```
 
 #### Fail2ban ban ip manually
