@@ -112,3 +112,9 @@ git config --global user.email "<email>"
 git config -l
 git config --global -l
 ```
+
+#### Tag Date
+
+```sh
+git log --tags --simplify-by-decoration --pretty="format:%ai %d" | cat
+```
