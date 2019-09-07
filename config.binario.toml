@@ -65,6 +65,7 @@ disqusShortname = "https-johnsiu-com"
   telegram = true
   twitter = true
   vk = true
+	pinterest = true
 
 [Params.Adsense]
   ads_id = "ca-pub-8176479711832264"
