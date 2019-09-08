@@ -1,11 +1,16 @@
 ---
 type: "blog"
-title: "Kubernetes RBAC"
 date: 2018-10-01T00:08:21-04:00
+author: "John Siu"
+title: "Kubernetes RBAC"
+description: "Kubernetes user setup (certification-based authentication) and RBAC setup of the same user."
 tags: ["kubernetes","rbac"]
+aliases:
+  - /kubernetes-rbac
+  - /blog/kubernetes-rbac
 ---
 
-[Kubernetes](https://k8s.io) user setup (certification-based authentication) and RBAC setup of the same user.
+Kubernetes user setup (certification-based authentication) and RBAC setup of the same user.
 <!--more-->
 
 ---
