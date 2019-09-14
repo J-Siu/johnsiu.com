@@ -1,11 +1,12 @@
 ---
-type: "blog"
-date: 2019-07-27T14:48:25-04:00
+type: "lib"
 author: "John Siu"
 title: "Tiny CA - OpenSSL-CA"
 description: "Creating a tiny CA for local network."
-tags: ["tiny","openssl","ca","certificate","authority"]
+tags: ["tiny","openssl","ca","certificate","authority","lib"]
 draft: false
+aliases:
+  - /blog/tiny-ca
 ---
 Bite the bullet and create a tiny CA for local network.
 <!--more-->
@@ -31,7 +32,7 @@ GitHub: [tiny_ca](https://github.com/J-Siu/tiny_ca)
 
 #### Usage
 
-```zsh
+```sh
 git clone https://github.com/J-Siu/tiny_ca.git
 cd tiny_ca
 chmod u+x cert-gen.sh
@@ -40,7 +41,7 @@ chmod u+x cert-gen.sh
 
 #### Output
 
-```zsh
+```sh
 --- Prepare directory
 --- Generate Root Key
 Generating a RSA private key
