@@ -3,7 +3,7 @@ type: "lib"
 author: "John Siu"
 title: "Id3go"
 description: "id3go provide easy viewing and updating of media file tags from command line."
-tags: ["id3v2","lib"]
+tags: ["id3v2","cli","lib"]
 draft: false
 ---
 Provide easy viewing and updating of media file tags from command line.
