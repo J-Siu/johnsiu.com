@@ -1,17 +1,17 @@
 ---
-type: blog
-date: 2016-10-11T04:18:35.000Z
+type: lib
 author: "John Siu"
 title: 'Angular Simple Timer Service'
 description: 'ng2-simple-timer is a simple timer service for Angular, base on RxJS.'
-tags: ["angular","service","ng2-simple-timer"]
+tags: ["angular","service","ng2-simple-timer","lib"]
 aliases:
-  - /blog/ng2-simple-timer
   - /angular-2-simple-timer-service
   - /angular-simple-timer-service
   - /angular2-simple-timer-service
   - /blog/angular-2-simple-timer-service
+  - /blog/angular-simple-timer-service
   - /blog/angular2-simple-timer-service
+  - /blog/ng2-simple-timer
   - /index.php/2016/10/11/angular-2-simple-timer-service
   - /index.php/2016/10/11/angular-simple-timer-service
   - /index.php/2016/10/11/angular2-simple-timer-service
