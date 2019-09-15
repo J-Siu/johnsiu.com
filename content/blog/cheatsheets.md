@@ -4,7 +4,7 @@ date: 2019-08-01T18:50:15-04:00
 author: "John Siu"
 title: "Cheat Sheet Section"
 description: "Introduce the cheat sheet section."
-tags: ["cheat sheet"]
+tags: ["cheatsheet"]
 draft: false
 ---
 Created a new cheat sheet section.
