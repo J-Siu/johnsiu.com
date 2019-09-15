@@ -229,7 +229,7 @@ Stop the registry with ctrl-c.
 
 We will use docker compose to make running private registry more streamline and manageable.
 
-Create directory __registry-compose__ and create the following files inside it:
+Create directory __compose_registry__ and create the following files inside it:
 
 #### .env
 
@@ -266,7 +266,7 @@ services:
 #### Start
 
 ```sh
-cd registry-compose
+cd compose_registry
 docker-compose up -d
 ```
 
@@ -299,7 +299,7 @@ Creating registry-compose_registry_1 ... done
 Check status with __ps__
 
 ```sh
-cd registry-compose
+cd compose_registry
 docker-compose up -d
 ```
 
@@ -314,7 +314,7 @@ registry-compose_registry_1   /entrypoint.sh /etc/docker ...   Up      0.0.0.0:5
 #### Stop
 
 ```sh
-cd registry-compose
+cd compose_registry
 docker-compose stop
 ```
 
