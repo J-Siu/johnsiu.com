@@ -1,11 +1,13 @@
 ---
-type: "Cheat Sheet"
+type: blog
 date: 2019-08-22T23:00:28-04:00
 author: "John Siu"
 title: "LVM Commands"
 description: "LVM commands cheat sheet"
-tags: ["lvm","cheat sheet"]
+tags: ["lvm","cheatsheet"]
 draft: false
+aliases:
+  - /cheatsheet/lvm-commands
 ---
 Some LVM commands.
 <!--more-->

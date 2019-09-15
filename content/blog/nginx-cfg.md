@@ -1,10 +1,12 @@
 ---
-type: "Cheat Sheet"
+type: blog
 date: 2019-07-31T00:30:22-04:00
 author: "John Siu"
 title: "Nginx Config"
 description: "Some nginx config."
-tags: ["nginx","cheat sheet","redirect","rewrite","permalink"]
+tags: ["nginx","cheatsheet","redirect","rewrite","permalink"]
+aliases:
+  - /cheatsheet/nginx-config
 draft: false
 ---
 Some quick nginx config.

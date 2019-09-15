@@ -1,10 +1,12 @@
 ---
-type: "Cheat Sheet"
+type: blog
 date: 2019-07-30T18:05:58-04:00
 author: "John Siu"
 title: "Git Commands"
 description: "Git commands cheat sheet"
-tags: ["git","cheat sheet"]
+tags: ["git","cheatsheet"]
+aliases:
+  - /cheatsheet/git-commands
 draft: false
 ---
 Some git commands.

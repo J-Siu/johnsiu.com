@@ -1,10 +1,12 @@
 ---
-type: "Cheat Sheet"
+type: blog
 date: 2019-07-30T22:06:28-04:00
 author: "John Siu"
 title: "Samba Config"
 description: "Quick samba config to share home directory."
-tags: ["samba","cheat sheet"]
+tags: ["samba","cheatsheet"]
+aliases:
+  - /cheatsheet/samba-config
 draft: false
 ---
 Quick samba config to share home directory only.

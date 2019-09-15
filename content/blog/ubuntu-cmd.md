@@ -1,10 +1,12 @@
 ---
-type: "Cheat Sheet"
+type: blog
 date: 2019-08-23T00:10:00-04:00
 author: "John Siu"
 title: "Ubuntu Commands"
 description: "Ubuntu commands."
-tags: ["ubuntu"]
+tags: ["ubuntu","cheatsheet"]
+aliases:
+  - /cheatsheet/ubuntu-commands
 draft: false
 ---
 Misc. Ubuntu commands.

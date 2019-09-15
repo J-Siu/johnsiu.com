@@ -1,11 +1,12 @@
 ---
-type: "Cheat Sheet"
+type: blog
 date: 2019-07-30T22:06:36-04:00
 author: "John Siu"
 title: "Avahi Config"
 description: "Some avahi config."
-tags: ["avahi","cheat sheet"]
-draft: false
+tags: ["avahi","cheatsheet"]
+aliases:
+  - /cheatsheet/avahi-config
 ---
 Some Avahi config.
 <!--more-->

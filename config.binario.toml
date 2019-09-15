@@ -103,7 +103,7 @@ disqusShortname = "https-johnsiu-com"
 [menu]
   [[menu.main]]
     name="Cheat Sheet"
-    url="/cheatsheet/"
+    url="/tags/cheatsheet/"
   [[menu.main]]
     name="Tags"
     url="/tags"

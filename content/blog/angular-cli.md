@@ -1,11 +1,12 @@
 ---
-type: "Cheat Sheet"
+type: blog
 date: 2019-09-06T11:36:46-04:00
 author: "John Siu"
 title: "Angular Cheat Sheet"
 description: "Angular cli cheat sheet."
-tags: ["angular","cli","cheat-sheet"]
-draft: false
+tags: ["angular","cli","cheatsheet"]
+aliases:
+  - /cheatsheet/angular-cheatsheet
 ---
 Some Angular CLI usage.
 <!--more-->

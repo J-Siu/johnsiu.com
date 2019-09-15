@@ -1,11 +1,13 @@
 ---
-type: "Cheat Sheet"
+type: blog
 date: 2019-07-30T18:06:21-04:00
 author: "John Siu"
 title: "Linux Commands"
 description: "Linux command cheat sheet."
-tags: ["linux","cli","cheat sheet"]
+tags: ["linux","cli","cheatsheet"]
 draft: false
+aliases:
+  - /cheatsheet/linux-commands
 ---
 Misc. Linux commands.
 <!--more-->

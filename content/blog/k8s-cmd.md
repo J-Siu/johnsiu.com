@@ -1,14 +1,15 @@
 ---
-type: "Cheat Sheet"
+type: blog
 date: 2018-09-30T23:39:45-04:00
 author: "John Siu"
 title: "Kubernetes Commands"
 description: "Some Kubernetes commands."
-tags: ["kubernetes","cheat sheet"]
+tags: ["kubernetes","cheatsheet"]
 aliases:
-  - /kubernetes-commands
   - /blog/kubernetes-commands
+  - /cheatsheet/k8s-cmd
   - /cheatsheet/kubernetes-commands
+  - /kubernetes-commands
 ---
 Some Kubernetes commands.
 <!--more-->

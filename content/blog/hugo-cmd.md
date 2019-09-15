@@ -1,11 +1,13 @@
 ---
-type: "Cheat Sheet"
+type: blog
 date: 2019-07-30T22:01:22-04:00
 author: "John Siu"
 title: "Hugo Commands and Config"
 description: "Hugo command and config cheat sheet."
-tags: ["hugo","cheat sheet"]
+tags: ["hugo","cheatsheet"]
 draft: false
+aliases:
+  - /cheatsheet/hugo-commands
 ---
 Some Hugo commands and config.
 <!--more-->

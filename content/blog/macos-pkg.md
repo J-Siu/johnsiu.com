@@ -1,10 +1,12 @@
 ---
-type: "Cheat Sheet"
+type: blog
 date: 2019-07-30T17:25:32-04:00
 author: "John Siu"
 title: "Mac OS Packages"
 description: "Mac OS packages I used."
-tags: ["macos"]
+tags: ["macos","cheatsheet"]
+aliases:
+  - /cheatsheet/macos-packages
 draft: false
 ---
 Mac OS packages I use.

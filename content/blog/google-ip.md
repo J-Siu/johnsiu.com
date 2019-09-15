@@ -1,11 +1,13 @@
 ---
-type: "Cheat Sheet"
+type: blog
 date: 2019-08-22T15:54:28-04:00
 author: "John Siu"
 title: "Google IP Addresses"
 description: "Google IP Addresses"
-tags: ["google"]
+tags: ["google","cheatsheet"]
 draft: false
+aliases:
+  - /cheatsheet/google-ip
 ---
 All Google IP addresses.
 <!--more-->
