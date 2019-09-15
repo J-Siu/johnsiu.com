@@ -1,15 +1,16 @@
 ---
-type: "lib"
+type: blog
+date: 2019-08-15
 author: "John Siu"
 title: "Simple API handler for node.js / ExpressJS"
 description: "ExpressJS api handler (NOT middleware) that work with simple-api-client-ng2, an Angular api service."
 tags: ["angular","service","expressjs","simple-api-express","simple-api-client-ng2","lib"]
 aliases:
-  - /blog/simple-api-express
   - /blog/simple-api-handler-for-node-js-expressjs
   - /index.php/2016/10/10/simple-api-handler-for-node-js-expressjs
   - /index.php/2016/10/11/simple-api-handler-for-node-js-expressjs
   - /index.php/simple-api-handler-for-node-js-expressjs
+  - /lib/simple-api-express
   - /simple-api-handler-for-node-js-expressjs
 ---
 

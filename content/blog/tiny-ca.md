@@ -1,12 +1,13 @@
 ---
-type: "lib"
+type: blog
+date: 2019-07-29
 author: "John Siu"
 title: "Tiny CA - OpenSSL-CA"
 description: "Creating a tiny CA for local network."
 tags: ["tiny","openssl","ca","certificate","authority","lib"]
 draft: false
 aliases:
-  - /blog/tiny-ca
+  - /lib/tiny-ca
 ---
 Bite the bullet and create a tiny CA for local network.
 <!--more-->

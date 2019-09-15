@@ -1,5 +1,6 @@
 ---
-type: "lib"
+type: blog
+date: 2019-08-15
 author: "John Siu"
 title: "Angular Simple MQ Service"
 description: "ng2-simple-mq is a message queue service for Angular inter-component communication base on RxJS."
@@ -11,13 +12,13 @@ aliases:
   - /blog/angular-2-simple-mq-service
   - /blog/angular-simple-mq-service
   - /blog/angular2-simple-mq-service
-  - /blog/ng2-simple-mq
   - /index.php/2016/10/11/angular-2-simple-mq-service
   - /index.php/2016/10/11/angular-simple-mq-service
   - /index.php/2016/10/11/angular2-simple-mq-service
   - /index.php/angular-2-simple-mq-service
   - /index.php/angular-simple-mq-service
   - /index.php/angular2-simple-mq-service
+  - /lib/ng2-simple-mq
 ---
 __ng2-simple-mq__ is a message queue service for Angular inter-component communication base on RxJS.
 <!--more-->
