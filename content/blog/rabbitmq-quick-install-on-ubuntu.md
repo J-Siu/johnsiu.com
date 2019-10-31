@@ -3,6 +3,7 @@ type: "blog"
 date: 2015-11-26T11:12:59Z
 title: "RabbitMQ Quick Install on Ubuntu"
 tags: ["ubuntu","rabbitmq","amqp","how-to"]
+description: "RabbitMQ Quick Install on Ubuntu."
 aliases:
   - /rabbitmq-quick-install-on-ubuntu
   - /index.php/rabbitmq-quick-install-on-ubuntu
@@ -54,10 +55,12 @@ sudo rabbitmqctl set_user_tags <username> administrator
 ```
 
 > __Note__: RabbitMQ come with default guest account.
+
 ```js
 Username: guest
 Password: guest
 ```
+
 You may want to disable/delete this account
 
 ### Create Virtual Host

@@ -3,6 +3,7 @@ type: "blog"
 date: 2017-03-13T04:16:54Z
 tags: ["ghost", "theme", "blog"]
 title: "Ghost Blog Custom Theme"
+description: "Ghost Blog Custom Theme with AdSense."
 aliases:
     - /ghost-blog-custom-theme
     - /index.php/ghost-blog-custom-theme

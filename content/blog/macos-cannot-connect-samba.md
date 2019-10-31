@@ -3,7 +3,7 @@ type: "blog"
 date: 2019-08-27T18:20:10-04:00
 author: "John Siu"
 title: "MacOS Cannot Connect Samba"
-description: ""
+description: "MacOS Cannot Connect Samba workaround."
 tags: ["macos","samba"]
 draft: false
 ---

@@ -3,6 +3,7 @@ type: "blog"
 date: 2017-04-10T08:37:52Z
 tags: ["social network"]
 title: "Social Network - 3 Steps to make your friend hate you"
+description: "Careful with what you do in social media ..."
 aliases:
     - /social-network-3-steps-to-make-your-friend-hate-you
     - /index.php/social-network-3-steps-to-make-your-friend-hate-you
