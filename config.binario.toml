@@ -116,3 +116,6 @@ disqusShortname = "https-johnsiu-com"
   [[menu.main]]
     name="Lib"
     url="/tags/lib/"
+  [[menu.main]]
+    name="Search"
+    url="/page/search/"
