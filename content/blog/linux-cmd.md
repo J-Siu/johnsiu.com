@@ -139,3 +139,12 @@ rsync -vahpt --size-only --stats --del <source> <target>
 ```sh
 curl -k ... # Use -k to skip certificate check.
 ```
+
+#### Resize Filesystem
+
+> Usually use after a partition / image resize
+
+```sh
+resize2fs <device>
+resize2fs /dev/sda1
+```
