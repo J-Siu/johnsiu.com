@@ -3,6 +3,7 @@ type: "blog"
 date: 2015-11-20T01:16:37Z
 tags: ["rabbitmq", "php", "amqp"]
 title: "RabbitMQ PHP-AMQP RPC Example - Client"
+description: "RabbitMQ PHP-AMQP RPC Example - Client"
 aliases:
   - /rabbitmq-php-amqp-rpc-example-client
   - /index.php/rabbitmq-php-amqp-rpc-example-client

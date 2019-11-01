@@ -3,6 +3,7 @@ type: "blog"
 date: 2016-10-13T03:33:00Z
 tags: ["lighttpd","redirect","url.rewrite","wordpress", "jetpack", "mod_rewrite"]
 title: "Lighttpd url.rewrite for latest WordPress Jetpack"
+description: "Lighttpd url.rewrite for latest WordPress Jetpack"
 aliases:
   - /index.php/2016/10/13/lighttpd-mod_rewrite-for-latest-wordpress-jetpack
   - /index.php/2016/10/13/lighttpd-url-rewrite-for-latest-wordpress-jetpack

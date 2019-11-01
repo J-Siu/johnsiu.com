@@ -3,6 +3,7 @@ type: "blog"
 date: 2017-02-25T18:15:16Z
 tags: ["ghost", "nodejs", "https", "blog"]
 title: "Ghost Blog Self Hosted with HTTPS using NodeJS only"
+description: "Ghost Blog Self Hosted with HTTPS using NodeJS only"
 aliases:
     - /ghost-blog-self-hosted-with-https-using-nodejs-only
     - /index.php/ghost-blog-self-hosted-with-https-using-nodejs-only

@@ -2,7 +2,8 @@
 type: "blog"
 date: 2017-04-08T15:17:58Z
 tags: ["ghost", "http2", "spdy", "https", "blog", "nodejs", "proxy"]
-title: "H2Ghost - The Revamped Ghost HTTP2/S Solution"
+title: "H2Ghost - The Revamped Ghost HTTPS/2 Solution"
+description: "H2Ghost - The Revamped Ghost HTTPS/2 Solution"
 aliases:
     - /h2ghost
     - /index.php/h2ghost

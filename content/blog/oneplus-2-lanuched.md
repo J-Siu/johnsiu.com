@@ -3,6 +3,7 @@ type: "blog"
 date: 2015-07-28T12:07:09Z
 tags: ["oneplus","phone"]
 title: "OnePlus 2 Lanuched"
+description: "OnePlus 2 Lanuched"
 aliases:
     - /oneplus-2-lanuched
     - /index.php/oneplus-2-lanuched

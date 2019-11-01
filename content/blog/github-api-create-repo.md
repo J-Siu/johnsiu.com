@@ -3,7 +3,7 @@ type: "blog"
 date: 2019-07-25T00:51:36-04:00
 author: "John Siu"
 title: "Use Github/Gogs Api To Create Repo"
-description: ""
+description: "Gogs implemented Github api. The only different is the URL."
 tags: ["github","gogs","api","zsh"]
 draft: false
 ---
