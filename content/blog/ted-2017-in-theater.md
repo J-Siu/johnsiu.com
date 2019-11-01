@@ -3,6 +3,7 @@ type: "blog"
 date: 2017-03-11T20:53:03Z
 tags: ["ted"]
 title: "TED 2017 in Theater"
+description: "TED 2017 in Theater"
 aliases:
     - /ted-2017-in-theater
     - /index.php/ted-2017-in-theater
