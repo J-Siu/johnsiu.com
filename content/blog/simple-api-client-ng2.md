@@ -14,6 +14,7 @@ aliases:
   - /index.php/simple-api-client-for-angular-2
   - /lib/simple-api-client-ng2
   - /simple-api-client-for-angular
+  - /simple-api-client-for-angular-2
 ---
 
 [simple-api-client-ng2](https://github.com/J-Siu/ng2-simple-api-lib) is an Angular api service, which work with [simple-api-express](https://github.com/J-Siu/simple-api-express), an ExpressJS api handler.
