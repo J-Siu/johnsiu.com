@@ -148,3 +148,17 @@ curl -k ... # Use -k to skip certificate check.
 resize2fs <device>
 resize2fs /dev/sda1
 ```
+
+#### avahi/mdns lookup
+
+> Get IPv4 mdns
+
+```sh
+avahi-resolve -n4 door.local
+```
+
+> Get IPv6 mdns
+
+```sh
+avahi-resolve -n6 door.local
+```

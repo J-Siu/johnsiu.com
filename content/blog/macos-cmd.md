@@ -50,3 +50,25 @@ defaults write -g com.apple.mouse.scaling your_mouse_speed
 ```
 
 > May need reboot.
+
+#### dns-sd(mdns)
+
+Get address of hostname
+
+```sh
+dns-sd -G v4v6 <hostname>
+```
+
+#### Kernel Extension
+
+- List all kernel extension
+
+```sh
+kextstat
+```
+
+- List all non-Apple extension
+
+```sh
+kextstat | grep -v com.apple
+```

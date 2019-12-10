@@ -16,7 +16,19 @@ Misc. Ubuntu commands.
 > If you don't know what they are ...
 
 ```sh
-apt remove cloud-* snapd whiptail unattended-upgrades ubuntu-advantage-tools
+apt purge cloud-* snapd whoopsie* unattended-upgrades ubuntu-advantage-tools
+```
+
+> If not using LVM, LXC/LXD
+
+```sh
+apt purge lvm2 lxd lxcfs
+```
+
+> If completely rely on journald.
+
+```sh
+apt purge rsyslog libestr0 libfastjson4
 ```
 
 #### Get Version
@@ -29,4 +41,12 @@ lsb_release -r
 
 ```sh
 dpkg-reconfigure tzdata
+```
+
+#### Check Upstream DNS
+
+> Ubuntu/Systemd use systemd-resolver for dns lookup and /etc/resolve.conf no longer show the actual upstream dns. Use following to check.
+
+```sh
+systemd-resolve --status
 ```
