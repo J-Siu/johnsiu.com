@@ -14,7 +14,7 @@ Alpine server is assumed to have no GUI capability. All steps are done through r
 
 ---
 
-## Install KVM
+### Install KVM
 
 > **Note:**
 >
@@ -55,7 +55,7 @@ Create `/etc/polkit-1/localauthority/50-local.d/50-libvirt-ssh-remote-access-pol
 
 At this point virt-manager and virsh can connect from remote and takeover completely.
 
-## Remote Management
+### Remote Management
 
 `virsh` and `virt-manager` can be used to manage KVM remotely.
 
@@ -63,7 +63,7 @@ At this point virt-manager and virsh can connect from remote and takeover comple
 
 `virt-manager` is the gui interface.
 
-### Local connection (on Alpine server)
+#### Local connection (on Alpine server)
 
 From `libvirt` group user:
 
@@ -79,11 +79,11 @@ Command line / batch mode
 virsh -c qemu:///system net-list --all
 ```
 
-### Remote connection
+#### Remote connection
 
 > **NOTE:** `user@hostname` will be the same string for ssh to the `libvirt` group user on Alpine host. SSH key should be setup already.
 
-#### Linux
+##### Linux
 
 ```sh
 virt-manager -c qemu+ssh://user@hostname/system
@@ -93,6 +93,6 @@ virsh -c qemu+ssh://user@hostname/system
 virsh -c qemu+ssh://user@hostname/system net-list --all
 ```
 
-#### MacOS
+##### MacOS
 
 Check out [MacOS Connect to KVM Client Desktop](/blog/macos-kvm-remote-connect/) for running virt-manager to remote manage and connect KVM on MacOS.

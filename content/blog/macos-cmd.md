@@ -10,13 +10,13 @@ aliases:
 ---
 Some Mac OS commands.
 <!--more-->
-#### Plist content
+### Plist content
 
 ```sh
 plutil -p <filename>
 ```
 
-#### Launch Control
+### Launch Control
 
 ```sh
 launchctl list # List services
@@ -24,18 +24,18 @@ launchctl load <plist file> # Start service
 launchctl unload <plist file> # Stop service
 ```
 
-##### System Service Location
+#### System Service Location
 
 - `/Library/LaunchDaemons/`
 - `/System/Library/LaunchDaemons/`
 
-#### Change Hostname
+### Change Hostname
 
 ```sh
 sudo scutil --set HostName <hostname>
 ```
 
-#### Mouse Speed
+### Mouse Speed
 
 - Get Current
 
@@ -51,7 +51,7 @@ defaults write -g com.apple.mouse.scaling your_mouse_speed
 
 > May need reboot.
 
-#### dns-sd(mdns)
+### dns-sd(mdns)
 
 Get address of hostname
 
@@ -59,7 +59,7 @@ Get address of hostname
 dns-sd -G v4v6 <hostname>
 ```
 
-#### Kernel Extension
+### Kernel Extension
 
 - List all kernel extension
 
@@ -71,4 +71,21 @@ kextstat
 
 ```sh
 kextstat | grep -v com.apple
+```
+
+### Safe Mode
+
+Boot and hold <kb>Shift</kb> during boot.
+
+Using command line:
+
+```sh
+sudo nvram boot-args="-x"
+sudo nvram boot-args="-x -v"
+```
+
+Change back to normal:
+
+```sh
+sudo nvram boot-args=""
 ```

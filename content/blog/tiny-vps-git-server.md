@@ -18,7 +18,7 @@ __GitLab CE__ and __Gogs__ in VPS.
 
 ---
 
-## GitLab CE
+### GitLab CE
 
 Early last year I upgraded my vps box. The main reason: __[GitLab CE](https://about.gitlab.com/features/#community)__.
 
@@ -30,7 +30,7 @@ I did not look back till a few months ago, when my development focus switched fr
 
 No! (suprise!?) ... But ...
 
-## Gogs - Go Git Server
+### Gogs - Go Git Server
 
 I did not find a node.js one, but one written in [GO Lang](https://golang.org): __[Gogs](https://gogs.io)__.
 
@@ -40,11 +40,11 @@ What make __Gogs__ so attractive? Extremely low resource requirement! Following 
 
 > Gogs has low minimal requirements and can run on an inexpensive __Raspberry Pi__. Some users even run Gogs instances on their __NAS devices__.
 
-## Numbers Talk
+### Numbers Talk
 
 Lets look at their resource consumption while idling in my vps.
 
-### GitLab CE Resources
+#### GitLab CE Resources
 
 |%CPU|%MEM|VSZ|RSS|COMMAND|
 |---:|---:|---:|---:|---|
@@ -56,7 +56,7 @@ Lets look at their resource consumption while idling in my vps.
 
 GitLab CE has 6 processes, and I already tuned them to the bare minimum. I excluded __mySQL__ (which is required), as it is also used by __WordPress__.
 
-### Gogs Resources
+#### Gogs Resources
 
 |%CPU|%MEM|VSZ|RSS|COMMAND|
 |---:|---:|---:|---:|---|

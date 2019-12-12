@@ -10,12 +10,12 @@ tags: ["chef","how-to"]
 This serve as a starting point for installing [Chef](https://chef.io) server on local machines.
 <!--more-->
 
-## Reference
+### Reference
 
 - [Chef Doc : Install Standalone](https://docs.chef.io/install_server.html#standalone)
 - [Chef Doc : chef-server-ctl](https://docs.chef.io/ctl_chef_server.html)
 
-## Objectives
+### Objectives
 
 We will focus on:
 
@@ -40,7 +40,7 @@ Hostname:
 - Server box: u64s07.local
 - Client box: u64s08.local
 
-## Download Chef packages
+### Download Chef packages
 
 Download Chef packages from <https://downloads.chef.io/> or use following links. Choose packages base on your OS version.
 
@@ -50,7 +50,7 @@ You will need:
 - [`Chef Client`](https://downloads.chef.io/chef/)
 - [`Chef Development Kit (ChefDK / DK)`](https://downloads.chef.io/chefdk/) (Optional)
 
-## Install Chef Server on Server Box
+### Install Chef Server on Server Box
 
 Install package:
 
@@ -86,7 +86,7 @@ run: redis_lb: (pid 19380) 199s; run: log: (pid 25967) 86s
 
 Reboot and Chef server should auto start.
 
-## Install Chef Client/DK on Client Box
+### Install Chef Client/DK on Client Box
 
 We have 2 choices: Chef Client package or Chef Development Kit(DK).
 
@@ -125,7 +125,7 @@ Check your configuration file and ensure that your private key is readable
 
 This is normal as we don't have a user yet.
 
-## Setup Admin User
+### Setup Admin User
 
 1. `Server Box`
 
@@ -235,7 +235,7 @@ This is normal as we don't have a user yet.
 
     Test again and there should be no error.
 
-## Chef Server Manager (Web GUI)
+### Chef Server Manager (Web GUI)
 
 After Chef server installed, open `https://your-server-box-hostname` will give you the following instruction:
 

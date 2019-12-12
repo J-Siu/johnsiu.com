@@ -20,13 +20,13 @@ Random notes from a long time Ubuntu / Red Hat user whose Alpine installation co
 
 As one of the most favorite base image of docker due to its small size, it is also a capable desktop and server OS. However due to its use of `musl` instead of `glibc`, there are some difference with other Linux distributions like Ubuntu, Debian or Red Hat.
 
-## Experience as a Ubuntu User
+### Experience as a Ubuntu User
 
-### Installation
+#### Installation
 
 Unlike Ubuntu, Debian and many other distros, Alpine installation is command line driven with helper script.
 
-### Minimalistic Base
+#### Minimalistic Base
 
 Alpine base installation mainly install `busybox` utilities. Following are some packages I installed manually:
 
@@ -43,7 +43,7 @@ Alpine base installation mainly install `busybox` utilities. Following are some 
 
 PS: Alpine packages don't bundle with man page. You have to install them separately.
 
-### Work Differently
+#### Work Differently
 
 Alpine use [busybox](https://www.busybox.net/) to provide most command line utilities. As aa result many commands don't work the same as other distros. Following are a few examples:
 
@@ -51,11 +51,11 @@ Alpine use [busybox](https://www.busybox.net/) to provide most command line util
 - `nslookup` - No interactive mode.
 - `top` - No color. Different hot-keys.
 
-### Not Available or Don't Work
+#### Not Available or Don't Work
 
 - `mdns` - Due to current limitation of [musl library](https://www.musl-libc.org/), Alpine does not support multicast-dns resolution. Running `avahi-daemon` only allow other devices to find the Alpine server.
 - `w`, `last` - User accounting not working.
 
-## Conclusion
+### Conclusion
 
 Each Linux distribution has its own characteristics. Alpine Linux standout for its simplicity and minimalistic approach of package building. This is not an exhaustion list nor about good or bad of Alpine, but some random notes from a long time Ubuntu / Red Hat user whose Alpine installation count is going up.

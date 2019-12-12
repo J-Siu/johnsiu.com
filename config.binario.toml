@@ -14,6 +14,11 @@ pygmentsStyle="Chroma"
 googleAnalytics = "UA-36805525-1" # optional
 disqusShortname = "https-johnsiu-com"
 
+[markup]
+  [markup.tableOfContents]
+    endLevel = 10
+		startLevel = 3
+
 [Author] # Used in authorbox
   name = "John Siu"
   bio = "Minimize the Effort, Maximize the Effect!"

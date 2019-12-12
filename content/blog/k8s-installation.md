@@ -15,7 +15,7 @@ This serve as a starting point for installing [Kubernetes](https://k8s.io) on mu
 
 ---
 
-## References
+### References
 
 `H` = Hands-on, `C` = Concept
 
@@ -33,7 +33,7 @@ Server Version: version.Info{Major:"1", Minor:"11", GitVersion:"v1.11.3", GitCom
 
 ---
 
-## Prepare all nodes
+### Prepare all nodes
 
 If you are creating your own Linux virtual/machines for k8s:
 
@@ -69,7 +69,7 @@ sudo timedatectl set-timezone EST
 
 ---
 
-## Install Docker (all nodes)
+### Install Docker (all nodes)
 
 ```sh
 sudo su -
@@ -81,7 +81,7 @@ apt -y install docker-ce
 
 ---
 
-## Install kubectl kubeadm kubelet (all nodes)
+### Install kubectl kubeadm kubelet (all nodes)
 
 ```sh
 apt-get update && apt-get install -y apt-transport-https curl
@@ -98,11 +98,11 @@ apt-mark hold kubelet kubeadm kubectl
 
 ---
 
-## Bootstrapping
+### Bootstrapping
 
 ---
 
-### Master node
+#### Master node
 
 Init as root
 
@@ -120,7 +120,7 @@ sudo chown $(id -u):$(id -g) $HOME/.kube/config
 
 ---
 
-### Other node (as root)
+#### Other node (as root)
 
 The first node will give a command line to join the cluster like
 following:
@@ -131,7 +131,7 @@ kubeadm join 172.16.168.151:6443 --token 8jrmrd.sskhizsrsndj10zx --discovery-tok
 
 ---
 
-### Install pod add-on
+#### Install pod add-on
 
 Install Weave Net from master node
 
@@ -141,6 +141,6 @@ kubectl apply -f "https://cloud.weave.works/k8s/net?k8s-version=$(kubectl versio
 
 ---
 
-## Conclusion
+### Conclusion
 
 This conclude the Kubernetes installation. Next post will have commands that can test out Kubernetes capabilities.

@@ -25,13 +25,13 @@ https://johnsiu.com/index.php/sample-post/
 
 Changing that is as easy as a few clicks in WordPress setting. All existing and future posts will have the new __`Post name`__ structure.
 
-## Issue
+### Issue
 
 However, after I uploaded the new sitemap to [Google Webmaster Tool](https://www.google.com/webmasters/tools), and start checking my site information, especially __`Links to Your Site`__ under __`Search Traffic`__, I noticed a big issue.
 
 After the permalink structure change, all the links out there with the old structure become broken! Not good!
 
-## Solution
+### Solution
 
 Solution? __[Lighttpd Url.redirect](https://redmine.lighttpd.net/projects/1/wiki/docs_modredirect)__
 

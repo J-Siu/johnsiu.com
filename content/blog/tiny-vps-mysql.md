@@ -18,7 +18,7 @@ This is the opposite of running a “normal” server, tuning it to growth, have
 
 Welcome to a tiny world.
 
-## MySQL
+### MySQL
 
 [![MySQL](https://i0.wp.com/www.mysql.com/common/logos/logo-mysql-110x57.png?resize=110%2C57 "MySQL")](http://mysql.com/)
 
@@ -34,7 +34,7 @@ This works … before MySQL 5.1. Turn out that the option **skip-bdb** was [depr
 
 So how much memory are we saving with skip-innodb? Lets test.
 
-### Memory usage with no mysql running!!
+#### Memory usage with no mysql running!!
 
 ||total|used|free|shared|buffers|cached|
 |---|---:|---:|---:|---:|---:|---:|
@@ -42,7 +42,7 @@ So how much memory are we saving with skip-innodb? Lets test.
 |-/+ buffers/cache||210|301|
 |Swap:|0|0|0|
 
-### Memory usage with mysql running, not using skip-innodb
+#### Memory usage with mysql running, not using skip-innodb
 
 ||total|used|free|shared|buffers|cached|
 |---|---:|---:|---:|---:|---:|---:|
@@ -50,7 +50,7 @@ So how much memory are we saving with skip-innodb? Lets test.
 |-/+ buffers/cache||332|179|
 |Swap:|0|0|0|
 
-### Memory usage with mysql running, using skip-innodb
+#### Memory usage with mysql running, using skip-innodb
 
 ||total|used|free|shared|buffers|cached|
 |---|---:|---:|---:|---:|---:|---:|

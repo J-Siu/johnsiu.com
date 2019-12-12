@@ -15,7 +15,7 @@ Kubernetes user setup (certification-based authentication) and RBAC setup of the
 
 ---
 
-## Reference
+### Reference
 
 - [Role based access control (RBAC) policies in Kubernetes](https://www.youtube.com/watch?v=CnHTCTP8d48)
 - [Controlling Access to the Kubernetes API](https://kubernetes.io/docs/reference/access-authn-authz/controlling-access/)
@@ -28,7 +28,7 @@ Kubernetes user setup (certification-based authentication) and RBAC setup of the
 
 ---
 
-## Authentication - User Management
+### Authentication - User Management
 
 - k8s provides no api objects for users
   - Certificate-based authentication
@@ -40,7 +40,7 @@ We will focus on Certificate-based authentication.
 
 ---
 
-### Certification-Based Authentication
+#### Certification-Based Authentication
 
 `Cluster CA`
 
@@ -60,7 +60,7 @@ Certificate signed by this CA will be accepted by the Kubernetes API.
 
 ---
 
-### Create User (Certificate with OpenSSL)
+#### Create User (Certificate with OpenSSL)
 
 - Certificate Common Name (CN): Kubernetes use this as `<USER>`.
 - Certificate Organization (O): Kubernetes use this as `<GROUP>`.
@@ -137,7 +137,7 @@ PS: At this point kubectl can communicat with the cluster(authenticated), but fo
 
 ---
 
-## Authorization - Role Base Access Control (RBAC)
+### Authorization - Role Base Access Control (RBAC)
 
 Kubernetes RBAC has `Role` and `ClusterRole`. A simple `Role` example is shown below.
 
@@ -145,13 +145,13 @@ Ref: <https://kubernetes.io/docs/reference/access-authn-authz/rbac/>
 
 For Helm RBAC: <https://github.com/helm/helm/blob/master/docs/rbac.md>
 
-### RBAC Terms
+#### RBAC Terms
 
 - Subject: users, os processes, processes in pod, etc.
 - API resources: nodes, pods, services, etc.
 - Operations(Verbs): get, list, create, etc.
 
-### Create Namespace
+#### Create Namespace
 
 Create namespace "test":
 
@@ -159,7 +159,7 @@ Create namespace "test":
 kubectl create ns test
 ```
 
-### Create Role
+#### Create Role
 
 Create a role with full access for "test" namespace.
 
@@ -183,7 +183,7 @@ Deploy:
 kubectl create -f test-admin-role.yml
 ```
 
-### Create RoleBinding
+#### Create RoleBinding
 
 Create a role binding for "test" namespace and "test" group.
 
