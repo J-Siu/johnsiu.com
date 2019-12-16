@@ -15,7 +15,7 @@ Though I move my blog to __[Ghost](//ghost.org)__ in __[last month](/blog/ghost-
 
 With work load at job under control, I finally have time to customize it to my liking this weekend and deployed it in this site.
 
-##### Highlight of Customization
+### Highlight of Customization
 
 - Use __[Pixeden Social Media Font](//www.pixeden.com/icon-fonts/social-icon-font-set)__ to support LinkedIn, Twitter, Facebook, Google+ and Reddit post sharing buttons
 - Support top and bottom Google Adsense

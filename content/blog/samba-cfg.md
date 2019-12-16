@@ -12,7 +12,7 @@ draft: false
 Quick samba config to share home directory only.
 <!--more-->
 
-#### smb.config
+### smb.config
 
 ```ini
 [global]
@@ -40,7 +40,7 @@ force directory mode = 0700
 
 `lpqd` should not start anymore.
 
-#### Disable NetBIOS
+### Disable NetBIOS
 
 Comment out `nmbd` related options in `/etc/conf.d/samba` (Alpine Linux):
 

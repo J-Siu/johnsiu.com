@@ -11,20 +11,20 @@ aliases:
 ---
 Some Hugo commands and config.
 <!--more-->
-#### New site
+### New site
 
 ```sh
 hugo new site <site name>  # Create Hugo site folder <site name>.
 ```
 
-#### New post
+### New post
 
 ```sh
 hugo new post/test.md
 hugo new <archetypes>/<post name>.md
 ```
 
-#### Add section
+### Add section
 
 A new section requires:
 
@@ -34,7 +34,7 @@ A new section requires:
 
 Following example creates a section call `section9`<sup>(1)</sup>.
 
-##### Archetype
+#### Archetype
 
 Copy `archetypes/default.md` to `archetypes/section9.md` and modify `type`:
 
@@ -53,7 +53,7 @@ draft: true
 
 Value of `type` will be section directory name. See below.
 
-##### Title
+#### Title
 
 Create a `test.md` under *section9*
 
@@ -71,7 +71,7 @@ Title: "Section 9 / 公安9課"
 ---
 ```
 
-##### Menu
+#### Menu
 
 Add a menu entry else the new section will not be shown:
 
@@ -84,7 +84,7 @@ name="公安9課" # Menu item.
 url="/section9" # Match the directory name under `content`.
 ```
 
-#### Syntax Highlight
+### Syntax Highlight
 
 Enable syntax highlight in `config.toml`:
 
@@ -93,7 +93,7 @@ pygmentsCodefences=true # Enable syntax highlight.
 pygmentsStyle="Chroma"  # Define highlight style.
 ```
 
-#### Rsync
+### Rsync
 
 Ssh rsync `public` folder to remote server:
 

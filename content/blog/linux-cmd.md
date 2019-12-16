@@ -14,13 +14,13 @@ Misc. Linux commands.
 
 ---
 
-#### Current directory
+### Current directory
 
 ```sh
 echo ${PWD##*/}
 ```
 
-#### Find x-days before and action
+### Find x-days before and action
 
 > In actuality, it should be (x-1).
 
@@ -28,25 +28,25 @@ echo ${PWD##*/}
 /bin/find <path> -maxdepth 1 -mtime +<x> -type f -name "<pattern>" -exec rm -f {} \;
 ```
 
-#### Find x-minutes before and action
+### Find x-minutes before and action
 
 ```sh
 /bin/find <path> -maxdepth 1 -mmin +<x> -type f -name "<pattern>" -exec rm -f {} \;
 ```
 
-#### Change password last modify
+### Change password last modify
 
 ```sh
 chage -d YYYY-MM-DD <user>
 ```
 
-#### Change password never expire
+### Change password never expire
 
 ```sh
 chage -I -1 -m 0 -M 99999 -E -1 <user>
 ```
 
-#### Lock/Unlock Account
+### Lock/Unlock Account
 
 ```sh
 passwd -l <user>  # Lock
@@ -58,59 +58,59 @@ usermod -U <user> # Unlock
 pam_tally2 -r -u <user> # Reset fail login count
 ```
 
-#### iptable ban ip
+### iptable ban ip
 
 ```sh
 iptable -A INPUT -s <IP> -j DROP
 ip6table -A INPUT -s <IP> -j DROP
 ```
 
-#### Fail2ban ban ip manually
+### Fail2ban ban ip manually
 
 ```sh
 fail2ban-client status # show jail list
 fail2ban-client -vvv set <jail from list> banip <ip>
 ```
 
-#### zsh range for loop
+### zsh range for loop
 
 ```sh
 for i in {1..10};do .....
 ```
 
-#### bash string comparison
+### bash string comparison
 
 ```sh
 if [ "$str" = "string" ]; then ...
 ```
 
-#### bash/zsh numeric comparison
+### bash/zsh numeric comparison
 
 ```sh
 if [[ ${A} = 3 ]]; then echo yes; fi
 ```
 
-#### Disable journal on ext4
+### Disable journal on ext4
 
 ```sh
 tune2fs -O ^has_journal /dev/<disk>
 ```
 
-#### Rotate frame buffer
+### Rotate frame buffer
 
 ```sh
 echo 1 > /sys/class/graphics/fbcon/rotate_all
 echo 1 > /sys/class/graphics/fbcon/rotate
 ```
 
-#### Show all mDNS/Bonjour entries
+### Show all mDNS/Bonjour entries
 
 ```sh
 avahi-browse -a
 avahi-browse -a -d <domain> # specify domain other than .local
 ```
 
-#### Create sparse file
+### Create sparse file
 
 `truncate -s <size> <filename>`
 
@@ -126,7 +126,7 @@ $ du -sh 10G.txt
 
 Ref: [Sparse file wikipedia](https://wiki.archlinux.org/index.php/Sparse_file)
 
-#### Rsync
+### Rsync
 
 ```sh
 rsync -vahpt --size-only --stats --del <source> <target>
@@ -134,13 +134,13 @@ rsync -vahpt --size-only --stats --del <source> <target>
 
 `<source>` is put/sync INTO `<target>` directory, not replacing `<target>`.
 
-#### Curl skip certificate checking
+### Curl skip certificate checking
 
 ```sh
 curl -k ... # Use -k to skip certificate check.
 ```
 
-#### Resize Filesystem
+### Resize Filesystem
 
 > Usually use after a partition / image resize
 
@@ -149,7 +149,7 @@ resize2fs <device>
 resize2fs /dev/sda1
 ```
 
-#### avahi/mdns lookup
+### avahi/mdns lookup
 
 > Get IPv4 mdns
 

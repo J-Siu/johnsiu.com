@@ -11,7 +11,7 @@ Cheat sheet.
 
 ---
 
-#### Start and Exit
+### Start and Exit
 
 Command|Usage
 ---|---
@@ -21,7 +21,7 @@ screen \<program\>|Start a program within a screen window. Exiting the program w
 
 ---
 
-#### Hot Key
+### Hot Key
 
 Screen default hot-key is <kbd>ctrl</kbd>+<kbd>a</kbd>, then follow by a command key. Following are some frequently used command keys:
 
@@ -44,7 +44,7 @@ Command Key|Usage
 
 ---
 
-#### Command Line Options
+### Command Line Options
 
 Some frequently use command line options:
 

@@ -11,7 +11,7 @@ aliases:
 Some Angular CLI usage.
 <!--more-->
 
-#### No Default Application
+### No Default Application
 
 Mainly for library project.
 
@@ -19,13 +19,13 @@ Mainly for library project.
 ng new myLib --create-application=false
 ```
 
-#### Generate Library With Project Name
+### Generate Library With Project Name
 
 ```sh
 ng generate library myLib-lib --prefix=myLib
 ```
 
-#### Generate Application
+### Generate Application
 
 ```sh
 ng generate application myLibTest

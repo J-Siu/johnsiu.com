@@ -12,13 +12,13 @@ aliases:
 Some LVM commands.
 <!--more-->
 
-#### Display Virtual Group Info
+### Display Virtual Group Info
 
 ```sh
 vgdisplay
 ```
 
-#### Extend Virtual Disk
+### Extend Virtual Disk
 
 ```sh
 lvextend -L+99G /dev/ubuntu-vg/ubuntu-lv

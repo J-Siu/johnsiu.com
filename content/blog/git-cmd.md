@@ -11,40 +11,40 @@ draft: false
 ---
 Some git commands.
 <!--more-->
-#### Push Master
+### Push Master
 
 ```sh
 git push -u origin master
 git push -u <name> master
 ```
 
-#### Remote Show
+### Remote Show
 
 ```sh
 git remote -v
 ```
 
-#### Remote Remove
+### Remote Remove
 
 ```sh
 git remote remove origin
 git remote remove <name>
 ```
 
-#### Add/Stage
+### Add/Stage
 
 ```sh
 git add . # Add everything in current dir tree. This include sub-dir recursively.
 git add <file/dir>...
 ```
 
-#### Remove From Stage
+### Remove From Stage
 
 ```sh
 git rm <file/dir>...
 ```
 
-#### Commit Staged Changes
+### Commit Staged Changes
 
 ```sh
 git commit -m '<comment>'
@@ -52,7 +52,7 @@ git commit -a # Commit all staged files.
 git commit <file/dir> # Commit files directly even not staged.
 ```
 
-#### Tag
+### Tag
 
 ```sh
 git tag # List tags
@@ -62,60 +62,60 @@ git tag -a <version> -m '<comment>'
 git show <version> # Show tagged commit
 ```
 
-#### Push tag
+### Push tag
 
 ```sh
 git push --tags
 ```
 
-#### Submodule Add
+### Submodule Add
 
 ```sh
 submodule add https://github.com/J-Siu/binario themes/binario
 submodule add <url> <path>
 ```
 
-#### Submodule Update
+### Submodule Update
 
 ```sh
 git submodule update --recursive --remote
 ```
 
-#### Status
+### Status
 
 ```sh
 git status
 ```
 
-#### Log show
+### Log show
 
 ```sh
 git log
 git reflog
 ```
 
-#### Revert
+### Revert
 
 ```sh
 git revert b68bc59
 git revert <ref#>
 ```
 
-#### Config User
+### Config User
 
 ```sh
 git config --global user.name "<Full Name>"
 git config --global user.email "<email>"
 ```
 
-#### Config List
+### Config List
 
 ```sh
 git config -l
 git config --global -l
 ```
 
-#### Tag Date
+### Tag Date
 
 ```sh
 git log --tags --simplify-by-decoration --pretty="format:%ai %d" | cat

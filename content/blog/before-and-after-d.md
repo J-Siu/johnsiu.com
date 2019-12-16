@@ -12,19 +12,19 @@ aliases:
 
 Found this photo in my photo stream. It was taken more than a year ago behind my computer desk. Networking guys, look familiar?
 <!--more-->
-#### Before
+### Before
 
 ***July 2015 ...***
 
 ![Before](https://raw.githubusercontent.com/J-Siu/johnsiu.com/master/static/img/before-and-after-01.jpg)
 
-#### After
+### After
 
 ***Now!!***
 
 ![After](https://raw.githubusercontent.com/J-Siu/johnsiu.com/master/static/img/before-and-after-02.jpg)
 
-#### How was it done?
+### How was it done?
 
 Well, it didn't happen over night. Following is recap of what I did in the past year that reduce cable count:
 

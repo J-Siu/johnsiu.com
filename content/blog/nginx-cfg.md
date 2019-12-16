@@ -12,23 +12,23 @@ draft: false
 Some quick nginx config.
 <!--more-->
 
-#### WordPress Permalink Redirect
+### WordPress Permalink Redirect
 
 Regex string must be put inside double quote.
 
-##### /index.php/YYYY/MM/DD/\<post\> to /blog/\<post\>
+#### /index.php/YYYY/MM/DD/\<post\> to /blog/\<post\>
 
 ```apache
 location ~ "^/index.php/\d{4}/\d{2}/\d{2}/(.*)$" { return 301 https://johnsiu.com/blog/$1; }
 ```
 
-##### /index.php/\<post\> to /blog/\<post\>
+#### /index.php/\<post\> to /blog/\<post\>
 
 ```apache
 location ~ "^/index.php/(.*)$" { return 301 https://johnsiu.com/blog/$1; }```
 ```
 
-#### Ghost Permalink Redirect
+### Ghost Permalink Redirect
 
 This is mainly use to redirect Ghost permalink, which has no prefix, to Hugo format.
 
@@ -36,7 +36,7 @@ This is mainly use to redirect Ghost permalink, which has no prefix, to Hugo for
 location /<post> { return 301 https://johnsiu.com/blog/<post>; }
 ```
 
-#### Multiple Domains Redirect
+### Multiple Domains Redirect
 
 Redirect all traffic hitting nginx to `<your domain>`. Not affect domain defined in other server block.
 

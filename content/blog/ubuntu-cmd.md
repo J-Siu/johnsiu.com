@@ -11,7 +11,7 @@ draft: false
 ---
 Misc. Ubuntu commands.
 <!--more-->
-#### Remove Pre-installed
+### Remove Pre-installed
 
 > If you don't know what they are ...
 
@@ -31,19 +31,19 @@ apt purge lvm2 lxd lxcfs
 apt purge rsyslog libestr0 libfastjson4
 ```
 
-#### Get Version
+### Get Version
 
 ```sh
 lsb_release -r
 ```
 
-#### Change Timezone
+### Change Timezone
 
 ```sh
 dpkg-reconfigure tzdata
 ```
 
-#### Check Upstream DNS
+### Check Upstream DNS
 
 > Ubuntu/Systemd use systemd-resolver for dns lookup and /etc/resolve.conf no longer show the actual upstream dns. Use following to check.
 

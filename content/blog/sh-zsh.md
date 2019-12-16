@@ -11,7 +11,7 @@ draft: false
 ---
 Zsh cheat sheet.
 <!--more-->
-#### Split String ${=STR}
+### Split String ${=STR}
 
 Zsh do not auto split string into words like bash.
 
@@ -31,7 +31,7 @@ for i in ${=STR}; do echo :: ${i}; done
 :: line2
 ```
 
-#### Compare [[ (statement) ]]
+### Compare [[ (statement) ]]
 
 - [[ ${a} = ${b} ]].
 - Space after [[ and before ]].
@@ -50,7 +50,7 @@ then
 fi
 ```
 
-#### Evaluate / Math (( ))
+### Evaluate / Math (( ))
 
 ```sh
 A=2; C=1
@@ -59,7 +59,7 @@ A=2; C=1
 echo A:${A} C:${C}
 ```
 
-#### For loop number
+### For loop number
 
 - {${i}..${j}}
 - NO SPACE after { and before }
@@ -69,7 +69,7 @@ for i in {1..10}; do ...; done
 for i in {1..${VAR}}; do ...; done
 ```
 
-#### Associative Array
+### Associative Array
 
 - typeset -A VAR_NAME
 - Array index can be number or string

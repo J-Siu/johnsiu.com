@@ -17,7 +17,7 @@ It work either via proxy or using Ghost's rootApp directly, providing an Node.js
 
 It can be used as Ghost Blog start up wrapper.
 
-#### Highlight
+### Highlight
 
 - Single Node.js process for both H2Ghost and your Ghost instant (configurable).
 
@@ -63,6 +63,6 @@ const helmetOptions = {
 }
 ```
 
-#### Full Instruction & Package
+### Full Instruction & Package
 
 __GitHub:__ [__H2Ghost__](//github.com/J-Siu/h2ghost)

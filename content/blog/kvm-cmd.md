@@ -9,7 +9,7 @@ tags: ["kvm","cheatsheet"]
 Some KVM frequently used commands.
 <!--more-->
 
-#### Connection string
+### Connection string
 
 > __virsh__ and __virt-manager__ use same connection string.
 
@@ -31,7 +31,7 @@ Some KVM frequently used commands.
   virsh -c qemu+ssh://user@hostname/system?socket=/var/run/libvirt/libvirt-sock
   ```
 
-#### VM
+### VM
 
 ```sh
 virsh list      # List running VMs only
@@ -42,7 +42,7 @@ virsh start <vm name>
 virsh stop <vm name>
 ```
 
-#### Snapshot
+### Snapshot
 
 - List
 
@@ -69,14 +69,14 @@ virsh stop <vm name>
   virsh snapshot-delete --snapshotname <snapshot name> <vm name>
   ```
 
-#### Network
+### Network
 
 ```sh
 virsh net-list
 virsh net-list --all
 ```
 
-#### Pool and Vol
+### Pool and Vol
 
 ```sh
 virsh pool-list
@@ -86,7 +86,7 @@ virsh vol-list <pool name>
 virsh vol-list default
 ```
 
-#### Image
+### Image
 
 - Create
 

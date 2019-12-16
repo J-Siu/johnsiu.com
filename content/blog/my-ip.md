@@ -10,14 +10,14 @@ draft: false
 Using Linux command line.
 <!--more-->
 
-#### IPv4
+### IPv4
 
 ```sh
 curl ifconfig.me
 curl ipecho.net/plain
 ```
 
-#### IPv6
+### IPv6
 
 ```sh
 curl icanhazip.com
