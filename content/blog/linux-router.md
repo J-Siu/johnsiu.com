@@ -57,7 +57,7 @@ The base OS is Ubuntu Server with unnecessary packages removed. You can check my
 
 To support IPv6 and as a router, following need to be set in `/etc/sysctl.conf`
 
-```conf
+```ini
 net.ipv4.ip_forward=1
 net.ipv4.conf.all.accept_source_route = 1
 net.ipv6.conf.all.accept_source_route = 1
@@ -174,7 +174,7 @@ apt install wide-dhcpv6-client
 
 Config file is located at `/etc/wide-dhcpv6/dhcp6c.conf`
 
-```conf
+```ini
 # WAN interface
 interface enp1s0 {
   send ia-na 1; # request NA for wan
@@ -246,7 +246,7 @@ Shorewall handle IPv4 traffic. Following are config files base on `/usr/share/do
 
 `/etc/shorewall/zones`
 
-```conf
+```ini
 #ZONE   TYPE    OPTIONS                 IN                      OUT
 #                                       OPTIONS                 OPTIONS
 fw      firewall
@@ -257,7 +257,7 @@ dmz     ipv4
 
 `/etc/shorewall/interfaces`
 
-```conf
+```ini
 ?FORMAT 2
 #ZONE   INTERFACE       OPTIONS
 net     NET_IF          dhcp,tcpflags,nosmurfs,routefilter,logmartians,sourceroute=0,physical=enp1s0
@@ -267,7 +267,7 @@ dmz     DMZ_IF          dhcp,tcpflags,nosmurfs,routefilter,logmartians,sourcerou
 
 `/etc/shorewall/policy`
 
-```conf
+```ini
 #SOURCE DEST            POLICY          LOGLEVEL        RATE    CONNLIMIT
 loc     net             ACCEPT
 loc     $FW             ACCEPT
@@ -283,7 +283,7 @@ all     all             REJECT          #$LOG_LEVEL
 
 `/etc/shorewall/rules`
 
-```conf
+```ini
 #ACTION         SOURCE          DEST            PROTO   DEST    SOURCE          ORIGINAL        RATE            USER/   MARK    CONNLIMIT       TIME         HEADERS          SWITCH          HELPER
 #                                                       PORT    PORT(S)         DEST            LIMIT           GROUP
 ?SECTION ALL
@@ -310,7 +310,7 @@ Ping(DROP)      net             $FW
 
 This is NAT configuration for both lan and dmz.
 
-```conf
+```ini
 #ACTION                 SOURCE                  DEST            PROTO   PORT    IPSEC   MARK    USER    SWITCH  ORIGDEST        PROBABILITY
 MASQUERADE              192.168.0.0/24,\
                         10.0.0.0/24           NET_IF
@@ -322,7 +322,7 @@ Shorewall6 handles IPv6 traffic. Following are config files base on `/usr/share/
 
 `/etc/shorewall6/zones`
 
-```conf
+```ini
 fw      firewall
 net     ipv6
 loc     ipv6
@@ -331,7 +331,7 @@ dmz     ipv6
 
 `/etc/shorewall6/interfaces`
 
-```conf
+```ini
 ?FORMAT 2
 #ZONE   INTERFACE       OPTIONS
 net     NET_IF          dhcp,tcpflags,forward=1,nosmurfs,sourceroute=0,physical=enp1s0
@@ -341,7 +341,7 @@ dmz     DMZ_IF          dhcp,tcpflags,forward=1,nosmurfs,physical=dmz
 
 `/etc/shorewall6/policy`
 
-```conf
+```ini
 #SOURCE DEST            POLICY          LOGLEVEL        RATE    CONNLIMIT
 loc     net             ACCEPT
 loc     $FW             ACCEPT
@@ -357,7 +357,7 @@ all     all             REJECT          #$LOG_LEVEL
 
 `/etc/shorewall6/rules`
 
-```conf
+```ini
 #ACTION         SOURCE          DEST            PROTO   DEST    SOURCE          ORIGINAL        RATE            USER/   MARK    CONNLIMIT       TIME         HEADERS          SWITCH          HELPER
 #                                                       PORT    PORT(S)         DEST            LIMIT           GROUP
 ?SECTION ALL
@@ -401,7 +401,7 @@ Wi-Fi adapter of my box is `wlp5s0`. It will be added to bridge `lan`.
 
 A 2nd virtual interface `wlan0` will be created and join bridge `dmz`.
 
-```conf
+```ini
 driver=nl80211
 
 hw_mode=a
@@ -442,7 +442,7 @@ auth_algs=1
 
 `hostapd` may die during boot up due to interface initialization timing. Add following in hostapd.service `[Service]` section:
 
-```conf
+```ini
 [Service]
 ...
 Restart=always
@@ -474,7 +474,7 @@ apt install dnsmasq
 
 Put the configuration file in `/etc/dnsmasq/`.
 
-```conf
+```ini
 except-interface=enp1s0
 
 no-poll         # don't poll /etc/resolv.con for change
@@ -520,7 +520,7 @@ rm /etc/resolv.conf
 
 Create new `/etc/resolv.conf`
 
-```conf
+```ini
 nameserver ::1
 nameserver 127.0.0.1
 ```
@@ -543,7 +543,7 @@ I believe currently, if not using a full router/firewall distro like OpenWrt, pf
 
 `mpd` has difficulty identifying the alsa PCM on Qotom-Q355G4. Use following `/etc/asound.conf` to solve it:
 
-```conf
+```ini
 defaults.pcm.device 1
 defaults.ctl.card 1
 defaults.pcm.card 1

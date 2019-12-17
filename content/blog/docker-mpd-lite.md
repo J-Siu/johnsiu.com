@@ -118,7 +118,7 @@ docker run --rm jsiu/docker_mpd_lite:0.21.14 cat /mpd.conf > mpd.conf
 
 Change mpd.conf log_level to verbose:
 
-```conf
+```ini
 log_level  "verbose"
 ```
 
