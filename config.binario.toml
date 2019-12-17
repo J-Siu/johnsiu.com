@@ -8,8 +8,8 @@ paginatepath = "blog"
 enableGitInfo = true
 pluralizeListTitles=false
 
-pygmentsCodefences=true
-pygmentsStyle="Chroma"
+#pygmentsCodefences=true
+#pygmentsStyle="Chroma"
 
 googleAnalytics = "UA-36805525-1" # optional
 disqusShortname = "https-johnsiu-com"
@@ -18,6 +18,31 @@ disqusShortname = "https-johnsiu-com"
   [markup.tableOfContents]
     endLevel = 6
     startLevel = 1
+  [markup.goldmark]
+    [markup.goldmark.extensions]
+      definitionList = true
+      footnote = true
+      linkify = true
+      strikethrough = true
+      table = true
+      taskList = true
+      typographer = true
+    [markup.goldmark.parser]
+      attribute = true
+      autoHeadingID = true
+    [markup.goldmark.renderer]
+      hardWraps = false
+      unsafe = true
+      xHTML = false
+  [markup.highlight]
+    codeFences = true
+    hl_Lines = ""
+    lineNoStart = 1
+    lineNos = true
+    lineNumbersInTable = true
+    noClasses = true
+    style = "monokai"
+    tabWidth = 4
 
 [Author] # Used in authorbox
   name = "John Siu"
@@ -46,7 +71,6 @@ disqusShortname = "https-johnsiu-com"
   toc = true # Enable Table of Contents for all site pages
   tocOpen = true # Open Table of Contents block. Optional
   twitter_cards = true # Enable Twitter Cards if true
-
 [Params.Social]
   #email = "example@example.com"
   #gitlab = "username"
