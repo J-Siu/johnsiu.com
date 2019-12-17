@@ -16,8 +16,8 @@ disqusShortname = "https-johnsiu-com"
 
 [markup]
   [markup.tableOfContents]
-    endLevel = 10
-    startLevel = 3
+    endLevel = 6
+    startLevel = 1
 
 [Author] # Used in authorbox
   name = "John Siu"
