@@ -10,10 +10,17 @@ aliases:
 ---
 Some Mac OS commands.
 <!--more-->
+
+### Play audio file
+
+```sh
+afplay <file>
+```
+
 ### Plist content
 
 ```sh
-plutil -p <filename>
+plutil -p <file>
 ```
 
 ### Launch Control
