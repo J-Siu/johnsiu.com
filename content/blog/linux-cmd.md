@@ -98,6 +98,8 @@ tune2fs -O ^has_journal /dev/<disk>
 
 ### Rotate frame buffer
 
+Number can be 1, 2, 3
+
 ```sh
 echo 1 > /sys/class/graphics/fbcon/rotate_all
 echo 1 > /sys/class/graphics/fbcon/rotate
@@ -161,4 +163,10 @@ avahi-resolve -n4 door.local
 
 ```sh
 avahi-resolve -n6 door.local
+```
+
+### Check NIC status
+
+```sh
+ethtool <nic>
 ```
