@@ -170,3 +170,12 @@ avahi-resolve -n6 door.local
 ```sh
 ethtool <nic>
 ```
+
+### Enable BBR
+
+Create file `/etc/sysctl.d/10-network-bbr.conf` with following content and reboot:
+
+```ini
+net.core.default_qdisc=fq
+net.ipv4.tcp_congestion_control=bbr
+```
