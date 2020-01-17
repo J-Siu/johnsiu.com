@@ -3,11 +3,11 @@ type: "blog"
 date: 2019-12-15T03:07:24-05:00
 author: "John Siu"
 title: "Linux IPv6 Router"
-description: "Create a simple Linux router supporting IPv4 and IPv6, with shorewall/6, wide-dhcpv6-client, dnsmasq, hostapd."
+description: "Create a simple Linux router supporting IPv4 and IPv6, with shorewall/6, wide-dhcpv6-client, dnsmasq, hostapd. No radvd."
 tags: ["linux","how-to","ipv6","router","networking"]
 draft: false
 ---
-Create a simple Linux router supporting IPv4 and IPv6.
+Create a simple Linux router supporting IPv4 and IPv6, with shorewall and dnsmasq. Radvd not required.
 <!--more-->
 
 ### Background
