@@ -70,3 +70,27 @@ docker save <image> | bzip2 | pv | ssh user@host 'bunzip2 | docker load'
 ```sh
 ssh target_server 'docker save image:latest | bzip2' | pv | bunzip2 | docker load
 ```
+
+---
+
+### docker-compose
+
+#### Specify compose file
+
+```sh
+docker-compose -f <filename> up
+```
+
+#### Daemon mode
+
+```sh
+docker-compose -f <filename> up -d
+```
+
+This will also start compose container if docker is auto start during reboot.
+
+#### Enter shell of running compose container
+
+```sh
+docker-compose -f <filename> exec <appname> sh
+```
