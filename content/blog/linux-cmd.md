@@ -179,3 +179,10 @@ Create file `/etc/sysctl.d/10-network-bbr.conf` with following content and reboo
 net.core.default_qdisc=fq
 net.ipv4.tcp_congestion_control=bbr
 ```
+
+### SSH remove from known hosts
+
+```sh
+ssh-keygen -R <hostname/ip>
+ssh-keygen -f "~/.ssh/known_hosts" -R <hostname/ip>
+```
