@@ -37,34 +37,36 @@ GitHub: [tiny_ca](https://github.com/J-Siu/tiny_ca)
 git clone https://github.com/J-Siu/tiny_ca.git
 cd tiny_ca
 chmod u+x cert-gen.sh
-./cert-gen.sh # Change line 1 if using domain other than local.local.
+tiny_ca.sh <domain>
 ```
 
 #### Output
 
 ```sh
+$ ./tiny_ca.sh local.local
 --- Prepare directory
---- Generate Root Key
+--- Generate Root Key and Certificate
 Generating a RSA private key
-......................................................+++++
-...........................................+++++
-writing new private key to './ca/ca.local.local.key.pem'
+...................................................................+++++
+................................+++++
+writing new private key to './ca/local.local/ca.local.local.key.pem'
 -----
+
 --- Generate Server Key
 Generating RSA private key, 2048 bit long modulus (2 primes)
-..........+++++
-................+++++
+.........+++++
+...........+++++
 e is 65537 (0x010001)
 --- Generate Server CSR
 --- Generate Server Certificate
-Using configuration from openssl-root.cnf
+Using configuration from ./ca/local.local/ca.local.local.cnf
 Check that the request matches the signature
 Signature ok
 Certificate Details:
         Serial Number: 4096 (0x1000)
         Validity
-            Not Before: Jul 29 05:35:25 2019 GMT
-            Not After : Jul 26 05:35:25 2029 GMT
+            Not Before: Feb  7 21:28:34 2020 GMT
+            Not After : Feb  4 21:28:34 2030 GMT
         Subject:
             countryName               = CA
             stateOrProvinceName       = local.local
@@ -78,36 +80,49 @@ Certificate Details:
             Netscape Comment:
                 OpenSSL Generated Server Certificate
             X509v3 Subject Key Identifier:
-                D2:7B:C9:DF:15:D6:5E:37:61:BC:64:57:91:A9:8F:99:17:D7:76:6D
+                14:5F:04:EF:39:42:8F:A3:B5:C7:21:8D:9B:7A:D9:A4:20:FB:21:EF
             X509v3 Authority Key Identifier:
-                keyid:AC:0A:54:5E:BA:44:1F:71:C8:B7:2F:15:6F:06:87:B5:15:4E:1B:1F
+                keyid:7E:B0:D5:B2:44:2A:A6:7C:2C:CB:A6:D2:7E:42:EB:2F:25:50:3C:E1
                 DirName:/C=CA/ST=local.local/O=local.local/CN=root
-                serial:14:78:AE:7D:B1:BB:D0:0E:E3:03:C1:9F:BE:51:4E:F4:14:1B:7A:A8
+                serial:3C:1A:88:5F:B7:71:A5:DB:4F:99:E2:6F:1C:25:D7:5E:13:79:83:17
 
             X509v3 Key Usage: critical
                 Digital Signature, Key Encipherment
             X509v3 Extended Key Usage:
                 TLS Web Server Authentication
-Certificate is to be certified until Jul 26 05:35:25 2029 GMT (3650 days)
+Certificate is to be certified until Feb  4 21:28:34 2030 GMT (3650 days)
 Sign the certificate? [y/n]:
 
 1 out of 1 certificate requests certified, commit? [y/n]Write out database with 1 new entries
 Data Base Updated
 
 --- CA Certificate:
-./ca/ca.local.local.crt.pem
+./ca/local.local/ca.local.local.crt.pem
+./ca/local.local/ca.local.local.crt.der
 --- Server Certificate:
 ./srv/wildcard.local.local.key.pem
 ./srv/wildcard.local.local.crt.pem
+./srv/wildcard.local.local.crt.der
 ```
 
-Install CA certificate into browser.
+Install CA certificate into browser or OS.
 
 Install server certificate and key into webserver.
 
 > **Notes**
 >
 > Most modern browsers will not accept wildcard certificate for TLD (top level domain). For example `*.local`, `*.com`, will not work.
+
+### Changelog
+
+- 1.0.0
+  - Take domain name from command line.
+  - Each domain in own directory under ca directory.
+  - Automatically generate der format for both ca and server cert.
+  - Check if ca and server cert exist.
+  - Remove OSCP and CRL extension from ca.cnf.template.
+- 1.1.0
+  - Incorporated ca config template into tiny_ca.sh.
 
 ### Reference
 
