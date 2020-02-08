@@ -186,3 +186,19 @@ net.ipv4.tcp_congestion_control=bbr
 ssh-keygen -R <hostname/ip>
 ssh-keygen -f "~/.ssh/known_hosts" -R <hostname/ip>
 ```
+
+### Echo Multiple Lines (Bash)
+
+```sh
+STR="Line 1
+Line2"
+
+# This will output all in one line
+echo $STR
+Line 1 Line 2
+
+# Use ""
+echo "$STR"
+Line 1
+Line 2
+```
