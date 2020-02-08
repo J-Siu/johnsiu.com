@@ -16,8 +16,8 @@ Zsh cheat sheet.
 Zsh do not auto split string into words like bash.
 
 ```sh
-STR="Line 1
-Line2"
+STR="line 1
+line2"
 
 # The :: is printed once only.
 for i in ${STR}; do echo :: ${i}; done
