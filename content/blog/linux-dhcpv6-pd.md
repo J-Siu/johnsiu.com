@@ -5,7 +5,7 @@ author: "John Siu"
 title: "Linux Router Dhcpv6 PD Split"
 description: "How to split dhcpv6 pd using linux router"
 tags: ["linux","how-to","ipv6","router","dhcpv6","pd"]
-draft: true
+draft: false
 ---
 Using dibbler-client / wide-dhcpv6-client to get dhcpv6-pd.
 <!--more-->
