@@ -401,6 +401,8 @@ Wi-Fi adapter of my box is `wlp5s0`. It will be added to bridge `lan`.
 
 A 2nd virtual interface `wlan0` will be created and join bridge `dmz`.
 
+`/etc/hostapd/hostapd.conf`
+
 ```ini
 driver=nl80211
 
