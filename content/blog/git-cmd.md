@@ -120,3 +120,11 @@ git config --global -l
 ```sh
 git log --tags --simplify-by-decoration --pretty="format:%ai %d" | cat
 ```
+
+### Fork Merge/Sync with upstream
+
+```sh
+git remote add upstream <up stream url>
+git fetch upstream
+git merge upstream/master
+```
