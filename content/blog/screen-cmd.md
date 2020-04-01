@@ -56,5 +56,6 @@ Options|Usage
 ---|---
 -ls|List socket name and status.
 -D|If inside a screen session, will detach the session and terminate the terminal process with it.
--r \<socket\>|Re-attach to a screen session.
+-r \<socket\>|Re-attach to a detached screen session.
+-x \<socket\>|Join a screen session.
 -S|Set socket name other than \<pid\>.\<tty\>.\<host\>.
