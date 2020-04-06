@@ -21,7 +21,7 @@ I have 4 libraries need upgrading:
 
 ### Manual Task
 
-There are 4 files need update manually:
+After following [Angular Upgrade Guide](https://update.angular.io/#8.0:9.0l3), there are 4 files need update manually:
 
 - `LICENSE` : Update year to 2020
 - `README.md` : Update change log and license year to 2020
