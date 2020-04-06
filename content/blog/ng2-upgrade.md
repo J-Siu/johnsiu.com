@@ -2,7 +2,7 @@
 type: "blog"
 date: 2020-04-05T22:06:31-04:00
 author: "John Siu"
-title: "Angular Package Upgrade"
+title: "Angular 8 to 9 Package Upgrade"
 description: "Angular 8 to 9 upgrade for packages."
 tags: ["angular","library"]
 draft: false
