@@ -43,10 +43,26 @@ lsb_release -r
 dpkg-reconfigure tzdata
 ```
 
-### Check Upstream DNS
+### systemd-resolver
 
-> Ubuntu/Systemd use systemd-resolver for dns lookup and /etc/resolve.conf no longer show the actual upstream dns. Use following to check.
+Ubuntu/Systemd use systemd-resolver for dns lookup and /etc/resolve.conf no longer show the actual upstream dns. Use following to check and change.
+
+#### Show DNS Settings
 
 ```sh
-systemd-resolve --status
+resolvectl
+```
+
+#### Change DNS
+
+```sh
+resolvectl dns <interface> <dns1> <dns2> ...
+resolvectl dns enp0s2 8.8.8.8 8.8.4.4 1.1.1.1
+```
+
+#### Change Search Domain
+
+```sh
+resolvectl domain <interface> <domain>
+resolvectl domain enp0s2 johnsiu.com
 ```
