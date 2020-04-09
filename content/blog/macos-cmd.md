@@ -82,7 +82,7 @@ kextstat | grep -v com.apple
 
 ### Safe Mode
 
-Boot and hold <kb>Shift</kb> during boot.
+Hold down <kbd>Shift</kbd> during boot.
 
 Using command line:
 
