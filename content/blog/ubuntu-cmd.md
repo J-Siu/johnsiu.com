@@ -66,3 +66,29 @@ resolvectl dns enp0s2 8.8.8.8 8.8.4.4 1.1.1.1
 resolvectl domain <interface> <domain>
 resolvectl domain enp0s2 johnsiu.com
 ```
+
+### Disable CPU mitigations
+
+> Do this at your own risk.
+
+`/etc/default/grub`
+
+```ini
+GRUB_CMDLINE_LINUX_DEFAULT="noibrs noibpb nopti nospectre_v2 nospectre_v1 l1tf=off nospec_store_bypass_disable no_stf_barrier mds=off mitigations=off"
+```
+
+Update GRUB
+
+```sh
+update-grub
+grub-install <boot disk>
+grub-install /dev/sda
+```
+
+### Update Initramfs
+
+This is needed if module used during boot is changed.
+
+```sh
+update-initramfs -u
+```
