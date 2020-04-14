@@ -96,3 +96,7 @@ Change back to normal:
 ```sh
 sudo nvram boot-args=""
 ```
+
+### Toggle Hidden File in Finder
+
+- <kbd>Command</kbd>+<kbd>Shift</kbd>+<kbd>.</kbd>
