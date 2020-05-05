@@ -113,6 +113,17 @@ Install server certificate and key into webserver.
 >
 > Most modern browsers will not accept wildcard certificate for TLD (top level domain). For example `*.local`, `*.com`, will not work.
 
+### Install CA in Ubuntu
+
+Copy ca certificate to `/usr/local/share/ca-certificates` and change extension to crt. Then run `update-ca-certificates`.
+
+Example:
+
+```sh
+cp ./ca/local.local/ca.local.local.crt.pem /usr/local/share/ca-certificates/ca.local.local.crt
+update-ca-certificates
+```
+
 ### Changelog
 
 - 1.0.0
