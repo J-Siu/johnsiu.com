@@ -100,3 +100,25 @@ sudo nvram boot-args=""
 ### Toggle Hidden File in Finder
 
 - <kbd>Command</kbd>+<kbd>Shift</kbd>+<kbd>.</kbd>
+
+### Network Setup Command
+
+Help
+
+```sh
+networksetup
+```
+
+List all network service
+
+```sh
+networksetup -listallnetworkservices
+```
+
+Turn network service on/off
+
+```sh
+networksetup -setnetworkserviceenabled <networkservice> <on off>
+networksetup -setnetworkserviceenabled Ethernet off
+networksetup -setnetworkserviceenabled Ethernet on
+```
