@@ -92,3 +92,10 @@ This is needed if module used during boot is changed.
 ```sh
 update-initramfs -u
 ```
+
+### Ubuntu Release Upgrade
+
+```sh
+apt install update-manager-core
+do-release-upgrade -d
+```
