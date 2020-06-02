@@ -2,15 +2,12 @@ baseURL = "https://johnsiu.com"
 title = "[JS Blog: Tech - Business Tool, Personal Toys]"
 
 theme = "Binario"
-#theme = "yinyang"
 languageCode = "en-us"
 paginate = "24"
 paginatepath = "blog"
 enableGitInfo = true
 pluralizeListTitles=false
-
-#pygmentsCodefences=true
-#pygmentsStyle="Chroma"
+relativeURLs=true
 
 googleAnalytics = "UA-36805525-1" # optional
 disqusShortname = "https-johnsiu-com"
