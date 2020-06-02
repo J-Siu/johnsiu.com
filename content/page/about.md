@@ -50,8 +50,7 @@ My interests.
   - [simple-api-client-ng2](https://github.com/J-Siu/ng2-simple-api-lib) - Api service work with simple-api-express.
   - [simple-api-express](https://github.com/J-Siu/simple-api-express) - Api handler that work with simple-api-client-ng2.
 - Docker
-  - [docker_mpd](https://github.com/J-Siu/docker_mpd) - Docker MPD with UID/GID handling.
-  - [docker_mpd_lite](https://github.com/J-Siu/docker_mpd_lite) - Docker version of [My Alpine MPD (Music Player Daemon) Lite](/blog/alpine-mpd-lite/) with UID/GID handling.
+  - [docker_compose](https://github.com/J-Siu/docker_compose) - My Dockerfile and compose library.
 
 ### Follow Me
 
