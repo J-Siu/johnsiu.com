@@ -61,3 +61,7 @@ apk add \
   bash \       # Require on gogs server.
   build-base   # gcc, g++, libc-dev, etc. System compiler tool chain.
 ```
+
+### Multi-ISO USB Boot
+
+- [ventoy](https://github.com/ventoy/Ventoy) - Open source tool to create bootable USB drive for ISO files.
