@@ -202,3 +202,16 @@ echo "$STR"
 Line 1
 Line 2
 ```
+
+### Detect Text File Charset/Encoding
+
+```sh
+uchardet <file.txt>
+```
+
+### Convert Text File Charset/Encoding
+
+```sh
+iconv iconv -f <file charset> -t <output charset> <file.txt>
+iconv iconv -f jis -t utf8 readme.txt
+```
