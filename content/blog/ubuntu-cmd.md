@@ -99,3 +99,17 @@ update-initramfs -u
 apt install update-manager-core
 do-release-upgrade -d
 ```
+
+### Netplan
+
+Apply netplan changes. Will not apply if there is syntax error in configuration files:
+
+```sh
+netplan apply
+```
+
+Try, will apply and auto revert:
+
+```sh
+netplan try
+```
