@@ -71,8 +71,14 @@ git push --tags
 ### Submodule Add
 
 ```sh
-submodule add https://github.com/J-Siu/binario themes/binario
-submodule add <url> <path>
+git submodule add https://github.com/J-Siu/binario themes/binario
+git submodule add <url> <path>
+```
+
+### Submodule First Pull
+
+```sh
+git submodule update --init --recursive
 ```
 
 ### Submodule Update
