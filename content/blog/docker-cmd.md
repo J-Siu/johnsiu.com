@@ -94,3 +94,33 @@ This will also start compose container if docker is auto start during reboot.
 ```sh
 docker-compose -f <filename> exec <appname> sh
 ```
+
+### Docker Daemon URI
+
+#### TCP
+
+To enable remote/tcp docker daemon access, edit `docker.server`
+
+```sh
+systemctl edit docker.service
+```
+
+with following content:
+
+```ini
+[Service]
+ExecStart=
+ExecStart=/usr/bin/dockerd -H fd:// -H tcp://127.0.0.1:2345
+```
+
+IPv6 use:
+
+```ini
+[Service]
+ExecStart=
+ExecStart=/usr/bin/dockerd -H fd:// -H tcp://[::1]:2345
+```
+
+#### Unix Socket
+
+Docker API socket is at `/var/run/docker.sock`
