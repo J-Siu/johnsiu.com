@@ -218,6 +218,8 @@ I made `compose` into a git repository and checked in my git server. If I want t
 
 ### The CON
 
+#### Host Email
+
 Host email need additional package to forward into postfix. Fortunately, `opensmtpd` with minimal configuration can do exactly that:
 
 ```sh
@@ -232,6 +234,14 @@ match from local for any action "relay"
 ```
 
 I actually have a copy of that in my `compose` directory and checked in git also.
+
+#### Certificate Refresh
+
+As illustrated above, postfix container is using caddy auto certificates. As I haven't find a way to auto detect certificate update, I just use a cronjob to restart postfix container weekly.
+
+```sh
+0 0 * * 1       cd $HOME/compose && /usr/bin/docker-compose restart postfix_container
+```
 
 ### Conclusion
 
