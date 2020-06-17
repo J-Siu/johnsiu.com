@@ -2,9 +2,9 @@
 type: "blog"
 date: 2019-09-02T23:31:33-04:00
 author: "John Siu"
-title: "K8s Dashboard"
-description: ""
-tags: [""]
+title: "Kubernetes Dashboard"
+description: "Kubernetes Dashboard"
+tags: ["kubernetes"]
 draft: true
 ---
 <!--more-->
