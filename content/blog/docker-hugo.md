@@ -12,7 +12,7 @@ Docker - Hugo site generator used in CI/CD.
 
 <!--more-->
 
-This is used in my [blog automation](/jenkins-blog-automation/).
+This is used in my [blog automation](/blog/jenkins-blog-automation/).
 
 ---
 
