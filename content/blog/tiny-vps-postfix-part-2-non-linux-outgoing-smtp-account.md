@@ -4,7 +4,7 @@ date: 2013-04-15T04:24:05Z
 author: "John Siu"
 title: "Tiny VPS Postfix - Part 2 - Non-Linux Outgoing SMTP Account"
 description: "Configuring postfix sasl2 authentication."
-tags: ["tiny","ubuntu","smtp","vps","postfix","sasl2"]
+tags: ["tiny","ubuntu","vps","postfix","sasl2"]
 aliases:
   - /tiny-vps-postfix-part-2-non-linux-outgoing-smtp-account
   - /index.php/tiny-vps-postfix-part-2-non-linux-outgoing-smtp-account

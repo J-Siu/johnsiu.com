@@ -4,7 +4,7 @@ date: 2013-04-15T11:20:30Z
 author: "John Siu"
 title: "Tiny VPS Postfix - Part 3 - GMail as Email Client"
 description: "Setup GMail to reply using your own email server and domain."
-tags: ["tiny","vps","gmail","google","ubuntu","postfix","smtp"]
+tags: ["tiny","vps","gmail","google","ubuntu","postfix"]
 aliases:
   - /tiny-vps-postfix-part-3-gmail-as-your-email-client
   - /index.php/tiny-vps-postfix-part-3-gmail-as-your-email-client

@@ -1,7 +1,7 @@
 ---
 type: "blog"
 date: 2012-12-07T04:29:48Z
-tags: ["tiny","ubuntu", "postfix", "smtp", "vps"]
+tags: ["tiny","ubuntu","postfix","vps"]
 title: "Tiny VPS Postfix"
 description: "Hosting my own email server."
 aliases:

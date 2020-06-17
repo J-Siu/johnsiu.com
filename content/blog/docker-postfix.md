@@ -4,7 +4,7 @@ date: 2020-06-07T01:00:58-04:00
 author: "John Siu"
 title: "Docker Postfix"
 description: "Docker Postfix"
-tags: ["docker","postfix","email"]
+tags: ["docker","postfix"]
 draft: false
 ---
 Docker - postfix with sasldb2 support
