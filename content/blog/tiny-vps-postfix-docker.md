@@ -124,7 +124,6 @@ services:
       - ${POSTFIX_CNF}:/postfix:ro
       - ${POSTFIX_QUE}:/queue
       - ${CADDY_DAT}:/data:ro
-      - /etc/letsencrypt:/etc/letsencrypt:ro
     environment:
       - P_TZ=${TZ}
 
