@@ -55,7 +55,7 @@ Modify line 29, 33 according to site setup. Then add line 41 to 57 for basic spa
 
 Remember to Change **MY-HOSTNAME** at line 29 and **MY-DOMAIN** to your own domain at line 33.
 
-{{< highlight ini "linenos=table,hl_lines=29 33" >}}
+```ini
 # See /usr/share/postfix/main.cf.dist for a commented, more complete version
 
 # Debian specific: Specifying a file name will cause the first
@@ -113,7 +113,7 @@ reject_rbl_client dnsbl.proxybl.org,
 reject_rbl_client truncate.gbudb.net,
 reject_rbl_client dnsbl.njabl.org,
 permit
-{{< / highlight >}}
+```
 
 #### /etc/aliases
 
