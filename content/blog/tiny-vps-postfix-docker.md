@@ -138,7 +138,7 @@ The reason I include caddy settings also is because I am using caddy auto certif
 
 The postfix configuration is basically the same as my original [Tiny VPS Postfix](/blog/tiny-vps-postfix/), with slight modification explained below.
 
-Postfix `main.cf`
+Copy existing postfix configuration files into `00_VOL/postfix`, or populate it with the default ones from image. Then modify `main.cf`:
 
 ```ini
 alias_database = hash:/etc/postfix/aliases
@@ -202,6 +202,16 @@ Line|Comment
 14, 15|Hostname need to be hardcode here as postfix is inside container.
 18|We want a persistent queue which can survive container restart. `/queue` is mapped to `${POSTFIX_QUE}` in compose file line 36.
 28, 29|We are using certificate from Caddy, which are saved in volume `CADDY_DAT` in compose file line 18. Postfix map `CADDY_DAT` to `/data` in compose file line 37.
+
+#### SASL
+
+`00_VOL/postfix/sasl2/smtpd.conf`
+
+```ini
+pwcheck_method: auxprop
+auxprop_plugin: sasldb
+mech_list: PLAIN LOGIN
+```
 
 I copied my original `/etc/aliases`, `/etc/sasldb2` into `00_VOL/postfix`. Started up docker compose:
 
