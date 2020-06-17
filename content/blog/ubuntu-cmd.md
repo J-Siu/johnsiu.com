@@ -113,3 +113,9 @@ Try, will apply and auto revert:
 ```sh
 netplan try
 ```
+
+### Purge Uninstalled Packages
+
+```sh
+apt-get purge $(dpkg -l | grep '^rc' | awk '{print $2}')
+```
