@@ -32,26 +32,28 @@ Host|Inside Container|Mapping Required|Default|Usage
 ---|---|---|---|---
 ${TZ}|${MY_TZ}|no|n/a|time zone
 ${WWW_VOL}|/www|yes|n/a|Base dir/volume Hugo publish to
-${MY_GIT_DIR}|${MY_GIT_DIR}|no|/hugo|Git pull location
-${MY_GIT_URL}|${MY_GIT_URL}|yes|n/a|Hugo will work inside this dir
+${MY_GIT_DIR}|${MY_GIT_DIR}|no|/hugo|Git clone/pull destination.
+${MY_GIT_URL}|${MY_GIT_URL}|yes|n/a|Git will clone/pull from this URL.
 ${MY_GIT_SUB}|${MY_GIT_SUB}|no|n/a|If defined(not empty), pull git sub-module
-${MY_PUB_DIR}|${MY_PUB_DIR}|no|n/a|If defined(not empty), public will be copied here.
+${MY_HUG_DIR}|${MY_HUG_DIR}|no|n/a|Relative path to ${MY_GIT_DIR}, default empty.
+${MY_HUG_PUB}|${MY_HUG_PUB}|no|n/a|Hugo publish directory(`publishDir` in site config), default `public`.
+${MY_PUB_DIR}|${MY_PUB_DIR}|no|n/a|If defined(not empty), ${MY_HUG_PUB} content will be copied here.
 
 If `${MY_GIT_DIR}` is defined:
 
-- If `${MY_GIT_DIR}/.git` exist, do git pull, exist if failed.
+- If `${MY_GIT_DIR}/.git` exist, do git pull, exit(1) if failed.
 - If `${MY_GIT_DIR}` exist
-	- If empty, do git clone. exit if failed.
-	- If not empty, if git remote match, do git pull, exit if failed.
-  - If not empty, not a repo, exit.
-- If `${MY_GIT_DIR}` does not exist, do git clone, exist if failed.
+  - If empty, do git clone. exit(1) if failed.
+  - If not empty, if git remote match, do git pull, exit(1) if failed.
+  - If not empty, not a repo, exit(1).
+- If `${MY_GIT_DIR}` does not exist, do git clone, exit(1) if failed.
 
 #### Run
 
-PS: All arguments will past to `hugo` in `start.sh`.
+> All arguments will past to `hugo` in `start.sh`. See last example below.
 
 ```docker
-docker run --rm \
+docker run --rm --name hugo \
 -v ${WWW_VOL}:/www \
 -e P_TZ=America/New_York \
 -e MY_GIT_URL=${MY_GIT_URL} \
@@ -59,10 +61,10 @@ docker run --rm \
 jsiu/hugo
 ```
 
-In following example fresh git clone each run, and copy `public` into `/www/johnsiu.com` at the end.
+Fresh git clone each run, copy `public` into `/www/johnsiu.com` at the end.
 
 ```sh
-docker run --rm \
+docker run --rm --name hugo \
 -v CADDY_WWW:/www \
 -e P_TZ=America/New_York \
 -e MY_GIT_URL=https://github.com/J-Siu/johnsiu.com.git \
@@ -71,16 +73,42 @@ docker run --rm \
 jsiu/hugo
 ```
 
-In following example will clone only if needed, else pull, no `public` copy at the end.
+Clone if needed, else pull, no `public` copy at the end.
 
 ```sh
-docker run --rm \
+docker run --rm --name hugo \
 -v CADDY_WWW:/www \
 -e P_TZ=America/New_York \
 -e MY_GIT_URL=https://github.com/J-Siu/johnsiu.com.git \
 -e MY_GIT_SUB=true \
 -e MY_GIT_DIR=/www/johnsiu.com \
 jsiu/hugo
+```
+
+Clone if needed, else pull, no `public` copy at the end.
+
+```sh
+docker run --rm --name hugo \
+-v CADDY_WWW:/www \
+-e P_TZ=America/New_York \
+-e MY_GIT_URL=https://github.com/J-Siu/johnsiu.com.git \
+-e MY_GIT_SUB=true \
+-e MY_GIT_DIR=/www/git/johnsiu.com \
+-e MY_PUB_DIR=/www/site/johnsiu.com \
+jsiu/hugo
+```
+
+Pass `--cleanDestinationDir` to hugo command.
+
+```sh
+docker run --rm --name hugo \
+-v CADDY_WWW:/www \
+-e P_TZ=America/New_York \
+-e MY_GIT_URL=https://github.com/J-Siu/johnsiu.com.git \
+-e MY_GIT_SUB=true \
+-e MY_GIT_DIR=/www/git/johnsiu.com \
+-e MY_PUB_DIR=/www/site/johnsiu.com \
+jsiu/hugo --cleanDestinationDir
 ```
 
 #### Compose
@@ -102,9 +130,11 @@ docker run --rm jsiu/hugo cat /README.md > README.md
 ### Change Log
 
 - 1.0
-	- Initial commit.
-
-### License
+  - Initial commit.
+- 1.1
+  - Add README.md example.
+  - Add `${MY_GIT_DIR}`, `${MY_GIT_PUB}`.
+  - Fix cd into repository bug.
 
 The MIT License
 
