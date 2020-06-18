@@ -99,7 +99,7 @@ docker-compose -f <filename> exec <appname> sh
 
 #### TCP
 
-To enable remote/tcp docker daemon access, edit `docker.server`
+To enable remote/tcp docker daemon access, edit **docker.server**
 
 ```sh
 systemctl edit docker.service
@@ -123,13 +123,13 @@ ExecStart=/usr/bin/dockerd -H fd:// -H tcp://[::1]:2345 --containerd=/run/contai
 
 #### Unix Socket
 
-Docker API socket is at `/var/run/docker.sock`
+Docker API socket is at **/var/run/docker.sock**
 
 ### Data Root
 
-`--data-root`, used to be `-g`, `--graph`, default to `/var/lib/docker`
+**--data-root**, used to be **-g**, **--graph**, default to **/var/lib/docker**
 
-Override in systemd
+Override in Systemd
 
 ```sh
 systemctl edit docker.service
@@ -148,6 +148,16 @@ Override with `/etc/docker/daemon.json`
 ```json
 {
   "data-root":"/new/location"
+}
+```
+
+### Log to Journald
+
+**/etc/daemon.json**
+
+```json
+{
+  "log-driver": "journald"
 }
 ```
 
