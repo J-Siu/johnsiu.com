@@ -7,14 +7,14 @@ description: "Docker MPD with UID/GID handling."
 tags: ["docker","mpd"]
 draft: false
 ---
-Docker MPD with UID/GID handling.
+Docker MPD Lite with UID/GID + audio GID handling.
 <!--more-->
 ### Build
 
 ```sh
-git clone https://github.com/J-Siu/docker_mpd.git
-cd docker_mpd
-docker build -t jsiu/docker_mpd:0.21.14
+git clone https://github.com/J-Siu/docker_compose.git
+cd docker/mpd
+docker build -t jsiu/mpd .
 ```
 
 ### Usage
@@ -35,25 +35,26 @@ Create playlists director inside ${MPD_PATH_MPD} if not exist yet.
 mkdir -p ${MPD_PATH_MPD}/playlists
 ```
 
-#### HOST_UID / HOST_GID
+#### MPD_UID / MPD_GID
 
 ENV VAR|Usage
 ---|---
-MPD_HOST_UID|UID of ${MPD_PATH_MPD},${MPD_PATH_MUSIC} owner
-MPD_HOST_GID|GID of ${MPD_PATH_MPD},${MPD_PATH_MUSIC} owner
+MPD_UID|UID of ${MPD_PATH_MPD},${MPD_PATH_MUSIC} owner
+MPD_GID|GID of ${MPD_PATH_MPD},${MPD_PATH_MUSIC} owner
 
 #### Run
 
 ```docker
 docker run \
 -d \
--e MPD_HOST_UID=${MPD_HOST_UID} \
--e MPD_HOST_GID=${MPD_HOST_GID} \
+-e PUID=${MPD_UID} \
+-e PGID=${MPD_GID} \
 -p ${MPD_PORT}:6600/tcp \
 -v ${MPD_PATH_MPD}:/mpd/.mpd \
 -v ${MPD_PATH_MUSIC}:/mpd/music \
 --device ${MPD_SND} \
-jsiu/docker_mpd:${MPD_TAG}
+--cap-add sys_nice \
+jsiu/docker_mpd
 ```
 
 Example:
@@ -63,13 +64,14 @@ If ${MPD_PATH_MPD} and ${MPD_PATH_MUSIC} owner's UID=1001 and GID=1002:
 ```docker
 docker run \
 -d \
--e MPD_HOST_UID=1001 \
--e MPD_HOST_GID=1002 \
+-e PUID=1001 \
+-e PGID=1002 \
 -p 6600:6600/tcp \
 -v /home/jsiu/MPD:/mpd/.mpd \
 -v /home/jsiu/Music:/mpd/music \
 --device /dev/snd \
-jsiu/docker_mpd:0.21.14
+--cap-add sys_nice \
+jsiu/docker_mpd
 ```
 
 #### Debug / Custom Config
@@ -77,12 +79,12 @@ jsiu/docker_mpd:0.21.14
 Get config from image:
 
 ```docker
-docker run --rm jsiu/docker_mpd:0.21.14 cat /mpd.conf > mpd.conf
+docker run --rm jsiu/docker_mpd cat /mpd.conf > mpd.conf
 ```
 
 Change mpd.conf log_level to verbose:
 
-```ini
+```conf
 log_level  "verbose"
 ```
 
@@ -90,14 +92,14 @@ Run with mpd.conf mapping:
 
 ```docker
 docker run \
--e MPD_HOST_UID=1001 \
--e MPD_HOST_GID=1002 \
+-e PUID=1001 \
+-e PGID=1002 \
 -p 6600:6600/tcp \
 -v /home/jsiu/mpd.conf:/mpd.conf \ # Map mpd.conf into container
 -v /home/jsiu/MPD:/mpd/.mpd \
 -v /home/jsiu/Music:/mpd/music \
 --device /dev/snd \
-jsiu/docker_mpd:0.21.14
+jsiu/docker_mpd
 ```
 
 #### Compose
@@ -105,8 +107,8 @@ jsiu/docker_mpd:0.21.14
 Get docker-compose template from image:
 
 ```docker
-docker run --rm jsiu/docker_mpd:0.21.14 cat /docker-compose.yml > docker-compose.yml
-docker run --rm jsiu/docker_mpd:0.21.14 cat /.env > .env
+docker run --rm jsiu/mpd cat /docker-compose.yml > docker-compose.yml
+docker run --rm jsiu/mpd cat /env > .env
 ```
 
 Fill in `.env` according to your environment.
@@ -117,7 +119,7 @@ docker-compose up
 
 ### Repository
 
-- [docker_mpd](https://github.com/J-Siu/docker_mpd)
+- [docker_compose](https://github.com/J-Siu/docker_compose)
 
 ### Contributors
 
@@ -129,12 +131,24 @@ docker-compose up
   - Matching mpd version number
   - Base image: alpine:edge
   - mpd version: 0.21.14
+- 0.21.19
+  - mpd version: 0.21.19
+- 0.21.22
+  - mpd version: 0.21.22
+- 0.21.23
+  - mpd version: 0.21.23
+- 0.21.24
+  - mpd version: 0.21.24
+  - start.sh
+    - Use exec so start.sh can exit
+    - Add exit code 1
+    - Remove delgroup/deluser ${PUSR}
 
 ### License
 
 The MIT License
 
-Copyright (c) 2019
+Copyright (c) 2020
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
