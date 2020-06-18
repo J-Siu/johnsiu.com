@@ -3,13 +3,13 @@ type: blog
 date: 2019-07-29
 author: "John Siu"
 title: "Tiny CA - OpenSSL-CA"
-description: "Creating a tiny CA for local network."
-tags: ["tiny","openssl","ca","certificate","authority","lib"]
+description: "Create Root CA with openssl."
+tags: ["tiny","openssl","certificate"]
 draft: false
 aliases:
   - /lib/tiny-ca
 ---
-Bite the bullet and create a tiny CA for local network.
+Bite the bullet and create a Root CA for local network.
 <!--more-->
 
 ---
@@ -107,7 +107,7 @@ Data Base Updated
 
 Install CA certificate into browser or OS.
 
-Install server certificate and key into webserver.
+Install server certificate and key into web server.
 
 > **Notes**
 >

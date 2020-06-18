@@ -4,10 +4,10 @@ date: 2020-06-07T01:00:58-04:00
 author: "John Siu"
 title: "Docker Postfix"
 description: "Docker Postfix"
-tags: ["docker","postfix"]
+tags: ["docker","postfix","sasl2"]
 draft: false
 ---
-Docker - postfix with sasldb2 support
+Docker - Postfix with sasldb2 support
 <!--more-->
 
 ### Build
@@ -32,11 +32,11 @@ ${TZ}|${P_TZ}|no|time zone
 
 ##### Configuration Volume
 
-Container will automatically exit if no configuration volumn (`${POSTFIX_CNF}`), or if configuration volumn is empty.
+Container will automatically exit if no configuration volume (`${POSTFIX_CNF}`), or if configuration volume is empty.
 
-The permission and ownership of `${POSTFIX_CNF}` is not important. Container `start.sh` copys `/postfix` to `/etc/` and applys ownership and permission to `/etec/postfix` accordingly.
+The permission and ownership of `${POSTFIX_CNF}` is not important. Container `start.sh` copies `/postfix` to `/etc/` and applies ownership and permission to `/etec/postfix` accordingly.
 
-Postfix configuration come with Alpine package install is included in the container at `/postfix.pkg.tgz`. Retrive it with following commands:
+Postfix configuration come with Alpine package install is included in the container at `/postfix.pkg.tgz`. Retrieve it with following commands:
 
 ```docker
 docker run -d -it --rm --name tmp jsiu/postfix sh
