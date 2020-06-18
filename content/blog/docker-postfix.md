@@ -9,13 +9,12 @@ draft: false
 ---
 Docker - Postfix with sasldb2 support
 <!--more-->
-
 ### Build
 
 ```sh
 git clone https://github.com/J-Siu/docker_compose.git
 cd docker/postfix
-docker build -t jsiu/postfix
+docker build -t jsiu/postfix .
 ```
 
 ### Usage
@@ -57,7 +56,7 @@ alias_database = hash:/etc/postfix/aliases
 
 ##### sasldb2
 
-If saasldb2 is to be used, `sasldb2` and `smtpd.conf` should be placed in `${POSTFIX_CNF}/sasl2/`. Container `start.sh` script will copy them to `/etc/sasl2/`.
+If sasldb2 is to be used, `sasldb2` and `smtpd.conf` should be placed in `${POSTFIX_CNF}/sasl2/`. Container `start.sh` script will copy them to `/etc/sasl2/`.
 
 Sample `smtpd.conf` content:
 
@@ -89,7 +88,7 @@ jsiu/postfix
 Get docker-compose template from image:
 
 ```docker
-docker run --rm jsiu/postifx cat /docker-compose.yml > docker-compose.yml
+docker run --rm jsiu/postfix cat /docker-compose.yml > docker-compose.yml
 docker run --rm jsiu/postfix cat /env > env
 ```
 
@@ -111,3 +110,19 @@ docker-compose up
 
 - 1.0
   - Initial commit.
+- 1.1
+  - Dockerfile remove apk update
+  - start.sh
+    - Use exec so start.sh can exit
+
+### License
+
+The MIT License
+
+Copyright (c) 2020
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
