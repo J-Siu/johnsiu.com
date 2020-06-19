@@ -73,7 +73,132 @@ ssh target_server 'docker save image:latest | bzip2' | pv | bunzip2 | docker loa
 
 ---
 
-### docker-compose
+### Dockerfile
+
+#### Alpine Base
+
+`apk update` is not necessary if `apk --no-cache add ...` is used for pulling packages.
+
+#### Common Steps
+
+If creating a lot of Dockerfile with similar base packages like `tzdata`, `ca-certificates`, they should be moved to the top and separate from container specific steps.
+
+### Container & Startup Script
+
+#### GID/UID
+
+1. Environment Variables
+
+    ```sh
+    #!/bin/ash
+
+    PUSR=mpd
+    PHOME=/${PUSR}
+
+    echo PGID:${PGID}
+    echo PUID:${PUID}
+
+    if [ "${PUID}" -lt "1000" ]
+    then
+      echo PUID cannot be \< 1000
+      exit 1
+    fi
+
+    if [ "${PGID}" -lt "1000" ]
+    then
+      echo PGID cannot be \< 1000
+      exit 1
+    fi
+
+    addgroup -g ${PGID} ${PUSR}
+    adduser -D -h ${PHOME} -G ${PUSR} -u ${PUID} ${PUSR}
+    ```
+
+    Full example [here](https://github.com/J-Siu/docker_compose/tree/master/docker/mpd_lite).
+
+2. Docker Option
+
+    ```sh
+    -u, --user string        Username or UID (format: <name|uid>[:<group|gid>])
+    ```
+
+#### Time Zone
+
+There are multiple ways to set time zone inside container. Following are 2:
+
+1. Environment Variables
+
+    In `Dockerfile`, install `tzdata`.
+
+    Pass `P_TZ=America/New_York` into container.
+
+    In start up script:
+
+    ```sh
+    echo P_TZ:${P_TZ}
+    if [ "${#P_TZ}" -gt "0" ]; then
+      TZ="/usr/share/zoneinfo/${P_TZ}"
+      if [ -f "${TZ}" ]; then
+        cp ${TZ} /etc/localtime
+        echo "${P_TZ}" >/etc/timezone
+      else
+        echo "${P_TZ}" not available.
+      fi
+    fi
+    ```
+
+    This is more reliable if no control of hosting OS, like cloud or Windows.
+
+2. Direct Mapping
+
+    Use:
+
+    ```sh
+    -v /etc/localtime:/etc/localtime \
+    -v /etc/timezone:/etc/timezone
+    ```
+
+    This is simpler if Linux host is guaranteed and always follow host's time zone.
+
+#### Exec
+
+If shell script is used in `CMD` or `ENTRYPOINT` to setup container environment, use `exec` to execute the final command so the shell can exit.
+
+```sh
+#!/bin/sh
+
+# Preparation
+  ...
+# Done
+
+exec <cmd>
+```
+
+This work for `su <cmd>` also.
+
+#### Command Check
+
+```sh
+#!/bin/sh
+
+# Run cmd with error check
+RUN_CMD() {
+	CMD=$1
+	$CMD
+	RTN=$?
+	if [ ${RTN} -ne 0 ]; then
+		echo \"$CMD\" error:${RTN}
+		exit ${RTN}
+	fi
+	return ${RTN}
+}
+
+RUN_CMD "git submodule update --init --recursive"
+```
+
+Full example [here](https://github.com/J-Siu/docker_compose/tree/master/docker/hugo).
+
+### Docker Compose
 
 #### Specify compose file
 
