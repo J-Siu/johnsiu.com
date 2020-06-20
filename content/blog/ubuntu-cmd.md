@@ -119,3 +119,17 @@ netplan try
 ```sh
 apt-get purge $(dpkg -l | grep '^rc' | awk '{print $2}')
 ```
+
+### APT Cache
+
+On apt cache server:
+
+```sh
+apt install apt-cacher-ng
+```
+
+On other server:
+
+```sh
+echo 'Acquire::http::Proxy "http://<cache-server>:3142";' > /etc/apt/apt.conf.d/00proxy
+```
