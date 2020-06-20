@@ -1,11 +1,11 @@
 ---
 type: "blog"
-date: 2020-05-08T13:37:26-04:00
+date: 2020-06-20
 author: "John Siu"
 title: "Final Cut Pro Cheatsheet"
 description: "Final Cut Pro Cheatsheet"
-tags: ["final cut pro"]
-draft: true
+tags: ["final cut pro","cheatsheet"]
+draft: false
 ---
 <!--more-->
 

@@ -1,11 +1,11 @@
 ---
-type: "Cheat Sheet"
-date: 2019-08-23T00:33:33-04:00
+type: "blog"
+date: 2020-06-20
 author: "John Siu"
 title: "Dovecot Virtual Mailbox, Replication with Postfix"
 description: "Configure dovecot virtual mailbox, replication with postfix."
 tags: ["dovecot","postfix","how-to"]
-draft: true
+draft: false
 ---
 Configure dovecot virtual mailbox, replication with postfix.
 <!--more-->
@@ -19,12 +19,7 @@ Active/Active Pair:
 - Use Dovecot replication, no share storage(eg. NFS) required.
 - User db need to be sync manually on both side
 
-### Configure Postfix/Dovecot integration
-
-Install dovecot
-Create local id vmail(uid:5000,gid:5000)
-
-Create /etc/dovecot/user.db
+### Linux Preparation
 
 #### Create user vmail
 
@@ -33,9 +28,13 @@ groupadd -g 5000 vmail
 useradd -m -u 5000 -g 5000 -d /var/vmail vmail
 ```
 
-#### /etc/dovecot/conf.d/10-master.conf
+### Dovecot
 
-```conf
+#### Services
+
+`/etc/dovecot/conf.d/10-master.conf`
+
+```ini
 service imap-login {
   inet_listener imap {
     port = 143
@@ -44,9 +43,7 @@ service imap-login {
     port = 993
     ssl = yes
   }
-
   process_min_avail = 4
-
 }
 
 service lmtp {
@@ -70,9 +67,13 @@ service auth-worker {
 }
 ```
 
-#### /etc/dovecot/conf.d/10-mail.conf
+`<dovecot_lmtp_port>` and `<dovecot_auth_port>` have to match values used in `main.cf` in [Postfix Dovecot Integration](#dovecot-integration) below.
 
-```conf
+#### IMAP Folders
+
+`/etc/dovecot/conf.d/10-mail.conf`
+
+```ini
 mail_plugins = $mail_plugins notify replication
 mail_location = maildir:~/maildir
 namespace inbox {
@@ -103,37 +104,25 @@ namespace inbox {
 }
 ```
 
-#### /etc/dovecot/conf.d/10-auth.conf
+#### Replication
 
-```conf
-auth_mechanisms = plain
-disable_plaintext_auth = no
-passdb {
-  driver = passwd-file
-  args = username_format=%u /etc/dovecot/user.db
-}
-userdb {
-  driver = passwd-file
-  default_fields = uid=vmail gid=vmail home=/var/vmail/%u
-  args = username_format=%u /etc/dovecot/user.db
+Enable replication plugin.
+
+`/etc/dovecot/conf.d/90-plugin.conf`
+
+```ini
+plugin {
+  mail_replica = tcp:<remote hostname/ip>:<doveadm_port>
 }
 ```
 
-#### /etc/dovecot/conf.d/10-logging.conf
+`/etc/dovecot/conf.d/local.conf`
 
-```conf
-log_path = /var/log/dovecot.log
-info_log_path = /var/log/dovecot-info.log
-mail_debug = no
-```
-
-#### /etc/dovecot/conf.d/local.conf
-
-```conf
+```ini
 # Doveadm (used by sync service)
 service doveadm {
   inet_listener {
-    # any port you want to use for this:
+    # Any port
     port = <doveadm_port>
 		password = <doveadm_password>
   }
@@ -154,21 +143,67 @@ service aggregator {
 }
 ```
 
-#### /etc/dovecot/conf.d/90-plugin.conf
+#### User Database
 
-```conf
-plugin {
-  mail_replica = tcp:<hostname/ip>:<doveadm_port>
+We will use the simple `passwd-file` type user database.
+
+`/etc/dovecot/conf.d/10-auth.conf`
+
+```ini
+auth_mechanisms = plain
+disable_plaintext_auth = no
+passdb {
+  driver = passwd-file
+  args = username_format=%u /etc/dovecot/user.db
+}
+userdb {
+  driver = passwd-file
+  default_fields = uid=vmail gid=vmail home=/var/vmail/%u
+  args = username_format=%u /etc/dovecot/user.db
 }
 ```
 
-### POSTFIX
+Create `/etc/dovecot/user.db`:
 
-#### /etc/postfix/main.cf
+```ini
+<email-address>:<crypt-password>
+user1@example.com:password1
+user2@example.com:password2
+```
 
-Add following:
+Create crypt-password:
 
-```postfix
+```sh
+doveadm pw -u <email> -p <password>
+doveadm pw -u test@test.com -p test
+{CRYPT}$2y$05$6caJDCFEge0qA1vBxjDWVOftUzwjrDx794c88gtVB0we6RlchrWxu
+```
+
+Above example will be as follow in `user.db`
+
+```ini
+test@test.com:{CRYPT}$2y$05$6caJDCFEge0qA1vBxjDWVOftUzwjrDx794c88gtVB0we6RlchrWxu
+```
+
+Other dovecote user database types can be found [here](https://doc.dovecot.org/configuration_manual/authentication/user_databases_userdb/).
+
+#### Logging
+
+`/etc/dovecot/conf.d/10-logging.conf`
+
+```ini
+log_path = /var/log/dovecot.log
+info_log_path = /var/log/dovecot-info.log
+mail_debug = no
+```
+
+### Postfix
+
+#### Dovecot Integration
+
+`/etc/postfix/main.cf` add following:
+
+```ini
 # relayhost = [<hostname/ip>]:25
 
 #Dovecot
@@ -181,9 +216,9 @@ virtual_mailbox_domains = <domain>
 virtual_transport = lmtp:inet:127.0.0.1:<dovecot_lmtp_port>
 ```
 
-#### /etc/postfix/master.cf
+`/etc/postfix/master.cf` modify `submission`:
 
-```postfix
+```ini
 # Enable submission
 submission inet n       -       n       -       -       smtpd
   -o smtpd_sasl_type=dovecot
