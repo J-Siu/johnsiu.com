@@ -227,26 +227,44 @@ I made `compose` into a git repository and checked in my git server. If I want t
 
 ### The CON
 
-#### Host Email
+#### Localhost Email
 
-Host email need additional package to forward into postfix. Fortunately, `opensmtpd` with minimal configuration can do exactly that:
+Localhost email need additional package to forward into postfix. Fortunately, both `msmtp` and `opensmtpd` with minimal configuration can do exactly that:
 
-```sh
-apt install opensmtpd
-```
+1. msmtp
 
-Its configuration file: `/etc/smtpd.conf`
+    ```sh
+    apt install msmtp-mta
+    ```
 
-```ini
-action "relay" relay host smtp://[::1]
-match from local for any action "relay"
-```
+    `/etc/msmtprc`
 
-I actually have a copy of that in my `compose` directory and checked in git also.
+    ```ini
+    domain  johnsiu.com
+    host    ::1
+    port    25
+    ```
+
+    Here, `domain` is actually hostname used by msmtp during HELO handshake with postfix.
+
+2. opensmtpd
+
+    ```sh
+    apt install opensmtpd
+    ```
+
+    Its configuration file: `/etc/smtpd.conf`
+
+    ```ini
+    action "relay" relay host smtp://[::1]
+    match from local for any action "relay"
+    ```
+
+I picked `msmtp` as it is just a command line replacement for sendmail and not running as daemon. I put a copy of the config in `compose` directory and checked in git also.
 
 #### Certificate Refresh
 
-As illustrated above, postfix container is using caddy auto certificates. As I haven't find a way to auto detect certificate update, I just use a cronjob to restart postfix container weekly.
+As illustrated above, postfix container is using caddy auto certificates. I haven't find a way to auto detect certificate update, so I just use a cronjob to restart postfix container weekly.
 
 ```sh
 0 0 * * 1       cd $HOME/compose && /usr/bin/docker-compose restart postfix_container
