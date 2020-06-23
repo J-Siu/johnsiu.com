@@ -126,9 +126,9 @@ If creating a lot of Dockerfile with similar base packages like `tzdata`, `ca-ce
 
 There are multiple ways to set time zone inside container. Following are 2:
 
-1. Environment Variables
+In `Dockerfile`, install `tzdata`.
 
-    In `Dockerfile`, install `tzdata`.
+1. Environment Variables
 
     Pass `P_TZ=America/New_York` into container.
 
@@ -160,7 +160,7 @@ There are multiple ways to set time zone inside container. Following are 2:
 
     This is simpler if Linux host is guaranteed and always follow host's time zone.
 
-#### Exec
+#### Exit Shell
 
 If shell script is used in `CMD` or `ENTRYPOINT` to setup container environment, use `exec` to execute the final command so the shell can exit.
 
@@ -198,6 +198,15 @@ RUN_CMD "git submodule update --init --recursive"
 
 Full example [here](https://github.com/J-Siu/docker_compose/tree/master/docker/hugo).
 
+#### Override ENTRYPOINT
+
+Use `--entrypoint sh` to start shell in container using `ENTRYPOINT`:
+
+```sh
+docker run --rm -it --entrypoint sh <image>
+docker-compose run --rm -it --entrypoint sh <service>
+```
+
 ### Docker Compose
 
 #### Specify compose file
@@ -220,9 +229,11 @@ This will also start compose container if docker is auto start during reboot.
 docker-compose -f <filename> exec <appname> sh
 ```
 
-### Docker Daemon URI
+### Docker Daemon Configuration
 
-#### TCP
+#### URI
+
+##### TCP
 
 To enable remote/tcp docker daemon access, edit **docker.server**
 
@@ -246,11 +257,11 @@ ExecStart=
 ExecStart=/usr/bin/dockerd -H fd:// -H tcp://[::1]:2345 --containerd=/run/containerd/containerd.sock
 ```
 
-#### Unix Socket
+##### Unix Socket
 
 Docker API socket is at **/var/run/docker.sock**
 
-### Data Root
+#### Data Root
 
 **--data-root**, used to be **-g**, **--graph**, default to **/var/lib/docker**
 
@@ -276,7 +287,7 @@ Override with `/etc/docker/daemon.json`
 }
 ```
 
-### Log to Journald
+#### Log to Journald
 
 All process stdout/stderr inside container go into docker log. To have that log into journald:
 
@@ -303,7 +314,7 @@ volumes:
   - /dev/log:/dev/log
 ```
 
-### daemon.json
+#### daemon.json
 
 From: https://docs.docker.com/engine/reference/commandline/dockerd/#daemon-configuration-file
 
