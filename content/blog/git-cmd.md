@@ -100,11 +100,23 @@ git log
 git reflog
 ```
 
+### Reset
+
+```sh
+git revert --hard [<commit>]
+git revert --soft [<commit>]
+```
+
+- `--hard` Resets the index and working tree. Any changes to tracked files in the working tree since \<commit\> are discarded.
+- `--soft` Does not touch the index file or the working tree at all (but resets the head to \<commit\>, just like all modes do). This leaves all your changed files "Changes to be committed", as git status would put it.
+
+This is prefer over `revert` when backing out from local commit, before pushing to remote.
+
 ### Revert
 
 ```sh
-git revert b68bc59
 git revert <ref#>
+git revert b68bc59
 ```
 
 ### Config User
