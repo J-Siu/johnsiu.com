@@ -68,7 +68,34 @@ mech_list: PLAIN LOGIN
 
 #### Logs
 
+There are two ways to log to journald.
+
+##### /dev/log
+
 Mount host `/dev/log` to container `/dev/log` to enable postfix logs to host logging system.
+
+##### /dev/stdout
+
+To have postfix log to stdout:
+
+Add following to `master.cf`
+
+```ini
+postlog   unix-dgram n  -       n       -       1       postlogd
+```
+
+Add following to `main.cf`
+
+```ini
+maillog_file = /dev/stdout
+```
+
+Show postfix log from journald:
+
+```sh
+journalctl -t <postfix container name>
+journalctl -t postfix
+```
 
 #### Run
 
@@ -114,6 +141,9 @@ docker-compose up
   - Dockerfile remove apk update
   - start.sh
     - Use exec so start.sh can exit
+- 3.5.3-r0
+  - Adopt Postfix version
+  - Postfix version 3.5.3-r0
 
 ### License
 
