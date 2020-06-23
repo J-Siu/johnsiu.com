@@ -278,12 +278,29 @@ Override with `/etc/docker/daemon.json`
 
 ### Log to Journald
 
-**/etc/daemon.json**
+All process stdout/stderr inside container go into docker log. To have that log into journald:
+
+`/etc/docker/daemon.json`
 
 ```json
 {
   "log-driver": "journald"
 }
+```
+
+`/dev/log`
+
+For processes(eg. postfix) that write to system log, map `/dev/log`:
+
+```sh
+-v /dev/log:/dev/log
+```
+
+In compose
+
+```yml
+volumes:
+  - /dev/log:/dev/log
 ```
 
 ### daemon.json
