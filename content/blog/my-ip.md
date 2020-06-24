@@ -15,6 +15,7 @@ Using Linux command line.
 ```sh
 curl ifconfig.me
 curl ipecho.net/plain
+curl -4 https://myip.jsiu.dev/plain
 ```
 
 ### IPv6
@@ -23,4 +24,5 @@ curl ipecho.net/plain
 curl icanhazip.com
 curl ifconfig.co
 dig TXT +short o-o.myaddr.l.google.com @ns1.google.com
+curl -6 https://myip.jsiu.dev/plain
 ```
