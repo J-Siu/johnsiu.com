@@ -36,10 +36,11 @@ ${MY_GIT_DIR}|${MY_GIT_DIR}|no|/hugo|Git clone/pull destination.
 ${MY_GIT_URL}|${MY_GIT_URL}|yes|n/a|Git will clone/pull from this URL.
 ${MY_GIT_SUB}|${MY_GIT_SUB}|no|n/a|If defined(not empty), pull git sub-module
 ${MY_HUG_DIR}|${MY_HUG_DIR}|no|n/a|Relative path to ${MY_GIT_DIR}, default empty.
-${MY_HUG_PUB}|${MY_HUG_PUB}|no|n/a|Hugo publish directory(`publishDir` in site config), default `public`.
-${MY_PUB_DIR}|${MY_PUB_DIR}|no|n/a|If defined(not empty), ${MY_HUG_PUB} content will be copied here.
+${MY_PUB_DIR}|${MY_PUB_DIR}|no|n/a|Override publish directory. Hugo default `public` or defined in site config(`publishDir`).
+${MY_THM_DIR}|${MY_THM_DIR}|no|/theme|Hugo theme clone/pull destination.
+${MY_THM_URL}|${MY_THM_URL}|no|n/a|Hugo theme repo url.
 
-If `${MY_GIT_DIR}` is defined:
+Clone/pull of `${MY_GIT_URL}` flow:
 
 - If `${MY_GIT_DIR}/.git` exist, do git pull, exit(1) if failed.
 - If `${MY_GIT_DIR}` exist
@@ -47,6 +48,12 @@ If `${MY_GIT_DIR}` is defined:
   - If not empty, if git remote match, do git pull, exit(1) if failed.
   - If not empty, not a repo, exit(1).
 - If `${MY_GIT_DIR}` does not exist, do git clone, exit(1) if failed.
+
+If `${MY_THM_URL}` is defined:
+
+- Go through the same flow as `${MY_GIT_URL}`
+- `--destination` will be added to hugo command
+- Defining `${MY_THM_DIR}` and `${MY_THM_URL}` will not use theme automatically. Please see examples below.
 
 #### Run
 
@@ -57,11 +64,10 @@ docker run --rm --name hugo \
 -v ${WWW_VOL}:/www \
 -e P_TZ=America/New_York \
 -e MY_GIT_URL=${MY_GIT_URL} \
--e MY_GIT_SUB=true \
 jsiu/hugo
 ```
 
-Fresh git clone each run, copy `public` into `/www/johnsiu.com` at the end.
+Fresh git clone each run, publish to `/www/johnsiu.com` at the end.
 
 ```sh
 docker run --rm --name hugo \
@@ -73,7 +79,7 @@ docker run --rm --name hugo \
 jsiu/hugo
 ```
 
-Clone if needed, else pull, no `public` copy at the end.
+Clone if needed, else pull.
 
 ```sh
 docker run --rm --name hugo \
@@ -84,8 +90,6 @@ docker run --rm --name hugo \
 -e MY_GIT_DIR=/www/johnsiu.com \
 jsiu/hugo
 ```
-
-Clone if needed, else pull, no `public` copy at the end.
 
 ```sh
 docker run --rm --name hugo \
@@ -109,6 +113,31 @@ docker run --rm --name hugo \
 -e MY_GIT_DIR=/www/git/johnsiu.com \
 -e MY_PUB_DIR=/www/site/johnsiu.com \
 jsiu/hugo --cleanDestinationDir
+```
+
+Replacing theme and hugo command.
+
+```sh
+docker run --rm --name hugo \
+-v CADDY_WWW:/www \
+-e P_TZ=America/New_York \
+-e MY_GIT_URL=https://github.com/J-Siu/johnsiu.com.git \
+-e MY_GIT_DIR=/www/git/johnsiu.com \
+-e MY_PUB_DIR=/www/site/johnsiu.com \
+-e MY_THM_URL=https://github.com/J-Siu/hugo-theme-sk3.git \
+jsiu/hugo --theme theme --themesDir /
+```
+
+```sh
+docker run --rm --name hugo \
+-v CADDY_WWW:/www \
+-e P_TZ=America/New_York \
+-e MY_GIT_URL=https://github.com/J-Siu/johnsiu.com.git \
+-e MY_GIT_DIR=/www/git/johnsiu.com \
+-e MY_PUB_DIR=/www/site/johnsiu.com \
+-e MY_THM_DIR=/www/themes/sk3 \
+-e MY_THM_URL=https://github.com/J-Siu/hugo-theme-sk3.git \
+jsiu/hugo --theme sk3 --themesDir /www/themes
 ```
 
 #### Compose
@@ -135,6 +164,15 @@ docker run --rm jsiu/hugo cat /README.md > README.md
   - Add README.md example.
   - Add `${MY_GIT_DIR}`, `${MY_GIT_PUB}`.
   - Fix cd into repository bug.
+- 0.72.0-r0
+  - Adopt Hugo version
+  - Hugo 0.72.0-r0
+- 0.72.0-r0-p1
+  - Removed
+    - ${MY_HUG_PUB}
+  - Added
+    - ${MY_THM_DIR}
+    - ${MY_THM_DIR}
 
 The MIT License
 
