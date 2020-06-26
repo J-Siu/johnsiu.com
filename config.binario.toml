@@ -7,7 +7,7 @@ paginate = "24"
 paginatepath = "blog"
 enableGitInfo = true
 pluralizeListTitles=false
-relativeURLs=true
+#relativeURLs=true
 
 googleAnalytics = "UA-36805525-1" # optional
 disqusShortname = "https-johnsiu-com"
