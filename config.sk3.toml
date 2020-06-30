@@ -1,0 +1,129 @@
+baseURL = "https://johnsiu.com"
+theme   = "sk3"
+title   = "John Siu Blog"
+
+DefaultContentLanguage = "en"
+enableGitInfo          = true
+enableInlineShortcodes = true
+languageCode           = "en"
+paginate               = 24
+#relativeURLs           = true
+
+disqusShortname = "https-johnsiu-com"
+googleAnalytics = "UA-36805525-1"
+
+[Author] # Used in authorbox
+  name = "John Siu"
+  bio = "Minimize the Effort, Maximize the Effect!"
+
+[menu]
+	[[menu.main]]
+	name = "Cheat Sheet"
+	url  = "/tags/cheatsheet/"
+	[[menu.main]]
+	name = "Tags"
+	url  = "/tags"
+	[[menu.main]]
+	name = "Links"
+	url  = "/page/links/"
+	[[menu.main]]
+	name = "About"
+	url  = "/page/about/"
+	[[menu.main]]
+	name = "Lib"
+	url  = "/tags/lib/"
+	[[menu.main]]
+	name = "Search"
+	url  = "/page/search/"
+
+[markup]
+
+	[markup.tableOfContents]
+	endLevel   = 6
+	startLevel = 3
+	[markup.goldmark]
+		[markup.goldmark.extensions]
+		definitionList = true
+		footnote       = true
+		linkify        = true
+		strikethrough  = true
+		table          = true
+		taskList       = true
+		typographer    = true
+		[markup.goldmark.parser]
+		attribute     = true
+		autoHeadingID = true
+		[markup.goldmark.renderer]
+		hardWraps = false
+		unsafe    = true
+		xHTML     = false
+[markup.highlight]
+codeFences         = true
+hl_Lines           = ""
+lineNoStart        = 1
+lineNos            = true
+lineNumbersInTable = true
+noClasses          = true
+#style = "monokai"
+tabWidth = 4
+
+[outputFormats]
+	[outputFormats.MANIFEST]
+	baseName       = "manifest"
+	isPlainText    = true
+	mediaType      = "application/json"
+	notAlternative = true
+
+[outputs]
+home = ["HTML", "RSS", "MANIFEST"]
+
+[Params]
+maintype  = "blog"
+pagewidth = "1024px"
+startdate = "2012-12-02"
+subtitle  = ": Tech - Business Tool, Personal Toys"
+toc       = true
+
+homepage = false
+# AdSense
+adsense_id = "ca-pub-8176479711832264"
+
+opengraph   = false
+twitercards = false
+# Fill in following if using opengraph / twitter card
+description = "A Hugo Theme"
+title       = "SK3"
+
+	[Params.sociallink]
+	facebook       = "john.siu.714"
+	flickr         = "johnsiu-com"
+	instagram      = "john.sd.siu"
+	linkedin       = "john-sing-dao-siu"
+	pinterest      = "johnsdsiu"
+	reddit         = "js1943"
+	tumblr         = "jsds"
+	twitter        = "JohnSiuCom"
+	vimeo          = "user88929197"
+	youtubechannel = "UC5LvdqfL2PubOp904UnUJAg"
+	youtubeuser    = "JohnSDSiu"
+
+	[Params.socialshare]
+	facebook  = true
+	instagram = true
+	linkedin  = true
+	pinterest = true
+	reddit    = true
+	telegram  = true
+	twitter   = true
+	vk        = true
+
+	[Params.card]
+	date    = true
+	summary = true
+	#width   = "100%"
+
+	[Params.color]
+	bg     = "#181a1b"
+	border = "white"
+	link   = "#3d84ff"
+	text   = "white"
