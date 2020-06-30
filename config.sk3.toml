@@ -81,7 +81,7 @@ home = ["HTML", "RSS", "MANIFEST"]
 maintype  = "blog"
 pagewidth = "1024px"
 startdate = "2012-12-02"
-subtitle  = ": Tech - Business Tool, Personal Toys"
+subtitle  = "Tech - Business Tool, Personal Toys"
 toc       = true
 
 homepage = false
