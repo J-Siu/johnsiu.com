@@ -13,8 +13,8 @@ disqusShortname = "https-johnsiu-com"
 googleAnalytics = "UA-36805525-1"
 
 [Params]
-maintype  = "blog"
-pagewidth = "1200px"
+maintype = "blog"
+#pagewidth = "1200px"
 startdate = "2012-12-02"
 subtitle  = "Tech - Business Tool, Personal Toys"
 
@@ -25,17 +25,17 @@ title       = "John Siu Blog"
 twitercards = true
 
 	[Params.sociallink]
-	facebook       = "john.siu.714"
-	flickr         = "johnsiu-com"
-	instagram      = "john.sd.siu"
-	linkedin       = "john-sing-dao-siu"
-	pinterest      = "johnsdsiu"
-	reddit         = "js1943"
-	tumblr         = "jsds"
-	twitter        = "JohnSiuCom"
-	vimeo          = "user88929197"
-	youtubechannel = "UC5LvdqfL2PubOp904UnUJAg"
-	youtubeuser    = "JohnSDSiu"
+	#instagram      = "john.sd.siu"
+	#pinterest      = "johnsdsiu"
+	#tumblr         = "jsds"
+	#vimeo          = "user88929197"
+	#youtubechannel = "UC5LvdqfL2PubOp904UnUJAg"
+	#youtubeuser    = "JohnSDSiu"
+	facebook = "john.siu.714"
+	flickr   = "johnsiu-com"
+	linkedin = "john-sing-dao-siu"
+	reddit   = "js1943"
+	twitter  = "JohnSiuCom"
 
 	[Params.socialshare]
 	facebook  = true
