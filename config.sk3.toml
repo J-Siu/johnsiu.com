@@ -12,87 +12,17 @@ paginate               = 24
 disqusShortname = "https-johnsiu-com"
 googleAnalytics = "UA-36805525-1"
 
-[Author] # Used in authorbox
-  name = "John Siu"
-  bio = "Minimize the Effort, Maximize the Effect!"
-
-[menu]
-	[[menu.main]]
-	name = "Cheat Sheet"
-	url  = "/tags/cheatsheet/"
-	[[menu.main]]
-	name = "Tags"
-	url  = "/tags"
-	[[menu.main]]
-	name = "Links"
-	url  = "/page/links/"
-	[[menu.main]]
-	name = "About"
-	url  = "/page/about/"
-	[[menu.main]]
-	name = "Lib"
-	url  = "/tags/lib/"
-	[[menu.main]]
-	name = "Search"
-	url  = "/page/search/"
-
-[markup]
-
-	[markup.tableOfContents]
-	endLevel   = 6
-	startLevel = 3
-	[markup.goldmark]
-		[markup.goldmark.extensions]
-		definitionList = true
-		footnote       = true
-		linkify        = true
-		strikethrough  = true
-		table          = true
-		taskList       = true
-		typographer    = true
-		[markup.goldmark.parser]
-		attribute     = true
-		autoHeadingID = true
-		[markup.goldmark.renderer]
-		hardWraps = false
-		unsafe    = true
-		xHTML     = false
-[markup.highlight]
-codeFences         = true
-hl_Lines           = ""
-lineNoStart        = 1
-lineNos            = true
-lineNumbersInTable = true
-noClasses          = true
-#style = "monokai"
-tabWidth = 4
-
-[outputFormats]
-	[outputFormats.MANIFEST]
-	baseName       = "manifest"
-	isPlainText    = true
-	mediaType      = "application/json"
-	notAlternative = true
-
-[outputs]
-home = ["HTML", "RSS", "MANIFEST"]
-
 [Params]
 maintype  = "blog"
-pagewidth = "1024px"
+pagewidth = "1200px"
 startdate = "2012-12-02"
 subtitle  = "Tech - Business Tool, Personal Toys"
-toc       = true
 
-homepage = false
-# AdSense
-adsense_id = "ca-pub-8176479711832264"
-
-opengraph   = false
-twitercards = false
-# Fill in following if using opengraph / twitter card
-description = "A Hugo Theme"
-title       = "SK3"
+adsense_id  = "ca-pub-8176479711832264"
+description = "John Siu technology blog."
+opengraph   = true
+title       = "John Siu Blog"
+twitercards = true
 
 	[Params.sociallink]
 	facebook       = "john.siu.714"
@@ -127,3 +57,42 @@ title       = "SK3"
 	border = "white"
 	link   = "#3d84ff"
 	text   = "white"
+
+[menu]
+	[[menu.main]]
+	name = "Cheat Sheet"
+	url  = "/tags/cheatsheet/"
+	[[menu.main]]
+	name = "Tags"
+	url  = "/tags"
+	[[menu.main]]
+	name = "Links"
+	url  = "/page/links/"
+	[[menu.main]]
+	name = "About"
+	url  = "/page/about/"
+	[[menu.main]]
+	name = "Lib"
+	url  = "/tags/lib/"
+	[[menu.main]]
+	name = "Search"
+	url  = "/page/search/"
+
+[markup]
+	[markup.tableOfContents]
+	endLevel   = 6
+	startLevel = 3
+
+[outputFormats]
+	[outputFormats.MANIFEST]
+	baseName       = "manifest"
+	isPlainText    = true
+	mediaType      = "application/json"
+	notAlternative = true
+
+[outputs]
+home = ["HTML", "RSS", "MANIFEST"]
+
+[Author] # Used in authorbox
+bio  = "Minimize the Effort, Maximize the Effect!"
+name = "John Siu"
