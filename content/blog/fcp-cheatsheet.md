@@ -10,6 +10,6 @@ draft: false
 <!--more-->
 
 Key|Tool / Action|Comment
--|-|-
+--|--|--
 <kbd>b</kbd>|Blade / cut|Cut a clip into sections
 <kbd>Shift</kbd>+<kbd>b</kbd>|Soft Blade / cut|
