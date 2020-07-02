@@ -13,7 +13,8 @@ disqusShortname = "https-johnsiu-com"
 googleAnalytics = "UA-36805525-1"
 
 [Params]
-maintype = "blog"
+maintype    = "blog"
+pageinfobox = true
 #pagewidth = "1200px"
 startdate = "2012-12-02"
 subtitle  = "Tech - Business Tool, Personal Toys"
@@ -105,7 +106,7 @@ defaultMarkdownHandler = "goldmark"
 	lineNos            = true
 	lineNumbersInTable = true
 	noClasses          = true
-	style              = "monokai"
+	style              = "fruity"
 	tabWidth           = 4
 
 	[markup.tableOfContents]
@@ -140,7 +141,3 @@ defaultMarkdownHandler = "goldmark"
 
 [outputs]
 home = ["HTML", "RSS", "MANIFEST"]
-
-[Author] # Used in authorbox
-bio  = "Minimize the Effort, Maximize the Effect!"
-name = "John Siu"
