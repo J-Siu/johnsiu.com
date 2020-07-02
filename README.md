@@ -4,4 +4,4 @@
 |---|---|
 URL|https://johnsiu.com/
 Platform|[Hugo](https://gohugo.io/)
-Theme|[Binario with AdSense](https://github.com/J-Siu/Binario)
+Theme|[SK3](https://github.com/J-Siu/hugo-theme-sk3)
