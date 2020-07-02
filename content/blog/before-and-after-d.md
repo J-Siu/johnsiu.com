@@ -16,13 +16,13 @@ Found this photo in my photo stream. It was taken more than a year ago behind my
 
 ***July 2015 ...***
 
-![Before](https://raw.githubusercontent.com/J-Siu/johnsiu.com/master/static/img/before-and-after-01.jpg)
+{{<figure src="https://raw.githubusercontent.com/J-Siu/johnsiu.com/master/static/img/before-and-after-01.jpg">}}
 
 ### After
 
 ***Now!!***
 
-![After](https://raw.githubusercontent.com/J-Siu/johnsiu.com/master/static/img/before-and-after-02.jpg)
+{{<figure src="https://raw.githubusercontent.com/J-Siu/johnsiu.com/master/static/img/before-and-after-02.jpg">}}
 
 ### How was it done?
 
