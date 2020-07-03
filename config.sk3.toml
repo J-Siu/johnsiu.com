@@ -32,11 +32,14 @@ twitercards = true
 	#vimeo          = "user88929197"
 	#youtubechannel = "UC5LvdqfL2PubOp904UnUJAg"
 	#youtubeuser    = "JohnSDSiu"
-	facebook = "john.siu.714"
-	flickr   = "johnsiu-com"
-	linkedin = "john-sing-dao-siu"
-	reddit   = "js1943"
-	twitter  = "JohnSiuCom"
+	facebook       = "john.siu.714"
+	flickr         = "johnsiu-com"
+	github         = "J-Siu"
+	linkedin       = "john-sing-dao-siu"
+	reddit         = "js1943"
+	stack-exchange = "1882213"
+	stack-overflow = "1810391"
+	twitter        = "JohnSiuCom"
 
 	[Params.socialshare]
 	facebook  = true
