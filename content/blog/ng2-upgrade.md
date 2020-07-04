@@ -4,7 +4,7 @@ date: 2020-04-05T22:06:31-04:00
 author: "John Siu"
 title: "Angular 8 to 9 Package Upgrade"
 description: "Angular 8 to 9 upgrade for packages."
-tags: ["angular","library"]
+tags: ["angular","lib"]
 draft: false
 ---
 In season of corvid-19, maybe it is time for some upgrade.
