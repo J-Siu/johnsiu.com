@@ -66,12 +66,6 @@ fail2ban-client status # show jail list
 fail2ban-client -vvv set <jail from list> banip <ip>
 ```
 
-### zsh range for loop
-
-```sh
-for i in {1..10};do .....
-```
-
 ### Disable journal on ext4
 
 ```sh
@@ -180,4 +174,20 @@ uchardet <file.txt>
 ```sh
 iconv iconv -f <file charset> -t <output charset> <file.txt>
 iconv iconv -f jis -t utf8 readme.txt
+```
+
+### SSH ProxyJump
+
+`ProxyCommand`
+
+```conf
+host test
+ProxyCommand ssh -W %h:%p jumpserver
+```
+
+`ProxyJump`
+
+```conf
+host test
+ProxyJump jumpserver
 ```
