@@ -14,12 +14,6 @@ Misc. Linux commands.
 
 ---
 
-### Current directory
-
-```sh
-echo ${PWD##*/}
-```
-
 ### Find x-days before and action
 
 > In actuality, it should be (x-1).
@@ -76,18 +70,6 @@ fail2ban-client -vvv set <jail from list> banip <ip>
 
 ```sh
 for i in {1..10};do .....
-```
-
-### bash string comparison
-
-```sh
-if [ "$str" = "string" ]; then ...
-```
-
-### bash/zsh numeric comparison
-
-```sh
-if [[ ${A} = 3 ]]; then echo yes; fi
 ```
 
 ### Disable journal on ext4
@@ -185,22 +167,6 @@ net.ipv4.tcp_congestion_control=bbr
 ```sh
 ssh-keygen -R <hostname/ip>
 ssh-keygen -f "~/.ssh/known_hosts" -R <hostname/ip>
-```
-
-### Echo Multiple Lines (Bash)
-
-```sh
-STR="Line 1
-Line2"
-
-# This will output all in one line
-echo $STR
-Line 1 Line 2
-
-# Use ""
-echo "$STR"
-Line 1
-Line 2
 ```
 
 ### Detect Text File Charset/Encoding
