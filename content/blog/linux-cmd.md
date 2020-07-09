@@ -122,7 +122,7 @@ resize2fs /dev/sda1
 
 ### Avahi/MDNS
 
-### Show All Entries
+#### Show All Entries
 
 ```sh
 avahi-browse -a
@@ -156,13 +156,6 @@ net.core.default_qdisc=fq
 net.ipv4.tcp_congestion_control=bbr
 ```
 
-### SSH remove from known hosts
-
-```sh
-ssh-keygen -R <hostname/ip>
-ssh-keygen -f "~/.ssh/known_hosts" -R <hostname/ip>
-```
-
 ### Detect Text File Charset/Encoding
 
 ```sh
@@ -176,7 +169,14 @@ iconv iconv -f <file charset> -t <output charset> <file.txt>
 iconv iconv -f jis -t utf8 readme.txt
 ```
 
-### SSH ProxyJump
+### SSH
+
+#### Remove Known Hosts
+
+```sh
+ssh-keygen -R <hostname/ip>
+ssh-keygen -f "~/.ssh/known_hosts" -R <hostname/ip>
+```
 
 #### ProxyCommand
 
