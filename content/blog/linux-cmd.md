@@ -52,7 +52,7 @@ usermod -U <user> # Unlock
 pam_tally2 -r -u <user> # Reset fail login count
 ```
 
-### iptable ban ip
+### IPTable Ban IP
 
 ```sh
 iptable -A INPUT -s <IP> -j DROP
@@ -81,14 +81,7 @@ echo 1 > /sys/class/graphics/fbcon/rotate_all
 echo 1 > /sys/class/graphics/fbcon/rotate
 ```
 
-### Show all mDNS/Bonjour entries
-
-```sh
-avahi-browse -a
-avahi-browse -a -d <domain> # specify domain other than .local
-```
-
-### Create sparse file
+### Create Sparse File
 
 `truncate -s <size> <filename>`
 
@@ -127,15 +120,22 @@ resize2fs <device>
 resize2fs /dev/sda1
 ```
 
-### avahi/mdns lookup
+### Avahi/MDNS
 
-> Get IPv4 mdns
+### Show All Entries
+
+```sh
+avahi-browse -a
+avahi-browse -a -d <domain> # specify domain other than .local
+```
+
+#### IPv4 Lookup
 
 ```sh
 avahi-resolve -n4 door.local
 ```
 
-> Get IPv6 mdns
+#### IPv6 Lookup
 
 ```sh
 avahi-resolve -n6 door.local
@@ -178,16 +178,32 @@ iconv iconv -f jis -t utf8 readme.txt
 
 ### SSH ProxyJump
 
-`ProxyCommand`
+#### ProxyCommand
 
 ```conf
 host test
 ProxyCommand ssh -W %h:%p jumpserver
 ```
 
-`ProxyJump`
+#### ProxyJump
 
 ```conf
 host test
 ProxyJump jumpserver
+```
+
+### Journalctl
+
+#### List Field
+
+```sh
+journalctl -N
+```
+
+#### List Identifier
+
+Identifier value can be used in `-t`.
+
+```sh
+journalctl -F SYSLOG_IDENTIFIE
 ```
