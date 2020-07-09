@@ -52,14 +52,16 @@ usermod -U <user> # Unlock
 pam_tally2 -r -u <user> # Reset fail login count
 ```
 
-### IPTable Ban IP
+### Ban IP
+
+#### IPTable
 
 ```sh
 iptable -A INPUT -s <IP> -j DROP
 ip6table -A INPUT -s <IP> -j DROP
 ```
 
-### Fail2ban ban ip manually
+#### Fail2ban
 
 ```sh
 fail2ban-client status # show jail list
