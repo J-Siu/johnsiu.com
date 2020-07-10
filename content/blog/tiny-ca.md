@@ -4,7 +4,7 @@ date: 2019-07-29
 author: "John Siu"
 title: "Tiny CA - OpenSSL-CA"
 description: "Create Root CA with openssl."
-tags: ["tiny","openssl","certificate"."lib"]
+tags: ["tiny","openssl","certificate","lib"]
 draft: false
 aliases:
   - /lib/tiny-ca
