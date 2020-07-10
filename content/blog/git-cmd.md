@@ -18,13 +18,15 @@ git push -u origin master
 git push -u <name> master
 ```
 
-### Remote Show
+### Remote
+
+#### Show
 
 ```sh
 git remote -v
 ```
 
-### Remote Remove
+#### Remove
 
 ```sh
 git remote remove origin
@@ -54,6 +56,8 @@ git commit <file/dir> # Commit files directly even not staged.
 
 ### Tag
 
+#### Add
+
 ```sh
 git tag # List tags
 git tag <version> # Light weight tag
@@ -62,26 +66,28 @@ git tag -a <version> -m '<comment>'
 git show <version> # Show tagged commit
 ```
 
-### Push tag
+#### Push
 
 ```sh
 git push --tags
 ```
 
-### Submodule Add
+### Submodule
+
+#### Add
 
 ```sh
 git submodule add https://github.com/J-Siu/binario themes/binario
 git submodule add <url> <path>
 ```
 
-### Submodule First Pull
+#### First Pull
 
 ```sh
 git submodule update --init --recursive
 ```
 
-### Submodule Update
+#### Update
 
 ```sh
 git submodule update --recursive --remote
@@ -119,14 +125,16 @@ git revert <ref#>
 git revert b68bc59
 ```
 
-### Config User
+### Config
+
+#### User
 
 ```sh
 git config --global user.name "<Full Name>"
 git config --global user.email "<email>"
 ```
 
-### Config List
+#### List
 
 ```sh
 git config -l
