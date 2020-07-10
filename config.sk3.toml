@@ -13,17 +13,17 @@ disqusShortname = "https-johnsiu-com"
 googleAnalytics = "UA-36805525-1"
 
 [Params]
+adsense_id   = "ca-pub-8176479711832264"
+description  = "John Siu technology blog."
 mainSections = "blog"
+opengraph    = true
 pageinfobox  = true
 #pagewidth    = "1200px"
 startdate    = "2012-12-02"
 subtitle     = "Tech - Business Tool, Personal Toys"
-
-adsense_id  = "ca-pub-8176479711832264"
-description = "John Siu technology blog."
-opengraph   = true
-title       = "John Siu Blog"
-twitercards = true
+svg_ext      = true
+title        = "John Siu Blog"
+twitercards  = true
 
 	[Params.sociallink]
 	#instagram      = "john.sd.siu"
