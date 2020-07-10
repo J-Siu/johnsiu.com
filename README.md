@@ -1,4 +1,6 @@
-# [JS Blog: Tech - Business Tool, Personal Toys]
+# [John Siu Blog](https://johnsiu.com/)
+
+### Tech - Business Tool, Personal Toys
 
 |||
 |---|---|
