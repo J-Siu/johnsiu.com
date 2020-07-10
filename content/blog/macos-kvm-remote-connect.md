@@ -4,7 +4,7 @@ date: 2019-08-26T23:51:14-04:00
 author: "John Siu"
 title: "MacOS Connect to KVM Client Desktop"
 description: "MacOS connect to KVM client with remote-viewer and virt-manager."
-tags: ["macos","osx","kvm","virt-manager","virt-viewer","remote-viewer",zsh]
+tags: ["macos","kvm","virt-manager","virt-viewer","remote-viewer","zsh"]
 draft: false
 ---
 Updated instruction for MacOS Mojave.
