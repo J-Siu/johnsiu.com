@@ -4,7 +4,7 @@ date: 2020-06-17T18:03:23-04:00
 author: "John Siu"
 title: "Docker Hugo"
 description: "Docker - Hugo site generator used in CI/CD."
-tags: ["docker","hugo"]
+tags: ["docker","hugo","lib"]
 draft: false
 ---
 

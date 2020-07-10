@@ -4,7 +4,7 @@ date: 2019-08-25T19:16:21-04:00
 author: "John Siu"
 title: "Docker MPD"
 description: "Docker MPD with UID/GID handling."
-tags: ["docker","mpd"]
+tags: ["docker","mpd","lib"]
 draft: false
 ---
 Docker MPD Lite with UID/GID + audio GID handling.
