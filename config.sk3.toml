@@ -119,12 +119,5 @@ defaultMarkdownHandler = "goldmark"
 		unsafe    = true
 		xhtml     = false
 
-[outputFormats]
-	[outputFormats.MANIFEST]
-	baseName       = "manifest"
-	isPlainText    = true
-	mediaType      = "application/json"
-	notAlternative = true
-
 [outputs]
-home = ["HTML", "RSS", "MANIFEST"]
+home = ["HTML", "RSS"]
