@@ -4,22 +4,22 @@ date: 2019-08-26T23:51:14-04:00
 author: "John Siu"
 title: "MacOS Connect to KVM Client Desktop"
 description: "MacOS connect to KVM client with remote-viewer and virt-manager."
-tags: ["macos","kvm","virt-manager","virt-viewer","remote-viewer","zsh"]
+tags: ["macos","kvm","virt-manager","virt-viewer","remote-viewer","zsh","how-to"]
 draft: false
 ---
 Updated instruction for MacOS Mojave.
 <!--more-->
 
-In [OS X direct connect to KVM client desktop](/blog/os-x-direct-connect-to-kvm-client-desktop/) I talked about XQuartz and virt-viewer. This will show you how to run __virt-manager__ and __virsh__.
+In [MacOS direct connect to KVM client desktop](/blog/macos-kvm-remove-viewer/) I talked about XQuartz and virt-viewer. This will show you how to run `virt-manager` and `virsh`.
 
-> **NOTE:** The user id \<user\> on KVM host used for ssh should be added to group __libvirt__ already. Check out [Alpine KVM](/blog/alpine-kvm/) for preparing KVM for remote management. \<user\>'s ssh key should also be setup.
+> **NOTE:** The user id \<user\> on KVM host used for ssh should be added to group `libvirt` already. Check out [Alpine KVM](/blog/alpine-kvm/) for preparing KVM for remote management. \<user\>'s ssh key should also be setup.
 
 ### Install Homebrew
 
 Homebrew allow Linux package to be installed and ran on MacOS/X system. Follow instruction on [Homebrew](http://brew.sh):
 
 ```sh
-/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 ```
 
 ### Install virt-manager and virt-viewer
@@ -43,7 +43,7 @@ virsh -c 'qemu+ssh://user@hostname/system' list
 virsh -c 'qemu+ssh://user@hostname/system' net-list --all
 ```
 
-On Mac, however, we have to append __?socket=/var/run/libvirt/libvirt-sock__ to the connection string. __/var/run/libvirt/libvirt-sock__ is where the file __libvirt-sock__ located on your KVM host. Though unlikely, you may have to modify it according to your environment.
+On Mac, however, we have to append `?socket=/var/run/libvirt/libvirt-sock` to the connection string. `/var/run/libvirt/libvirt-sock` is where the file `libvirt-sock` located on your KVM host. Though unlikely, you may have to modify it according to your environment.
 
 ```sh
 virt-manager -c 'qemu+ssh://user@hostname/system?socket=/var/run/libvirt/libvirt-sock'
@@ -57,7 +57,7 @@ virsh -c 'qemu+ssh://user@hostname/system?socket=/var/run/libvirt/libvirt-sock' 
 
 #### Using virt-viewer
 
-__virt-viewer__ is a command line tool to open remote KVM client desktop. It use the same syntax as __virsh__ and __virt-manager__.
+`virt-viewer` is a command line tool to open remote KVM client desktop. It use the same syntax as `virsh` and `virt-manager`.
 
 ```sh
 virt-viewer -c 'qemu+ssh://user@hostname/system?socket=/var/run/libvirt/libvirt-sock' <vm-name>
@@ -65,7 +65,7 @@ virt-viewer -c 'qemu+ssh://user@hostname/system?socket=/var/run/libvirt/libvirt-
 
 #### Using remote-viewer
 
-__remote-viewer__ is a small GUI interface allow you to connect to remote KVM desktop without using virt-manager. It connect to spice port directly.
+`remote-viewer` is a small GUI interface allow you to connect to remote KVM desktop without using virt-manager. It connect to spice port directly.
 
 ```sh
 spice://<ip/hostname>:<port>
@@ -73,7 +73,7 @@ spice://localhost:5900
 spice://192.168.0.10:5901
 ```
 
-> **Note** If you are not using ssh tunnel for spice port, then you have to configure the client __Display Spice__ to listen on __All Interfaces__.
+> **Note** If you are not using ssh tunnel for spice port, then you have to configure the client `Display Spice` to listen on `All Interfaces`.
 
 ![remote-viewer](https://raw.githubusercontent.com/J-Siu/johnsiu.com/master/static/img/remote-viewer.png)
 

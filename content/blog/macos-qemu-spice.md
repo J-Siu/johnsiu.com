@@ -4,7 +4,7 @@ date: 2020-07-10T19:43:28-04:00
 author: "John Siu"
 title: "MacOS Qemu & Spice"
 description: "Running qemu with spice on MacOS using brew formula"
-tags: ["macos","brew","qemu","spice","how-to"]
+tags: ["macos","brew","qemu","spice","kvm","how-to"]
 draft: false
 ---
 Spice is again compilable on MacOS ...
@@ -236,7 +236,7 @@ qemu-system-x86_64 \
 -spice port=5900,addr=127.0.0.1,disable-ticketing,image-compression=off,seamless-migration=on
 ```
 
-Connect to it with [remote-viewer](/blog/os-x-direct-connect-to-kvm-client-desktop/):
+Connect to it with [remote-viewer](/blog/macos-kvm-remote-viewer/):
 
 ```sh
 remote-viewer spice://127.0.0.1:5900

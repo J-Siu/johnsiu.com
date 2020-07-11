@@ -18,7 +18,7 @@ There are multiple ways to install docker on Mac. We will use [Homebrew for Mac]
 Follow instruction on brew website:
 
 ```sh
-/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 ```
 
 ### Install Docker
@@ -89,7 +89,7 @@ More details can be found in Docker Doc[^1].
 Pull my unbound example from github:
 
 ```sh
-git clone https://github.com/J-Siu/unbound-dot.git
+git clone https://github.com/J-Siu/docker-unbound.git
 ```
 
 `unbound`[^2] is a lightweight dns server supporting dns-over-tls(DoT). This example use `alpine linux` as base and install unbound using package manager to install unbound within the container.
@@ -97,7 +97,7 @@ git clone https://github.com/J-Siu/unbound-dot.git
 Building the example:
 
 ```sh
-cd unbound-dot
+cd docker-unbound
 docker build -t unbound-dot .
 ```
 
@@ -139,7 +139,7 @@ Removing intermediate container b831324d182a
 Successfully built aa13f9e6d595
 ```
 
-> You can inspect the `Dockerfile` to see how it is done. More details of Docketfile can be found at DockerFile reference[^3].
+> You can inspect the `Dockerfile` to see how it is done. More details of Dockerfile can be found at DockerFile reference[^3].
 
 List docker images:
 
@@ -151,7 +151,7 @@ Output:
 
 ```sh
 REPOSITORY          TAG                 IMAGE ID            CREATED             SIZE
-unbound-dot         latest              aa13f9e6d595        8 minutes ago       13.1MB
+unbound             latest              aa13f9e6d595        8 minutes ago       13.1MB
 alpine              latest              b7b28af77ffe        4 weeks ago         5.58MB
 hello-world         latest              fce289e99eb9        7 months ago        1.84kB
 ```
@@ -162,7 +162,7 @@ Running unbound-dot:
 docker run -d \
   -p 53:53/udp \
   -p 53:53/tcp \
-  unbound-dot
+  unbound
 ```
 
 Show running container:
@@ -175,7 +175,7 @@ Output:
 
 ```sh
 CONTAINER ID        IMAGE               COMMAND             CREATED             STATUS              PORTS                                    NAMES
-260ee2c31f37        unbound-dot         "unbound -d"        33 seconds ago      Up 31 seconds       0.0.0.0:53->53/tcp, 0.0.0.0:53->53/udp   brave_feistel
+260ee2c31f37        unbound             "unbound -d"        33 seconds ago      Up 31 seconds       0.0.0.0:53->53/tcp, 0.0.0.0:53->53/udp   brave_feistel
 ```
 
 Stop the container using container id:
@@ -188,6 +188,6 @@ docker container stop 260ee2c31f37
 
 [^1]: [Docker Getting Started](https://docs.docker.com/get-started/)
 
-[^2]: [unbund-dot](https://github.com/J-Siu/unbound-dot)
+[^2]: [docker-unbund](https://github.com/J-Siu/docker-unbound)
 
 [^3]: [Dockerfile Reference](https://docs.docker.com/engine/reference/builder/)
