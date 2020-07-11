@@ -45,6 +45,6 @@ Once it is started, you can even pin it to the dock. Problem solved!!!
 
 ![remote-viewer](https://raw.githubusercontent.com/J-Siu/johnsiu.com/master/static/img/remote-viewer.png)
 
-### MacOS Mojave
+### MacOS virt-manager
 
-Check out [MacOS Connect to KVM Client Desktop](/blog/macos-kvm-remote-connect/) for updated instructions for MacOS Mojave, which contain instructions for running virt-manager to remote manage KVM.
+Check out [MacOS Connect to KVM Client Desktop](/blog/macos-kvm-remote-connect/) for using `virt-manager` on MacOS to manage and connect remote KVM.
