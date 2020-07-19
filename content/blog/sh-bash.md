@@ -46,20 +46,38 @@ Line 2
 
 ### Cut Prefix
 
-```sh
-a=/b/c/d/e
+Cut shortest match:
 
-echo ${a##*/c}
-/d/e
+```sh
+$ a=b/c/d/e
+$ echo ${a#*/}
+c/d/e
+```
+
+Cut longest match:
+
+```sh
+$ a=b/c/d/e
+$ echo ${a##*/}
+e
 ```
 
 ### Cut Suffix
 
-```sh
-a=/b/c/d/e
+Cut shortest match:
 
-echo ${a%%/c*}
-/b
+```sh
+$ a=b/c/d/e
+$ echo ${a%/*}
+b/c/d
+```
+
+Cut longest match:
+
+```sh
+$ a=b/c/d/e
+$ echo ${a%%/*}
+b
 ```
 
 ### Search/Replace
