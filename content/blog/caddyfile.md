@@ -5,7 +5,6 @@ author: "John Siu"
 title: "Caddy 2 Caddyfile Usage"
 description: "Caddy 2 Caddyfile usage examples."
 tags: ["caddy","cheatsheet"]
-draft: false
 ---
 Some Caddy 2 Caddyfile examples.
 <!--more-->

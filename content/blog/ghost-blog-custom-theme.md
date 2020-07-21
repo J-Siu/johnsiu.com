@@ -4,10 +4,6 @@ date: 2017-03-13T04:16:54Z
 tags: ["ghost", "theme", "blog"]
 title: "Ghost Blog Custom Theme"
 description: "Ghost Blog Custom Theme with AdSense."
-aliases:
-    - /ghost-blog-custom-theme
-    - /index.php/ghost-blog-custom-theme
-    - /index.php/2017/03/13/ghost-blog-custom-theme
 ---
 
 Though I move my blog to __[Ghost](//ghost.org)__ in __[last month](/blog/ghost-blog-from-wordpress)__, I am not satisfy with the default  __[Casper](//github.com/TryGhost/Casper)__ theme come with Ghost.

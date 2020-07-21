@@ -5,7 +5,6 @@ author: "John Siu"
 title: "Tiny VPS Postfix with Docker"
 description: "Hosting my own email server with docker."
 tags: ["docker","postfix","sasl2"]
-draft: false
 ---
 A refresh of my tiny vps postfix setup.
 <!--more-->

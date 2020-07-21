@@ -5,7 +5,6 @@ author: "John Siu"
 title: "Jenkins Blog Automation"
 description: "Jenkins Blog Automation"
 tags: ["jenkins","hugo"]
-draft: false
 ---
 Automate site generation with Jenkins.
 <!--more-->

@@ -5,8 +5,6 @@ author: "John Siu"
 title: "Mac OS Commands"
 description: "Mac OS command cheat sheet."
 tags: ["macos","cheatsheet"]
-aliases:
-  - /cheatsheet/macos-commands
 ---
 Some Mac OS commands.
 <!--more-->

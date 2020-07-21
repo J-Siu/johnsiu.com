@@ -5,7 +5,6 @@ author: "John Siu"
 title: "Docker Postfix"
 description: "Docker Postfix"
 tags: ["docker","postfix","sasl2","lib"]
-draft: false
 ---
 Docker - Postfix with sasldb2 support
 <!--more-->

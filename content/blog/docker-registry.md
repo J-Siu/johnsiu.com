@@ -5,7 +5,6 @@ author: "John Siu"
 title: "Docker Private Registry - How To"
 description: "Setup private docker registry using official registry image."
 tags: ["docker","registry","how-to"]
-draft: false
 ---
 Setup private docker registry using official registry image.
 <!--more-->

@@ -5,7 +5,6 @@ author: "John Siu"
 title: "Docker Jenkins - How To"
 description: "Setup Jenkins using official docker image."
 tags: ["docker","jenkins","how-to"]
-draft: false
 ---
 Setup Jenkins using official docker image.
 <!--more-->

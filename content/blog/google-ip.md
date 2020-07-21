@@ -5,9 +5,6 @@ author: "John Siu"
 title: "Google IP Addresses"
 description: "Google IP Addresses"
 tags: ["google","cheatsheet"]
-draft: false
-aliases:
-  - /cheatsheet/google-ip
 ---
 All Google IP addresses.
 <!--more-->

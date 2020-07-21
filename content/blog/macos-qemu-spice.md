@@ -5,7 +5,6 @@ author: "John Siu"
 title: "MacOS Qemu & Spice"
 description: "Running qemu with spice on MacOS using brew formula"
 tags: ["macos","brew","qemu","spice","kvm","how-to"]
-draft: false
 ---
 Spice is again compilable on MacOS ...
 <!--more-->

@@ -5,7 +5,6 @@ author: "John Siu"
 title: "Final Cut Pro Cheatsheet"
 description: "Final Cut Pro Cheatsheet"
 tags: ["final cut pro","cheatsheet"]
-draft: false
 ---
 <!--more-->
 

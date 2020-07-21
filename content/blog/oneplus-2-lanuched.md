@@ -1,13 +1,10 @@
 ---
-type: "blog"
+author: "John Siu"
 date: 2015-07-28T12:07:09Z
+description: "OnePlus 2 Lanuched"
 tags: ["oneplus","phone"]
 title: "OnePlus 2 Lanuched"
-description: "OnePlus 2 Lanuched"
-aliases:
-    - /oneplus-2-lanuched
-    - /index.php/oneplus-2-lanuched
-    - /index.php/2015/07/28/oneplus-2-lanuched
+type: "blog"
 ---
 
 Oneplus officially launched their 2nd generation phone last night. Review is not out yet, but it look beautiful in their VR launch video and in the product site.

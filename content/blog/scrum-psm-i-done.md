@@ -1,14 +1,10 @@
 ---
-type: "blog"
-date: 2017-02-25T18:19:07Z
 author: "John Siu"
-title: "SCRUM (PSM-I) Done!!"
+date: 2017-02-25T18:19:07Z
 description: "Passed SCRUM (PSM-I) test."
 tags: ["scrum", "psm"]
-aliases:
-    - /scrum-psm-i-done
-    - /index.php/scrum-psm-i-done
-    - /index.php/2017/02/25/scrum-psm-i-done
+title: "SCRUM (PSM-I) Done!!"
+type: "blog"
 ---
 
 Want to do this for awhile, and finally get it done.

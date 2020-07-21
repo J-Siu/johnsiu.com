@@ -5,7 +5,6 @@ author: "John Siu"
 title: "MacOS Cannot Connect Samba"
 description: "MacOS Cannot Connect Samba workaround."
 tags: ["macos","samba"]
-draft: false
 ---
 It suddenly stop working ... and luckily I got it fix.
 <!--more-->

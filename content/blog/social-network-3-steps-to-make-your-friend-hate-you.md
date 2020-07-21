@@ -1,13 +1,10 @@
 ---
-type: "blog"
+author: "John Siu"
 date: 2017-04-10T08:37:52Z
+description: "Careful with what you do in social media ..."
 tags: ["social network"]
 title: "Social Network - 3 Steps to make your friend hate you"
-description: "Careful with what you do in social media ..."
-aliases:
-    - /social-network-3-steps-to-make-your-friend-hate-you
-    - /index.php/social-network-3-steps-to-make-your-friend-hate-you
-    - /index.php/2017/04/10/social-network-3-steps-to-make-your-friend-hate-you
+type: "blog"
 ---
 
 Careful ...

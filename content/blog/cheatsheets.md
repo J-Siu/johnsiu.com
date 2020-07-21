@@ -5,7 +5,6 @@ author: "John Siu"
 title: "Cheat Sheet Section"
 description: "Introduce the cheat sheet section."
 tags: ["cheatsheet"]
-draft: false
 ---
 Created a new cheat sheet section.
 <!--more-->

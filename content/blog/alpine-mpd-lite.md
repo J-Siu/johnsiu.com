@@ -5,7 +5,6 @@ author: "John Siu"
 title: "My Alpine MPD (Music Player Daemon) Lite"
 description: "Compiling my own MPD, a lite version"
 tags: ["alpine","mpd"]
-draft: false
 ---
 Didn't get my hand dirty for a long time.
 <!--more-->

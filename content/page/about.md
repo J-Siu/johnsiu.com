@@ -1,19 +1,11 @@
 ---
-type: "page"
 author: "John Siu"
-title: "About"
-description: "Something about John Siu"
-aliases:
-  - /about-me
-  - /author/john
-  - /author/johnsiu
-  - /page/about-me
-draft: false
-authorbox: true
 comments: false
-mathjax: false
+description: "Something about John Siu"
 related: false
+title: "About"
 toc: false
+type: "page"
 ---
 My interests.
 <!--more-->

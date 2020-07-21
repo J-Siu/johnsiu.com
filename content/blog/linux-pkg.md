@@ -5,9 +5,6 @@ author: "John Siu"
 title: "Linux Packages"
 description: "Linux packages I used."
 tags: ["alpine","cheatsheet"]
-draft: false
-aliases:
-  - /cheatsheet/linux-packages
 ---
 Linux packages I used.
 <!--more-->

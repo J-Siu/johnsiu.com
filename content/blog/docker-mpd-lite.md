@@ -5,7 +5,6 @@ author: "John Siu"
 title: "Docker MPD Lite"
 description: "Docker MPD with UID/GID handling."
 tags: ["docker","mpd","lib"]
-draft: false
 ---
 Base on [My Alpine MPD (Music Player Daemon) Lite](https://johnsiu.com/blog/alpine-mpd-lite/) with UID/GID + audio GID handling.
 <!--more-->

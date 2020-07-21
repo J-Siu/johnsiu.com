@@ -5,7 +5,6 @@ author: "John Siu"
 title: "CoreOS on Ubuntu KVM"
 description: "Deploy Fedora CoreOS on Ubuntu 20.04 KVM."
 tags: ["kvm","coreos","ubuntu"]
-draft: false
 ---
 Deploy Fedora CoreOS on Ubuntu 20.04 KVM host.
 <!--more-->

@@ -1,20 +1,10 @@
 ---
-type: blog
-date: 2019-08-15
 author: "John Siu"
-title: "Angular Simple API Client Service"
+date: 2019-08-15
 description: "simple-api-client-ng2 is an Angular api service, which work with simple-api-express, an ExpressJS api handler."
 tags: ["angular","service","expressjs","simple-api-express","simple-api-client-ng2","lib"]
-aliases:
-  - /blog/simple-api-client-for-angular
-  - /index.php/2016/10/10/simple-api-client-for-angular
-  - /index.php/2016/10/10/simple-api-client-for-angular-2
-  - /index.php/2016/10/11/simple-api-client-for-angular
-  - /index.php/simple-api-client-for-angular
-  - /index.php/simple-api-client-for-angular-2
-  - /lib/simple-api-client-ng2
-  - /simple-api-client-for-angular
-  - /simple-api-client-for-angular-2
+title: "Angular Simple API Client Service"
+type: blog
 ---
 
 [simple-api-client-ng2](https://github.com/J-Siu/ng2-simple-api-lib) is an Angular api service, which work with [simple-api-express](https://github.com/J-Siu/simple-api-express), an ExpressJS api handler.

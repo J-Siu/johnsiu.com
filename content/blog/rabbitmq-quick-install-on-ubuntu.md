@@ -1,13 +1,10 @@
 ---
-type: "blog"
+author: "John Siu"
 date: 2015-11-26T11:12:59Z
-title: "RabbitMQ Quick Install on Ubuntu"
-tags: ["ubuntu","rabbitmq","amqp","how-to"]
 description: "RabbitMQ Quick Install on Ubuntu."
-aliases:
-  - /rabbitmq-quick-install-on-ubuntu
-  - /index.php/rabbitmq-quick-install-on-ubuntu
-  - /index.php/2015/11/26/rabbitmq-quick-install-on-ubuntu
+tags: ["ubuntu","rabbitmq","amqp","how-to"]
+title: "RabbitMQ Quick Install on Ubuntu"
+type: "blog"
 ---
 Step by Step.
 <!--more-->

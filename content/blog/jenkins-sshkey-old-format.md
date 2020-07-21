@@ -5,7 +5,6 @@ author: "John Siu"
 title: "Jenkins - SSH Build Step Credential Issue"
 description: "Jenkins - SSH Build Step Credential Issue"
 tags: ["jenkins","ssh"]
-draft: false
 ---
 The old credential issue.
 <!--more-->

@@ -5,10 +5,6 @@ author: "John Siu"
 title: "My 20min of FireFall"
 description: "Playing Firefall for 20min on beta."
 tags: ["game","mmorpg"]
-aliases:
-    - /my-20min-of-firefall
-    - /index.php/my-20min-of-firefall
-    - /index.php/2012/12/08/my-20min-of-firefall
 ---
 
 I am never good at point and shoot game. But after seeing FireFall trailer and game play video on YouTube, I signed up for their beta test.

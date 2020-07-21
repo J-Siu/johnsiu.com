@@ -5,7 +5,6 @@ author: "John Siu"
 title: "Shell - Bash"
 description: "My bash cheat sheet"
 tags: ["bash","cheatsheet"]
-draft: false
 ---
 Bash cheat sheet.
 <!--more-->

@@ -5,7 +5,6 @@ author: "John Siu"
 title: "Hugo Front Matter Aliases for Migration"
 description: "Use Hugo front matter aliases to handle migration from other platform such as Ghost or WordPress."
 tags: ["hugo","blog","redirect","permalink","migrate","front matter"]
-draft: false
 ---
 Use Hugo front matter aliases to handle migration from other platform such as Ghost or WordPress.
 <!--more-->

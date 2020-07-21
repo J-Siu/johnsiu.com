@@ -5,7 +5,6 @@ author: "John Siu"
 title: "Use Github/Gogs Api To Create Repo"
 description: "Gogs implemented Github api. The only different is the URL."
 tags: ["github","gogs","api","zsh"]
-draft: false
 ---
 
 Gogs implemented Github api. The only different is the URL.

@@ -5,7 +5,6 @@ author: "John Siu"
 title: "Alpine iSCSI Target"
 description: "Sharing a file base iSCSI disk from Alpine."
 tags: ["alpine","iscsi","how-to"]
-draft: false
 ---
 
 Sharing a file base iSCSI disk from Alpine.

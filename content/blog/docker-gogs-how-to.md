@@ -5,7 +5,6 @@ author: "John Siu"
 title: "Docker Gogs - How To"
 description: "Setup Gogs using official docker image."
 tags: ["docker","gogs","how-to"]
-draft: false
 ---
 Setup Gogs using official docker image.
 <!--more-->

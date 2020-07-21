@@ -5,14 +5,6 @@ author: "John Siu"
 title: 'Angular Simple Global Variable Service'
 description: "ng2-simple-global is a global variable service for Angular."
 tags: ["angular","service","ng2-simple-global","lib"]
-aliases:
-  - /a-simple-global-variable-service-for-angular-2
-  - /blog/a-simple-global-variable-service-for-angular-2
-  - /blog/angular-simple-global-variable-service
-  - /index.php/2016/10/10/a-simple-global-variable-service-for-angular-2
-  - /index.php/2016/10/11/a-simple-global-variable-service-for-angular-2
-  - /index.php/a-simple-global-variable-service-for-angular-2
-  - /lib/ng2-simple-global
 ---
 
 __ng2-simple-global__ is a global variable service for Angular.

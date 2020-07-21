@@ -5,9 +5,6 @@ author: "John Siu"
 title: "Git Commands"
 description: "Git commands cheat sheet"
 tags: ["git","cheatsheet"]
-aliases:
-  - /cheatsheet/git-commands
-draft: false
 ---
 Some git commands.
 <!--more-->

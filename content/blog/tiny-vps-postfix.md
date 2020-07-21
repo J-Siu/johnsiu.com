@@ -1,13 +1,10 @@
 ---
-type: "blog"
+author: "John Siu"
 date: 2012-12-07T04:29:48Z
+description: "Hosting my own email server."
 tags: ["tiny","ubuntu","postfix","vps"]
 title: "Tiny VPS Postfix"
-description: "Hosting my own email server."
-aliases:
-  - /tiny-vps-postfix
-  - /index.php/tiny-vps-postfix
-  - /index.php/2012/12/06/tiny-vps-postfix
+type: "blog"
 ---
 
 Finally running my own website, hosting my own blog, having my own server to do whatever I want with it.

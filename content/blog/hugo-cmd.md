@@ -5,9 +5,6 @@ author: "John Siu"
 title: "Hugo Commands and Config"
 description: "Hugo command and config cheat sheet."
 tags: ["hugo","cheatsheet"]
-draft: false
-aliases:
-  - /cheatsheet/hugo-commands
 ---
 Some Hugo commands and config.
 <!--more-->

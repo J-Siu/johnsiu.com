@@ -5,7 +5,6 @@ author: "John Siu"
 title: "Hugo Blog"
 description: "Hugo Blog zsh workflow"
 tags: ["hugo","blog","zsh"]
-draft: false
 ---
 
 Finally get my Hugo Blog workflow iron out.

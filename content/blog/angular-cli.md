@@ -5,8 +5,6 @@ author: "John Siu"
 title: "Angular Cheat Sheet"
 description: "Angular cli cheat sheet."
 tags: ["angular","cli","cheatsheet"]
-aliases:
-  - /cheatsheet/angular-cheatsheet
 ---
 Some Angular CLI usage.
 <!--more-->

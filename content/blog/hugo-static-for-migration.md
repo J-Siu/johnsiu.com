@@ -5,7 +5,6 @@ author: "John Siu"
 title: "Hugo Static for Migration"
 description: "Use Hugo static section to handle migration from other platform such as Ghost or WordPress."
 tags: ["hugo","blog","redirect","permalink","migrate"]
-draft: false
 ---
 Use Hugo __static__ section to handle migration from other platform such as Ghost or WordPress.
 <!--more-->

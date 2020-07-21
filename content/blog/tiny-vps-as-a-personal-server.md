@@ -1,14 +1,10 @@
 ---
-type: "blog"
-date: 2012-12-02T06:59:25Z
 author: "John Siu"
-title: "Tiny VPS as a personal server"
+date: 2012-12-02T06:59:25Z
 description: "Tiny VPS as a personal server."
 tags: ["tiny","lighttpd", "ubuntu", "mysql", "vps"]
-aliases:
-  - /tiny-vps-as-a-personal-server
-  - /index.php/tiny-vps-as-a-personal-server
-  - /index.php/2012/12/02/tiny-vps-as-a-personal-server
+title: "Tiny VPS as a personal server"
+type: "blog"
 ---
 
 [VPS (Virtual Private Server)](http://en.wikipedia.org/wiki/Virtual_private_server) is getting more and more affordable today, even for personal use.

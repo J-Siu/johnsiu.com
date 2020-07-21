@@ -5,9 +5,6 @@ author: "John Siu"
 title: "Docker Commands"
 description: "Docker misc."
 tags: ["docker","cheatsheet"]
-draft: false
-aliases:
-  - /cheatsheet/docker-commands
 ---
 Docker misc.
 <!--more-->

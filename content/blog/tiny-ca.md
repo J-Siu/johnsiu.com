@@ -1,13 +1,10 @@
 ---
-type: blog
-date: 2019-07-29
 author: "John Siu"
-title: "Tiny CA - OpenSSL-CA"
+date: 2019-07-29
 description: "Create Root CA with openssl."
 tags: ["tiny","openssl","certificate","lib"]
-draft: false
-aliases:
-  - /lib/tiny-ca
+title: "Tiny CA - OpenSSL-CA"
+type: blog
 ---
 Bite the bullet and create a Root CA for local network.
 <!--more-->

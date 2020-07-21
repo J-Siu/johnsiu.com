@@ -1,15 +1,10 @@
 ---
-type: "blog"
-date: 2016-10-13T22:55:00Z
 author: "John Siu"
-title: "Tiny VPS Git Server"
+date: 2016-10-13T22:55:00Z
 description: "GitLab vs Gogs git server in a VPS."
 tags: ["tiny","vps","gogs","git"]
-aliases:
-  - /personal-git-server-in-a-vps
-  - /blog/personal-git-server-in-a-vps
-  - /index.php/personal-git-server-in-a-vps
-  - /index.php/2016/10/13/personal-git-server-in-a-vps
+title: "Tiny VPS Git Server"
+type: "blog"
 ---
 
 __GitLab CE__ and __Gogs__ in VPS.

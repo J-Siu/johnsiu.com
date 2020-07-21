@@ -5,9 +5,6 @@ author: "John Siu"
 title: "Linux Commands"
 description: "Linux command cheat sheet."
 tags: ["linux","cli","cheatsheet"]
-draft: false
-aliases:
-  - /cheatsheet/linux-commands
 ---
 Misc. Linux commands.
 <!--more-->

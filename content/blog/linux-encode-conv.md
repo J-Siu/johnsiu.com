@@ -5,7 +5,6 @@ author: "John Siu"
 title: "Text File Encode/Charset Convertion"
 description: "Linux text file encoding / charset convertion."
 tags: ["linux","iconv","uchardet"]
-draft: false
 ---
 From time to time we get files with garbage characters ...
 <!--more-->

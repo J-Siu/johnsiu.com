@@ -5,7 +5,6 @@ author: "John Siu"
 title: "Jenkins - Gogs/Github Webhook"
 description: "Jenkins Github/Gogs Webhooks configuration"
 tags: ["jenkins","webhook","gogs","github"]
-draft: false
 ---
 How to set them up.
 <!--more-->

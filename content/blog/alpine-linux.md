@@ -5,7 +5,6 @@ author: "John Siu"
 title: "Alpine Linux"
 description: "Random notes from a long time Ubuntu / Red Hat user whose Alpine installation count is going up."
 tags: ["alpine"]
-draft: false
 ---
 Random notes from a long time Ubuntu / Red Hat user whose Alpine installation count is going up.
 <!--more-->

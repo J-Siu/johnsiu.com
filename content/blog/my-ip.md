@@ -5,7 +5,6 @@ author: "John Siu"
 title: "How to Find My Public IP"
 description: "Find your public ip with Linux command line."
 tags: ["cheatsheet"]
-draft: false
 ---
 Using Linux command line.
 <!--more-->

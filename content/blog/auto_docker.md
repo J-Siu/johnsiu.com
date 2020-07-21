@@ -5,7 +5,6 @@ author: "John Siu"
 title: "Docker Image - Mass Auto Update"
 description: "Mass Docker Image Update"
 tags: ["docker","lib"]
-draft: false
 ---
 Not sure how others deal with 100s+ images, but this is how I do it.
 <!--more-->

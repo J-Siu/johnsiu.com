@@ -1,14 +1,11 @@
 ---
-type: "page"
 author: "John Siu"
-title: "Comment Policy"
-description: "Comment Policy"
-draft: false
-authorbox: true
 comments: false
-mathjax: false
+description: "Comment Policy"
 related: false
+title: "Comment Policy"
 toc: false
+type: "page"
 ---
 <!--more-->
 ### Keep it civil aka don’t be a jerk

@@ -5,11 +5,6 @@ author: "John Siu"
 title: "Kubernetes Commands"
 description: "Some Kubernetes commands."
 tags: ["kubernetes","cheatsheet"]
-aliases:
-  - /blog/kubernetes-commands
-  - /cheatsheet/k8s-cmd
-  - /cheatsheet/kubernetes-commands
-  - /kubernetes-commands
 ---
 Some Kubernetes commands.
 <!--more-->

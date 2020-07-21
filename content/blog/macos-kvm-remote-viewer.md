@@ -5,11 +5,6 @@ author: "John Siu"
 title: "MacOS direct connect to KVM client desktop"
 description: "MacOS connect to KVM with remote-viewer."
 tags: ["macos","kvm","virt-manager","virt-viewer","remote-viewer","spice","how-to"]
-aliases:
-  - /blog/os-x-direct-connect-to-kvm-client-desktop
-  - /index.php/2015/11/18/os-x-direct-connect-to-kvm-client-desktop
-  - /index.php/os-x-direct-connect-to-kvm-client-desktop
-  - /os-x-direct-connect-to-kvm-client-desktop
 ---
 
 Recently I have been experimenting with a tiny KVM setup. Everything is good till I want to use my Mac Mini to connect to the client desktop.

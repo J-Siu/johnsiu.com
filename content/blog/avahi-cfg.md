@@ -5,8 +5,6 @@ author: "John Siu"
 title: "Avahi Config"
 description: "Some avahi config."
 tags: ["avahi","cheatsheet"]
-aliases:
-  - /cheatsheet/avahi-config
 ---
 Some Avahi config.
 <!--more-->

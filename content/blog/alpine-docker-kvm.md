@@ -1,11 +1,10 @@
 ---
-type: "blog"
-date: 2019-07-22T02:32:06-04:00
 author: "John Siu"
-title: "Alpine Docker-Machine & KVM Driver"
+date: 2019-07-22T02:32:06-04:00
 description: "Install docker machine on Alpine with KVM driver."
 tags: ["alpine","kvm","docker","how-to"]
-draft: false
+title: "Alpine Docker-Machine & KVM Driver"
+type: "blog"
 ---
 
 It is easy to install Docker in Alpine as packages are readily available. But what about Docker-Machine without VirtualBox?

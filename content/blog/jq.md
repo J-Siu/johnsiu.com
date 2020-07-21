@@ -5,7 +5,6 @@ author: "John Siu"
 title: "JQ - Json Parser"
 description: "jq cheatsheet"
 tags: ["jq","cheatsheet"]
-draft: false
 ---
 Cheatsheet for simple usage.
 <!--more-->

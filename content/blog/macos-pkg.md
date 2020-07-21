@@ -5,9 +5,6 @@ author: "John Siu"
 title: "Mac OS Packages"
 description: "Mac OS packages I used."
 tags: ["macos","cheatsheet"]
-aliases:
-  - /cheatsheet/macos-packages
-draft: false
 ---
 Mac OS packages I use.
 <!--more-->

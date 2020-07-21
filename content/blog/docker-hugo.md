@@ -5,7 +5,6 @@ author: "John Siu"
 title: "Docker Hugo"
 description: "Docker - Hugo site generator used in CI/CD."
 tags: ["docker","hugo","lib"]
-draft: false
 ---
 
 Docker - Hugo site generator used in CI/CD.

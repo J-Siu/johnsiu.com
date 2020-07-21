@@ -1,14 +1,10 @@
 ---
-type: "blog"
-date: 2012-12-10T10:18:16Z
 author: "John Siu"
-title: "Tiny VPS Lighttpd Single Site Multiple Domains"
+date: 2012-12-10T10:18:16Z
 description: "How to configure Lighttpd to handle all the domains the way I want?"
 tags: ["tiny","lighttpd","ubuntu","vps"]
-aliases:
-  - /tiny-vps-lighttpd-single-site-multiple-domains
-  - /index.php/tiny-vps-lighttpd-single-site-multiple-domains
-  - /index.php/2012/12/10/tiny-vps-lighttpd-single-site-multiple-domains
+title: "Tiny VPS Lighttpd Single Site Multiple Domains"
+type: "blog"
 ---
 How to configure Lighttpd to handle all the domains the way I want?
 <!--more-->

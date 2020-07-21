@@ -5,7 +5,6 @@ author: "John Siu"
 title: "Covid-19 Websites List"
 description: "Corvid-19 Websites List"
 tags: ["covid-19","corona virus"]
-draft: false
 ---
 
 Some websites for covid-19 information.

@@ -1,13 +1,10 @@
 ---
-type: blog
-date: 2019-08-01T20:06:21-04:00
 author: "John Siu"
-title: "Shell - Zsh"
+date: 2019-08-01T20:06:21-04:00
 description: "My zsh cheat sheet."
 tags: ["zsh","cheatsheet"]
-aliases:
-  - /cheatsheet/shell-zsh
-draft: false
+title: "Shell - Zsh"
+type: blog
 ---
 Zsh cheat sheet.
 <!--more-->

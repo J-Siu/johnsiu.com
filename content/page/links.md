@@ -1,14 +1,11 @@
 ---
-type: "page"
 author: "John Siu"
-title: "Links"
-description: "Links to companies and friends I know personally."
-draft: false
-authorbox: true
 comments: false
-mathjax: false
+description: "Links to companies and friends I know personally."
 related: false
+title: "Links"
 toc: false
+type: "page"
 ---
 Links to companies and friends I know personally.
 <!--more-->

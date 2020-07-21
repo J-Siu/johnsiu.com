@@ -1,14 +1,9 @@
 ---
 type: "blog"
-
 date: 2016-02-20T06:49:38Z
 tags: ["ubuntu", "systemd"]
 title: "How to configure Systemd Journal Remote"
 description: "Configure Systemd Journal Remote"
-aliases:
-    - /how-to-configure-systemd-journal-remote
-    - /index.php/how-to-configure-systemd-journal-remote
-    - /index.php/2016/02/20/how-to-configure-systemd-journal-remote
 ---
 
 This one is actually simple, online examples are correct and only need to touch one configuration file.

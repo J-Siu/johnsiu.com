@@ -1,14 +1,10 @@
 ---
-type: "blog"
-date: 2013-04-15T04:24:05Z
 author: "John Siu"
-title: "Tiny VPS Postfix - Part 2 - Non-Linux Outgoing SMTP Account"
+date: 2013-04-15T04:24:05Z
 description: "Configuring postfix sasl2 authentication."
 tags: ["tiny","ubuntu","vps","postfix","sasl2"]
-aliases:
-  - /tiny-vps-postfix-part-2-non-linux-outgoing-smtp-account
-  - /index.php/tiny-vps-postfix-part-2-non-linux-outgoing-smtp-account
-  - /index.php/2013/04/15/tiny-vps-postfix-part-2-non-linux-outgoing-smtp-account
+title: "Tiny VPS Postfix - Part 2 - Non-Linux Outgoing SMTP Account"
+type: "blog"
 ---
 
 In the last part I show a minimal setup of Postfix. It allow incoming emails to be forwarded to specific external email address(es).

@@ -1,14 +1,10 @@
 ---
-type: "blog"
-date: 2013-04-15T11:20:30Z
 author: "John Siu"
-title: "Tiny VPS Postfix - Part 3 - GMail as Email Client"
+date: 2013-04-15T11:20:30Z
 description: "Setup GMail to reply using your own email server and domain."
 tags: ["tiny","vps","gmail","google","ubuntu","postfix"]
-aliases:
-  - /tiny-vps-postfix-part-3-gmail-as-your-email-client
-  - /index.php/tiny-vps-postfix-part-3-gmail-as-your-email-client
-  - /index.php/2013/04/15/tiny-vps-postfix-part-3-gmail-as-your-email-client
+title: "Tiny VPS Postfix - Part 3 - GMail as Email Client"
+type: "blog"
 ---
 
 In [Tiny VPS Postfix](/blog/tiny-vps-postfix/) I set up a minimalistic postfix server, which will forward all email to an external email.
