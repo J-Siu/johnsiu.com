@@ -1,9 +1,10 @@
 ---
-type: "blog"
+author: "John Siu"
 date: 2017-03-13T04:16:54Z
+description: "Ghost Blog Custom Theme with AdSense."
 tags: ["ghost", "theme", "blog"]
 title: "Ghost Blog Custom Theme"
-description: "Ghost Blog Custom Theme with AdSense."
+type: "blog"
 ---
 
 Though I move my blog to __[Ghost](//ghost.org)__ in __[last month](/blog/ghost-blog-from-wordpress)__, I am not satisfy with the default  __[Casper](//github.com/TryGhost/Casper)__ theme come with Ghost.

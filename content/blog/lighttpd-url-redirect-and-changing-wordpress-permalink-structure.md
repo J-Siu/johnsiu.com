@@ -1,9 +1,10 @@
 ---
-type: "blog"
+author: "John Siu"
 date: 2016-10-13T22:30:00Z
+description: "Lighttpd url.redirect and changing WordPress permalink structure"
 tags: ["lighttpd","redirect","url.redirect","mod_redirect","permalink","blog","wordpress","migrate"]
 title: "Lighttpd url.redirect and changing WordPress permalink structure"
-description: "Lighttpd url.redirect and changing WordPress permalink structure"
+type: "blog"
 ---
 
 I used to use the __`Date and Name`__ permalink structure for my blog:

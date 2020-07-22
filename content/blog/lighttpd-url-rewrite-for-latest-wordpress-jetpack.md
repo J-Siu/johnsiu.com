@@ -1,9 +1,10 @@
 ---
-type: "blog"
+author: "John Siu"
 date: 2016-10-13T03:33:00Z
+description: "Lighttpd url.rewrite for latest WordPress Jetpack"
 tags: ["lighttpd","redirect","url.rewrite","wordpress", "jetpack", "mod_rewrite"]
 title: "Lighttpd url.rewrite for latest WordPress Jetpack"
-description: "Lighttpd url.rewrite for latest WordPress Jetpack"
+type: "blog"
 ---
 
 The latest [WordPress Jetpack (4.3.1)](https://wordpress.org/plugins/jetpack/) is using __`<your-site>/wp-json/whatever/`__ for its api callback to the web server. It is an issue for web server not supporting __`.htaccess`__, and [Lighttpd](https://redmine.lighttpd.net) is one of them.

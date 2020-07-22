@@ -1,9 +1,10 @@
 ---
-type: "blog"
+author: "John Siu"
 date: 2017-02-27T06:16:01Z
+description: "Found this photo in my photo stream. It was taken more than a year ago behind my computer desk. Networking guys, look familiar?"
 tags: ["networking", "cable"]
 title: "Before and After :D"
-description: "Found this photo in my photo stream. It was taken more than a year ago behind my computer desk. Networking guys, look familiar?"
+type: "blog"
 ---
 
 Found this photo in my photo stream. It was taken more than a year ago behind my computer desk. Networking guys, look familiar?

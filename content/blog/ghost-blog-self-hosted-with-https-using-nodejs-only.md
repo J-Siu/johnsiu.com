@@ -1,9 +1,10 @@
 ---
-type: "blog"
+author: "John Siu"
 date: 2017-02-25T18:15:16Z
+description: "Ghost Blog Self Hosted with HTTPS using NodeJS only"
 tags: ["ghost", "nodejs", "https", "blog"]
 title: "Ghost Blog Self Hosted with HTTPS using NodeJS only"
-description: "Ghost Blog Self Hosted with HTTPS using NodeJS only"
+type: "blog"
 ---
 
 As of today, the official way for self-hosted __Ghost Blog__ to use HTTPS is to use __[Nginx](http://nginx.org)__ as a front end proxy server. The official guide is __[here](http://support.ghost.org/setup-ssl-self-hosted-ghost/)__.

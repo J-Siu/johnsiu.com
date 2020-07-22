@@ -1,9 +1,10 @@
 ---
-type: "blog"
+author: "John Siu"
 date: 2017-04-08T15:12:12Z
+description: "Let Ghost be Ghost"
 tags: ["ghost", "http2", "https", "proxy", "blog"]
 title: "Let Ghost be Ghost"
-description: "Let Ghost be Ghost"
+type: "blog"
 ---
 
 I moved my blog to [Ghost](//ghost.org) a few months ago. Like many other self hosting Ghost users, I keep asking why Ghost does not fully support https out of the box.

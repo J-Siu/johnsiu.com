@@ -1,10 +1,10 @@
 ---
-type: blog
-date: 2019-07-30T22:01:22-04:00
 author: "John Siu"
-title: "Hugo Commands and Config"
+date: 2019-07-30T22:01:22-04:00
 description: "Hugo command and config cheat sheet."
 tags: ["hugo","cheatsheet"]
+title: "Hugo Commands and Config"
+type: blog
 ---
 Some Hugo commands and config.
 <!--more-->
@@ -37,13 +37,13 @@ Copy `archetypes/default.md` to `archetypes/section9.md` and modify `type`:
 
 ```toml
 ---
-type: "section9"
-date: {{ .Date }}
 author: "John Siu"
-title: "{{ replace .Name "-" " " | title }}"
+date: {{ .Date }}
 description: ""
-tags: [""]
 draft: true
+tags: [""]
+title: "{{ replace .Name "-" " " | title }}"
+type: "section9"
 ---
 <!--more-->
 ```

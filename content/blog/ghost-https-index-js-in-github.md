@@ -1,9 +1,10 @@
 ---
-type: "blog"
+author: "John Siu"
 date: 2017-03-13T07:00:18Z
+description: "Ghost Https index.js in GitHub"
 tags: ["ghost", "https", "nodejs", "blog", "http2", "spdy"]
 title: "Ghost Https index.js in GitHub"
-description: "Ghost Https index.js in GitHub"
+type: "blog"
 ---
 
 In an earlier __[post](/ghost-blog-self-hosted-with-https-using-nodejs-only/)__ I talk about running __[Ghost Blog](//ghost.org)__ with https using nodejs only.

@@ -1,9 +1,10 @@
 ---
-type: "blog"
+author: "John Siu"
 date: 2017-04-08T15:17:58Z
+description: "H2Ghost - The Revamped Ghost HTTPS/2 Solution"
 tags: ["ghost", "http2", "spdy", "https", "blog", "nodejs", "proxy"]
 title: "H2Ghost - The Revamped Ghost HTTPS/2 Solution"
-description: "H2Ghost - The Revamped Ghost HTTPS/2 Solution"
+type: "blog"
 ---
 
 [__H2Ghost__](//github.com/J-Siu/h2ghost) is a http2/https front end for [Ghost Blog](//ghost.org)

@@ -1,9 +1,10 @@
 ---
-type: "blog"
+author: "John Siu"
 date: 2017-02-07T18:21:11Z
 description: "Ghost Blog from WordPress Migration"
 tags: ["ghost", "nodejs", "blog","migrate"]
 title: "Ghost Blog from WordPress"
+type: "blog"
 ---
 
 Last October I moved my git server from __[GitLab CE](https://about.gitlab.com/features/#community)__ to __[GoGs](https://gogs.io)__. I also planned to move my blog from __[WordPress](https://wordpress.com)__ to __[Ghost Blog](https://ghost.org)__ at the same time, but was delayed by the heavy load at work, until now.
