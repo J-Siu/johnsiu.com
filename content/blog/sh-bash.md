@@ -114,6 +114,8 @@ echo $a
 
 ### Read Line By Line
 
+#### File
+
 ```sh
 file=test.txt
 while IFS= read -r line; do
@@ -123,3 +125,15 @@ done <${file}
 
 - `IFS=` change delimiter to new line (`\n`).
 - `IFS` default: `$' \t\n'`
+
+#### Variable
+
+```sh
+VAR="line 1
+line 2
+line 3"
+
+while IFS= read -r LINE; do
+	echo ${LINE}
+done <<<"${VAR}"
+```
