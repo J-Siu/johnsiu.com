@@ -13,7 +13,7 @@ Random notes from a long time Ubuntu / Red Hat user whose Alpine installation co
 
 [Alpine Linux](https://alpinelinux.org/about/) initial released in 2005. From [Wikipedia page](https://en.wikipedia.org/wiki/Alpine_Linux):
 
-> Alpine Linux is a Linux distribution based on musl and BusyBox, designed for security, simplicity, and resource efficiency. It uses a hardened kernel and compiles all user space binaries as position-independent executables with stack-smashing protection.
+> Alpine Linux is a Linux distribution based on `musl` and BusyBox, designed for security, simplicity, and resource efficiency. It uses a hardened kernel and compiles all user space binaries as position-independent executables with stack-smashing protection.
 >
 > Because of its small size, it's heavily used in containers providing quick boot up times.
 
