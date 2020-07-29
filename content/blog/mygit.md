@@ -4,9 +4,9 @@ date: 2020-07-28T21:22:54-04:00
 author: "John Siu"
 title: "MyGit - Bash git automation script"
 description: "Bash git automation script support group action."
-tags: ["bash","git"]
+tags: ["bash","git","cli","lib"]
 ---
-Migrate all my ZSH git functions into a standalone bash script.
+Migrated all my ZSH git functions into a standalone bash script.
 <!--more-->
 
 ### Who & Why
@@ -36,6 +36,7 @@ Migrate all my ZSH git functions into a standalone bash script.
     - [x] --pub/--public
     - [x] del/delete
     - [x] ls/list
+      - [x] --archive
     - [x] new
     - [x] vis/visibility
     - [x] desc/description
@@ -270,6 +271,9 @@ mygit -r gh push --all
 
 ```sh
 mygit fetch
+```
+
+```sh
 mygit -r gh fetch
 ```
 
@@ -356,8 +360,11 @@ mygit -g external repo topic "topic1 topic2 topic3"
 
 `mygit repo ls` will list up to 100 repositories on remote server. This command does not depend on repository.
 
+By default archived repositories are filtered out. Use `--archive` to show them also.
+
 ```sh
 mygit repo ls
+mygit repo ls --archive
 mygit -g internal repo ls
 mygit -r gh repo ls
 ```
@@ -380,11 +387,23 @@ mygit push --master
 
 - [John Sing Dao Siu](https://github.com/J-Siu)
 
-
 ### Change Log
 
 - 0.1.0
   - Feature complete
+- 0.2.0
+  - README.md completed
+  - add -g/-r checking
+  - add init repository name support
+  - add repo get info
+  - add repo ls --archive flag
+  - add usage
+  - change push master/all to flag(--)
+  - fix comment typo
+  - fix repo del github del token logic
+  - fix repo ls gogs/gitea support
+  - fix repo new visibility logic
+  - move desc, topic into repo
 
 ### License
 
