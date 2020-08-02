@@ -4,7 +4,7 @@ date: 2020-06-16T20:56:11-04:00
 author: "John Siu"
 title: "Tiny VPS Postfix with Docker"
 description: "Hosting my own email server with docker."
-tags: ["docker","postfix","sasl2"]
+tags: ["docker","postfix","sasl2","tiny","vps"]
 ---
 A refresh of my tiny vps postfix setup.
 <!--more-->
