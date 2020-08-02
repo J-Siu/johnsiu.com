@@ -10,8 +10,8 @@ Mac OS packages I use.
 <!--more-->
 ### System
 
-- [Spectacle](https://github.com/eczarny/spectacle) - Organize windows with keyboard.
-- [Synergy](https://symless.com/) - Keyboard and mouse sharing between Mac, Windows and Linux.
+- [Spectacle](https://github.com/eczarny/spectacle) / [Rectangle](https://github.com/rxhanson/Rectangle) - Organize windows with keyboard.
+- [Barrier](https://github.com/debauchee/barrier) (replaced [Synergy](https://symless.com/)) - Keyboard and mouse sharing between Mac, Windows and Linux.
 
 ### Development
 
