@@ -6,16 +6,14 @@ title: "Hugo Theme SK3 with AdSense"
 description: "Full feature Hugo theme with AdSense support."
 tags: ["hugo","theme","adsense","lib"]
 ---
-Full feature Hugo theme with AdSense support.
+Full feature Hugo theme build on top of [hugo-theme-sk2](https://github.com/J-Siu/hugo-theme-sk2) with Google AdSense support.
 <!--more-->
 
 ### Sites
 
 John Siu Blog: https://johnsiu.com/
 
-SK3 demo site: https://sk3.jsiu.dev/
-
-SK3 demo site content from [hugoBasicExample](https://github.com/gohugoio/hugoBasicExample)
+SK3 demo site: https://sk3.jsiu.dev/ with content from [hugoBasicExample](https://github.com/gohugoio/hugoBasicExample)
 
 ### Install
 
@@ -110,6 +108,15 @@ hugo server -D --bind :: \
   ```
 
   > Page width will automatically set to 100% on small screen.
+
+- List Last Modify Date
+
+  Use last modify date in list page.
+
+  ```toml
+  [Params]
+  listlastmod	= true
+  ```
 
 - Social links
 
@@ -261,6 +268,7 @@ paginate               = 15
 
 [Params]
 #adsense_id   = ""
+#listlastmod  = true
 #mainSections = "post"
 #pagewidth    = "1200px"
 #startdate    = "2012-12-02"
@@ -332,7 +340,9 @@ Social buttons provided by [Font Awesome](https://github.com/FortAwesome/Font-Aw
 
 ### Repository
 
-- [hugo-theme-sk3](https://github.com/J-Siu/hugo-theme-sk3)
+- [hugo-theme-sk1](https://github.com/J-Siu/hugo-theme-sk3) Fully functional basic Hugo theme with no css, no javascript.
+- [hugo-theme-sk2](https://github.com/J-Siu/hugo-theme-sk3) Fully functional basic Hugo theme with minimum css.
+- [hugo-theme-sk3](https://github.com/J-Siu/hugo-theme-sk3) Full feature Hugo theme with Google AdSense support.
 
 ### Contributors
 
@@ -386,6 +396,12 @@ Social buttons provided by [Font Awesome](https://github.com/FortAwesome/Font-Aw
 - 0.9.4
   - Fix css spacing, kbd, social buttons, author box
   - Fix menu closing click through
+- 0.9.5
+  - Add `listlastmod`
+  - Fix H1 line height
+  - Fix Google Analytics
+  - Fix table for mobile screen
+  - Refactor css margin/padding/font size
 
 ### License
 
