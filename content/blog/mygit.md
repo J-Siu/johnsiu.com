@@ -340,6 +340,13 @@ Github token need `delete_repo` scope to delete repository through API. Either u
 
 ##### desc/description
 
+`mygit repo desc` will get description of remote repository.
+
+```sh
+mygit repo desc
+mygit -g external repo desc
+```
+
 `mygit repo desc "<description>"` can update description of remote repository. Description needs to be in double quote.
 
 ```sh
@@ -348,6 +355,13 @@ mygit -g external repo desc "<description>"
 ```
 
 ##### topic/topics
+
+`mygit repo topic` will get topics of remote repository.
+
+```sh
+mygit repo topic
+mygit -g external repo topic
+```
 
 `mygit repo topic "topics ..."` can update topics of remote repository. Multiple topics needs to be in double quote.
 
