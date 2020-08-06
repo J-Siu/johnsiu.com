@@ -13,13 +13,11 @@ Docker - Hugo site generator used in CI/CD.
 
 This is used in my [blog automation](/blog/jenkins-blog-automation/).
 
----
-
 ### Build
 
 ```sh
-git clone https://github.com/J-Siu/docker_compose.git
-cd docker/hugo
+git clone https://github.com/J-Siu/docker_hugo.git
+cd docker_hugo
 docker build -t jsiu/hugo .
 ```
 
@@ -34,6 +32,7 @@ ${WWW_VOL}|/www|yes|n/a|Base dir/volume Hugo publish to
 ${MY_GIT_DIR}|${MY_GIT_DIR}|no|/hugo|Git clone/pull destination.
 ${MY_GIT_URL}|${MY_GIT_URL}|yes|n/a|Git will clone/pull from this URL.
 ${MY_GIT_SUB}|${MY_GIT_SUB}|no|n/a|If defined(not empty), pull git sub-module
+${MY_GIT_SUB_REMOTE}|${MY_GIT_SUB_REMOTE}|no|n/a|If defined(not empty), pull git sub-module with `--remote`
 ${MY_HUG_DIR}|${MY_HUG_DIR}|no|n/a|Relative path to ${MY_GIT_DIR}, default empty.
 ${MY_PUB_DIR}|${MY_PUB_DIR}|no|n/a|Override publish directory. Hugo default `public` or defined in site config(`publishDir`).
 ${MY_THM_DIR}|${MY_THM_DIR}|no|/theme|Hugo theme clone/pull destination.
@@ -139,7 +138,7 @@ docker run --rm --name hugo \
 jsiu/hugo --theme sk3 --themesDir /www/themes
 ```
 
-#### Compose
+#### Extract
 
 Get `REAME.md` from image:
 
@@ -149,7 +148,7 @@ docker run --rm jsiu/hugo cat /README.md > README.md
 
 ### Repository
 
-- [docker_compose](https://github.com/J-Siu/docker_compose)
+- [docker_hugo](https://github.com/J-Siu/docker_hugo)
 
 ### Contributors
 
@@ -172,6 +171,17 @@ docker run --rm jsiu/hugo cat /README.md > README.md
   - Added
     - ${MY_THM_DIR}
     - ${MY_THM_DIR}
+- 0.73.0-r0
+  - Auto update to 0.73.0-r0
+- 0.74.1-r0
+  - Auto update to 0.74.1-r0
+- 0.74.2-r0
+  - Auto update to 0.74.2-r0
+- 0.74.2-r0-p1
+  - Add `MY_GIT_SUB_REMOTE` option
+- 0.74.3-r0
+  - Auto update to 0.74.3-r0
+<!--CHANGE-LOG-END-->
 
 The MIT License
 
