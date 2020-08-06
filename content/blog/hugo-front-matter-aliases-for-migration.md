@@ -98,7 +98,7 @@ The site is 100% static with no dependency on redirect rules!
 
 #### Con
 
-The __public__ directory became flooded with static directories:
+The `public` directory became flooded with static directories:
 
 ```txt
 public/
@@ -120,7 +120,7 @@ public/
 ...
 ```
 
-But those are generated automatically and not my working directory, which is __content__.
+But those are generated automatically and not my working directory, which is `content`.
 
 ### Conclusion
 
