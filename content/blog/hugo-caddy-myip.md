@@ -30,7 +30,7 @@ title: "MY IP"
 {{.RemoteIP}}
 ```
 
-`{{.RemoteIP}}` is a Hugo template function[^1].
+`{{.RemoteIP}}` is a Caddy template function[^1].
 
 Create a menu entry in `config.toml`
 
