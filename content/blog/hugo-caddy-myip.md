@@ -24,6 +24,8 @@ Inside `myip.md`, enter following line:
 {{.RemoteIP}}
 ```
 
+`` is a Hugo template functions. More functions can be found [here](https://caddyserver.com/docs/modules/http.handlers.templates).
+
 Generate and deploy your site.
 
 ### Caddy Server
@@ -33,6 +35,8 @@ In `caddyfile`, add following line inside your site config:
 ```apache
 templates /post/myip/
 ```
+
+The `templates` line tell caddy server to treat `/post/myip/` as a template. Caddy doc is [here](https://caddyserver.com/docs/caddyfile/directives/templates#templates).
 
 Take this site `caddyfile` as example:
 
@@ -53,7 +57,7 @@ I put `myip` in `page` section and created a menu entry for it.
 
 ### Plain Text
 
-You can also create a plain text version to be used by `curl` command as I shown in [How to Find My Public IP](/blog/my-ip.md).
+You can also create a plain text version to be used by `curl` command as I shown in [How to Find My Public IP](/blog/my-ip/).
 
 In Hugo site root, create `static/myip/intex.html`:
 
