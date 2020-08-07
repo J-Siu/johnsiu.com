@@ -1,10 +1,12 @@
 ---
-type: "page"
-date: {{ .Date }}
 author: "John Siu"
-title: "{{ replace .Name "-" " " | title }}"
+comments: false
+date: {{ .Date }}
 description: ""
-tags: [""]
 draft: true
+tags: [""]
+title: "{{ replace .Name "-" " " | title }}"
+toc: false
+type: "page"
 ---
 <!--more-->

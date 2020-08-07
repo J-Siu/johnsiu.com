@@ -1,10 +1,10 @@
 ---
-type: "blog"
-date: {{ .Date }}
 author: "John Siu"
-title: "{{ replace .Name "-" " " | title }}"
+date: {{ .Date }}
 description: ""
-tags: [""]
 draft: true
+tags: [""]
+title: "{{ replace .Name "-" " " | title }}"
+type: "blog"
 ---
 <!--more-->
