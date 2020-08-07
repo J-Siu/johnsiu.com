@@ -91,10 +91,9 @@ Generate and deploy your site, restart caddy server.
 Test from command line:
 
 ```sh
-curl https://johnsiu.com/myip/
+curl -4 https://johnsiu.com/myip/
+curl -6 https://johnsiu.com/myip/
 ```
-
----
 
 [^1]: [Caddy template functions](https://caddyserver.com/docs/modules/http.handlers.templates).
 [^2]: [Caddy templates doc](https://caddyserver.com/docs/caddyfile/directives/templates#templates).
