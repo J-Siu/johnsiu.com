@@ -82,6 +82,9 @@ url = "/tags/lib/"
 [[menu.main]]
 name = "Search"
 url = "/page/search/"
+[[menu.main]]
+name = "My IP"
+url = "/page/myip/"
 
 [markup]
 defaultMarkdownHandler = "goldmark"
