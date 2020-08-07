@@ -18,13 +18,17 @@ Create a new Hugo page:
 hugo new post/myip.md
 ```
 
-Inside `myip.md`, enter following line:
+Inside `myip.md` with following content:
 
 ```md
+---
+title: "MY IP"
+---
+
 {{.RemoteIP}}
 ```
 
-`` is a Hugo template functions. More functions can be found [here](https://caddyserver.com/docs/modules/http.handlers.templates).
+`{{.RemoteIP}}` is a Hugo template functions. More functions can be found [here](https://caddyserver.com/docs/modules/http.handlers.templates).
 
 Generate and deploy your site.
 
