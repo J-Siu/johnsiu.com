@@ -8,19 +8,21 @@ type: "blog"
 ---
 There are websites that show your internet IP, ever want to create your own?
 <!--more-->
-Following is a simple way to create a "show my ip" page in with Hugo and Caddy V2 servers.
+Hugo is a static site generator, there is no server side processing once deployed. However Caddy v2 templates feature is giving this a twist.
+
+Following is a simple way to create a fully themed Hugo "show my ip" page with Caddy v2 servers.
 
 ### Create Page
 
 Create a new Hugo page:
 
 ```sh
-hugo new post/myip.md
+hugo new page/myip.md
 ```
 
 Inside `myip.md` with following content:
 
-```md
+```toml
 ---
 title: "MY IP"
 ---
@@ -28,7 +30,16 @@ title: "MY IP"
 {{.RemoteIP}}
 ```
 
-`{{.RemoteIP}}` is a Hugo template functions. More functions can be found [here](https://caddyserver.com/docs/modules/http.handlers.templates).
+`{{.RemoteIP}}` is a Hugo template function[^1].
+
+Create a menu entry in `config.toml`
+
+```toml
+[menu]
+[[menu.main]]
+name = "My IP"
+url = "/page/myip/"
+```
 
 Generate and deploy your site.
 
@@ -37,15 +48,15 @@ Generate and deploy your site.
 In `caddyfile`, add following line inside your site config:
 
 ```apache
-templates /post/myip/
+templates /page/myip/
 ```
 
-The `templates` line tell caddy server to treat `/post/myip/` as a template. Caddy doc is [here](https://caddyserver.com/docs/caddyfile/directives/templates#templates).
+The `templates` line tell caddy server to treat `/post/myip/` as a template[^2].
 
 Take this site `caddyfile` as example:
 
 ```apache
-int.jsiu.dev stg.jsiu.dev {
+johnsiu.com {
 	encode gzip
 	root * /www/site/johnsiu.com
 	file_server
@@ -57,7 +68,7 @@ int.jsiu.dev stg.jsiu.dev {
 }
 ```
 
-I put `myip` in `page` section and created a menu entry for it.
+Restart caddy server.
 
 ### Plain Text
 
@@ -82,3 +93,8 @@ Test from command line:
 ```sh
 curl https://johnsiu.com/myip/
 ```
+
+---
+
+[^1]: [Caddy template functions](https://caddyserver.com/docs/modules/http.handlers.templates).
+[^2]: [Caddy templates doc](https://caddyserver.com/docs/caddyfile/directives/templates#templates).
