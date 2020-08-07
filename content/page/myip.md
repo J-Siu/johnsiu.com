@@ -7,5 +7,6 @@ tags: ["caddy","hugo","myip"]
 title: "My IP"
 type: "page"
 ---
+Show my public IP.
 <!--more-->
 ### {{.RemoteIP}}
