@@ -15,7 +15,7 @@ googleAnalytics = "UA-36805525-1"
 [Params]
 adsense_id = "ca-pub-8176479711832264"
 description = "John Siu technology blog."
-favicon = "/favicon.svg"
+favicon = "/favicon.ico"
 listlastmod = false
 mainSections = "blog"
 opengraph = true
