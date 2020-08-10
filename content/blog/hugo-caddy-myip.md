@@ -22,7 +22,7 @@ hugo new page/myip.md
 
 Inside `myip.md` with following content:
 
-```toml
+```Handlebars
 ---
 title: "MY IP"
 ---
@@ -76,7 +76,7 @@ You can also create a plain text version to be used by `curl` command as I shown
 
 In Hugo site root, create `static/myip/intex.html`:
 
-```md
+```Handlebars
 {{.RemoteIP}}
 ```
 
