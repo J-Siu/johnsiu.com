@@ -97,11 +97,17 @@ virsh vol-list default
 
   > __vmdk__(vmware) and __vdi__(virtualbox) are supported.
 
+- Snapshot
+
+  ```sh
+  qemu-img create -f qcow2 -b ubuntu.master.qcow2 ubuntu.qcow2
+  ```
+
 - Info
 
-```sh
-qemu-img info <filename>
-```
+  ```sh
+  qemu-img info <filename>
+  ```
 
 - Resize
 
