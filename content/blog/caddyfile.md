@@ -67,13 +67,13 @@ www.example.com {
 }
 ```
 
-Caddy will parse files in `/www/site/www.example.com/myip`:
+Caddy will parse files in `/www/site/www.example.com/myip/`:
 
 ```nginx
 www.example.com {
 	root * /www/site/www.example.com
 	file_server
-	templates /www/site/www.example.com/myip
+	templates /www/site/www.example.com/myip/
 }
 ```
 
