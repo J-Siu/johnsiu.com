@@ -38,7 +38,15 @@ PNG, like JPEGa and GIF, is a raster file format. Its file size scales with imag
 
 ICO, maybe the most common format due to early browser adaptation.
 
-`magick` is a popular command line tool to change PNG to ICO:
+`Imagemagick` is a popular command line tool to change PNG to ICO:
+
+`Imagemagick` < 7.0
+
+```sh
+convert favicon.png favicon.ico
+```
+
+`Imagemagick` 7.x
 
 ```sh
 magick convert favicon.png favicon.ico
