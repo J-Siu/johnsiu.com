@@ -395,11 +395,11 @@ mygit push --master
 
 ### Repository
 
-- [mygit](//github.com/J-Siu/mygit)
+- [mygit](https://github.com/J-Siu/mygit)
 
 ### Contributors
 
-- [John Sing Dao Siu](//github.com/J-Siu)
+- [John Sing Dao Siu](https://github.com/J-Siu)
 
 ### Change Log
 
@@ -418,6 +418,16 @@ mygit push --master
   - fix repo ls gogs/gitea support
   - fix repo new visibility logic
   - move desc, topic into repo
+- 0.2.1
+  - Improve debug log
+  - change _mygit_group write to MY_GIT_GROUP directly
+  - change _mygit_remote write to MY_GIT_REMOTE directly
+  - change repo del allow independent of local remote
+  - change shebang to #!/usr/bin/env bash
+  - fix ARGP leak for push
+  - fix _in_group call missing "" for group
+  - fix _in_group call wrapped with $() incorrectly
+  - fix _in_group var conflict, change _g -> _x
 
 ### License
 
