@@ -8,5 +8,5 @@ title: "Search"
 toc: false
 type: "page"
 ---
-<script async src="https://cse.google.com/cse.js?cx=partner-pub-8176479711832264:5311659258"></script>
+<script async src="//cse.google.com/cse.js?cx=partner-pub-8176479711832264:5311659258"></script>
 <div class="gcse-search"></div>
