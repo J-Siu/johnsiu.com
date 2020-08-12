@@ -16,13 +16,11 @@ My interests.
 - CI/CD
   - [Kubernetes](/tags/kubernetes)
   - [Docker](/tags/docker)
-  - Jenkins
+  - [Jenkins](/tags/jenkins)
 - [Alpine Linux](/tags/alpine)
 - [Angular](/tags/angular)
 - [Elastic Stack](/tags/elk)
 - [Hugo](/tags/hugo)
-- Serverless
-  - Google Functions
 
 ### Others
 
@@ -33,7 +31,9 @@ My interests.
 ### Repository
 
 - Theme
-  - [Binario](//github.com/J-Siu/Binario) - Hugo theme with AdSense support.
+  - [hugo-theme-sk1](//github.com/J-Siu/hugo-theme-sk1) Fully functional basic Hugo theme with no css, no javascript.
+  - [hugo-theme-sk2](//github.com/J-Siu/hugo-theme-sk2) Fully functional basic Hugo theme with minimum css.
+  - [hugo-theme-sk3](//github.com/J-Siu/hugo-theme-sk3) Full feature Hugo theme with Google AdSense support.
 - Library
   - [ng2-simple-global](//github.com/J-Siu/ng2-simple-global-lib) - Global variable service for Angular.
   - [ng2-simple-mq](//github.com/J-Siu/ng2-simple-mq-lib) - Message queue for Angular inter-component communication base on RxJS.
