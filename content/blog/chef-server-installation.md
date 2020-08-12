@@ -7,13 +7,13 @@ author: "John Siu"
 tags: ["chef","how-to"]
 ---
 
-This serve as a starting point for installing [Chef](https://chef.io) server on local machines.
+This serve as a starting point for installing [Chef](//chef.io) server on local machines.
 <!--more-->
 
 ### Reference
 
-- [Chef Doc : Install Standalone](https://docs.chef.io/install_server.html#standalone)
-- [Chef Doc : chef-server-ctl](https://docs.chef.io/ctl_chef_server.html)
+- [Chef Doc : Install Standalone](//docs.chef.io/install_server.html#standalone)
+- [Chef Doc : chef-server-ctl](//docs.chef.io/ctl_chef_server.html)
 
 ### Objectives
 
@@ -46,9 +46,9 @@ Download Chef packages from <https://downloads.chef.io/> or use following links.
 
 You will need:
 
-- [`Chef Server`](https://downloads.chef.io/chef-server/)
-- [`Chef Client`](https://downloads.chef.io/chef/)
-- [`Chef Development Kit (ChefDK / DK)`](https://downloads.chef.io/chefdk/) (Optional)
+- [`Chef Server`](//downloads.chef.io/chef-server/)
+- [`Chef Client`](//downloads.chef.io/chef/)
+- [`Chef Development Kit (ChefDK / DK)`](//downloads.chef.io/chefdk/) (Optional)
 
 ### Install Chef Server on Server Box
 

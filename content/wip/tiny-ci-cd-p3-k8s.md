@@ -294,7 +294,7 @@ node/<hostname> untainted
 
 ### Master Node HA
 
-If you are interested in high available setup of the master node, check out the official document [here](https://kubernetes.io/docs/setup/production-environment/tools/kubeadm/setup-ha-etcd-with-kubeadm/).
+If you are interested in high available setup of the master node, check out the official document [here](//kubernetes.io/docs/setup/production-environment/tools/kubeadm/setup-ha-etcd-with-kubeadm/).
 
 ---
 

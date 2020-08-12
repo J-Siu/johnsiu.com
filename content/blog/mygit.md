@@ -395,11 +395,11 @@ mygit push --master
 
 ### Repository
 
-- [mygit](https://github.com/J-Siu/mygit)
+- [mygit](//github.com/J-Siu/mygit)
 
 ### Contributors
 
-- [John Sing Dao Siu](https://github.com/J-Siu)
+- [John Sing Dao Siu](//github.com/J-Siu)
 
 ### Change Log
 

@@ -39,7 +39,7 @@ It look stupid but safe. I ended up with 43 of them plus other rules!!
 
 ### Hugo Front Matter Aliases
 
-As I use and explore Hugo more, I found that Hugo front matter support aliases[^1] and also a tools to extract front matter call [front-matter-manipulator](https://github.com/chrisdmacrae/front-matter-manipulator).
+As I use and explore Hugo more, I found that Hugo front matter support aliases[^1] and also a tools to extract front matter call [front-matter-manipulator](//github.com/chrisdmacrae/front-matter-manipulator).
 
 #### Script and front-matter-manipulator
 
@@ -130,6 +130,6 @@ The switch freed my site from web server dependency and can move between differe
 
 ### Reference
 
-[^1]: [Hugo Front Matter Aliases](https://gohugo.io/content-management/urls/#aliases/)
+[^1]: [Hugo Front Matter Aliases](//gohugo.io/content-management/urls/#aliases/)
 
-[^2]: [front-matter-aliases.zsh](https://github.com/J-Siu/johnsiu.com/blob/master/front-matter-aliases.zsh)
+[^2]: [front-matter-aliases.zsh](//github.com/J-Siu/johnsiu.com/blob/master/front-matter-aliases.zsh)

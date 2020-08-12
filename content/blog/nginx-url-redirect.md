@@ -16,11 +16,11 @@ I used my own [h2ghost](/blog/h2ghost/) with Ghost as both were nodejs applicati
 
 However Hugo produce static pages and I decided to look into other http server options.
 
-I was debating between [Monkey Server](http://monkey-project.com/) and [Nginx](https://nginx.org/). And finally pick Nginx as it is more actively developed.
+I was debating between [Monkey Server](http://monkey-project.com/) and [Nginx](//nginx.org/). And finally pick Nginx as it is more actively developed.
 
 ### Logwatch
 
-Log was set to minimum when I was using h2ghost. But once I switched to Nginx, [Logwatch](https://sourceforge.net/projects/logwatch/) start showing the 404 listing. To my surprise, other than all the random attacks, there are a few old WordPress permalink popping up.
+Log was set to minimum when I was using h2ghost. But once I switched to Nginx, [Logwatch](//sourceforge.net/projects/logwatch/) start showing the 404 listing. To my surprise, other than all the random attacks, there are a few old WordPress permalink popping up.
 
 ```log
 /index.php/2012/12/06/tiny-vps-postfix/: 1 Time(s)

@@ -7,7 +7,7 @@ date: 2018-09-30T23:17:40-04:00
 tags: ["kubernetes","ubuntu"]
 ---
 
-This serve as a starting point for installing [Kubernetes](https://k8s.io) on multiple [Ubuntu Servers](https://www.ubuntu.com/server).
+This serve as a starting point for installing [Kubernetes](//k8s.io) on multiple [Ubuntu Servers](//www.ubuntu.com/server).
 <!--more-->
 
 ---
@@ -16,8 +16,8 @@ This serve as a starting point for installing [Kubernetes](https://k8s.io) on mu
 
 `H` = Hands-on, `C` = Concept
 
-- `H` - [Hello Minikube](https://kubernetes.io/docs/tutorials/hello-minikube/)
-- `HC` - [Kubernetes Basic](https://kubernetes.io/docs/tutorials/kubernetes-basics/)
+- `H` - [Hello Minikube](//kubernetes.io/docs/tutorials/hello-minikube/)
+- `HC` - [Kubernetes Basic](//kubernetes.io/docs/tutorials/kubernetes-basics/)
 
 ---
 

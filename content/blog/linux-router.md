@@ -17,7 +17,7 @@ My old home wi-fi router is dying and instead of buying one, I decided to build 
 
 ### Hardware
 
-The new box I am using is [Qotom-Q355G4](https://www.amazon.com/gp/product/B076PKP6G9/ref=ox_sc_act_title_1?smid=AIHFP4MVXMM7V&psc=1):
+The new box I am using is [Qotom-Q355G4](//www.amazon.com/gp/product/B076PKP6G9/ref=ox_sc_act_title_1?smid=AIHFP4MVXMM7V&psc=1):
 
 - Main Port: 1 HD Video Port + 1 COM + 2 USB 2.0 + 2 USB 3.0 + 4 LAN.
 - CPU: Intel Core i5-5200U SOC Processor (Broadwell, Dual Core, 3M Cache, 2.2GHz, up to 2.7GHz). Support AES-NI.

@@ -16,7 +16,7 @@ Welcome to a tiny world.
 
 ### MySQL
 
-[![MySQL](https://i0.wp.com/www.mysql.com/common/logos/logo-mysql-110x57.png?resize=110%2C57 "MySQL")](http://mysql.com/)
+[![MySQL](//i0.wp.com/www.mysql.com/common/logos/logo-mysql-110x57.png?resize=110%2C57 "MySQL")](http://mysql.com/)
 
 DB tuning is a big topic, a profession, a complicated process … well, if you are doing performance tuning. Tuning MySQL to use less memory, turn out to be pretty simple.
 

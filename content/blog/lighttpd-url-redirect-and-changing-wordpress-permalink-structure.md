@@ -24,13 +24,13 @@ Changing that is as easy as a few clicks in WordPress setting. All existing and 
 
 ### Issue
 
-However, after I uploaded the new sitemap to [Google Webmaster Tool](https://www.google.com/webmasters/tools), and start checking my site information, especially __`Links to Your Site`__ under __`Search Traffic`__, I noticed a big issue.
+However, after I uploaded the new sitemap to [Google Webmaster Tool](//www.google.com/webmasters/tools), and start checking my site information, especially __`Links to Your Site`__ under __`Search Traffic`__, I noticed a big issue.
 
 After the permalink structure change, all the links out there with the old structure become broken! Not good!
 
 ### Solution
 
-Solution? __[Lighttpd Url.redirect](https://redmine.lighttpd.net/projects/1/wiki/docs_modredirect)__
+Solution? __[Lighttpd Url.redirect](//redmine.lighttpd.net/projects/1/wiki/docs_modredirect)__
 
 Since __`Date and Name`__ permalink format is well structured, the redirect rules is easy:
 

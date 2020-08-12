@@ -13,7 +13,7 @@ Deploy Fedora CoreOS on Ubuntu 20.04 KVM host.
 
 #### Download CoreOS
 
-Fedora CoreOS download page is [here](https://getfedora.org/coreos/download).
+Fedora CoreOS download page is [here](//getfedora.org/coreos/download).
 
 ```sh
 cd /var/lib/libvirt/images

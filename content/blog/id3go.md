@@ -105,11 +105,11 @@ id3go set --album "My Record" *.mp3
 
 ### Repository
 
-- [id3go](https://github.com/J-Siu/id3go)
+- [id3go](//github.com/J-Siu/id3go)
 
 ### Contributors
 
-- [John Sing Dao Siu](https://github.com/J-Siu)
+- [John Sing Dao Siu](//github.com/J-Siu)
 
 ### Changelog
 

@@ -7,7 +7,7 @@ title: "Lighttpd url.rewrite for latest WordPress Jetpack"
 type: "blog"
 ---
 
-The latest [WordPress Jetpack (4.3.1)](https://wordpress.org/plugins/jetpack/) is using `<your-site>/wp-json/whatever/` for its api callback to the web server. It is an issue for web server not supporting `.htaccess`, and [Lighttpd](https://redmine.lighttpd.net) is one of them.
+The latest [WordPress Jetpack (4.3.1)](//wordpress.org/plugins/jetpack/) is using `<your-site>/wp-json/whatever/` for its api callback to the web server. It is an issue for web server not supporting `.htaccess`, and [Lighttpd](//redmine.lighttpd.net) is one of them.
 <!--more-->
 
 I end up with a lot of 404 errors in the `access.log` like the following one:
@@ -18,7 +18,7 @@ I end up with a lot of 404 errors in the `access.log` like the following one:
 
 ### Solution
 
-To solve the issue I start exploring [Lighttpd url.rewrite](https://redmine.lighttpd.net/projects/1/wiki/docs_modrewrite). After some research and a few tries, I finally come up with a working configuration:
+To solve the issue I start exploring [Lighttpd url.rewrite](//redmine.lighttpd.net/projects/1/wiki/docs_modrewrite). After some research and a few tries, I finally come up with a working configuration:
 
 ```lighttpd
 url.rewrite-if-not-file = ("^/(.*)$" => "/index.php/$1")

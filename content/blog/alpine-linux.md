@@ -11,7 +11,7 @@ Random notes from a long time Ubuntu / Red Hat user whose Alpine installation co
 
 ---
 
-[Alpine Linux](https://alpinelinux.org/about/) initial released in 2005. From [Wikipedia page](https://en.wikipedia.org/wiki/Alpine_Linux):
+[Alpine Linux](//alpinelinux.org/about/) initial released in 2005. From [Wikipedia page](//en.wikipedia.org/wiki/Alpine_Linux):
 
 > Alpine Linux is a Linux distribution based on `musl` and BusyBox, designed for security, simplicity, and resource efficiency. It uses a hardened kernel and compiles all user space binaries as position-independent executables with stack-smashing protection.
 >
@@ -44,7 +44,7 @@ PS: Alpine packages don't bundle with man page. You have to install them separat
 
 #### Work Differently
 
-Alpine use [busybox](https://www.busybox.net/) to provide most command line utilities. As aa result many commands don't work the same as other distros. Following are a few examples:
+Alpine use [busybox](//www.busybox.net/) to provide most command line utilities. As aa result many commands don't work the same as other distros. Following are a few examples:
 
 - `dropbear` - `openssh` drop-in replacement. Do not support ed25519 keys.
 - `nslookup` - No interactive mode.
@@ -52,7 +52,7 @@ Alpine use [busybox](https://www.busybox.net/) to provide most command line util
 
 #### Not Available or Don't Work
 
-- `mdns` - Due to current limitation of [musl library](https://www.musl-libc.org/), Alpine does not support multicast-dns resolution. Running `avahi-daemon` only allow other devices to find the Alpine server.
+- `mdns` - Due to current limitation of [musl library](//www.musl-libc.org/), Alpine does not support multicast-dns resolution. Running `avahi-daemon` only allow other devices to find the Alpine server.
 - `w`, `last` - User accounting not working.
 
 ### Conclusion

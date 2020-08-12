@@ -126,11 +126,11 @@ docker-compose up
 
 ### Repository
 
-- [docker_compose](https://github.com/J-Siu/docker_compose)
+- [docker_compose](//github.com/J-Siu/docker_compose)
 
 ### Contributors
 
-- [John Sing Dao Siu](https://github.com/J-Siu)
+- [John Sing Dao Siu](//github.com/J-Siu)
 
 ### Change Log
 

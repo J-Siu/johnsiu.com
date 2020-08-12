@@ -20,7 +20,7 @@ Active/Active Pair:
 
 ### Linux Preparation
 
-#### Create user vmail
+#### Create User Vmail
 
 ```sh
 groupadd -g 5000 vmail
@@ -184,7 +184,7 @@ Above example will be as follow in `user.db`
 test@test.com:{CRYPT}$2y$05$6caJDCFEge0qA1vBxjDWVOftUzwjrDx794c88gtVB0we6RlchrWxu
 ```
 
-Other dovecote user database types can be found [here](https://doc.dovecot.org/configuration_manual/authentication/user_databases_userdb/).
+Other dovecote user database types can be found [here](//doc.dovecot.org/configuration_manual/authentication/user_databases_userdb/).
 
 #### Logging
 

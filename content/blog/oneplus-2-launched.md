@@ -22,7 +22,7 @@ I am a OnePlus One user. However the touch screen start to act strange since I d
 6. Dual SIM. This is a bonuses. I don’t need it daily, but it is nice to have when traveling. For people traveling monthly, weekly, (or daily:eek:), this is a must have!!
 7. Finally, surprisingly low price!!
 
-![1+2](https://i2.wp.com/content.oneplus.net/skin/frontend/oneplus2015/default/images/feature/two/impress-img.png?resize=1201%2C1181&ssl=1)![case](https://i1.wp.com/content.oneplus.net/skin/frontend/oneplus2015/default/images/feature/two/styleSwap-view-img.png?resize=886%2C690&ssl=1)
+![1+2](//i2.wp.com/content.oneplus.net/skin/frontend/oneplus2015/default/images/feature/two/impress-img.png?resize=1201%2C1181&ssl=1)![case](//i1.wp.com/content.oneplus.net/skin/frontend/oneplus2015/default/images/feature/two/styleSwap-view-img.png?resize=886%2C690&ssl=1)
 
 ### Price
 
@@ -31,8 +31,8 @@ I am a OnePlus One user. However the touch screen start to act strange since I d
 
 ### Spec
 
-I am not going to repeat their spec., you can check it out [here](https://oneplus.net/2/specs).
+I am not going to repeat their spec., you can check it out [here](//oneplus.net/2/specs).
 
 ### How to Get
 
-To reserve one, click [here](https://oneplus.net/invites?kolid=UQY0CZ).
+To reserve one, click [here](//oneplus.net/invites?kolid=UQY0CZ).

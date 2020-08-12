@@ -10,20 +10,20 @@ Mac OS packages I use.
 <!--more-->
 ### System
 
-- [Spectacle](https://github.com/eczarny/spectacle) / [Rectangle](https://github.com/rxhanson/Rectangle) - Organize windows with keyboard.
-- [Barrier](https://github.com/debauchee/barrier) (replaced [Synergy](https://symless.com/)) - Keyboard and mouse sharing between Mac, Windows and Linux.
+- [Spectacle](//github.com/eczarny/spectacle) / [Rectangle](//github.com/rxhanson/Rectangle) - Organize windows with keyboard.
+- [Barrier](//github.com/debauchee/barrier) (replaced [Synergy](//symless.com/)) - Keyboard and mouse sharing between Mac, Windows and Linux.
 
 ### Development
 
-- [VSCode](https://github.com/microsoft/vscode) - IDE.
-- [Meld](https://github.com/yousseb/meld) - Graphical merge/diff tool.
+- [VSCode](//github.com/microsoft/vscode) - IDE.
+- [Meld](//github.com/yousseb/meld) - Graphical merge/diff tool.
 - Xcode - IDE.
 
 ### Media
 
-- [Cantata](https://github.com/cdrummond/cantata) - Graphical mpd client.
-- [mpc](https://github.com/MusicPlayerDaemon/mpc) - Command line mpd client.
-- [LyricsX](https://github.com/ddddxxx/LyricsX) - iTunes lyrics plugin.
-- [VLC](https://github.com/videolan/vlc) - Media player.
+- [Cantata](//github.com/cdrummond/cantata) - Graphical mpd client.
+- [mpc](//github.com/MusicPlayerDaemon/mpc) - Command line mpd client.
+- [LyricsX](//github.com/ddddxxx/LyricsX) - iTunes lyrics plugin.
+- [VLC](//github.com/videolan/vlc) - Media player.
 - Final Cut Pro X - Video Editing.
 - iTunes - Music player.

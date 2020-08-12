@@ -17,7 +17,7 @@ Above is a short description from MPD developer site. Indeed too short. MPD is p
 
 ### Download MPD Source
 
-Get latest source from [muscipd.org](https://www.musicpd.org/).
+Get latest source from [musicpd.org](//www.musicpd.org/).
 
 ### Install Build Tools
 
@@ -33,13 +33,13 @@ apk add alsa-lib-dev sqlite-dev ffmpeg-dev
 
 Library|Usage
 ---|---
-`alsa-lib-dev`|Linux Alsa sound system. This is for sound output.
+`alsa-lib-dev`|Linux ALSA sound system. This is for sound output.
 `ffmpeg-dev`|This take care of 99% of audio file playback.
 `sqlite-dev`|For mpd song database.
 
 ### Compile
 
-Following [MPD instructions](https://www.musicpd.org/doc/html/user.html#compiling-from-source) and some modification from [Alpine community APKBUILD](https://git.alpinelinux.org/aports/tree/community/mpd?h=master)
+Following [MPD instructions](//www.musicpd.org/doc/html/user.html#compiling-from-source) and some modification from [Alpine community APKBUILD](//git.alpinelinux.org/aports/tree/community/mpd?h=master)
 
 ```zsh
 meson . output/release \
@@ -187,7 +187,7 @@ audio_output {
 }
 ```
 
-> Must add `<user>` to group `audio`, else mpd cannot connect to alsa device.
+> Must add `<user>` to group `audio`, else mpd cannot connect to ALSA device.
 
 ### Result
 

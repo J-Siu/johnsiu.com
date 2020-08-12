@@ -88,10 +88,10 @@ Above fix is only for short term and to get your site back. In the long run you 
 
 #### Hugo Theme Page
 
-If your theme is one in [Hugo Theme](https://themes.gohugo.io/) page, check if it is updated. Hugo development team is actively contacting all theme authors to migrate[^2].
+If your theme is one in [Hugo Theme](//themes.gohugo.io/) page, check if it is updated. Hugo development team is actively contacting all theme authors to migrate[^2].
 
 ### Reference
 
-[^1]: [Page lists broken in various theme demos in 0.57.0 #678](https://github.com/gohugoio/hugoThemes/issues/678)
+[^1]: [Page lists broken in various theme demos in 0.57.0 #678](//github.com/gohugoio/hugoThemes/issues/678)
 
-[^2]: [Demos with empty homepage and/or wrong posts list #682](https://github.com/gohugoio/hugoThemes/issues/682)
+[^2]: [Demos with empty homepage and/or wrong posts list #682](//github.com/gohugoio/hugoThemes/issues/682)

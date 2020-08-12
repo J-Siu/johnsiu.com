@@ -15,21 +15,21 @@ __GitLab CE__ and __Gogs__ in VPS.
 
 ### GitLab CE
 
-Early last year I upgraded my vps box. The main reason: __[GitLab CE](https://about.gitlab.com/features/#community)__.
+Early last year I upgraded my vps box. The main reason: __[GitLab CE](//about.gitlab.com/features/#community)__.
 
 __GitLab CE__ properly is one of the best open source, free, mature and actively maintained git server package. It is feature rich, come with beautiful user interface, and backed by commercial development team. You really cannot ask for more.
 
 I was sold once I had it up and running. Except one issue, __GitLab__ is a resource hog. It constantly push my then tiny vps' memory to the limit. That pushed me to upgrade my box.
 
-I did not look back till a few months ago, when my development focus switched from [AngularJS](https://angularjs.org) to [Angular2](https://angular.io), of which the development process is closely tie to [node.js](https://nodejs.org). And node.js, in turn, is closely tie to git. I started asking myself, wouldn't there be a node.js base git server out there, similar to GitLab, but using much less resource?
+I did not look back till a few months ago, when my development focus switched from [AngularJS](//angularjs.org) to [Angular2](//angular.io), of which the development process is closely tie to [node.js](//nodejs.org). And node.js, in turn, is closely tie to git. I started asking myself, wouldn't there be a node.js base git server out there, similar to GitLab, but using much less resource?
 
 No! (suprise!?) ... But ...
 
 ### Gogs - Go Git Server
 
-I did not find a node.js one, but one written in [GO Lang](https://golang.org): __[Gogs](https://gogs.io)__.
+I did not find a node.js one, but one written in [GO Lang](//golang.org): __[Gogs](//gogs.io)__.
 
-__Gogs__ interface closely resemble [Github](https://github.com). I have no complain about the UI. As a younger project(>2yrs) than GitLab(>5yr), while feature complete, Gogs still have some rough edges. But as an open source project with an active development team, there is no worry about project continuation.
+__Gogs__ interface closely resemble [Github](//github.com). I have no complain about the UI. As a younger project(>2yrs) than GitLab(>5yr), while feature complete, Gogs still have some rough edges. But as an open source project with an active development team, there is no worry about project continuation.
 
 What make __Gogs__ so attractive? Extremely low resource requirement! Following is quote from its website:
 

@@ -77,4 +77,4 @@ Type|Size|Path
 ---|---|---
 ICO|256x256 (file size ~5k)|`/favicon.ico` with `rel` link
 
-[^1]: [Firefox UI considerations for web developers](https://developer.mozilla.org/en-US/docs/Mozilla/Firefox/UI_considerations)
+[^1]: [Firefox UI considerations for web developers](//developer.mozilla.org/en-US/docs/Mozilla/Firefox/UI_considerations)

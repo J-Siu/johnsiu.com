@@ -13,7 +13,7 @@ Deploying BackupPC 4.x on Alpine require some efforts.
 
 ### BackupPC 4.X
 
-[BackupPC](https://github.com/backuppc/backuppc) is a Linux base backup software with a web frontend. It support client across Linux, Windows, Mac OS and other UNIX-base system.
+[BackupPC](//github.com/backuppc/backuppc) is a Linux base backup software with a web frontend. It support client across Linux, Windows, Mac OS and other UNIX-base system.
 
 #### Dev Dependencies
 
@@ -68,7 +68,7 @@ adduser backuppc
 
 #### Compiling & Install
 
-[BackupPC github](https://github.com/backuppc/backuppc) page list out 2 dependency packages.
+[BackupPC github](//github.com/backuppc/backuppc) page list out 2 dependency packages.
 
 ##### rsync-bpc
 
@@ -265,4 +265,4 @@ This should give a very good starting point of running BackupPC 4.x with Nginx o
 
 ### Reference
 
-[freebsd + nginx + backuppc](https://wiki.k2patel.in/doku.php?id=freebsd_nginx_backuppc)
+[freebsd + nginx + backuppc](//wiki.k2patel.in/doku.php?id=freebsd_nginx_backuppc)

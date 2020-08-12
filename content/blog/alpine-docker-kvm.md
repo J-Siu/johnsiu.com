@@ -14,7 +14,7 @@ It is easy to install Docker in Alpine as packages are readily available. But wh
 
 ### Install Docker Machine
 
-Following [official instruction](https://docs.docker.com/machine/install-machine/) work perfectly:
+Following [official instruction](//docs.docker.com/machine/install-machine/) work perfectly:
 
 ```zsh
 base=https://github.com/docker/machine/releases/download/v0.16.0 &&
@@ -37,7 +37,7 @@ Docker site only give VirtualBox example:
 docker-machine create --driver virtualbox myvm
 ```
 
-There is a [driver list](https://docs.docker.com/machine/drivers/) if you dig deeper but none is for KVM. [dhiltgen](https://github.com/dhiltgen/docker-machine-kvm) on github created one but stopped maintaining it, and it has issue[^1] with the latest docker image used by docker machine. The current working driver is from [tdilauro's fork](https://github.com/tdilauro/docker-machine-kvm) and you can install it as below:
+There is a [driver list](//docs.docker.com/machine/drivers/) if you dig deeper but none is for KVM. [dhiltgen](//github.com/dhiltgen/docker-machine-kvm) on github created one but stopped maintaining it, and it has issue[^1] with the latest docker image used by docker machine. The current working driver is from [tdilauro's fork](//github.com/tdilauro/docker-machine-kvm) and you can install it as below:
 
 ```zsh
 curl -L https://github.com/tdilauro/docker-machine-kvm/releases/download/v0.10.1/docker-machine-driver-kvm-alpine3.4 > /usr/local/bin/docker-machine-driver-kvm
@@ -51,4 +51,4 @@ This fork added the `--kvm-nic-type` option to allow one to specify `virtio` dur
 docker-machine create --driver kvm --kvm-nic-type virtio myKvm
 ```
 
-[^1]: [Original KVM driver issue on github](https://github.com/dhiltgen/docker-machine-kvm/issues/72)
+[^1]: [Original KVM driver issue on github](//github.com/dhiltgen/docker-machine-kvm/issues/72)

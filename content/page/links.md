@@ -11,7 +11,7 @@ Links to companies and friends I know personally.
 <!--more-->
 ### Companies
 
-#### [Jentu](https://jentu-networks.com/)
+#### [Jentu](//jentu-networks.com/)
 
 Computer Networks Re-Imagined!
 
@@ -21,11 +21,11 @@ Computer Networks Re-Imagined!
 - STABILITY – Network Reboot Solves 99% of IT Issues
 - SIMPLICITY – Easy For IT Teams To Learn And Manage
 
-#### [CDOC](https://cdoc.ca/)
+#### [CDOC](//cdoc.ca/)
 
 With 30 years of experience in Toronto/GTA we know fast, professional, and competitively-priced computer network repair and management is what's important to you. We serve Toronto, Barrie, Wasaga Beach, Collingwood and Owen Sound's commercial IT needs.
 
-#### [Primary Support Systems](https://www.pssnet.com/)
+#### [Primary Support Systems](//www.pssnet.com/)
 
 Toronto’s premier IT support & network consulting company. Fast, reliable, affordable service since 1991.
 

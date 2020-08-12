@@ -133,11 +133,11 @@ Keep it running for now and go to next step.
 
 Open your browser to __http://\<hostname/ip\>:3000__ and fill out the form as follow:
 
-![Install](https://raw.githubusercontent.com/J-Siu/johnsiu.com/master/static/img/gogs-01.png)
+![Install](//raw.githubusercontent.com/J-Siu/johnsiu.com/master/static/img/gogs-01.png)
 
 Once you click __Install Gogs__:
 
-![Done](https://raw.githubusercontent.com/J-Siu/johnsiu.com/master/static/img/gogs-02.png)
+![Done](//raw.githubusercontent.com/J-Siu/johnsiu.com/master/static/img/gogs-02.png)
 
 The config file is located at __${MY_GOGS_DIR}/gogs/conf/app.ini__. In this example the path will be __/var/lib/my_gogs/gogs/conf/app.ini__.
 

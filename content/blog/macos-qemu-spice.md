@@ -11,7 +11,7 @@ Spice is again compilable on MacOS ...
 
 ### Brew Formula
 
-`spice-gtk` and `spice-protocol` have been available through `brew` for quite some time. And finally [Spice](https://www.spice-space.org/) is working on MacOS. There is no official brew formula for spice yet. We have to create our own.
+`spice-gtk` and `spice-protocol` have been available through `brew` for quite some time. And finally [Spice](//www.spice-space.org/) is working on MacOS. There is no official brew formula for spice yet. We have to create our own.
 
 #### Spice
 

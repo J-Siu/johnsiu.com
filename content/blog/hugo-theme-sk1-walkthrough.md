@@ -273,21 +273,21 @@ Theme <a href="https://github.com/J-Siu/hugo-theme-sk1/">SK1</a> by <a href="htt
 
 The above give a basic idea of how a Hugo theme is put together. Following are more starting points for Hugo theme development:
 
-- [Hugo Templates](https://gohugo.io/templates/)
-- [Hugo Variables](https://gohugo.io/variables/)
-- [Hugo Documentation](https://gohugo.io/documentation/)
+- [Hugo Templates](//gohugo.io/templates/)
+- [Hugo Variables](//gohugo.io/variables/)
+- [Hugo Documentation](//gohugo.io/documentation/)
 
 The search box in Hugo site is your friend!!
 
 ### SK Themes
 
-- [hugo-theme-sk1](https://github.com/J-Siu/hugo-theme-sk1) Fully functional basic Hugo theme with no css, no javascript. Full example of this walk-through.
-- [hugo-theme-sk2](https://github.com/J-Siu/hugo-theme-sk2) Fully functional basic Hugo theme with minimum css.
+- [hugo-theme-sk1](//github.com/J-Siu/hugo-theme-sk1) Fully functional basic Hugo theme with no css, no javascript. Full example of this walk-through.
+- [hugo-theme-sk2](//github.com/J-Siu/hugo-theme-sk2) Fully functional basic Hugo theme with minimum css.
 - [hugo-theme-sk3](/blog/hugo-theme-sk3/) Full feature Hugo theme with Google AdSense support.
 
-[^1]: [Define the Base Template](https://gohugo.io/templates/base/#define-the-base-template)
-[^2]: [Hugo List Defaults](https://gohugo.io/templates/lists#list-defaults)
-[^3]: [Hugo Pagination](https://gohugo.io/templates/pagination)
-[^4]: [Hugo Single Page Templates](https://gohugo.io/templates/single-page-templates/#postssinglehtml)
-[^5]: [Hugo Partials - Header](https://gohugo.io/templates/partials/#example-headerhtml)
-[^6]: [Hugo Partials - Footer](https://gohugo.io/templates/partials/#example-footerhtml)
+[^1]: [Define the Base Template](//gohugo.io/templates/base/#define-the-base-template)
+[^2]: [Hugo List Defaults](//gohugo.io/templates/lists#list-defaults)
+[^3]: [Hugo Pagination](//gohugo.io/templates/pagination)
+[^4]: [Hugo Single Page Templates](//gohugo.io/templates/single-page-templates/#postssinglehtml)
+[^5]: [Hugo Partials - Header](//gohugo.io/templates/partials/#example-headerhtml)
+[^6]: [Hugo Partials - Footer](//gohugo.io/templates/partials/#example-footerhtml)

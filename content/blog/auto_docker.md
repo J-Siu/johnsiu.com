@@ -234,7 +234,7 @@ Take following `Dockerfile` as example:
 FROM alpine:edge
 
 LABEL version="0.73.0-r0"
-LABEL maintainers="[John Sing Dao Siu](https://github.com/J-Siu)"
+LABEL maintainers="[John Sing Dao Siu](//github.com/J-Siu)"
 LABEL name="hugo"
 LABEL usage="https://github.com/J-Siu/docker_hugo/blob/master/README.md"
 
@@ -372,11 +372,11 @@ latest::krfb-lang
 
 ### Repository
 
-- [docker_compose](https://github.com/J-Siu/auto_docker)
+- [docker_compose](//github.com/J-Siu/auto_docker)
 
 ### Contributors
 
-- [John Sing Dao Siu](https://github.com/J-Siu)
+- [John Sing Dao Siu](//github.com/J-Siu)
 
 ### Change Log
 

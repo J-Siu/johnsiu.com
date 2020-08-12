@@ -42,7 +42,7 @@ const cert = {
 }
 ```
 
-- [Helmet](https://github.com/helmetjs/helmet) support
+- [Helmet](//github.com/helmetjs/helmet) support
 
 ```js
 const helmetOptions = {

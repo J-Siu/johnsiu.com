@@ -24,7 +24,7 @@ Do this, do that, check cell phone for email … hmm … O-Shit, totally forget 
 
 #### 6:55
 
-![Login](https://raw.githubusercontent.com/J-Siu/johnsiu.com/master/static/img/firefall-01.jpg)
+![Login](//raw.githubusercontent.com/J-Siu/johnsiu.com/master/static/img/firefall-01.jpg)
 
 Turn on computer, login website, start downloading installer …
 
@@ -32,7 +32,7 @@ Hmm .. 17M only … not bad …
 
 #### 6:57
 
-![Install](https://raw.githubusercontent.com/J-Siu/johnsiu.com/master/static/img/firefall-02.jpg)
+![Install](//raw.githubusercontent.com/J-Siu/johnsiu.com/master/static/img/firefall-02.jpg)
 
 Running the installer/downloader …
 
@@ -40,37 +40,37 @@ Running the installer/downloader …
 
 #### 9:00
 
-![Launch](https://raw.githubusercontent.com/J-Siu/johnsiu.com/master/static/img/firefall-03.jpg)
+![Launch](//raw.githubusercontent.com/J-Siu/johnsiu.com/master/static/img/firefall-03.jpg)
 
 **Finally … Go!! Go!! Go!!**
 
 ..
 
-![Got my man](https://raw.githubusercontent.com/J-Siu/johnsiu.com/master/static/img/firefall-04.jpg)
+![Got my man](//raw.githubusercontent.com/J-Siu/johnsiu.com/master/static/img/firefall-04.jpg)
 
 **Got my man!**
 
 ..
 
-![Wait](https://raw.githubusercontent.com/J-Siu/johnsiu.com/master/static/img/firefall-05.jpg)
+![Wait](//raw.githubusercontent.com/J-Siu/johnsiu.com/master/static/img/firefall-05.jpg)
 
 **Wait … Again …**
 
 ..
 
-![Flying](https://raw.githubusercontent.com/J-Siu/johnsiu.com/master/static/img/firefall-06.jpg)
+![Flying](//raw.githubusercontent.com/J-Siu/johnsiu.com/master/static/img/firefall-06.jpg)
 
 **Flying to base**
 
 ..
 
-![Walking around](https://raw.githubusercontent.com/J-Siu/johnsiu.com/master/static/img/firefall-07.jpg)
+![Walking around](//raw.githubusercontent.com/J-Siu/johnsiu.com/master/static/img/firefall-07.jpg)
 
 **Walk around**
 
 ..
 
-![Kill bug](https://raw.githubusercontent.com/J-Siu/johnsiu.com/master/static/img/firefall-08.jpg)
+![Kill bug](//raw.githubusercontent.com/J-Siu/johnsiu.com/master/static/img/firefall-08.jpg)
 
 **Lets go kill some bugs**
 
@@ -78,7 +78,7 @@ Running the installer/downloader …
 
 #### 9:20
 
-![End](https://raw.githubusercontent.com/J-Siu/johnsiu.com/master/static/img/firefall-09.jpg)
+![End](//raw.githubusercontent.com/J-Siu/johnsiu.com/master/static/img/firefall-09.jpg)
 
 **Oops … Hit by a truck**
 

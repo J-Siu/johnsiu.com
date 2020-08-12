@@ -89,11 +89,11 @@ ng serve --open
 
 ### Repository
 
-- [ng2-simple-global-lib](https://github.com/J-Siu/ng2-simple-global-lib)
+- [ng2-simple-global-lib](//github.com/J-Siu/ng2-simple-global-lib)
 
 ### Contributors
 
-- [John Sing Dao Siu](https://github.com/J-Siu)
+- [John Sing Dao Siu](//github.com/J-Siu)
 
 ### Changelog
 

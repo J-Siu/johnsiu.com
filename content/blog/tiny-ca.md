@@ -24,7 +24,7 @@ As browsers are getting more secure and packed with more safeguards to prevent m
 
 The result is a simple script with an openssl config file that will generate a CA and a wildcard certificate.
 
-GitHub: [tiny_ca](https://github.com/J-Siu/tiny_ca)
+GitHub: [tiny_ca](//github.com/J-Siu/tiny_ca)
 
 > ***WARNING:*** This is intended for testing/throw-away environment. Don't use it for production.
 
@@ -134,6 +134,6 @@ update-ca-certificates
 
 ### Reference
 
-[OpenSSL Certificate Authority](https://jamielinux.com/docs/openssl-certificate-authority/index.html) by Jamie Nguyen.
+[OpenSSL Certificate Authority](//jamielinux.com/docs/openssl-certificate-authority/index.html) by Jamie Nguyen.
 
-[openssl-ca](https://www.openssl.org/docs/manmaster/man1/ca.html) man page.
+[openssl-ca](//www.openssl.org/docs/manmaster/man1/ca.html) man page.

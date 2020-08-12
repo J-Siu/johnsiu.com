@@ -148,11 +148,11 @@ docker run --rm jsiu/hugo cat /README.md > README.md
 
 ### Repository
 
-- [docker_hugo](https://github.com/J-Siu/docker_hugo)
+- [docker_hugo](//github.com/J-Siu/docker_hugo)
 
 ### Contributors
 
-- [John Sing Dao Siu](https://github.com/J-Siu)
+- [John Sing Dao Siu](//github.com/J-Siu)
 
 ### Change Log
 

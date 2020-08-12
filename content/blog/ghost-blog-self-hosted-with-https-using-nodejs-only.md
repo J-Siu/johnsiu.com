@@ -12,7 +12,7 @@ As of today, the official way for self-hosted __Ghost Blog__ to use HTTPS is to 
 
 ### My Way ...
 
-There are many reasons to use a proxy server in front of NodeJS service such as Ghost. However, it seems overkill in my situation. I come up with 2 ways to just use NodeJS to support HTTPS with __[Ghost 0.11.4](https://ghost.org/developers/)__.
+There are many reasons to use a proxy server in front of NodeJS service such as Ghost. However, it seems overkill in my situation. I come up with 2 ways to just use NodeJS to support HTTPS with __[Ghost 0.11.4](//ghost.org/developers/)__.
 
 ### Method 1 : Single NodeJS Instance
 

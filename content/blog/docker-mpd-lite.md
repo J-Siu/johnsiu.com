@@ -6,7 +6,7 @@ title: "Docker MPD Lite"
 description: "Docker MPD with UID/GID handling."
 tags: ["docker","mpd","lib"]
 ---
-Base on [My Alpine MPD (Music Player Daemon) Lite](https://johnsiu.com/blog/alpine-mpd-lite/) with UID/GID + audio GID handling.
+Base on [My Alpine MPD (Music Player Daemon) Lite](//johnsiu.com/blog/alpine-mpd-lite/) with UID/GID + audio GID handling.
 <!--more-->
 Docker MPD Lite with UID/GID + audio GID handling.
 
@@ -172,11 +172,11 @@ docker-compose up
 
 ### Repository
 
-- [docker_compose](https://github.com/J-Siu/docker_compose)
+- [docker_compose](//github.com/J-Siu/docker_compose)
 
 ### Contributors
 
-- [John Sing Dao Siu](https://github.com/J-Siu)
+- [John Sing Dao Siu](//github.com/J-Siu)
 
 ### Change Log
 

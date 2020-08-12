@@ -94,7 +94,7 @@ $ du -sh 10G.txt
 0       10G.txt
 ```
 
-Ref: [Sparse file wikipedia](https://wiki.archlinux.org/index.php/Sparse_file)
+Ref: [Sparse file wikipedia](//wiki.archlinux.org/index.php/Sparse_file)
 
 ### Rsync
 

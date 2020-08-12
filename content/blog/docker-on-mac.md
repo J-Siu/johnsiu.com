@@ -8,7 +8,7 @@ tags: ["docker","macos","how-to"]
 ---
 Running Docker on Mac and create first container.
 <!--more-->
-There are multiple ways to install docker on Mac. We will use [Homebrew for Mac](https://brew.sh/).
+There are multiple ways to install docker on Mac. We will use [Homebrew for Mac](//brew.sh/).
 
 ---
 
@@ -185,8 +185,8 @@ docker container stop 260ee2c31f37
 
 ### Reference
 
-[^1]: [Docker Getting Started](https://docs.docker.com/get-started/)
+[^1]: [Docker Getting Started](//docs.docker.com/get-started/)
 
-[^2]: [docker-unbund](https://github.com/J-Siu/docker-unbound)
+[^2]: [docker-unbund](//github.com/J-Siu/docker-unbound)
 
-[^3]: [Dockerfile Reference](https://docs.docker.com/engine/reference/builder/)
+[^3]: [Dockerfile Reference](//docs.docker.com/engine/reference/builder/)

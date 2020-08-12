@@ -13,14 +13,14 @@ In season of corvid-19, maybe it is time for some upgrade.
 
 I have 4 libraries need upgrading:
 
-- [ng2-simple-api-lib](https://github.com/J-Siu/ng2-simple-api-lib.git)
-- [ng2-simple-global-lib](https://github.com/J-Siu/ng2-simple-global-lib.git)
-- [ng2-simple-mq-lib](https://github.com/J-Siu/ng2-simple-mq-lib.git)
-- [ng2-simple-timer-lib](https://github.com/J-Siu/ng2-simple-timer-lib.git)
+- [ng2-simple-api-lib](//github.com/J-Siu/ng2-simple-api-lib.git)
+- [ng2-simple-global-lib](//github.com/J-Siu/ng2-simple-global-lib.git)
+- [ng2-simple-mq-lib](//github.com/J-Siu/ng2-simple-mq-lib.git)
+- [ng2-simple-timer-lib](//github.com/J-Siu/ng2-simple-timer-lib.git)
 
 ### Manual Task
 
-After following [Angular Upgrade Guide](https://update.angular.io/#8.0:9.0l3), there are 4 files need update manually:
+After following [Angular Upgrade Guide](//update.angular.io/#8.0:9.0l3), there are 4 files need update manually:
 
 - `LICENSE` : Update year to 2020
 - `README.md` : Update change log and license year to 2020

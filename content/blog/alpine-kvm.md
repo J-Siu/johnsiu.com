@@ -17,7 +17,7 @@ Alpine server is assumed to have no GUI capability. All steps are done through r
 
 > **Note:**
 >
-> - This part is a streamline version of [Alpine KVM wiki page](https://wiki.alpinelinux.org/wiki/KVM).
+> - This part is a streamline version of [Alpine KVM wiki page](//wiki.alpinelinux.org/wiki/KVM).
 > - No __virt-manager__ on remote Alpine server. You only need it on your local machine.
 > - Assume VMs bridge-mode using __macvtap__. __bridge__ package not required.
 > - Use __root__ or __sudo__ for all commands in this section.

@@ -7,18 +7,18 @@ title: "Ghost Blog from WordPress"
 type: "blog"
 ---
 
-Last October I moved my git server from __[GitLab CE](https://about.gitlab.com/features/#community)__ to __[GoGs](https://gogs.io)__. I also planned to move my blog from __[WordPress](https://wordpress.com)__ to __[Ghost Blog](https://ghost.org)__ at the same time, but was delayed by the heavy load at work, until now.
+Last October I moved my git server from __[GitLab CE](//about.gitlab.com/features/#community)__ to __[GoGs](//gogs.io)__. I also planned to move my blog from __[WordPress](//wordpress.com)__ to __[Ghost Blog](//ghost.org)__ at the same time, but was delayed by the heavy load at work, until now.
 <!--more-->
 
 ### WordPress - King of Blog for the Mass
 
 __WordPress__ is a very powerful and mature blogging platform, and many companies and organizations use it for their official website.
 
-However, just as __GitLab CE__, I am the only one posting in this site, I want something more lightweight, something that doesn't require a full __[LAMP](https://en.wikipedia.org/wiki/LAMP_(software_bundle))__ stack. Especially database like __[MySQL](https://mysql.com)__ or __[MariaDB](https://mariadb.org)__.
+However, just as __GitLab CE__, I am the only one posting in this site, I want something more lightweight, something that doesn't require a full __[LAMP](//en.wikipedia.org/wiki/LAMP_(software_bundle))__ stack. Especially database like __[MySQL](//mysql.com)__ or __[MariaDB](//mariadb.org)__.
 
 ### Ghost - New Kids On The "Blog"
 
-__Ghost__ started as a __[KickStarter Project](https://www.kickstarter.com/projects/johnonolan/ghost-just-a-blogging-platform)__ in 2012 as both an open source __[GitHub Project](https://github.com/TryGhost/Ghost)__ and  __[Ghost(Pro)](https://ghost.org/pricing/)__, a blog hosting service. Check out the [wiki page](https://en.wikipedia.org/wiki/Ghost_(blogging_platform)) if you are interested in the story behind Ghost.
+__Ghost__ started as a __[KickStarter Project](//www.kickstarter.com/projects/johnonolan/ghost-just-a-blogging-platform)__ in 2012 as both an open source __[GitHub Project](//github.com/TryGhost/Ghost)__ and  __[Ghost(Pro)](//ghost.org/pricing/)__, a blog hosting service. Check out the [wiki page](//en.wikipedia.org/wiki/Ghost_(blogging_platform)) if you are interested in the story behind Ghost.
 
 What make __Ghost__ attractive for me?
 

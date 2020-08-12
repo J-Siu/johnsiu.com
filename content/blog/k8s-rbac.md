@@ -14,9 +14,9 @@ Kubernetes user setup (certification-based authentication) and RBAC setup of the
 
 ### Reference
 
-- [Role based access control (RBAC) policies in Kubernetes](https://www.youtube.com/watch?v=CnHTCTP8d48)
-- [Controlling Access to the Kubernetes API](https://kubernetes.io/docs/reference/access-authn-authz/controlling-access/)
-- [Kubernetes Authenticating](https://kubernetes.io/docs/reference/access-authn-authz/authentication/)
+- [Role based access control (RBAC) policies in Kubernetes](//www.youtube.com/watch?v=CnHTCTP8d48)
+- [Controlling Access to the Kubernetes API](//kubernetes.io/docs/reference/access-authn-authz/controlling-access/)
+- [Kubernetes Authenticating](//kubernetes.io/docs/reference/access-authn-authz/authentication/)
 
 ---
 

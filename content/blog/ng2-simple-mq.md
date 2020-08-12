@@ -29,7 +29,7 @@ __ng2-simple-mq__ is implemented as Angular 2 injectable service name __SimpleMQ
 
 #### Module
 
-Add `SimpleMQ` into module providers (eg. [app.module.ts](https://github.com/J-Siu/ng2-simple-mq-lib/blob/master/src/app/app.module.ts)).
+Add `SimpleMQ` into module providers (eg. [app.module.ts](//github.com/J-Siu/ng2-simple-mq-lib/blob/master/src/app/app.module.ts)).
 
 ```javascript
 import { SimpleMQ } from 'ng2-simple-mq';
@@ -166,11 +166,11 @@ ng serve --open
 
 ### Repository
 
-- [ng2-simple-mq-lib](https://github.com/J-Siu/ng2-simple-mq-lib)
+- [ng2-simple-mq-lib](//github.com/J-Siu/ng2-simple-mq-lib)
 
 ### Contributors
 
-- [John Sing Dao Siu](https://github.com/J-Siu)
+- [John Sing Dao Siu](//github.com/J-Siu)
 
 ### Changelog
 

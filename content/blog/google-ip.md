@@ -64,4 +64,4 @@ dig @8.8.8.8 _netblocks3.google.com txt
 
 ### Reference
 
-[Google IP address ranges for outbound SMTP](https://support.google.com/a/answer/60764)
+[Google IP address ranges for outbound SMTP](//support.google.com/a/answer/60764)

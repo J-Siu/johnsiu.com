@@ -38,7 +38,7 @@ Use following command to start the viewer
 
 Once it is started, you can even pin it to the dock. Problem solved!!!
 
-![remote-viewer](https://raw.githubusercontent.com/J-Siu/johnsiu.com/master/static/img/remote-viewer.png)
+![remote-viewer](//raw.githubusercontent.com/J-Siu/johnsiu.com/master/static/img/remote-viewer.png)
 
 ### MacOS virt-manager
 

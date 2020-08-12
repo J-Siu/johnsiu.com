@@ -18,4 +18,4 @@ Careful ...
 
 Wait for result, LOL!!
 
-![LOL](https://raw.githubusercontent.com/J-Siu/johnsiu.com/master/static/img/social.jpg)
+![LOL](//raw.githubusercontent.com/J-Siu/johnsiu.com/master/static/img/social.jpg)

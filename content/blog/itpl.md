@@ -132,11 +132,11 @@ ls -lh iTunes/iTunes\ Media/Music/U2/Songs\ of\ Innocence/11\ The\ Troubles.m4a
 
 ### Repository
 
-- [itpl](https://github.com/J-Siu/itpl)
+- [itpl](//github.com/J-Siu/itpl)
 
 ### Contributors
 
-- [John Sing Dao Siu](https://github.com/J-Siu)
+- [John Sing Dao Siu](//github.com/J-Siu)
 
 ### Changelog
 

@@ -78,8 +78,8 @@ my-blog-deploy () {
 
 It is always a pain to pick a new theme when switching packages. I finally settle on the current one, and modified it with AdSense. Following are the original and my fork:
 
-- Original: [https://github.com/Vimux/Binario](https://github.com/Vimux/Binario)
-- With AdSense: [https://github.com/J-Siu/Binario](https://github.com/J-Siu/Binario)
+- Original: [https://github.com/Vimux/Binario](//github.com/Vimux/Binario)
+- With AdSense: [https://github.com/J-Siu/Binario](//github.com/J-Siu/Binario)
 
 ### Conclusion
 
