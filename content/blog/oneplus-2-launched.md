@@ -1,16 +1,16 @@
 ---
 author: "John Siu"
 date: 2015-07-28T12:07:09Z
-description: "OnePlus 2 Lanuched"
+description: "OnePlus 2 Launching excitment."
 tags: ["oneplus","phone"]
-title: "OnePlus 2 Lanuched"
+title: "OnePlus 2 Launched"
 type: "blog"
 ---
 
-Oneplus officially launched their 2nd generation phone last night. Review is not out yet, but it look beautiful in their VR launch video and in the product site.
+OnePlus officially launched their 2nd generation phone last night. Review is not out yet, but it look beautiful in their VR launch video and in the product site.
 <!--more-->
 
-I am a Oneplus One user. However the touch screen start to act strange since I dropped it in the sink, and have been debating getting a screen replacement or wait for the new one. Watching the launch last night, I am sold on the Oneplus Two.
+I am a OnePlus One user. However the touch screen start to act strange since I dropped it in the sink, and have been debating getting a screen replacement or wait for the new one. Watching the launch last night, I am sold on the OnePlus Two.
 
 ### Like
 

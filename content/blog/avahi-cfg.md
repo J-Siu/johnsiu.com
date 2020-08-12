@@ -1,10 +1,10 @@
 ---
-type: blog
-date: 2019-07-30T22:06:36-04:00
 author: "John Siu"
-title: "Avahi Config"
-description: "Some avahi config."
+date: 2019-07-30T22:06:36-04:00
+description: "Some avahi config I find useful."
 tags: ["avahi","cheatsheet"]
+title: "Avahi Config"
+type: blog
 ---
 Some Avahi config.
 <!--more-->

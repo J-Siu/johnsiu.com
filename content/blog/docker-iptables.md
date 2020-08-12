@@ -1,10 +1,10 @@
 ---
-type: "blog"
-date: 2020-06-16T16:57:06-04:00
 author: "John Siu"
-title: "Docker and Iptables"
-description: "Docker and Iptables"
+date: 2020-06-16T16:57:06-04:00
+description: "Using iptables on docker host."
 tags: ["docker","iptables"]
+title: "Docker and Iptables"
+type: "blog"
 ---
 Using iptables on docker host.
 <!--more-->

@@ -1,12 +1,12 @@
 ---
-type: blog
-date: 2019-07-30T12:52:01-04:00
 author: "John Siu"
-title: "Linux Packages"
-description: "Linux packages I used."
+date: 2019-07-30T12:52:01-04:00
+description: "Linux packages that I use."
 tags: ["alpine","cheatsheet"]
+title: "Linux Packages"
+type: blog
 ---
-Linux packages I used.
+Linux packages I use.
 <!--more-->
 
 ### Alpine
@@ -46,11 +46,11 @@ apk add \
 
 ### Network Tools
 
-- [avahi-alias](https://github.com/airtonix/avahi-aliases) - Allow multiple avahi cname aliases.
+- [avahi-alias](//github.com/airtonix/avahi-aliases) - Allow multiple avahi cname aliases.
 
 ### Development
 
-- [gogs](https://gogs.io) - Web gui git repository.
+- [gogs](//gogs.io) - Web GUI git repository.
 
 ```sh
 apk add \
@@ -61,4 +61,4 @@ apk add \
 
 ### Multi-ISO USB Boot
 
-- [ventoy](https://github.com/ventoy/Ventoy) - Open source tool to create bootable USB drive for ISO files.
+- [ventoy](//github.com/ventoy/Ventoy) - Open source tool to create bootable USB drive for ISO files.

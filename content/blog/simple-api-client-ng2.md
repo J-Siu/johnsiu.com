@@ -1,13 +1,13 @@
 ---
 author: "John Siu"
 date: 2019-08-15
-description: "simple-api-client-ng2 is an Angular api service, which work with simple-api-express, an ExpressJS api handler."
+description: "simple-api-client-ng2 is an Angular API service."
 tags: ["angular","service","expressjs","simple-api-express","simple-api-client-ng2","lib"]
 title: "Angular Simple API Client Service"
 type: blog
 ---
 
-[simple-api-client-ng2](https://github.com/J-Siu/ng2-simple-api-lib) is an Angular api service, which work with [simple-api-express](https://github.com/J-Siu/simple-api-express), an ExpressJS api handler.
+[simple-api-client-ng2](//github.com/J-Siu/ng2-simple-api-lib) is an Angular api service, which work with [simple-api-express](//github.com/J-Siu/simple-api-express), an ExpressJS api handler.
 
 <!--more-->
 
@@ -94,7 +94,7 @@ Previous created SimpleApiObj will be returned if the same baseUrl is used.
 
 ### Error Handling
 
-For detail example on error handling, please refer to [error.component.ts](https://github.com/J-Siu/ng2-simple-api-lib/blob/master/src/app/error.component.ts) contain in full example below.
+For detail example on error handling, please refer to [error.component.ts](//github.com/J-Siu/ng2-simple-api-lib/blob/master/src/app/error.component.ts) contain in full example below.
 
 ### Example
 
@@ -145,11 +145,11 @@ Connect your browser to http://localhost:4000 .
 
 ### Repository
 
-- [ng2-simple-api-lib](https://github.com/J-Siu/ng2-simple-api-lib)
+- [ng2-simple-api-lib](//github.com/J-Siu/ng2-simple-api-lib)
 
 ### Contributors
 
-- [John Sing Dao Siu](https://github.com/J-Siu)
+- [John Sing Dao Siu](//github.com/J-Siu)
 
 ### Changelog
 

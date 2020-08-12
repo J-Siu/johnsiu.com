@@ -1,10 +1,10 @@
 ---
-type: "blog"
-date: 2020-06-07T01:00:58-04:00
 author: "John Siu"
-title: "Docker Postfix"
-description: "Docker Postfix"
+date: 2020-06-07T01:00:58-04:00
+description: "My docker Postfix with sasldb2 support."
 tags: ["docker","postfix","sasl2","lib"]
+title: "Docker Postfix"
+type: "blog"
 ---
 Docker - Postfix with sasldb2 support
 <!--more-->

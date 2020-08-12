@@ -1,10 +1,10 @@
 ---
-type: "blog"
-date: 2020-07-06T21:49:56-04:00
 author: "John Siu"
-title: "Shell - Bash"
-description: "My bash cheat sheet"
+date: 2020-07-06T21:49:56-04:00
+description: "Bash cheat sheet that I use myself."
 tags: ["bash","cheatsheet"]
+title: "Shell - Bash"
+type: "blog"
 ---
 Bash cheat sheet.
 <!--more-->

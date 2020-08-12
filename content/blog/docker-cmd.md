@@ -1,10 +1,10 @@
 ---
-type: blog
-date: 2019-07-30T18:06:06-04:00
 author: "John Siu"
-title: "Docker Commands"
-description: "Docker misc."
+date: 2019-07-30T18:06:06-04:00
+description: "A personal docker cheat sheet."
 tags: ["docker","cheatsheet"]
+title: "Docker Commands"
+type: blog
 ---
 Docker misc.
 <!--more-->

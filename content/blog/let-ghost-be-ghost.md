@@ -1,7 +1,7 @@
 ---
 author: "John Siu"
 date: 2017-04-08T15:12:12Z
-description: "Let Ghost be Ghost"
+description: "Should I keep on adding https to Ghost?"
 tags: ["ghost", "http2", "https", "proxy", "blog"]
 title: "Let Ghost be Ghost"
 type: "blog"
@@ -27,7 +27,7 @@ The solution was not future proof, it was not even working at that moment!
 
 ### Until You Get Your Hands Dirty
 
-I focused on the proxy version, which is future proof by nature. At the same time, I wanted to have a proper, up to date https setup. [Qualys SSL server test](https://www.ssllabs.com/ssltest/) was used to check https settings, and I kept improving it.
+I focused on the proxy version, which is future proof by nature. At the same time, I wanted to have a proper, up to date https setup. [Qualys SSL server test](//www.ssllabs.com/ssltest/) was used to check https settings, and I kept improving it.
 
 At that point I realized it was NOT a simple task if I want to do it properly. I was facing multiple issues:
 

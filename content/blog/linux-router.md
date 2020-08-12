@@ -1,10 +1,10 @@
 ---
-type: "blog"
-date: 2019-12-15T03:07:24-05:00
 author: "John Siu"
-title: "Linux IPv6 Router How To"
-description: "Create a simple Linux router supporting IPv4 and IPv6, with shorewall/6, wide-dhcpv6-client, dnsmasq, hostapd. No radvd."
+date: 2019-12-15T03:07:24-05:00
+description: "IPv4/6 Linux router without radvd."
 tags: ["linux","how-to","ipv6","router","networking"]
+title: "Linux IPv6 Router How To"
+type: "blog"
 ---
 Linux IPv4/IPv6 router using shorewall and dnsmasq only, without radvd.
 <!--more-->
@@ -21,10 +21,10 @@ The new box I am using is [Qotom-Q355G4](https://www.amazon.com/gp/product/B076P
 
 - Main Port: 1 HD Video Port + 1 COM + 2 USB 2.0 + 2 USB 3.0 + 4 LAN.
 - CPU: Intel Core i5-5200U SOC Processor (Broadwell, Dual Core, 3M Cache, 2.2GHz, up to 2.7GHz). Support AES-NI.
-- Configuration: 8GB DDR3L RAM, 512GB mSATA SSD, WiFi, NO 2.5" SATA HDD, Fanless
+- Configuration: 8GB DDR3L RAM, 512GB mSATA SSD, WiFi, NO 2.5" SATA HDD, fanless
 - Audio in/out
 
-It is way overkill for a home router even with 100M+ donwload speed. However it has the extra power to do some docker testing.
+It is way overkill for a home router even with 100M+ download speed. However it has the extra power to do some docker testing.
 
 ---
 
@@ -108,13 +108,13 @@ dhcp4: true|We need to IPv4 address from upstream
 dhcp-identifier: mac|This is needed to get proper dhcp
 link-local: [ ]|This prevent systemd-network from starting dhcp6, explain below.
 
-The ```optional: ture``` for other interfaces allow boot process to continue without delay if no cable is pluged in.
+The ```optional: ture``` for other interfaces allow boot process to continue without delay if no cable is plugged in.
 
 Then we have our two bridges `dmz` and `lan`.
 
 `dmz` is `enp2s0`(NIC2) by itself. `hostapd` will add the wi-fi interfaces to it in later section.
 
-`lan` consist of `enp3s0`(NIC3) and `enp4s0`(NIC4) bridged to gether for internal network.
+`lan` consist of `enp3s0`(NIC3) and `enp4s0`(NIC4) bridged together for internal network.
 
 Plug in your internet cable to NIC 1 and enable the settings:
 
@@ -126,7 +126,7 @@ Internet access should be working with IPv4.
 
 #### Netplan & accept_ra
 
-Though `net.ipv6.conf.enp1s0.accept_ra=2` is set in `sysctl.conf`, netplan will remove it during network start up because `link-local: [ ]` is used. That will prevent the router from receiving IPv6 info from upsgtream.
+Though `net.ipv6.conf.enp1s0.accept_ra=2` is set in `sysctl.conf`, netplan will remove it during network start up because `link-local: [ ]` is used. That will prevent the router from receiving IPv6 info from upstream.
 
 To make sure accept_ra is set after network interface is up, create following files:
 
@@ -161,9 +161,9 @@ systemctl enable accept_ra
 
 #### wide-dhcpv6-client
 
-While dmz and lan IPv4s are configured in netplan, IPv6 use global address even for devices within your network. PD(prefix-delegation) is requied for `lan`, `dmz` interfaces so devices behind them will work correctly.
+While dmz and lan IPv4s are configured in netplan, IPv6 use global address even for devices within your network. PD(prefix-delegation) is required for `lan`, `dmz` interfaces so devices behind them will work correctly.
 
-Netplan doesn't support PD config at the time of writing. Package `wide-dhcpv6-client` is used. It is able to assign PD IPv6 addresses to other interfaces after PDs are received, almost (see sla-len at end of this section) without any address hardcoding in the config file or external helper script.
+Netplan doesn't support PD config at the time of writing. Package `wide-dhcpv6-client` is used. It is able to assign PD IPv6 addresses to other interfaces after PDs are received, almost (see `sla-len` at end of this section) without any address hardcoding in the config file or external helper script.
 
 Install package:
 
@@ -219,7 +219,7 @@ After reboot all 3 interfaces(enp1s0, dmz, lan) should have IPv4 and IPv6(scope 
 ip a
 ```
 
-> `sla-len` : Do `journalctl -t dhcp6c | grep 'IA_PD prefix:'`. If the IA_PD prefix end in /56 instead of /64, change both line to `sla-len 8;`. This config is for /64 prefix and actually not sutitable for /56, which should use a single `id-assoc pd` block with two `prefix-interface`.
+> `sla-len` : Do `journalctl -t dhcp6c | grep 'IA_PD prefix:'`. If the IA_PD prefix end in /56 instead of /64, change both line to `sla-len 8;`. This config is for /64 prefix and actually not suitable for /56, which should use a single `id-assoc pd` block with two `prefix-interface`.
 
 ---
 
@@ -439,7 +439,7 @@ auth_algs=1
 
 `bssid` of the physical wi-fi adapter(`wlp5s0`) is its real mac address.
 
-`bssid` of the virtual wi-fi adapter(`wlan0`) can be any valid mac address format that don't conflict with other devices in the network. I usually just increse the physical adapter mac by 1.
+`bssid` of the virtual wi-fi adapter(`wlan0`) can be any valid mac address format that don't conflict with other devices in the network. I usually just increase the physical adapter mac by 1.
 
 `hostapd` may die during boot up due to interface initialization timing. Add following in hostapd.service `[Service]` section:
 
@@ -528,13 +528,13 @@ nameserver 127.0.0.1
 
 ---
 
-### Conslusion
+### Conclusion
 
 It took much longer than I thought to put all this together.
 
-I had to switch packages a few times due to various reasons, but mostly to avoid creating custome scripts. The most notible one is dnsmasq replacing both systemd-resolverd/powerDNS-recursor and radvd. dnsmasq is able to handle both functions with much cleaner way and more flexibility.
+I had to switch packages a few times due to various reasons, but mostly to avoid creating custom scripts. The most notable one is dnsmasq replacing both systemd-resolved/powerDNS-recursor and radvd. dnsmasq is able to handle both functions with much cleaner way and more flexibility.
 
-I believe currently, if not using a full router/firewall distro like OpenWrt, pfSense or ClearOS, then dnsmasq with wide-dhcpv6-client is the best combination for DIY Linux router solution. Their ability of auto IPv6 prefix handling, which allow configurations without hardcoding IPv6 prefix, is especially important for location that can't secure their own IPV6 prefix.
+I believe currently, if not using a full router/firewall distro like OpenWRT, pfSense or ClearOS, then dnsmasq with wide-dhcpv6-client is the best combination for DIY Linux router solution. Their ability of auto IPv6 prefix handling, which allow configurations without hardcoding IPv6 prefix, is especially important for location that can't secure their own IPV6 prefix.
 
 ---
 
@@ -542,7 +542,7 @@ I believe currently, if not using a full router/firewall distro like OpenWrt, pf
 
 #### mpd on Qotom-Q355G4
 
-`mpd` has difficulty identifying the alsa PCM on Qotom-Q355G4. Use following `/etc/asound.conf` to solve it:
+`mpd` has difficulty identifying the ALSA PCM on Qotom-Q355G4. Use following `/etc/asound.conf` to solve it:
 
 ```ini
 defaults.pcm.device 1

@@ -1,7 +1,7 @@
 ---
 author: "John Siu"
 date: 2019-07-31T00:30:22-04:00
-description: "Some nginx config."
+description: "Some quick nginx configuration."
 tags: ["nginx","cheatsheet","redirect","rewrite","permalink"]
 title: "Nginx Config"
 type: blog

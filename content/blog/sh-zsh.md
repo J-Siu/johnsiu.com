@@ -1,7 +1,7 @@
 ---
 author: "John Siu"
 date: 2019-08-01T20:06:21-04:00
-description: "My zsh cheat sheet."
+description: "Zsh cheat sheet that I use myself."
 tags: ["zsh","cheatsheet"]
 title: "Shell - Zsh"
 type: blog

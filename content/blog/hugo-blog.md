@@ -1,10 +1,10 @@
 ---
-type: "blog"
-date: 2019-07-21T18:28:57-04:00
 author: "John Siu"
-title: "Hugo Blog"
-description: "Hugo Blog zsh workflow"
+date: 2019-07-21T18:28:57-04:00
+description: "My Hugo blog zsh workflow."
 tags: ["hugo","blog","zsh"]
+title: "Hugo Blog"
+type: "blog"
 ---
 
 Finally get my Hugo Blog workflow iron out.
@@ -16,13 +16,13 @@ Early 2017 I switched my blogging package from WordPress to Ghost.
 
 I was attracted to Ghost due to its simplicity, low resource requirement, and most importantly the markdown syntax.
 
-I started using markdown with GitHub. Nowadays I create all my documentation, notes in markdown. Typing them up in VScode, I don't need the web gui interface in Ghost.
+I started using markdown with GitHub. Nowadays I create all my documentation, notes in markdown. Typing them up in VSCode, I don't need the web GUI interface in Ghost.
 
-Late last year I come across the term __static site generator__. After experimenting with different packages, I picked __[Hugo](https://gohugo.io/)__.
+Late last year I come across the term `static site generator`. After experimenting with different packages, I picked [Hugo](//gohugo.io/).
 
 ### Workflow
 
-Hugo is a command line tool. There is no online/web gui. It does have a steep learning curve during initial setup. However once I lock down my directory structure, theme, and all the commands I need, it become smooth and easy.
+Hugo is a command line tool. There is no online/web GUI. It does have a steep learning curve during initial setup. However once I lock down my directory structure, theme, and all the commands I need, it become smooth and easy.
 
 Following is the workflow in plan commands:
 
@@ -31,13 +31,13 @@ Following is the workflow in plan commands:
         cd <blog dir>
         hugo new blog/<new-postname>.md
 
-2. Edit blog post in VScode.
+2. Edit blog post in VSCode.
 
 3. Test in browser
 
         hugo server -D
 
-4. Publish to webserver
+4. Publish to web server
 
         hugo
         rsync --stats -haz --delete public user@host:/home/user

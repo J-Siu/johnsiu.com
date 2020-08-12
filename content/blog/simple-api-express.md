@@ -1,13 +1,13 @@
 ---
 author: "John Siu"
 date: 2019-08-15
-description: "ExpressJS api handler (NOT middleware) that work with simple-api-client-ng2, an Angular api service."
+description: "ExpressJS API handler(NOT middleware)."
 tags: ["angular","service","expressjs","simple-api-express","simple-api-client-ng2","lib"]
 title: "Simple API handler for node.js / ExpressJS"
 type: blog
 ---
 
-[simple-api-express](https://github.com/J-Siu/simple-api-express) is an ExpressJS api handler (NOT middleware) that work with [simple-api-client-ng2](https://github.com/J-Siu/ng2-simple-api-lib), an Angular api service.
+[simple-api-express](//github.com/J-Siu/simple-api-express) is an ExpressJS api handler (NOT middleware) that work with [simple-api-client-ng2](https://github.com/J-Siu/ng2-simple-api-lib), an Angular api service.
 <!--more-->
 
 ### Install

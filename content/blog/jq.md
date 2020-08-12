@@ -1,12 +1,12 @@
 ---
-type: "blog"
-date: 2019-11-21T16:19:53-05:00
 author: "John Siu"
-title: "JQ - Json Parser"
-description: "jq cheatsheet"
+date: 2019-11-21T16:19:53-05:00
+description: "My personal jq cheat sheet."
 tags: ["jq","cheatsheet"]
+title: "JQ - Json Parser"
+type: "blog"
 ---
-Cheatsheet for simple usage.
+Cheat sheet for simple usage.
 <!--more-->
 
 simple.json
