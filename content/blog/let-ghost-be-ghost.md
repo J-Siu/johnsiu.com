@@ -19,7 +19,7 @@ Ghost development team sticked with their official answer : Use Nginx, Apache or
 
 With the assumption that it should be an easy task, I started to toy around with different ideas to make this happen in a pure Node.js way, without Nginx or Apache.
 
-I came up with "solutions" like [Ghost Https Index.js](//johnsiu.com/ghost-https-index-js-in-github/) by modifying the Ghost's index.js. Then put together a node.js proxy version too. Did both in a short period of time without much planning. They worked, but story didn't end there.
+I came up with "solutions" like [Ghost Https Index.js](/blog/ghost-https-index-js-in-github/) by modifying the Ghost's index.js. Then put together a node.js proxy version too. Did both in a short period of time without much planning. They worked, but story didn't end there.
 
 During that time I also upgraded my Ghost installation from 0.11.4 to 0.11.7. Ghost upgrade went well. But not fully functional with my modified index.js.
 
