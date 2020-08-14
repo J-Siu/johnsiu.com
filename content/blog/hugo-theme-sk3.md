@@ -9,11 +9,19 @@ tags: ["hugo","theme","adsense","lib"]
 Full feature Hugo theme build on top of [hugo-theme-sk2](//github.com/J-Siu/hugo-theme-sk2) with Google AdSense support.
 <!--more-->
 
+### SK Themes
+
+Theme|GitHub|Hugo|Demo|Description
+---|---|---|---|---
+SK1|[hugo-theme-sk1](//github.com/J-Siu/hugo-theme-sk1)|[SK1](//themes.gohugo.io/hugo-theme-sk1/)|[sk1.jsiu.dev](//sk1.jsiu.dev/)|Fully functional basic Hugo theme with no css, no javascript.
+SK2|[hugo-theme-sk2](//github.com/J-Siu/hugo-theme-sk2)|[SK2](//themes.gohugo.io/hugo-theme-sk2/)|[sk2.jsiu.dev](//sk2.jsiu.dev/)|Fully functional basic Hugo theme with minimum css.
+SK3|[hugo-theme-sk3](//github.com/J-Siu/hugo-theme-sk3)|[SK3](//themes.gohugo.io/hugo-theme-sk3/)|[sk3.jsiu.dev](//sk3.jsiu.dev/)|Full feature Hugo theme with Google AdSense support.
+
 ### Sites
 
-John Siu Blog: https://johnsiu.com/
+John Siu Blog: [johnsiu.com](//johnsiu.com/)
 
-SK3 demo site: https://sk3.jsiu.dev/ with content from [hugoBasicExample](//github.com/gohugoio/hugoBasicExample)
+SK3 demo site: [sk3.jsiu.dev](//sk3.jsiu.dev/) with content from [hugoBasicExample](//github.com/gohugoio/hugoBasicExample)
 
 ### Install
 
@@ -78,6 +86,38 @@ hugo server -D --bind :: \
   ```toml
   [Params]
   mainSections = "post"
+  ```
+
+- Favicon
+
+  Path of favicon of the published site.
+
+  If favicon `logo.svg` is put inside `static` like following:
+
+  ```sh
+  ./
+  ├── archetypes/
+  ├── content/
+  ├── public/
+  ├── resources/
+  ├── static/
+  │   └── logo.svg
+  ├── themes/
+  └── config.toml
+  ```
+
+  The final path will be `/logo.svg`:
+
+  ```toml
+  [Params]
+  favicon = "/logo.svg"
+  ```
+
+  SK themes come with default favicon. To disable it:
+
+  ```sh
+  # At Hugo site root
+  touch static/favicon.ico
   ```
 
 - Sub-title
@@ -268,6 +308,7 @@ paginate               = 15
 
 [Params]
 #adsense_id   = ""
+#favicon      = ""
 #listlastmod  = true
 #mainSections = "post"
 #pagewidth    = "1200px"
@@ -338,12 +379,6 @@ Social buttons provided by [Font Awesome](//github.com/FortAwesome/Font-Awesome)
 
 - SK3 inspired by [Vimux/Binario](//github.com/Vimux/Binario). Check it out too!
 
-### Repository
-
-- [hugo-theme-sk1](//github.com/J-Siu/hugo-theme-sk1) Fully functional basic Hugo theme with no css, no javascript.
-- [hugo-theme-sk2](//github.com/J-Siu/hugo-theme-sk2) Fully functional basic Hugo theme with minimum css.
-- [hugo-theme-sk3](//github.com/J-Siu/hugo-theme-sk3) Full feature Hugo theme with Google AdSense support.
-
 ### Contributors
 
 - [John Sing Dao Siu](//github.com/J-Siu)
@@ -402,6 +437,11 @@ Social buttons provided by [Font Awesome](//github.com/FortAwesome/Font-Awesome)
   - Fix Google Analytics
   - Fix table for mobile screen
   - Refactor css margin/padding/font size
+- 0.9.6
+  - Add default favicon.ico
+  - Remove <h1> from header.html & menu.html (Bing SEO)
+  - Standardize .Site. -> site.
+  - Update README.md
 
 ### License
 
