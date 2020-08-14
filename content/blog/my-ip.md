@@ -12,16 +12,22 @@ Using Linux command line.
 ### IPv4
 
 ```sh
+curl https://myip4.johnsiu.com/
+curl https://myip4.jsiu.dev/
+curl -4 https://myip.jsiu.dev/
+
 curl ifconfig.me
 curl ipecho.net/plain
-curl -4 https://myip.jsiu.dev/
 ```
 
 ### IPv6
 
 ```sh
+curl https://myip6.johnsiu.com/
+curl https://myip6.jsiu.dev/
+curl -6 https://myip.jsiu.dev/
+
 curl icanhazip.com
 curl ifconfig.co
 dig TXT +short o-o.myaddr.l.google.com @ns1.google.com
-curl -6 https://myip.jsiu.dev/
 ```
