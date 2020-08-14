@@ -281,9 +281,11 @@ The search box in Hugo site is your friend!!
 
 ### SK Themes
 
-- [hugo-theme-sk1](//github.com/J-Siu/hugo-theme-sk1) Fully functional basic Hugo theme with no css, no javascript. Full example of this walk-through.
-- [hugo-theme-sk2](//github.com/J-Siu/hugo-theme-sk2) Fully functional basic Hugo theme with minimum css.
-- [hugo-theme-sk3](/blog/hugo-theme-sk3/) Full feature Hugo theme with Google AdSense support.
+Theme|GitHub|Hugo|Demo|Description
+---|---|---|---|---
+SK1|[hugo-theme-sk1](//github.com/J-Siu/hugo-theme-sk1)|[SK1](//themes.gohugo.io/hugo-theme-sk1/)|[sk1.jsiu.dev](//sk1.jsiu.dev/)|Fully functional basic Hugo theme with no css, no javascript.
+SK2|[hugo-theme-sk2](//github.com/J-Siu/hugo-theme-sk2)|[SK2](//themes.gohugo.io/hugo-theme-sk2/)|[sk2.jsiu.dev](//sk2.jsiu.dev/)|Fully functional basic Hugo theme with minimum css.
+SK3|[hugo-theme-sk3](//github.com/J-Siu/hugo-theme-sk3)|[SK3](//themes.gohugo.io/hugo-theme-sk3/)|[sk3.jsiu.dev](//sk3.jsiu.dev/)|Full feature Hugo theme with Google AdSense support.
 
 [^1]: [Define the Base Template](//gohugo.io/templates/base/#define-the-base-template)
 [^2]: [Hugo List Defaults](//gohugo.io/templates/lists#list-defaults)
