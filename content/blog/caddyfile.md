@@ -86,3 +86,15 @@ www.example.com {
 	templates /www/site/www.example.com/myip/index.html
 }
 ```
+
+### Header
+
+```nginx
+www.example.com {
+  root * /www/site/www.example.com
+  file_server
+  header Access-Control-Allow-Origin *
+  header Cache-Control max-age=3600
+  header /css/* Cache-Control max-age=604800
+}
+```
