@@ -25,6 +25,11 @@ Show my IP.
 
 <div id="myip6">Not Available</div>
 
+### How This Is Done
+
+- [Hugo - Create My IP Page With Caddy](/blog/hugo-caddy-myip/)
+- [Hugo - My IP Page With Javascript](/blog/hugo-caddy-myip-js/)
+
 ---
 
 <script>
