@@ -95,5 +95,9 @@ curl -4 https://johnsiu.com/myip/
 curl -6 https://johnsiu.com/myip/
 ```
 
+### Simultaneous IPv4 IPv6
+
+[Hugo - My IP Page With Javascript](/blog/hugo-caddy-myip-js/) will explore how to show IPv4 and IPv6 at the same time.
+
 [^1]: [Caddy template functions](//caddyserver.com/docs/modules/http.handlers.templates).
 [^2]: [Caddy templates doc](//caddyserver.com/docs/caddyfile/directives/templates#templates).
