@@ -14,4 +14,4 @@ I booked ticket for 4/24.
 
 You can see more detail here: [TED Cinema](//tedcinema.com)
 
-<iframe width="560" height="315" src="//www.youtube.com/embed/frwwE9PCILU?rel=0" frameborder="0" allowfullscreen></iframe>
+{{< youtube frwwE9PCILU >}}
