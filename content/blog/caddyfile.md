@@ -99,6 +99,49 @@ www.example.com {
 }
 ```
 
+### Import
+
+Caddy v2.1+ allow common section to be factored out (snippet) and re-used by different sections.
+
+Following is a snippet for Cache-Control:
+
+```nginx
+(cache_ctl) {
+	header /css/* Cache-Control max-age=3600
+	header /img/* Cache-Control max-age=3600
+	header /js/* Cache-Control max-age=3600
+}
+```
+
+Following is a snippet for site options:
+
+```nginx
+(site_option) {
+	encode gzip
+	file_server
+	handle_errors {
+		rewrite * /{http.error.status_code}.html
+		file_server
+	}
+}
+```
+
+Use above in site sections:
+
+```nginx
+example1.com {
+  import site_option
+  import cache_ctl
+}
+
+example2.com {
+  import site_option
+  import cache_ctl
+}
+```
+
+Also check out example in [CROS](#cros).
+
 ### CROS
 
 - Single CROS
