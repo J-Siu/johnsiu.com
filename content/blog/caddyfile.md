@@ -38,7 +38,7 @@ old.example.com other.example.com {
 
 ```nginx
 www.example.com {
-	root * /www/site/www.example.com
+	root * /www/example.com
 	file_server
 	handle_errors {
 		rewrite * /{http.error.status_code}.html
@@ -51,7 +51,7 @@ www.example.com {
 
 Create your own `myip` page.
 
-`/www/site/www.example.com/myip/index.html`
+`/www/example.com/myip/index.html`
 
 ```html
 {{.RemoteIP}}
@@ -61,29 +61,29 @@ Caddy will parse all files:
 
 ```nginx
 www.example.com {
-	root * /www/site/www.example.com
+	root * /www/example.com
 	file_server
 	templates
 }
 ```
 
-Caddy will parse files in `/www/site/www.example.com/myip/`:
+Caddy will parse files in `/www/example.com/myip/`:
 
 ```nginx
 www.example.com {
-	root * /www/site/www.example.com
+	root * /www/example.com
 	file_server
-	templates /www/site/www.example.com/myip/
+	templates /www/example.com/myip/
 }
 ```
 
-Caddy will only parse `/www/site/www.example.com/myip/index.html`:
+Caddy will only parse `/www/example.com/myip/index.html`:
 
 ```nginx
 www.example.com {
-	root * /www/site/www.example.com
+	root * /www/example.com
 	file_server
-	templates /www/site/www.example.com/myip/index.html
+	templates /www/example.com/myip/index.html
 }
 ```
 
@@ -91,10 +91,42 @@ www.example.com {
 
 ```nginx
 www.example.com {
-  root * /www/site/www.example.com
+  root * /www/example.com
   file_server
   header Access-Control-Allow-Origin *
   header Cache-Control max-age=3600
   header /css/* Cache-Control max-age=604800
+}
+```
+
+### CROS
+
+- Single CROS
+
+```nginx
+api.example.com {
+  root * /www/api.example.com
+  file_server
+	@site2 header Origin https://w3.example.com
+	header @site2 Access-Control-Allow-Origin https://w3.example.com
+}
+```
+
+- Multiple CROS
+
+> Caddy v2.1+
+
+```nginx
+(cors) {
+	@{args.0} header Origin {args.0}
+	header @{args.0} Access-Control-Allow-Origin {args.0}
+}
+
+api.example.com {
+  root * /www/api.example.com
+  file_server
+  import cors https://example.com
+  import cors https://www.example.com
+  import cors https://another.example.com
 }
 ```
