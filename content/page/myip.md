@@ -11,28 +11,28 @@ Show my IP.
 <!--more-->
 ---
 
-### IP via Javascript
-
-#### IPv4
-
-<div id="IPv4">Not Available</div>
-
-#### IPv6
-
-<div id="IPv6">Not Available</div>
-
 ### IP via Caddy Templates
 
 {{.RemoteIP}}
 
+### IP via Javascript
+
+#### IPv4
+
+<div id="myip4">Not Available</div>
+
+#### IPv6
+
+<div id="myip6">Not Available</div>
+
 ---
 
 <script>
-function myip(ipv,url){
-  fetch(url)
+function myip(ipv){
+  fetch('//myip'+ipv+'.jsiu.dev')
     .then(r=>r.text())
-    .then(t=>document.getElementById(ipv).innerHTML=t)
+    .then(t=>document.getElementById('myip'+ipv).innerHTML=t)
 }
-myip('IPv4','https://myip4.jsiu.dev/')
-myip('IPv6','https://myip6.jsiu.dev/')
+myip(4)
+myip(6)
 </script>
