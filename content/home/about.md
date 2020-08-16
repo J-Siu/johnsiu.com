@@ -2,6 +2,7 @@
 author: "John Siu"
 comments: false
 description: "Something about John Siu."
+prevnext : false
 related: false
 title: "About"
 type: "home"

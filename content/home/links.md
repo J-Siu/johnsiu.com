@@ -2,9 +2,9 @@
 author: "John Siu"
 comments: false
 description: "Links to companies and friends I know personally."
+prevnext : false
 related: false
 title: "Links"
-toc: false
 type: "home"
 ---
 Links to companies and friends I know personally.

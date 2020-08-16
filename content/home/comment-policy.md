@@ -2,9 +2,9 @@
 author: "John Siu"
 comments: false
 description: "Comment policy for Disqus."
+prevnext : false
 related: false
 title: "Comment Policy"
-toc: false
 type: "home"
 ---
 <!--more-->

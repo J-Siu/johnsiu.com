@@ -2,9 +2,10 @@
 author: "John Siu"
 date: 2020-08-06T15:29:03-04:00
 description: "MyIP page using Hugo and Caddy."
+prevnext : false
+related: false
 tags: ["caddy","hugo","myip"]
 title: "My IP"
-toc: true
 type: "home"
 ---
 Show me the IPs.
