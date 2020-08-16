@@ -3,7 +3,7 @@ type: "blog"
 date: 2019-07-30T00:14:48-04:00
 author: "John Siu"
 title: "Nginx URL Redirect For Old WordPress Permalink"
-description: "Nginx URL redirect for old WordPress Permalink in the internet."
+description: "Nginx URL redirect for old WordPress Permalink."
 tags: ["nginx","redirect","permalink","blog","migrate"]
 ---
 Seems URL rewrite/redirect is a never ending story.
@@ -31,7 +31,7 @@ Log was set to minimum when I was using h2ghost. But once I switched to Nginx, [
 
 ### Redirect
 
-To *save* those requests, I need to implement redirect/rewrite again, just like old times. Luckily the [regex from my old Lighttpd](/blog/lighttpd-url-redirect-and-changing-wordpress-permalink-structure/) still works.
+To *save* those requests, I need to implement redirect/rewrite again, just like old times. Luckily the [regex from my old Lighttpd](/blog/lighttpd-redirect-and-wp-permalink/) still works.
 
 ```apache
 # /index.php/YYYY/MM/DD/<article> to /blog/<article>

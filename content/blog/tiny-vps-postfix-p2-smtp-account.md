@@ -13,8 +13,8 @@ In the last part I show a minimal setup of Postfix. It allow incoming emails to 
 ### Series Content
 
 - Part 1 - [Tiny VPS Postfix](/blog/tiny-vps-postfix/)
-- Part 2 - [Non-Linux Outgoing SMTP Account](/blog/tiny-vps-postfix-part-2-non-linux-outgoing-smtp-account/) <- You are here
-- Part 3 - [GMail As Email Client](/blog/tiny-vps-postfix-part-3-gmail-as-your-email-client/)
+- Part 2 - [Non-Linux Outgoing SMTP Account](/blog/tiny-vps-postfix-p2-smtp-account/) <- You are here
+- Part 3 - [GMail As Email Client](/blog/tiny-vps-postfix-p3-gmail/)
 
 ### Replying email with my own domain
 

@@ -3,11 +3,11 @@ author: "John Siu"
 date: 2017-02-08T08:00:44Z
 description: "Configure URL Redirect For Ghost After Migrating From WordPress."
 tags: ["ghost", "nodejs", "permalink", "blog", "migrate"]
-title: "Ghost Blog Redirect Configuration for WordPress Migration"
+title: "Ghost Blog Redirect for WordPress Migration"
 type: "blog"
 ---
 
-In my earlier post [Lighttpd url.redirect and changing WordPress permalink structure](/blog/lighttpd-url-redirect-and-changing-wordpress-permalink-structure/), I talk about the issue when permalink structure is changed.
+In my earlier post [Lighttpd url.redirect and changing WordPress permalink structure](/blog/lighttpd-redirect-and-wp-permalink/), I talk about the issue when permalink structure is changed.
 <!--more-->
 
 ### New Issue

@@ -3,7 +3,7 @@ type: "blog"
 date: 2019-08-17T20:59:28-04:00
 author: "John Siu"
 title: "Hugo Front Matter Aliases for Migration"
-description: "Use Hugo front matter aliases to handle migration from other platform such as Ghost or WordPress."
+description: "Use Hugo front matter aliases for migration from Ghost or WordPress."
 tags: ["hugo","blog","redirect","permalink","migrate","front matter"]
 ---
 Use Hugo front matter aliases to handle migration from other platform such as Ghost or WordPress.
@@ -29,7 +29,7 @@ It looks simple by itself but it can be a big mess. The risk is high and I opted
 ```nginx
 location /ghost-blog-custom-theme { return 301 https://johnsiu.com/blog/ghost-blog-custom-theme; }
 location /ghost-blog-from-wordpress { return 301 https://johnsiu.com/blog/ghost-blog-from-wordpress; }
-location /ghost-blog-redirect-after-wordpress-migration { return 301 https://johnsiu.com/blog/ghost-blog-redirect-after-wordpress-migration; }
+location /ghost-blog-redirect-for-wordpress { return 301 https://johnsiu.com/blog/ghost-blog-redirect-for-wordpress; }
 location /ghost-blog-self-hosted-with-https-using-nodejs-only { return 301 https://johnsiu.com/blog/ghost-blog-self-hosted-with-https-using-nodejs-only; }
 location /ghost-https-index-js-in-github { return 301 https://johnsiu.com/blog/ghost-https-index-js-in-github; }
 ...
@@ -60,12 +60,12 @@ aliases:
     - /index.php/ghost-blog-from-wordpress.md
     - /index.php/2017/02/07/ghost-blog-from-wordpress.md
 
---- 2017/02/08 ghost-blog-redirect-after-wordpress-migration.md
+--- 2017/02/08 ghost-blog-redirect-for-wordpress.md
 
 aliases:
-    - /ghost-blog-redirect-after-wordpress-migration.md
-    - /index.php/ghost-blog-redirect-after-wordpress-migration.md
-    - /index.php/2017/02/08/ghost-blog-redirect-after-wordpress-migration.md
+    - /ghost-blog-redirect-for-wordpress.md
+    - /index.php/ghost-blog-redirect-for-wordpress.md
+    - /index.php/2017/02/08/ghost-blog-redirect-for-wordpress.md
 
 --- 2017/02/25 ghost-blog-self-hosted-with-https-using-nodejs-only.md
 
@@ -109,13 +109,13 @@ public/
 ├── before-and-after-d/
 ├── ghost-blog-custom-theme/
 ├── ghost-blog-from-wordpress/
-├── ghost-blog-redirect-after-wordpress-migration/
+├── ghost-blog-redirect-for-wordpress/
 ├── ghost-blog-self-hosted-with-https-using-nodejs-only
 ├── ghost-https-index-js-in-github/
 ├── h2ghost/
 ├── how-to-configure-systemd-journal-remote/
 ├── let-ghost-be-ghost/
-├── lighttpd-url-redirect-and-changing-wordpress-permalink-structure/
+├── lighttpd-redirect-and-wp-permalink/
 ├── lighttpd-url-rewrite-for-latest-wordpress-jetpack/
 ...
 ```
