@@ -27,30 +27,26 @@ Provide easy viewing and updating of media file tags from command line.
 #### Alpine
 
 ```sh
-apk add taglib-dev libc-dev go
+apk add taglib-dev libc-dev
 ```
 
-#### OSX
+#### MacOS
 
 ```sh
-brew install taglib go
+brew install taglib
 ```
 
 #### Ubuntu
 
 ```sh
-apt-get install libtagc0-dev golang
+apt-get install libtagc0-dev
 ```
 
 ### Install
 
 ```sh
 go get github.com/J-Siu/id3go
-cd $HOME/go/src/github.com/J-Siu/id3go
-go install
 ```
-
-Binary will be at __$HOME/go/bin/id3go__
 
 ### Usage
 
@@ -105,11 +101,11 @@ id3go set --album "My Record" *.mp3
 
 ### Repository
 
-- [id3go](//github.com/J-Siu/id3go)
+- [id3go](https://github.com/J-Siu/id3go)
 
 ### Contributors
 
-- [John Sing Dao Siu](//github.com/J-Siu)
+- [John Sing Dao Siu](https://github.com/J-Siu)
 
 ### Changelog
 
@@ -120,7 +116,7 @@ id3go set --album "My Record" *.mp3
 
 The MIT License
 
-Copyright (c) 2019
+Copyright (c) 2020 John Siu
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
