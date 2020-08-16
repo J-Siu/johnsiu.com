@@ -3,7 +3,7 @@ type: blog
 date: 2019-08-22T23:00:28-04:00
 author: "John Siu"
 title: "LVM Commands"
-description: "LVM commands cheat sheet"
+description: "LVM commands cheat sheet."
 tags: ["lvm","cheatsheet"]
 ---
 Some LVM commands.

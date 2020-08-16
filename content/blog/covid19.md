@@ -3,8 +3,8 @@ type: "blog"
 date: 2020-03-29T17:30:00-04:00
 author: "John Siu"
 title: "Covid-19 Websites List"
-description: "Corvid-19 Websites List"
-tags: ["covid-19","corona virus"]
+description: "Covid-19 websites list worldwide."
+tags: ["covid-19"]
 ---
 
 Some websites for covid-19 information.

@@ -3,10 +3,10 @@ type: blog
 date: 2019-07-30T17:25:32-04:00
 author: "John Siu"
 title: "Mac OS Packages"
-description: "Mac OS packages I used."
+description: "Some MacOS packages I use."
 tags: ["macos","cheatsheet"]
 ---
-Mac OS packages I use.
+MacOS packages I use.
 <!--more-->
 ### System
 

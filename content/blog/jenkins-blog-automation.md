@@ -3,7 +3,7 @@ type: "blog"
 date: 2020-06-17T18:04:07-04:00
 author: "John Siu"
 title: "Jenkins Blog Automation"
-description: "Jenkins Blog Automation"
+description: "Blog automation using Jenkins."
 tags: ["jenkins","hugo"]
 ---
 Automate site generation with Jenkins.

@@ -3,7 +3,7 @@ type: "blog"
 date: 2019-08-13T11:13:25-04:00
 author: "John Siu"
 title: "Docker on Mac"
-description: "Running Docker on Mac OS"
+description: "Running Docker on MacOS ..."
 tags: ["docker","macos","how-to"]
 ---
 Running Docker on Mac and create first container.
@@ -187,6 +187,6 @@ docker container stop 260ee2c31f37
 
 [^1]: [Docker Getting Started](//docs.docker.com/get-started/)
 
-[^2]: [docker-unbund](//github.com/J-Siu/docker-unbound)
+[^2]: [docker-unbound](//github.com/J-Siu/docker-unbound)
 
 [^3]: [Dockerfile Reference](//docs.docker.com/engine/reference/builder/)

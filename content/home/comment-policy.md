@@ -1,7 +1,7 @@
 ---
 author: "John Siu"
 comments: false
-description: "Comment Policy"
+description: "Comment policy for Disqus."
 related: false
 title: "Comment Policy"
 toc: false
