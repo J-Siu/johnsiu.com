@@ -31,44 +31,56 @@ To enable smtp authentication with Postfix without Linux account or a database, 
 
 #### Installing
 
-`apt-get install sasl2-bin`
+```sh
+apt-get install sasl2-bin
+```
 
 This will pull in the required sasl2 library and command line utilities required to use sasldb2.
 
 #### Setup Postfix
 
-To have postfix to use sasldb2, modify `/etc/postfix/sasl/smtpd.conf` as follow
+To have postfix to use sasldb2, modify `/etc/postfix/sasl/smtpd.conf` as follow:
 
 ```ini
 pwcheck_method: auxprop
 mech_list: plain login
 ```
 
-Then restart postfix
+Then restart postfix:
 
-`sudo service postfix restart`
+```sh
+sudo service postfix restart
+```
 
 #### Create sasldb2 users
 
-To create a user in sasldb2, use following command
+To create a user in sasldb2, use following command:
 
-`saslpasswd2 -c -u <domain> -a smtpauth <username>`
+```sh
+saslpasswd2 -c -u <domain> -a smtpauth <username>
+```
 
-For example, my domain is `johnsiu.com`, and I want to have a new email `testing@johnsiu.com`
+For example, my domain is `johnsiu.com`, and I want to have a new email `testing@johnsiu.com`:
 
-`saslpasswd2 -c -u johnsiu.com -a smtpauth testing`
+```sh
+saslpasswd2 -c -u johnsiu.com -a smtpauth testing
+```
 
 #### Finalizing
 
 The actual sasldb2 file is located at `/etc/sasldb2`. Make sure it has the following permission:
 
-`-rw-rw---- 1 postfix sasl sasldb2`
+```sh
+-rw-rw---- 1 postfix sasl sasldb2
+```
 
 #### What if sasldb2 doesn’t seems to work
 
-Then it is likely that your postfix is run with chroot. Just copy sasldb2 to the chrooted /etc/
+Then it is likely that your postfix is run with chroot. Just copy sasldb2 to the chroot `/etc/`:
 
-`cp -a /etc/sasldb2 /var/spool/postfix/etc/`
+```sh
+cp -a /etc/sasldb2 /var/spool/postfix/etc/
+```
 
 You will have to do that every time you modify sasl2 password, add/del sasl2 user.
 

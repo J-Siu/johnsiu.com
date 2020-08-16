@@ -58,4 +58,4 @@ The above will take care of the following redirects:
 - https://johnsiu.com/index.php/catagory/\<tag\>/ to https://johnsiu.com/tag/\<tag\>/
 - https://johnsiu.com/index.php/\<post\>/ to https://johnsiu.com/\<post\>/
 
-__Done!! ^.^__
+Done!! ✌️
