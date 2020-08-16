@@ -9,7 +9,7 @@ tags: ["macos","kvm","virt-manager","virt-viewer","remote-viewer","zsh","how-to"
 Updated instruction for MacOS Mojave.
 <!--more-->
 
-In [MacOS direct connect to KVM client desktop](/blog/macos-kvm-remove-viewer/) I talked about XQuartz and virt-viewer. This will show you how to run `virt-manager` and `virsh`.
+In [MacOS direct connect to KVM client desktop](/blog/macos-kvm-remote-viewer/) I talked about XQuartz and virt-viewer. This will show you how to run `virt-manager` and `virsh`.
 
 > **NOTE:** The user id \<user\> on KVM host used for ssh should be added to group `libvirt` already. Check out [Alpine KVM](/blog/alpine-kvm/) for preparing KVM for remote management. \<user\>'s ssh key should also be setup.
 

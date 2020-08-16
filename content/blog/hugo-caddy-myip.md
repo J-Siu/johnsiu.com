@@ -72,7 +72,7 @@ Restart caddy server.
 
 ### Plain Text
 
-You can also create a plain text version to be used by `curl` command as I shown in [How to Find My Public IP](/blog/my-ip/).
+You can also create a plain text version to be used by `curl` command as I shown in [How to Find My Public IP](/blog/myip/).
 
 In Hugo site root, create `static/myip/intex.html`:
 
