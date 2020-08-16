@@ -229,7 +229,8 @@ My postfix is now up and running in docker container.
 
 ### The PRO
 
-I made `compose` into a git repository and checked in my git server. If I want to change my vps box again, I just have to clone `compose` to the new box. I can also backup `compose` with a single tar command.
+- Re-using existing postfix configuration with minimum modification.
+- Easy to migrate. `compose` is a git repository and checked into git server. If I want to change my VPS box again, I just have to clone `compose` to the new box. I can also backup `compose` with a single tar command.
 
 ### The CON
 

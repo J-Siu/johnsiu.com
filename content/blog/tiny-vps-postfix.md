@@ -31,7 +31,7 @@ Do I really want another email account setup on my phone, my desktop, or have to
 
 No. Lets take a step back and think again.
 
-### What is really needed … for now?
+### What is really needed … for now
 
 My WordPress blog, the only public website for now, is able to send directly to my personal email. So it does not need an email address.
 

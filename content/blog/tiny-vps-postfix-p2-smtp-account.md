@@ -19,7 +19,7 @@ In the last part I show a minimal setup of Postfix. It allow incoming emails to 
 
 ### Replying email with my own domain
 
-However, there are situations we would like to reply or sent with our own domain. Especially with today tighter email security setup, relaying through others email server (eg. your isp) will likely have your email flagged as spam, if not outright rejected.
+However, there are situations we would like to reply or sent with our own domain. Especially with today tighter email security setup, relaying through others email server (eg. your ISP) will likely have your email flagged as spam, if not outright rejected.
 
 It will be way over kill to setup `postfixadmin` and `mysql` for a few email addresses. On the other hand, it is undesirable (at least for me) to setup a local Linux account on the VPS just for sending email.
 
@@ -33,7 +33,7 @@ To enable smtp authentication with Postfix without Linux account or a database, 
 
 `apt-get install sasl2-bin`
 
-This will pull in the required sasl library and command line utilities required to use sasldb2.
+This will pull in the required sasl2 library and command line utilities required to use sasldb2.
 
 #### Setup Postfix
 
@@ -70,6 +70,6 @@ Then it is likely that your postfix is run with chroot. Just copy sasldb2 to the
 
 `cp -a /etc/sasldb2 /var/spool/postfix/etc/`
 
-You will have to do that every time you modify sasl password, add/del sasl user.
+You will have to do that every time you modify sasl2 password, add/del sasl2 user.
 
 Now you should able to configure your email client(Thunderbird, Outlook, etc) to use your VPS as outgoing smtp server.
