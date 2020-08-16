@@ -13,6 +13,10 @@ Some Caddy 2 Caddyfile examples.
 
 ```nginx
 {
+  # Turn on all debug log
+  debug
+  # Setup default sni
+  default_sni example.com
 	# Turn off admin port
 	admin off
 	# Turn on http3
