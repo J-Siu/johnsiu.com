@@ -79,7 +79,7 @@ That confirms the text version is working.
 
 ### Hugo Page
 
-Update our Hugo page `content/page/myip.md`:
+Update our Hugo page `content/home/myip.md`:
 
 ```md
 ### IP via Caddy Templates
@@ -97,7 +97,7 @@ Update our Hugo page `content/page/myip.md`:
 <div id="myip6">Not Available</div>
 ```
 
-`{{.RemoteIP}}` will continue to work as Caddyfile was setup last time. In order to fill in IPv4 and IPv6 addresses, add following script section at the end of `content/page/myip.md`:
+`{{.RemoteIP}}` will continue to work as Caddyfile was setup last time. In order to fill in IPv4 and IPv6 addresses, add following script section at the end of `content/home/myip.md`:
 
 ```html
 <script>
@@ -111,4 +111,4 @@ myip(6)
 </script>
 ```
 
-The final result is [here](/page/myip/).
+The final result is [here](/home/myip/).

@@ -38,7 +38,7 @@ Create a menu entry in `config.toml`
 [menu]
 [[menu.main]]
 name = "My IP"
-url = "/page/myip/"
+url = "/home/myip/"
 ```
 
 Generate and deploy your site.
@@ -48,7 +48,7 @@ Generate and deploy your site.
 In `caddyfile`, add following line inside your site config:
 
 ```apache
-templates /page/myip/
+templates /home/myip/
 ```
 
 The `templates` line tell caddy server to treat `/post/myip/` as a template[^2].
@@ -64,7 +64,7 @@ johnsiu.com {
 		rewrite * /{http.error.status_code}.html
 		file_server
 	}
-	templates /page/myip/
+	templates /home/myip/
 }
 ```
 

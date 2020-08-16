@@ -75,19 +75,19 @@ name = "Tags"
 url = "/tags"
 [[menu.main]]
 name = "Links"
-url = "/page/links/"
+url = "/home/links/"
 [[menu.main]]
 name = "About"
-url = "/page/about/"
+url = "/home/about/"
 [[menu.main]]
 name = "Lib"
 url = "/tags/lib/"
 [[menu.main]]
 name = "Search"
-url = "/page/search/"
+url = "/home/search/"
 [[menu.main]]
 name = "My IP"
-url = "/page/myip/"
+url = "/home/myip/"
 
 [markup]
 defaultMarkdownHandler = "goldmark"
