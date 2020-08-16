@@ -7,6 +7,7 @@ related: false
 title: "Comment Policy"
 type: "home"
 ---
+Comment policy for Disqus.
 <!--more-->
 ### Keep it civil aka don’t be a jerk
 
