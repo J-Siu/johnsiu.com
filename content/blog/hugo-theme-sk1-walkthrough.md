@@ -279,6 +279,8 @@ The above give a basic idea of how a Hugo theme is put together. Following are m
 
 The search box in Hugo site is your friend!!
 
+For basic theming with CSS, check out [hugo-theme-sk2](//github.com/J-Siu/hugo-theme-sk2) on GitHub.
+
 ### SK Themes
 
 Theme|GitHub|Hugo|Demo|Description
