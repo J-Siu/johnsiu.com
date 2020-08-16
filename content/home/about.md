@@ -55,13 +55,14 @@ Docker|GitHub
 amule|[docker_amule](//github.com/J-Siu/docker_amule)
 dnsmasq|[docker_dnsmasq](//github.com/J-Siu/docker_dnsmasq)
 hostapd|[docker_hostapd](//github.com/J-Siu/docker_hostapd)
-hugo|[docker_hugo](//github.com/J-Siu/docker_hugo)
+hugo|[docker_hugo](/blog/docker-hugo/)
 mldonkey|[docker_mldonkey](//github.com/J-Siu/docker_mldonkey)
-mpd|[docker_mpd](//github.com/J-Siu/docker_mpd)
-mpd_lite|[docker_mpd_lite](//github.com/J-Siu/docker_mpd_lite)
-postfix|[docker_postfix](//github.com/J-Siu/docker_postfix)
+mpd|[docker_mpd](/blog/docker-mpd/)
+mpd_lite|[docker_mpd_lite](/blog/docker-mpd-lite/)
+postfix|[docker_postfix](/blog/docker-postfix/)
 tor|[docker_tor](//github.com/J-Siu/docker_tor)
 transmission|[docker_transmission](//github.com/J-Siu/docker_transmission)
 unbound|[docker_unbound](//github.com/J-Siu/docker_unbound)
 
-[docker_compose](//github.com/J-Siu/) - Compose and env for 3rd party docker images.
+[auto_docker](/blog/auto_docker/) - Mass Dockerfile auto update script.
+[docker_compose](//github.com/J-Siu/docker_compose) - Compose and env files for 3rd party docker images.
