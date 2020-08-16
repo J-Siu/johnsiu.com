@@ -1,8 +1,5 @@
 User-agent: *
-Disallow: /categories/
 Disallow: /index.php/
 Disallow: /js/
-Disallow: /page/
-Disallow: /tags/
 Disallow: /wp-login.php/
 Sitemap: https://johnsiu.com/sitemap.xml
