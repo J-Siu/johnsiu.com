@@ -3,7 +3,7 @@ author: "John Siu"
 date: 2013-04-15T04:24:05Z
 description: "Configuring postfix sasl2 authentication."
 tags: ["tiny","ubuntu","vps","postfix","sasl2"]
-title: "Tiny VPS Postfix - Part 2 - Non-Linux Outgoing SMTP Account"
+title: "Tiny VPS Postfix - Part 2 - Non-Linux Outgoing Account"
 type: "blog"
 ---
 

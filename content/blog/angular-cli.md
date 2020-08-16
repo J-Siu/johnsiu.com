@@ -3,7 +3,7 @@ type: blog
 date: 2019-09-06T11:36:46-04:00
 author: "John Siu"
 title: "Angular Cheat Sheet"
-description: "Angular cli cheat sheet."
+description: "My Angular cli cheat sheet."
 tags: ["angular","cli","cheatsheet"]
 ---
 Some Angular CLI usage.
