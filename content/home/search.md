@@ -6,7 +6,7 @@ description: "Google CSE for johnsiu.com"
 related: false
 title: "Search"
 toc: false
-type: "page"
+type: "home"
 ---
 <script async src="//cse.google.com/cse.js?cx=partner-pub-8176479711832264:5311659258"></script>
 <div class="gcse-search"></div>

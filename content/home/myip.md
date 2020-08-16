@@ -5,7 +5,7 @@ description: "My IP page"
 tags: ["caddy","hugo","myip"]
 title: "My IP"
 toc: true
-type: "page"
+type: "home"
 ---
 Show my IP.
 <!--more-->

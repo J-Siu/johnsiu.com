@@ -5,7 +5,7 @@ description: "Links to companies and friends I know personally."
 related: false
 title: "Links"
 toc: false
-type: "page"
+type: "home"
 ---
 Links to companies and friends I know personally.
 <!--more-->

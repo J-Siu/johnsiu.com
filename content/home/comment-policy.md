@@ -5,7 +5,7 @@ description: "Comment Policy"
 related: false
 title: "Comment Policy"
 toc: false
-type: "page"
+type: "home"
 ---
 <!--more-->
 ### Keep it civil aka don’t be a jerk

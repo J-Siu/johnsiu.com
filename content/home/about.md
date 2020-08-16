@@ -4,7 +4,7 @@ comments: false
 description: "Something about John Siu"
 related: false
 title: "About"
-type: "page"
+type: "home"
 ---
 My interests.
 <!--more-->

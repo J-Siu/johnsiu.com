@@ -7,6 +7,6 @@ draft: true
 tags: [""]
 title: "{{ replace .Name "-" " " | title }}"
 toc: false
-type: "page"
+type: "home"
 ---
 <!--more-->
