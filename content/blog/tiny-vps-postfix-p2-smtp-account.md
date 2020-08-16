@@ -15,6 +15,7 @@ In the last part I show a minimal setup of Postfix. It allow incoming emails to 
 - Part 1 - [Tiny VPS Postfix](/blog/tiny-vps-postfix/)
 - Part 2 - [Non-Linux Outgoing SMTP Account](/blog/tiny-vps-postfix-p2-smtp-account/) <- You are here
 - Part 3 - [GMail As Email Client](/blog/tiny-vps-postfix-p3-gmail/)
+- Part 4 - [Postfix with Docker](/blog/tiny-vps-postfix-docker/)
 
 ### Replying email with my own domain
 
@@ -26,17 +27,17 @@ So is there a simple way to setup smtp authentication with postfix without using
 
 ### SASLDB to the Rescue
 
-To enable smtp authentication with Postfix without Linux account or a database, we can use [sasldb](http://cyrusimap.web.cmu.edu/mediawiki/index.php/Cyrus_SASL#Plugins_.28Auxillary_Property.29). It is easy to install and configure.
+To enable smtp authentication with Postfix without Linux account or a database, we can use [sasldb2](http://cyrusimap.web.cmu.edu/mediawiki/index.php/Cyrus_SASL#Plugins_.28Auxillary_Property.29). It is easy to install and configure.
 
 #### Installing
 
 `apt-get install sasl2-bin`
 
-This will pull in the required sasl library and command line utilities required to use sasldb.
+This will pull in the required sasl library and command line utilities required to use sasldb2.
 
 #### Setup Postfix
 
-To have postfix to use sasldb, modify **/etc/postfix/sasl/smtpd.conf** as follow
+To have postfix to use sasldb2, modify `/etc/postfix/sasl/smtpd.conf` as follow
 
 ```ini
 pwcheck_method: auxprop
@@ -47,23 +48,23 @@ Then restart postfix
 
 `sudo service postfix restart`
 
-#### Create sasldb users
+#### Create sasldb2 users
 
-To create a user in sasldb, use following command
+To create a user in sasldb2, use following command
 
 `saslpasswd2 -c -u <domain> -a smtpauth <username>`
 
-For example, my domain is **johnsiu.com**, and I want to have a new email **testing@johnsiu.com**
+For example, my domain is `johnsiu.com`, and I want to have a new email `testing@johnsiu.com`
 
 `saslpasswd2 -c -u johnsiu.com -a smtpauth testing`
 
 #### Finalizing
 
-The actual sasldb file is located at **/etc/sasldb2**. Make sure it has the following permission:
+The actual sasldb2 file is located at `/etc/sasldb2`. Make sure it has the following permission:
 
 `-rw-rw---- 1 postfix sasl sasldb2`
 
-#### What if sasldb doesn’t seems to work
+#### What if sasldb2 doesn’t seems to work
 
 Then it is likely that your postfix is run with chroot. Just copy sasldb2 to the chrooted /etc/
 
