@@ -75,6 +75,7 @@ Project|Blog|GitHub|Description
 ---|---|---|---
 auto_docker|[auto_docker](/blog/auto_docker/)|[auto_docker](//github.com/J-Siu/auto_docker)|Mass Dockerfile auto update script.
 docker_compose|-|[docker_compose](//github.com/J-Siu/docker_compose)|Compose and env files for 3rd party docker images.
+go-png2ico|[go-png2ico](/blog/go-png2ico/)|[go-png2ico](//github.com/J-Siu/go-png2ico)|PNG to ICO in GoLang. ICO store use PNG format.
 id3go|[id3go](/blog/id3go/)|[id3go](//github.com/J-Siu/id3go)|ID3v2 Command Line Editor
 itpl|[itpl](/blog/itpl/)|[itpl](//github.com/J-Siu/itpl)|iTunes Playlist command line tool.
 tiny_ca|[Tiny CA - OpenSSL-CA](blog/tiny-ca/)|[tiny_ca](//github.com/J-Siu/tiny_ca)|Bash script to create root CA for local network.

@@ -3,8 +3,8 @@ type: "blog"
 date: 2019-09-14
 author: "John Siu"
 title: "Id3go - ID3v2 Command Line Editor"
-description: "id3go provide easy viewing and updating of media file tags from command line."
-tags: ["id3v2","command-line","lib"]
+description: "id3go view and update file id3v2 tags from command line."
+tags: ["id3v2","command-line","golang","lib"]
 ---
 Provide easy viewing and updating of media file tags from command line.
 <!--more-->
@@ -46,6 +46,8 @@ apt-get install libtagc0-dev
 
 ```sh
 go get github.com/J-Siu/id3go
+cd $GOPATH/src/github.com/J-Siu/id3go
+go install
 ```
 
 ### Usage
