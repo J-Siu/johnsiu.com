@@ -4,7 +4,7 @@ date: 2019-09-14
 author: "John Siu"
 title: "Id3go - ID3v2 Command Line Editor"
 description: "id3go provide easy viewing and updating of media file tags from command line."
-tags: ["id3v2","cli","lib"]
+tags: ["id3v2","command-line","lib"]
 ---
 Provide easy viewing and updating of media file tags from command line.
 <!--more-->

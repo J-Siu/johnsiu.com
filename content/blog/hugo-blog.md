@@ -2,8 +2,8 @@
 author: "John Siu"
 date: 2019-07-21T18:28:57-04:00
 description: "My Hugo blog zsh workflow."
-tags: ["hugo","blog","zsh"]
-title: "Hugo Blog"
+tags: ["hugo","blog","zsh","command-line"]
+title: "Hugo Blog Workflow"
 type: "blog"
 ---
 
@@ -28,25 +28,31 @@ Following is the workflow in plan commands:
 
 1. Create skeleton markdown file.
 
-        cd <blog dir>
-        hugo new blog/<new-postname>.md
+    ```sh
+    cd <blog dir>
+    hugo new blog/<new-postname>.md
+    ```
 
 2. Edit blog post in VSCode.
 
 3. Test in browser
 
-        hugo server -D
+    ```sh
+    hugo server -D
+    ```
 
 4. Publish to web server
 
-        hugo
-        rsync --stats -haz --delete public user@host:/home/user
+    ```sh
+    hugo
+    rsync --stats -haz --delete public user@host:/home/user
+    ```
 
 #### zsh function
 
 I put the publishing steps with a few enhancement into my zsh function:
 
-```zsh
+```sh
 my-blog-deploy () {
   BLOG=<local blog dir>
   PUB=public # Unless you change your hugo config
@@ -84,3 +90,5 @@ It is always a pain to pick a new theme when switching packages. I finally settl
 ### Conclusion
 
 The switch gives me a chance to review my blog writing, technique and post structure. It was a good experience, but not sure if I want another one anytime soon.
+
+> Also check out my automation setup: [Jenkins Blog Automation](/blog/jenkins-blog-automation/).

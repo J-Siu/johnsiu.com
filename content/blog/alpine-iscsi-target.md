@@ -4,7 +4,7 @@ date: 2019-07-23T00:00:00-04:00
 author: "John Siu"
 title: "Alpine iSCSI Target"
 description: "Sharing a file base iSCSI disk from Alpine."
-tags: ["alpine","iscsi","how-to"]
+tags: ["alpine","iscsi","command-line","how-to"]
 ---
 
 Sharing a file base iSCSI disk from Alpine.
@@ -14,7 +14,7 @@ Sharing a file base iSCSI disk from Alpine.
 
 Man page description:
 
-> targetcli is a shell for viewing, editing, and saving the configuration of the kernel's target subsystem, also known as LIO. It enables the administrator to assign local storage resources backed by either files, volumes, local SCSI devices, or ramdisk, and export them to remote systems via network fabrics, such as FCoE.
+> targetcli is a shell for viewing, editing, and saving the configuration of the kernel's target subsystem, also known as LIO. It enables the administrator to assign local storage resources backed by either files, volumes, local SCSI devices, or ram disk, and export them to remote systems via network fabrics, such as FCoE.
 
 #### Install in Alpine
 
@@ -151,7 +151,7 @@ iscsi/iqn.2003-01.org.linux-iscsi.alpine-hp-01.x8664:sn.159f1aa77319/tpg1/portal
 iscsi/iqn.2003-01.org.linux-iscsi.alpine-hp-01.x8664:sn.159f1aa77319/tpg1/portals/ create ::0 3260
 ```
 
-##### Lun
+##### LUN
 
 We need to attach our backstore, `disk01`, to the newly created iSCSI entry:
 
@@ -186,7 +186,7 @@ o- / ...........................................................................
 />
 ```
 
-##### Acls
+##### ACLs
 
 To allow initiator `iqn.2005-03.org.open-iscsi:a3beddeaf977` to access our target:
 

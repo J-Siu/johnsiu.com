@@ -2,7 +2,7 @@
 author: "John Siu"
 date: 2019-07-30T18:06:06-04:00
 description: "A personal docker cheat sheet."
-tags: ["docker","cheatsheet"]
+tags: ["docker","command-line","cheatsheet"]
 title: "Docker Commands"
 type: blog
 ---

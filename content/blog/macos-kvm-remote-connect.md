@@ -4,9 +4,9 @@ date: 2019-08-26T23:51:14-04:00
 author: "John Siu"
 title: "MacOS Connect to KVM Client Desktop"
 description: "MacOS connect to KVM client with remote-viewer and virt-manager."
-tags: ["macos","kvm","virt-manager","virt-viewer","remote-viewer","zsh","how-to"]
+tags: ["macos","kvm","qemu","virt-manager","virt-viewer","remote-viewer","zsh","how-to","command-line"]
 ---
-Updated instruction for MacOS Mojave.
+Updated instruction for MacOS.
 <!--more-->
 
 In [MacOS direct connect to KVM client desktop](/blog/macos-kvm-remote-viewer/) I talked about XQuartz and virt-viewer. This will show you how to run `virt-manager` and `virsh`.

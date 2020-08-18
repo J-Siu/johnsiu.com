@@ -2,7 +2,7 @@
 author: "John Siu"
 date: 2019-07-29
 description: "Create Root CA with openssl."
-tags: ["tiny","openssl","certificate","lib"]
+tags: ["tiny","openssl","certificate","lib","command-line"]
 title: "Tiny CA - OpenSSL-CA"
 type: blog
 ---
@@ -112,7 +112,7 @@ Install server certificate and key into web server.
 
 ### Install CA in Ubuntu
 
-Copy ca certificate to `/usr/local/share/ca-certificates` and change extension to crt. Then run `update-ca-certificates`.
+Copy ca certificate to `/usr/local/share/ca-certificates` and change extension to `.crt`. Then run `update-ca-certificates`.
 
 Example:
 
@@ -126,7 +126,7 @@ update-ca-certificates
 - 1.0.0
   - Take domain name from command line.
   - Each domain in own directory under ca directory.
-  - Automatically generate der format for both ca and server cert.
+  - Automatically generate DER format for both ca and server cert.
   - Check if ca and server cert exist.
   - Remove OSCP and CRL extension from ca.cnf.template.
 - 1.1.0

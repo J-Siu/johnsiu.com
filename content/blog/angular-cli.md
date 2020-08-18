@@ -4,7 +4,7 @@ date: 2019-09-06T11:36:46-04:00
 author: "John Siu"
 title: "Angular Cheat Sheet"
 description: "My Angular cli cheat sheet."
-tags: ["angular","cli","cheatsheet"]
+tags: ["angular","command-line","cheatsheet"]
 ---
 Some Angular CLI usage.
 <!--more-->

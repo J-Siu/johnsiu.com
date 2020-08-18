@@ -4,7 +4,7 @@ date: 2019-09-15T18:33:11-04:00
 author: "John Siu"
 title: "Screen Command"
 description: "Screen command cheat sheet"
-tags: ["screen","cheatsheet"]
+tags: ["screen","cheatsheet","command-line"]
 ---
 Cheat sheet.
 <!--more-->
@@ -36,7 +36,7 @@ Command Key|Usage
 <kbd>S</kbd>|Split the terminal.
 <kbd>Q</kbd>|Remove all split areas other than the current focused one.
 <kbd>X</kbd>|Remove the currently focused split area.
-<kbd>ctrl</kbd>+<kbd>I</kbd>|Cycle cursor focus through splitted area.
+<kbd>ctrl</kbd>+<kbd>I</kbd>|Cycle cursor focus through split area.
 <kbd>0</kbd> <kbd>1</kbd> <kbd>2</kbd> <kbd>3</kbd> <kbd>4</kbd> <kbd>5</kbd> <kbd>6</kbd> <kbd>7</kbd> <kbd>8</kbd> <kbd>9</kbd>|Quick switch between window 0-9.
 <kbd>k</kbd>|Kill current window.
 <kbd>d</kbd>|Detect the screen session.

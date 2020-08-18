@@ -4,7 +4,7 @@ date: 2019-07-30T18:06:21-04:00
 author: "John Siu"
 title: "Linux Commands"
 description: "Linux command cheat sheet."
-tags: ["linux","cli","cheatsheet"]
+tags: ["linux","command-line","cheatsheet"]
 ---
 Misc. Linux commands.
 <!--more-->

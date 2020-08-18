@@ -4,7 +4,7 @@ date: 2019-07-21T18:15:55-04:00
 author: "John Siu"
 title: "Alpine KVM"
 description: "Install and manage KVM on a remote Alpine server."
-tags: ["alpine","kvm","macos","how-to"]
+tags: ["alpine","kvm","macos","command-line","how-to"]
 ---
 Setup libvirt/KVM on a remote Alpine Linux server and connect __virsh__/__virt-manager__ from remote.
 <!--more-->
@@ -60,7 +60,7 @@ At this point virt-manager and virsh can connect from remote and takeover comple
 
 `virsh` is the command line tool that can manage libvirt/KVM directly on the host or from remote.
 
-`virt-manager` is the gui interface.
+`virt-manager` is the GUI interface.
 
 #### Local connection (on Alpine server)
 

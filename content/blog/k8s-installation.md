@@ -2,7 +2,7 @@
 type: "blog"
 author: "John Siu"
 title: "Kubernetes Installation"
-description: "This serve as a starting point for installing Kubernetes on multiple Ubuntu Servers."
+description: "Starting point for installing Kubernetes on multiple servers."
 date: 2018-09-30T23:17:40-04:00
 tags: ["kubernetes","ubuntu"]
 ---

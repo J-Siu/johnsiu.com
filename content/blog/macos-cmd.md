@@ -2,37 +2,106 @@
 type: blog
 date: 2019-07-30T22:01:30-04:00
 author: "John Siu"
-title: "Mac OS Commands"
-description: "Mac OS command cheat sheet."
-tags: ["macos","cheatsheet"]
+title: "MacOS Command Line"
+description: "John Siu's MacOS command cheat sheet."
+tags: ["macos","command-line","cheatsheet"]
 ---
 Some Mac OS commands.
 <!--more-->
 
-### Play audio file
+### Run Application from Command Line
+
+> Application name is case-sensitive. Use <kbd>tab</kbd> for auto-complete.
 
 ```sh
-afplay <file>
+open -a <application>
+open -a Google\ Earth\ Pro
 ```
 
-### Plist content
+### Show Hidden File in Finder
+
+- <kbd>Command</kbd>+<kbd>Shift</kbd>+<kbd>.</kbd>
+
+### Launch Control
+
+- List all services
+
+  ```sh
+  launchctl list # List services
+  launchctl load <plist file> # Start service
+  launchctl unload <plist file> # Stop service
+  ```
+
+- List all 3rd-party(non-Apple) services
+
+  ```sh
+  launchctl list|grep -v com.apple.
+  ```
+
+- System Service Location
+  - `/Library/LaunchDaemons/`
+  - `/System/Library/LaunchDaemons/`
+
+### Kernel Extension
+
+- List all kernel extension
+
+  ```sh
+  kextstat
+  ```
+
+- List all non-Apple extension
+
+  ```sh
+  kextstat | grep -v com.apple
+  ```
+
+### Plist Content
 
 ```sh
 plutil -p <file>
 ```
 
-### Launch Control
+### Safe Mode
 
-```sh
-launchctl list # List services
-launchctl load <plist file> # Start service
-launchctl unload <plist file> # Stop service
-```
+Hold down <kbd>Shift</kbd> during boot.
 
-#### System Service Location
+> Command line may not work anymore.
 
-- `/Library/LaunchDaemons/`
-- `/System/Library/LaunchDaemons/`
+- Enable
+
+  ```sh
+  sudo nvram boot-args="-x"
+  sudo nvram boot-args="-x -v"
+  ```
+
+- Disable
+
+  ```sh
+  sudo nvram boot-args=""
+  ```
+
+### Network Setup Command
+
+- Help
+
+  ```sh
+  networksetup
+  ```
+
+- List all network service
+
+  ```sh
+  networksetup -listallnetworkservices
+  ```
+
+- Turn network service on/off
+
+  ```sh
+  networksetup -setnetworkserviceenabled <networkservice> <on off>
+  networksetup -setnetworkserviceenabled Ethernet off
+  networksetup -setnetworkserviceenabled Ethernet on
+  ```
 
 ### Change Hostname
 
@@ -42,21 +111,21 @@ sudo scutil --set HostName <hostname>
 
 ### Mouse Speed
 
-- Get Current
+- Get
 
-```sh
-defaults read -g com.apple.mouse.scaling
-```
+  ```sh
+  defaults read -g com.apple.mouse.scaling
+  ```
 
-- Set New value
+- Set
 
-```sh
-defaults write -g com.apple.mouse.scaling your_mouse_speed
-```
+  > May need reboot.
 
-> May need reboot.
+  ```sh
+  defaults write -g com.apple.mouse.scaling your_mouse_speed
+  ```
 
-### dns-sd(mdns)
+### dns-sd (mdns/avahi/bonjour)
 
 Get address of hostname
 
@@ -64,59 +133,8 @@ Get address of hostname
 dns-sd -G v4v6 <hostname>
 ```
 
-### Kernel Extension
-
-- List all kernel extension
+### Play Audio
 
 ```sh
-kextstat
-```
-
-- List all non-Apple extension
-
-```sh
-kextstat | grep -v com.apple
-```
-
-### Safe Mode
-
-Hold down <kbd>Shift</kbd> during boot.
-
-Using command line:
-
-```sh
-sudo nvram boot-args="-x"
-sudo nvram boot-args="-x -v"
-```
-
-Change back to normal:
-
-```sh
-sudo nvram boot-args=""
-```
-
-### Toggle Hidden File in Finder
-
-- <kbd>Command</kbd>+<kbd>Shift</kbd>+<kbd>.</kbd>
-
-### Network Setup Command
-
-Help
-
-```sh
-networksetup
-```
-
-List all network service
-
-```sh
-networksetup -listallnetworkservices
-```
-
-Turn network service on/off
-
-```sh
-networksetup -setnetworkserviceenabled <networkservice> <on off>
-networksetup -setnetworkserviceenabled Ethernet off
-networksetup -setnetworkserviceenabled Ethernet on
+afplay <file>
 ```

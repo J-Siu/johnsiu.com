@@ -4,7 +4,7 @@ date: 2020-07-28T21:22:54-04:00
 author: "John Siu"
 title: "MyGit - Bash git automation script"
 description: "Bash git automation script support group action."
-tags: ["bash","git","cli","lib"]
+tags: ["bash","git","command-line","lib"]
 ---
 Migrated all my ZSH git functions into a standalone bash script.
 <!--more-->
