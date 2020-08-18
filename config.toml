@@ -21,6 +21,7 @@ description = "John Siu technology blog."
 favicon = "/favicon.ico"
 listlastmod = false
 mainSections = "blog"
+openToc = true
 opengraph = true
 pageinfobox = true
 startdate = "2012-12-02"
