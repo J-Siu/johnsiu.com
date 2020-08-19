@@ -6,12 +6,12 @@ title: "Cheat Sheet Section"
 description: "Introduce the cheat sheet section."
 tags: ["cheatsheet"]
 ---
-Created a new cheat sheet section.
+Created a new cheat sheet menu.
 <!--more-->
 
 ### TL;DR
 
-New [Cheat Sheet Section](/cheatsheet/), accessible on upper right corner.
+New [Cheat Sheet Tag](/tags/cheatsheet/), accessible through menu.
 
 ### Blog Don't Fit All
 
@@ -53,4 +53,4 @@ I am quite satisfy with the lists converted so far. They have better format than
 
 Google Keep is still be my on-the-fly note taking tool. But now I have a long term fall back solution.
 
-I hope you also find them useful. Again, they are [here](/cheatsheet/).
+I hope you also find them useful. Again, they are [here](/tags/cheatsheet/).
