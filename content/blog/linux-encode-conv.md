@@ -2,9 +2,9 @@
 type: "blog"
 date: 2020-06-03T12:03:34-04:00
 author: "John Siu"
-title: "Text File Encode/Charset Convertion"
-description: "Linux text file encoding / charset convertion."
-tags: ["linux","iconv","uchardet"]
+title: "Text File Encode/Charset Conversion"
+description: "Linux text file encoding / charset conversion."
+tags: ["linux","iconv","uchardet","command-line"]
 ---
 From time to time we get files with garbage characters ...
 <!--more-->
@@ -85,7 +85,7 @@ We can put above in a script:
 
 `iconv_cat`:
 
-```
+```sh
 #!/bin/sh
 iconv -f $(uchardet $1) -t UTF8 $1
 ```
