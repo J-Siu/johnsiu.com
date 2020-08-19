@@ -2,7 +2,7 @@
 author: "John Siu"
 date: 2019-08-22T15:54:28-04:00
 description: "A list of Google IP addresses."
-tags: ["google","cheatsheet","ip"]
+tags: ["google","cheatsheet","ip","javascript"]
 title: "Google IP Addresses"
 type: blog
 ---
