@@ -2,9 +2,9 @@
 type: "blog"
 date: 2019-11-19T16:47:26-05:00
 author: "John Siu"
-title: "How to Find My Public IP"
-description: "Find your public ip with Linux command line."
-tags: ["cheatsheet","command-line","myip"]
+title: "How To Find My Public IP From Command Line"
+description: "Find public ip with command line."
+tags: ["cheatsheet","command-line","myip","ip","how-to"]
 ---
 Using Linux command line.
 <!--more-->
@@ -31,3 +31,7 @@ curl icanhazip.com
 curl ifconfig.co
 dig TXT +short o-o.myaddr.l.google.com @ns1.google.com
 ```
+
+### Web Base
+
+[My IP](/home/myip/)
