@@ -2,7 +2,7 @@
 author: "John Siu"
 date: 2017-04-10T08:37:52Z
 description: "Careful with what you do in social media ..."
-tags: ["social network"]
+tags: ["social"]
 title: "Social Network - 3 Steps to make your friend hate you"
 type: "blog"
 ---

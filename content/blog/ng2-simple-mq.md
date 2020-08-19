@@ -125,7 +125,7 @@ Return empty string if any of following is true:
 
 Either use Lambda(fat arrow) in typescript to pass in callback or bind `this` to another variable in javascript, else `this` scope will be lost.
 
-__Lambda(fat arrow)__
+##### Lambda(fat arrow)
 
 ```javascript
 broadcastMsg;

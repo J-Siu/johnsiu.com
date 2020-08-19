@@ -71,6 +71,7 @@ sudo chef-server-ctl status
 ```
 
 Output:
+
 ```sh
 run: bookshelf: (pid 25591) 90s; run: log: (pid 25651) 90s
 run: nginx: (pid 25417) 94s; run: log: (pid 25974) 86s

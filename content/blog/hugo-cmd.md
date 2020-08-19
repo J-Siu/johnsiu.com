@@ -58,7 +58,7 @@ Create a `test.md` under *section9*
 hugo new section9/test.md
 ```
 
-That will create directory `section9` under `content` with `test.md` insdie. Create `_index.md` to set the title:
+That will create directory `section9` under `content` with `test.md` inside. Create `_index.md` to set the title:
 
 `content/section9/_index.md`:
 

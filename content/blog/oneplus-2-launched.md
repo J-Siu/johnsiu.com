@@ -1,7 +1,7 @@
 ---
 author: "John Siu"
 date: 2015-07-28T12:07:09Z
-description: "OnePlus 2 Launching excitment."
+description: "OnePlus 2 Launching excitement."
 tags: ["oneplus","phone"]
 title: "OnePlus 2 Launched"
 type: "blog"
@@ -26,8 +26,8 @@ I am a OnePlus One user. However the touch screen start to act strange since I d
 
 ### Price
 
-64GB USD $389
- 16GB USD $329
+-64GB USD $389
+-16GB USD $329
 
 ### Spec
 

@@ -107,7 +107,7 @@ Init as root
 sudo kubeadm init
 ```
 
-Setup kubctl for user
+Setup kubectl for user
 
 ```sh
 mkdir -p $HOME/.kube

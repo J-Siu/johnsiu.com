@@ -6,7 +6,6 @@ tags: ["scrum", "psm"]
 title: "SCRUM (PSM-I) Done!!"
 type: "blog"
 ---
-
 Want to do this for awhile, and finally get it done.
 <!--more-->
 

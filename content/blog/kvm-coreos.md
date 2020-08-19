@@ -144,6 +144,7 @@ coreos01 login:
 Login as `core`. To exit console mode, press <kbd>ctrl</kbd>+<kbd>]</kbd>.
 
 > If you see permission error about `coreos01.ign`, add following lines to `/etc/apparmor.d/local/abstractions/libvirt-qemu`:
+>
 > ```ini
 > /var/lib/libvirt/images/*.ign r,
 > ```

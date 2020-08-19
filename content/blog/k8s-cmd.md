@@ -11,7 +11,7 @@ Some Kubernetes commands.
 
 ### Node
 
-Restart kubelet (kubernete agent)
+Restart kubelet (kubernetes agent)
 
 ```sh
 sudo systemctl restart kubelet
@@ -264,7 +264,7 @@ replicaset.apps/ghost-7b7d68d64c   1         1         1         1m        ghost
 
 ---
 
-#### Edit Menifest(config) on the fly
+#### Edit Manifest(config) on the fly
 
 ```sh
 kubectl edit <kind> <name>
@@ -283,7 +283,7 @@ kubectl scale deployment ghost --replicas=5
 
 #### Rollout Update
 
-Edit the image version in deployment menifest
+Edit the image version in deployment manifest:
 
 ```sh
 kubectl edit deployment ghost

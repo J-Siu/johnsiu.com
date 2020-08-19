@@ -21,7 +21,7 @@ Kubernetes user setup (certification-based authentication) and RBAC setup of the
 ---
 
 - `kubectl` is a client. It need connection information to communicate with a kubernetes cluster.
-- `<USER>`, `<GROUP>` in this docunment are NOT OS(linux/windows) level user/group.
+- `<USER>`, `<GROUP>` in this document are NOT OS(linux/windows) level user/group.
 
 ---
 
@@ -130,7 +130,7 @@ Certificate signed by this CA will be accepted by the Kubernetes API.
      use-context <CONTEXT-NAME> \
     ```
 
-PS: At this point kubectl can communicat with the cluster(authenticated), but forbidden to perform any action(not authorized).
+PS: At this point kubectl can communicate with the cluster(authenticated), but forbidden to perform any action(not authorized).
 
 ---
 

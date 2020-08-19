@@ -54,7 +54,7 @@ The URL actually dictate the transfer protocol(http/https) and the destination p
 
 Additionally if you want to prevent accidental overwrite by future package update, you can create a */etc/systemd/journal-upload.conf.d* directory and put your config file inside, as long as the file end with a *.conf* extension.
 
-As a side notes, I am doing this within a LXC container and seems the service will not use /etc/hosts for dns resolvution, I end up using IP address here. So if you use hostname and see error message that journal-upload cannot reach the target, try switch to IP address.
+As a side notes, I am doing this within a LXC container and seems the service will not use /etc/hosts for dns resolution, I end up using IP address here. So if you use hostname and see error message that journal-upload cannot reach the target, try switch to IP address.
 
 ### Receiving server configuration
 

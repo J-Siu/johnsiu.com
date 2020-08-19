@@ -97,13 +97,15 @@ perl configure.pl
 ```
 
 > **Note:** Following are settings I choose that will affect configuration files in later part.
->
-    $Conf{TopDir}      = '/home/backuppc/data';
-    $Conf{RunDir}      = '/home/backuppc';
-    $Conf{InstallDir}  = '/home/backuppc';
-    $Conf{CgiDir}      = '/home/backuppc/cgi-bin';
-    $Conf{CgiImageDir} = '/home/backuppc/img';
-    $Conf{CgiImageDirURL} = '/img';
+
+```php
+$Conf{TopDir}      = '/home/backuppc/data';
+$Conf{RunDir}      = '/home/backuppc';
+$Conf{InstallDir}  = '/home/backuppc';
+$Conf{CgiDir}      = '/home/backuppc/cgi-bin';
+$Conf{CgiImageDir} = '/home/backuppc/img';
+$Conf{CgiImageDirURL} = '/img';
+```
 
 #### Clean Up
 

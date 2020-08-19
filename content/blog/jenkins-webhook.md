@@ -77,7 +77,7 @@ You will be back to `Webhooks` page and see your new webhook listed there. There
 - Fill in following
   - `Payload URL`: https://\<your jenkins url\>/gogs-webhook/?job=\<project name / pipeline name\>
     - Gogs webhook will fail without `?job=<project name /pipeline name>`
-  - `Content type`: `application/json`. Jenkings Gogs plugin does not support `application/x-www-from-urlencoded`.
+  - `Content type`: `application/json`. Jenkins Gogs plugin does not support `application/x-www-from-urlencoded`.
   - `Secret`: Fill in same secret as in Jenkins if used.
   - `Just the push event`: This is properly what you want.
   - `Active`: Should be check marked already.

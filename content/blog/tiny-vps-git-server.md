@@ -21,9 +21,9 @@ __GitLab CE__ properly is one of the best open source, free, mature and actively
 
 I was sold once I had it up and running. Except one issue, __GitLab__ is a resource hog. It constantly push my then tiny vps' memory to the limit. That pushed me to upgrade my box.
 
-I did not look back till a few months ago, when my development focus switched from [AngularJS](//angularjs.org) to [Angular2](//angular.io), of which the development process is closely tie to [node.js](//nodejs.org). And node.js, in turn, is closely tie to git. I started asking myself, wouldn't there be a node.js base git server out there, similar to GitLab, but using much less resource?
+I did not look back till a few months ago, when my development focus switched from `AngularJS` to [Angular](//angular.io), of which the development process is closely tie to [node.js](//nodejs.org). And node.js, in turn, is closely tie to git. I started asking myself, wouldn't there be a node.js base git server out there, similar to GitLab, but using much less resource?
 
-No! (suprise!?) ... But ...
+No! (surprise!?) ... But ...
 
 ### Gogs - Go Git Server
 
