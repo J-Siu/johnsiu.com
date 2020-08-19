@@ -1,3 +1,11 @@
+// --- /home/myip.md
+
+function myip(ipv) {
+	fetch('//myip' + ipv + '.jsiu.dev')
+		.then(r => r.text())
+		.then(t => document.getElementById('myip' + ipv).innerHTML = t)
+}
+
 // Get SPF result
 function googleIp2table() {
 	fetch('//dns.google/resolve?name=_spf.google.com&type=txt')
@@ -21,7 +29,7 @@ function googleIp2table() {
 		})
 }
 
-// ---
+// --- /blog/google-ip.md
 
 // Get blocks from SPF
 function spf2blocks(msg) {
@@ -61,7 +69,6 @@ function block2ip(msg) {
 function ip2table(title, list) {
 	var str = ""
 	str += "<table>"
-	//  str+="<thead><tr><th>"+title+"</th></tr></thead>"
 	str += "<tbody>"
 	for (i = 0; i < list.length; i++) {
 		str += "<tr><td>" + list[i] + "</td></tr>"

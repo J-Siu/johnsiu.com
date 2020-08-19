@@ -33,11 +33,6 @@ Show me the IPs.
 ---
 
 <script>
-function myip(ipv){
-  fetch('//myip'+ipv+'.jsiu.dev')
-    .then(r=>r.text())
-    .then(t=>document.getElementById('myip'+ipv).innerHTML=t)
-}
 myip(4)
 myip(6)
 </script>
