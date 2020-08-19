@@ -29,7 +29,7 @@ subtitle = "Tech - Business Tool, Personal Toys"
 svg_ext = true
 title = "John Siu Blog"
 twitercards = true
-
+custom_js = ["/js/my.js"]
 [Params.sociallink]
 #instagram      = "john.sd.siu"
 #pinterest      = "johnsdsiu"
