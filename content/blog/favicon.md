@@ -2,7 +2,7 @@
 author: "John Siu"
 date: 2020-08-08T17:05:01-04:00
 description: "A brief look on favicon for website."
-tags: ["favicon","command-line"]
+tags: ["favicon"]
 title: "Brief Look At Favicon"
 type: "blog"
 ---
