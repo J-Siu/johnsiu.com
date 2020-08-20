@@ -1,12 +1,12 @@
 baseURL = "https://johnsiu.com"
-theme = "sk3"
-title = "John Siu Blog"
+theme   = "sk3"
+title   = "John Siu Blog"
 
 DefaultContentLanguage = "en"
-enableGitInfo = true
+enableGitInfo          = true
 enableInlineShortcodes = true
-languageCode = "en-us"
-paginate = 24
+languageCode           = "en-us"
+paginate               = 24
 #relativeURLs           = true
 
 disqusShortname = "https-johnsiu-com"
@@ -16,20 +16,22 @@ googleAnalytics = "UA-36805525-1"
 name = "John Siu"
 
 [Params]
-adsense_id = "ca-pub-8176479711832264"
-description = "John Siu technology blog."
-favicon = "/favicon.ico"
-listlastmod = false
-mainSections = "blog"
-openToc = true
-opengraph = true
-pageinfobox = true
-startdate = "2012-12-02"
-subtitle = "Tech - Business Tool, Personal Toys"
-svg_ext = true
-title = "John Siu Blog"
-twitercards = true
-custom_js = ["/js/my.js"]
+adsense_id     = "ca-pub-8176479711832264"
+custom_js      = ["/js/my.js"]
+description    = "John Siu technology blog."
+favicon        = "/favicon.ico"
+listlastmod    = false
+mainSections   = "blog"
+openToc        = true
+opengraph      = true
+pageinfobox    = true
+startdate      = "2012-12-02"
+subtitle       = "Tech - Business Tool, Personal Toys"
+svg_ext        = true
+title          = "John Siu Blog"
+twitercards    = true
+user_canonical = true
+
 [Params.sociallink]
 #instagram      = "john.sd.siu"
 #pinterest      = "johnsdsiu"
@@ -37,95 +39,95 @@ custom_js = ["/js/my.js"]
 #vimeo          = "user88929197"
 #youtubechannel = "UC5LvdqfL2PubOp904UnUJAg"
 #youtubeuser    = "JohnSDSiu"
-facebook = "john.siu.714"
-flickr = "johnsiu-com"
-github = "J-Siu"
-linkedin = "john-sing-dao-siu"
-reddit = "js1943"
+facebook       = "john.siu.714"
+flickr         = "johnsiu-com"
+github         = "J-Siu"
+linkedin       = "john-sing-dao-siu"
+reddit         = "js1943"
 stack-exchange = "1882213"
 stack-overflow = "1810391"
-twitter = "JohnSiuCom"
+twitter        = "JohnSiuCom"
 
 [Params.socialshare]
-facebook = true
+facebook  = true
 instagram = true
-linkedin = true
+linkedin  = true
 pinterest = true
-reddit = true
-telegram = true
-twitter = true
-vk = true
+reddit    = true
+telegram  = true
+twitter   = true
+vk        = true
 
 [Params.card]
-date = true
+date    = true
 summary = true
 #width   = "100%"
 
 [Params.color]
-bg = "#181a1b"
+bg     = "#181a1b"
 border = "white"
-link = "#3d84ff"
-text = "white"
+link   = "#3d84ff"
+text   = "white"
 
 [menu]
 [[menu.main]]
 name = "Cheat Sheet"
-url = "/tags/cheatsheet/"
+url  = "/tags/cheatsheet/"
 [[menu.main]]
 name = "Tags"
-url = "/tags"
+url  = "/tags"
 [[menu.main]]
 name = "Links"
-url = "/home/links/"
+url  = "/home/links/"
 [[menu.main]]
 name = "About"
-url = "/home/about/"
+url  = "/home/about/"
 [[menu.main]]
 name = "Lib"
-url = "/tags/lib/"
+url  = "/tags/lib/"
 [[menu.main]]
 name = "Search"
-url = "/home/search/"
+url  = "/home/search/"
 [[menu.main]]
 name = "My IP"
-url = "/home/myip/"
+url  = "/home/myip/"
 
 [markup]
 defaultMarkdownHandler = "goldmark"
 
 [markup.highlight]
-codeFences = true
-guessSyntax = false
-hl_Lines = ""
-lineNoStart = 1
-lineNos = true
+codeFences         = true
+guessSyntax        = false
+hl_Lines           = ""
+lineNoStart        = 1
+lineNos            = true
 lineNumbersInTable = true
-noClasses = true
-style = "fruity"
-tabWidth = 4
+noClasses          = true
+style              = "fruity"
+tabWidth           = 4
 
 [markup.tableOfContents]
-endLevel = 6
-ordered = false
+endLevel   = 6
+ordered    = false
 startLevel = 3
 
 [markup.goldmark]
 [markup.goldmark.extensions]
 definitionList = true
-footnote = true
-linkify = true
-strikethrough = true
-table = true
-taskList = true
-typographer = true
+footnote       = true
+linkify        = true
+strikethrough  = true
+table          = true
+taskList       = true
+typographer    = true
 [markup.goldmark.parser]
-attribute = true
-autoHeadingID = true
+attribute         = true
+autoHeadingID     = true
 autoHeadingIDType = "github"
 [markup.goldmark.renderer]
 hardWraps = false
-unsafe = true
-xhtml = false
+unsafe    = true
+xhtml     = false
 
 [outputs]
 home = ["HTML", "RSS"]
