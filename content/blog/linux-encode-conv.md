@@ -6,7 +6,7 @@ title: "Text File Encode/Charset Conversion"
 description: "Linux text file encoding / charset conversion."
 tags: ["linux","iconv","uchardet","command-line"]
 ---
-From time to time we get files with garbage characters ...
+From time to time we get files with garbage characters.
 <!--more-->
 
 ### Garbage Text

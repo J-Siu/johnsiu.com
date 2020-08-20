@@ -6,7 +6,7 @@ title: "Docker MPD Lite"
 description: "Docker MPD with UID/GID handling."
 tags: ["docker","mpd","lib"]
 ---
-Base on [My Alpine MPD (Music Player Daemon) Lite](/blog/alpine-mpd-lite/) with UID/GID + audio GID handling.
+Base on my [Alpine MPD Lite](/blog/alpine-mpd-lite/) with UID/GID + audio GID handling.
 <!--more-->
 Docker MPD Lite with UID/GID + audio GID handling.
 

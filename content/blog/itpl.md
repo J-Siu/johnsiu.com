@@ -2,8 +2,8 @@
 author: "John Siu"
 date: 2020-04-04T03:07:24-05:00
 description: "itpl - iTunes Playlist command line tool written in swift."
-tags: ["itunes","playlist","command-line","macos","lib"]
-title: "itpl - iTunes Playlist Command Line Tool"
+tags: ["itunes","playlist","macos","command-line","lib"]
+title: "itpl - iTunes Playlist Tool"
 type: "blog"
 ---
 __itpl__ (iTunes PlayList in short) is a command line tool to export iTunes playlist with various options.

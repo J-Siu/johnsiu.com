@@ -1,9 +1,9 @@
 ---
 author: "John Siu"
 date: 2019-07-22T02:32:06-04:00
-description: "Install docker machine on Alpine with KVM driver."
+description: "Install docker machine on Alpine using KVM driver."
 tags: ["alpine","kvm","docker","how-to"]
-title: "Alpine Docker-Machine & KVM Driver"
+title: "Alpine Docker-Machine KVM Driver"
 type: "blog"
 ---
 

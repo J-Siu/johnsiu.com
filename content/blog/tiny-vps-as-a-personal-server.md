@@ -3,7 +3,7 @@ author: "John Siu"
 date: 2012-12-02T06:59:25Z
 description: "Tiny VPS as a personal server."
 tags: ["tiny","lighttpd", "ubuntu", "mysql", "vps"]
-title: "Tiny VPS as a personal server"
+title: "Tiny VPS Personal Server"
 type: "blog"
 ---
 

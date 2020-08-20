@@ -1,9 +1,9 @@
 ---
 author: "John Siu"
 date: 2019-11-19T16:47:26-05:00
-description: "Find public ip with command line."
+description: "Find my public ip with command line."
 tags: ["cheatsheet","command-line","myip","ip","how-to"]
-title: "How To Find My Public IP From Command Line"
+title: "My IP From Command Line"
 type: "blog"
 ---
 Using Linux command line.

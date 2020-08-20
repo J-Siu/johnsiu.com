@@ -2,8 +2,8 @@
 type: "blog"
 date: 2019-07-27T02:32:48-04:00
 author: "John Siu"
-title: "My Alpine MPD (Music Player Daemon) Lite"
-description: "Compiling my own MPD, a lite version"
+title: "Alpine MPD Lite"
+description: "Compiling MPD (Music Player Daemon), a lite version."
 tags: ["alpine","mpd"]
 ---
 Didn't get my hand dirty for a long time.

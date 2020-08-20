@@ -3,7 +3,7 @@ author: "John Siu"
 date: 2019-07-30T00:14:48-04:00
 description: "Nginx URL redirect for old WordPress Permalink."
 tags: ["nginx","redirect","permalink","blog","migrate"]
-title: "Nginx URL Redirect For Old WordPress Permalink"
+title: "Nginx Redirect For WordPress Permalink"
 type: "blog"
 ---
 Seems URL rewrite/redirect is a never ending story.
