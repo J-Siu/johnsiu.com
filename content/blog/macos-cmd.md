@@ -1,12 +1,12 @@
 ---
-type: blog
-date: 2019-07-30T22:01:30-04:00
 author: "John Siu"
-title: "MacOS Command Line"
+date: 2019-07-30T22:01:30-04:00
 description: "John Siu's MacOS command cheat sheet."
 tags: ["macos","command-line","cheatsheet"]
+title: "MacOS Command Line"
+type: blog
 ---
-Some Mac OS commands.
+Some MacOS commands.
 <!--more-->
 
 ### Run Application from Command Line

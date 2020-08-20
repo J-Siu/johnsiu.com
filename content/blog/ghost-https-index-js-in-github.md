@@ -7,7 +7,7 @@ title: "Ghost Https index.js in GitHub"
 type: "blog"
 ---
 
-In an earlier __[post](/ghost-blog-self-hosted-with-https-using-nodejs-only/)__ I talk about running __[Ghost Blog](//ghost.org)__ with https using nodejs only.
+In [Ghost Blog Self Hosted HTTPS With Node.JS](/blog/ghost-blog-self-hosted-nodejs-https/) I talk about running [Ghost Blog](//ghost.org) with https using nodejs only.
 <!--more-->
 
 > Update 2017/03/16 - Code in this post work for Ghost 0.11.4 but not 0.11.7.

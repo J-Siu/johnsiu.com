@@ -3,7 +3,7 @@ author: "John Siu"
 date: 2015-11-20T01:20:42Z
 description: "RabbitMQ PHP-AMQP RPC Example - Server"
 tags: ["rabbitmq", "php", "amqp"]
-title: "RabbitMQ PHP-AMQP RPC Example - Server"
+title: "RabbitMQ PHP-AMQP RPC - Server"
 type: "blog"
 ---
 
@@ -12,9 +12,9 @@ This is Part 2 of PHP-AMQP RPC implementation.
 
 ### Series Content
 
-1. [Client](/blog/rabbitmq-php-amqp-rpc-example-client/)
-2. [Server](/blog/rabbitmq-php-amqp-rpc-example-server/) <- You are here
-3. [Setup & Include](/blog/rabbitmq-php-amqp-rpc-example-setup-include/)
+1. [Client](/blog/rabbitmq-php-amqp-rpc-client/)
+2. [Server](/blog/rabbitmq-php-amqp-rpc-server/) <- You are here
+3. [Setup & Include](/blog/rabbitmq-php-amqp-rpc-setup/)
 
 I didn’t spend as much time as the client to implement command line option for the server.
 

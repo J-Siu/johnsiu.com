@@ -27,7 +27,7 @@ So is there a simple way to setup smtp authentication with postfix without using
 
 ### SASLDB to the Rescue
 
-To enable smtp authentication with Postfix without Linux account or a database, we can use [sasldb2](http://cyrusimap.web.cmu.edu/mediawiki/index.php/Cyrus_SASL#Plugins_.28Auxillary_Property.29). It is easy to install and configure.
+To enable smtp authentication with Postfix without Linux account or a database, we can use [sasldb2](//cyrusimap.web.cmu.edu/mediawiki/index.php/Cyrus_SASL#Plugins_.28Auxillary_Property.29). It is easy to install and configure.
 
 #### Installing
 

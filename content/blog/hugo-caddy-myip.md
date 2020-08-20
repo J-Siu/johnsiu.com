@@ -17,7 +17,7 @@ Following is a simple way to create a fully themed Hugo "show my ip" page with C
 Create a new Hugo page:
 
 ```sh
-hugo new page/myip.md
+hugo new home/myip.md
 ```
 
 Inside `myip.md` with following content:
@@ -51,7 +51,7 @@ In `caddyfile`, add following line inside your site config:
 templates /home/myip/
 ```
 
-The `templates` line tell caddy server to treat `/post/myip/` as a template[^2].
+The `templates` line tell caddy server to treat `/home/myip/` as a template[^2].
 
 Take this site `caddyfile` as example:
 

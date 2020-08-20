@@ -1,10 +1,10 @@
 ---
-type: "blog"
-date: 2020-06-16T14:03:17-04:00
 author: "John Siu"
-title: "Jenkins - SSH Build Step Credential Issue"
+date: 2020-06-16T14:03:17-04:00
 description: "Jenkins - SSH Build Step Credential Issue"
 tags: ["jenkins","ssh"]
+title: "Jenkins - SSH Build Step Credential Issue"
+type: "blog"
 ---
 The old credential issue.
 <!--more-->

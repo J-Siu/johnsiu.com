@@ -1,10 +1,10 @@
 ---
-type: blog
-date: 2019-08-15
 author: "John Siu"
-title: 'Angular Simple Timer Service'
+date: 2019-08-15
 description: 'ng2-simple-timer is a simple timer service for Angular, base on RxJS.'
-tags: ["angular","service","ng2-simple-timer","lib"]
+tags: ["angular","service","lib"]
+title: 'Angular Timer Service'
+type: blog
 ---
 
 __ng2-simple-timer__ is a simple timer service for Angular, base on RxJS.

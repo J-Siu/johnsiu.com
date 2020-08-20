@@ -1,10 +1,10 @@
 ---
-type: "blog"
-date: 2019-09-14T16:09:23-04:00
 author: "John Siu"
-title: "Docker Jenkins - How To"
+date: 2019-09-14T16:09:23-04:00
 description: "Setup Jenkins using official docker image."
-tags: ["docker","jenkins","how-to"]
+tags: ["docker","cicd","jenkins","how-to"]
+title: "Docker Jenkins - How To"
+type: "blog"
 ---
 Setup Jenkins using official docker image.
 <!--more-->

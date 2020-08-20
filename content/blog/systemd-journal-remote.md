@@ -3,7 +3,7 @@ author: "John Siu"
 date: 2016-02-20T06:49:38Z
 description: "Configure Systemd Journal Remote"
 tags: ["ubuntu", "systemd"]
-title: "How to configure Systemd Journal Remote"
+title: "How To Configure Systemd Journal Remote"
 type: "blog"
 ---
 

@@ -31,6 +31,6 @@ Toronto’s premier IT support & network consulting company. Fast, reliable, aff
 
 ### Blogs
 
-#### [Dalaris Tech Blog](http://dalaris.com/) - Microsoft / VMWare
+#### [Dalaris Tech Blog](//dalaris.com/) - Microsoft / VMWare
 
-#### [Mike Anobile](http://mike.anobile.info/) - Microsoft and Wine, Technology and Lifestyle
+#### [Mike Anobile](//mike.anobile.info/) - Microsoft and Wine, Technology and Lifestyle

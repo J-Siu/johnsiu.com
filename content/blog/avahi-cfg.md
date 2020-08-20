@@ -10,7 +10,7 @@ Some Avahi config.
 <!--more-->
 ### Avahi
 
-To make samba share show up in Mac OS finder network section, create `/etc/avahi/services/smb.service`:
+To make samba share show up in MacOS finder network section, create `/etc/avahi/services/smb.service`:
 
 ```xml
 <?xml version="1.0" standalone='no'?>
@@ -31,7 +31,7 @@ To make samba share show up in Mac OS finder network section, create `/etc/avahi
 
 Then restart avahi.
 
-### Mac OS Icons
+### MacOS Icons
 
 - plist: `/System/Library/CoreServices/CoreTypes.bundle/Contents/Info.plist`
 - location: `/System/Library/CoreServices/CoreTypes.bundle/Contents/Resources`

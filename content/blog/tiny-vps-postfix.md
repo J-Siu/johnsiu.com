@@ -49,7 +49,7 @@ Dealing with postfix daily at work, it is a no-brainer to use it here too. And I
 
 The standard *main.cf* come with Ubuntu is quite complete.
 
-Modify line 29, 33 according to site setup. Then add line 41 to 57 for basic spam protection and close off [open relay](http://en.wikipedia.org/wiki/Open_mail_relay). You really don’t want to be an open relay!
+Modify line 29, 33 according to site setup. Then add line 41 to 57 for basic spam protection and close off [open relay](//en.wikipedia.org/wiki/Open_mail_relay). You really don’t want to be an open relay!
 
 Remember to Change **MY-HOSTNAME** at line 29 and **MY-DOMAIN** to your own domain at line 33.
 

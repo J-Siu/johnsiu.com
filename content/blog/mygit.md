@@ -1,10 +1,10 @@
 ---
-type: "blog"
-date: 2020-07-28T21:22:54-04:00
 author: "John Siu"
-title: "MyGit - Bash git automation script"
+date: 2020-07-28T21:22:54-04:00
 description: "Bash git automation script support group action."
 tags: ["bash","git","command-line","lib"]
+title: "MyGit - Bash Git Automation Script"
+type: "blog"
 ---
 Migrated all my ZSH git functions into a standalone bash script.
 <!--more-->
@@ -395,11 +395,11 @@ mygit push --master
 
 ### Repository
 
-- [mygit](https://github.com/J-Siu/mygit)
+- [mygit](//github.com/J-Siu/mygit)
 
 ### Contributors
 
-- [John Sing Dao Siu](https://github.com/J-Siu)
+- [John Sing Dao Siu](//github.com/J-Siu)
 
 ### Change Log
 

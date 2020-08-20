@@ -1,10 +1,10 @@
 ---
-type: "blog"
-date: 2020-06-16T03:32:11-04:00
 author: "John Siu"
+date: 2020-06-16T03:32:11-04:00
+description: "Jenkins Github/Gogs Webhooks Configuration"
+tags: ["jenkins","cicd","webhook","gogs","github"]
 title: "Jenkins - Gogs/Github Webhook"
-description: "Jenkins Github/Gogs Webhooks configuration"
-tags: ["jenkins","webhook","gogs","github"]
+type: "blog"
 ---
 How to set them up.
 <!--more-->

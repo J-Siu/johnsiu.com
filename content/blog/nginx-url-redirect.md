@@ -1,10 +1,10 @@
 ---
-type: "blog"
-date: 2019-07-30T00:14:48-04:00
 author: "John Siu"
-title: "Nginx URL Redirect For Old WordPress Permalink"
+date: 2019-07-30T00:14:48-04:00
 description: "Nginx URL redirect for old WordPress Permalink."
 tags: ["nginx","redirect","permalink","blog","migrate"]
+title: "Nginx URL Redirect For Old WordPress Permalink"
+type: "blog"
 ---
 Seems URL rewrite/redirect is a never ending story.
 <!--more-->
@@ -16,7 +16,7 @@ I used my own [h2ghost](/blog/h2ghost/) with Ghost as both were nodejs applicati
 
 However Hugo produce static pages and I decided to look into other http server options.
 
-I was debating between [Monkey Server](http://monkey-project.com/) and [Nginx](//nginx.org/). And finally pick Nginx as it is more actively developed.
+I was debating between [Monkey Server](//monkey-project.com/) and [Nginx](//nginx.org/). And finally pick Nginx as it is more actively developed.
 
 ### Logwatch
 

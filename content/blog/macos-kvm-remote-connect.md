@@ -1,10 +1,10 @@
 ---
-type: "blog"
-date: 2019-08-26T23:51:14-04:00
 author: "John Siu"
-title: "MacOS Connect to KVM Client Desktop"
+date: 2019-08-26T23:51:14-04:00
 description: "MacOS connect to KVM client with remote-viewer and virt-manager."
 tags: ["macos","kvm","qemu","virt-manager","virt-viewer","remote-viewer","zsh","how-to","command-line"]
+title: "MacOS Connect to KVM Client Desktop"
+type: "blog"
 ---
 Updated instruction for MacOS.
 <!--more-->
@@ -15,7 +15,7 @@ In [MacOS direct connect to KVM client desktop](/blog/macos-kvm-remote-viewer/) 
 
 ### Install Homebrew
 
-Homebrew allow Linux package to be installed and ran on MacOS/X system. Follow instruction on [Homebrew](http://brew.sh):
+Homebrew allow Linux package to be installed and ran on MacOS/X system. Follow instruction on [Homebrew](//brew.sh):
 
 ```sh
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"

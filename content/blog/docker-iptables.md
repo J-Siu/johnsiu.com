@@ -3,7 +3,7 @@ author: "John Siu"
 date: 2020-06-16T16:57:06-04:00
 description: "Using iptables on docker host."
 tags: ["docker","iptables"]
-title: "Docker and Iptables"
+title: "Docker and IPtables"
 type: "blog"
 ---
 Using iptables on docker host.

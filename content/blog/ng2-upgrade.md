@@ -1,12 +1,12 @@
 ---
-type: "blog"
-date: 2020-04-05T22:06:31-04:00
 author: "John Siu"
-title: "Angular 8 to 9 Package Upgrade"
+date: 2020-04-05T22:06:31-04:00
 description: "Angular 8 to 9 upgrade for packages."
 tags: ["angular","lib"]
+title: "Angular 8 to 9 Package Upgrade"
+type: "blog"
 ---
-In season of corvid-19, maybe it is time for some upgrade.
+In season of covid-19, maybe it is time for some upgrade.
 <!--more-->
 
 ### Packages

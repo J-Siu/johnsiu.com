@@ -22,7 +22,7 @@ __Ghost__ started as a __[KickStarter Project](//www.kickstarter.com/projects/jo
 
 What make __Ghost__ attractive for me?
 
-Ghost, as a NodeJS application, is a web server by itself, that eliminated the needed for standalone web server like Lighttpd or apache. Besides MySQL, it also support __[sqlite3](http://sqlite.org)__, an embedded light weight database library. I don't need standalone database.
+Ghost, as a NodeJS application, is a web server by itself, that eliminated the needed for standalone web server like Lighttpd or apache. Besides MySQL, it also support __[sqlite3](//sqlite.org)__, an embedded light weight database library. I don't need standalone database.
 
 And again, numbers talk ...
 

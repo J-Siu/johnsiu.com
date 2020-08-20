@@ -16,7 +16,7 @@ Welcome to a tiny world.
 
 ### MySQL
 
-[![MySQL](//i0.wp.com/www.mysql.com/common/logos/logo-mysql-110x57.png?resize=110%2C57 "MySQL")](http://mysql.com/)
+[![MySQL](//i0.wp.com/www.mysql.com/common/logos/logo-mysql-110x57.png?resize=110%2C57 "MySQL")](//mysql.com/)
 
 DB tuning is a big topic, a profession, a complicated process … well, if you are doing performance tuning. Tuning MySQL to use less memory, turn out to be pretty simple.
 
@@ -26,7 +26,7 @@ A simple googling on this topic will give you lot of pages, either blog or forum
 > skip-bdb
 > skip-innodb
 
-This works … before MySQL 5.1. Turn out that the option **skip-bdb** was [deprecated in 5.0](http://bugs.mysql.com/bug.php?id=50336), and removed completely from 5.1. If it is added to 5.1 *my.cnf*, mysqld won’t even start. For 5.1 and later (5.5.28 as of today), only use **skip-innodb**.
+This works … before MySQL 5.1. Turn out that the option **skip-bdb** was [deprecated in 5.0](//bugs.mysql.com/bug.php?id=50336), and removed completely from 5.1. If it is added to 5.1 *my.cnf*, mysqld won’t even start. For 5.1 and later (5.5.28 as of today), only use **skip-innodb**.
 
 So how much memory are we saving with skip-innodb? Lets test.
 

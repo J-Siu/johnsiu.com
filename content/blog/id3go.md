@@ -1,10 +1,10 @@
 ---
-type: "blog"
-date: 2019-09-14
 author: "John Siu"
-title: "Id3go - ID3v2 Command Line Editor"
+date: 2019-09-14
 description: "id3go view and update file id3v2 tags from command line."
 tags: ["id3v2","command-line","golang","lib"]
+title: "id3go - ID3v2 Command Line Editor"
+type: "blog"
 ---
 Provide easy viewing and updating of media file tags from command line.
 <!--more-->
@@ -103,11 +103,11 @@ id3go set --album "My Record" *.mp3
 
 ### Repository
 
-- [id3go](https://github.com/J-Siu/id3go)
+- [id3go](//github.com/J-Siu/id3go)
 
 ### Contributors
 
-- [John Sing Dao Siu](https://github.com/J-Siu)
+- [John Sing Dao Siu](//github.com/J-Siu)
 
 ### Changelog
 

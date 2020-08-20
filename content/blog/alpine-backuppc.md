@@ -1,10 +1,10 @@
 ---
-type: "blog"
-date: 2019-08-03T00:10:20-04:00
 author: "John Siu"
-title: "Alpine BackupPC 4 With Nginx"
+date: 2019-08-03T00:10:20-04:00
 description: "Install BackupPC 4.x on Alpine Linux with Nginx"
 tags: ["alpine","backuppc","nginx","how-to"]
+title: "Alpine BackupPC 4 With Nginx"
+type: "blog"
 ---
 Deploying BackupPC 4.x on Alpine require some efforts.
 <!--more-->
@@ -13,7 +13,7 @@ Deploying BackupPC 4.x on Alpine require some efforts.
 
 ### BackupPC 4.X
 
-[BackupPC](//github.com/backuppc/backuppc) is a Linux base backup software with a web frontend. It support client across Linux, Windows, Mac OS and other UNIX-base system.
+[BackupPC](//github.com/backuppc/backuppc) is a Linux base backup software with a web frontend. It support client across Linux, Windows, MacOS and other UNIX-base system.
 
 #### Dev Dependencies
 

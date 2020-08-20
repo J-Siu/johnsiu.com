@@ -1,10 +1,10 @@
 ---
-type: "blog"
-date: 2019-08-17T20:59:28-04:00
 author: "John Siu"
-title: "Hugo Front Matter Aliases for Migration"
+date: 2019-08-17T20:59:28-04:00
 description: "Use Hugo front matter aliases for migration from Ghost or WordPress."
 tags: ["hugo","blog","redirect","permalink","migrate","front matter"]
+title: "Hugo Front Matter Aliases for Migration"
+type: "blog"
 ---
 Use Hugo front matter aliases to handle migration from other platform such as Ghost or WordPress.
 <!--more-->
@@ -113,10 +113,10 @@ public/
 ├── ghost-blog-self-hosted-with-https-using-nodejs-only
 ├── ghost-https-index-js-in-github/
 ├── h2ghost/
-├── how-to-configure-systemd-journal-remote/
 ├── let-ghost-be-ghost/
 ├── lighttpd-redirect-and-wp-permalink/
-├── lighttpd-url-rewrite-for-latest-wordpress-jetpack/
+├── lighttpd-rewrite-for-wordpress-jetpack/
+├── systemd-journal-remote/
 ...
 ```
 

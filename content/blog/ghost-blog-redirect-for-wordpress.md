@@ -26,7 +26,7 @@ https://johnsiu.com/sample-post/
 
 ### Solution
 
-Ghost development team provided a perfect and simple solution in version __0.11.4__, the `redirects.json`. The official document is __[here](http://support.ghost.org/redirects/)__.
+Ghost development team provided a perfect and simple solution in version __0.11.4__, the `redirects.json`. The official document is __[here](//support.ghost.org/redirects/)__.
 
 `redirects.json` need to be placed in `<Ghost root>/content/data/`.
 

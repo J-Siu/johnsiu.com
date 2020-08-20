@@ -1,10 +1,10 @@
 ---
-type: "blog"
-date: 2019-11-19T16:47:26-05:00
 author: "John Siu"
-title: "How To Find My Public IP From Command Line"
+date: 2019-11-19T16:47:26-05:00
 description: "Find public ip with command line."
 tags: ["cheatsheet","command-line","myip","ip","how-to"]
+title: "How To Find My Public IP From Command Line"
+type: "blog"
 ---
 Using Linux command line.
 <!--more-->
@@ -14,7 +14,6 @@ Using Linux command line.
 ```sh
 curl https://myip4.johnsiu.com/
 curl https://myip4.jsiu.dev/
-curl -4 https://myip.jsiu.dev/
 
 curl ifconfig.me
 curl ipecho.net/plain
@@ -25,7 +24,6 @@ curl ipecho.net/plain
 ```sh
 curl https://myip6.johnsiu.com/
 curl https://myip6.jsiu.dev/
-curl -6 https://myip.jsiu.dev/
 
 curl icanhazip.com
 curl ifconfig.co
@@ -34,4 +32,5 @@ dig TXT +short o-o.myaddr.l.google.com @ns1.google.com
 
 ### Web Base
 
-[My IP](/home/myip/)
+- [https://johnsiu.com/home/myip/](/home/myip/)
+- [https://myip.jsiu.dev/](/home/myip/)

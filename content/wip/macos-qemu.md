@@ -2,8 +2,8 @@
 type: "blog"
 date: 2019-12-06T21:54:54-05:00
 author: "John Siu"
-title: "Mac OS Qemu/KVM"
-description: "Running QEMU/KVM on Mac OS"
+title: "MacOS Qemu/KVM"
+description: "Running QEMU/KVM on MacOS"
 tags: ["macos","kvm"]
 draft: true
 ---

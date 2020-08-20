@@ -1,10 +1,10 @@
 ---
-type: "blog"
-date: 2019-08-13T11:13:25-04:00
 author: "John Siu"
-title: "Docker on Mac"
+date: 2019-08-13T11:13:25-04:00
 description: "Running Docker on MacOS ..."
 tags: ["docker","macos","how-to"]
+title: "Docker on MacOS"
+type: "blog"
 ---
 Running Docker on Mac and create first container.
 <!--more-->

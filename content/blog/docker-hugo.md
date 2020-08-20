@@ -1,10 +1,10 @@
 ---
-type: "blog"
-date: 2020-06-17T18:03:23-04:00
 author: "John Siu"
-title: "Docker Hugo"
+date: 2020-06-17T18:03:23-04:00
 description: "Docker - Hugo site generator used in CI/CD."
-tags: ["docker","hugo","lib"]
+tags: ["docker","cicd","lib","hugo"]
+title: "Docker Hugo"
+type: "blog"
 ---
 
 Docker - Hugo site generator used in CI/CD.

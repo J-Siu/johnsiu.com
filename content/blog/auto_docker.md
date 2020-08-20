@@ -1,10 +1,10 @@
 ---
-type: "blog"
-date: 2020-07-09T23:27:25-04:00
 author: "John Siu"
-title: "Docker Image - Mass Auto Update"
+date: 2020-07-09T23:27:25-04:00
 description: "Mass Dockerfile auto update script."
-tags: ["docker","lib"]
+tags: ["docker","cicd","lib"]
+title: "Docker Image - Mass Auto Update"
+type: "blog"
 ---
 Not sure how others deal with 100s+ images, but this is how I do it.
 <!--more-->

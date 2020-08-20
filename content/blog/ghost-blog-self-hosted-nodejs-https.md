@@ -3,14 +3,14 @@ author: "John Siu"
 date: 2017-02-25T18:15:16Z
 description: "Ghost Blog Self Hosted with HTTPS using NodeJS only"
 tags: ["ghost", "nodejs", "https", "blog"]
-title: "Ghost Blog Self Hosted with HTTPS using NodeJS only"
+title: "Ghost Blog Self Hosted HTTPS With Node.JS"
 type: "blog"
 ---
 
-As of today, the official way for self-hosted __Ghost Blog__ to use HTTPS is to use __[Nginx](http://nginx.org)__ as a front end proxy server. The official guide is __[here](http://support.ghost.org/setup-ssl-self-hosted-ghost/)__.
+As of today, the official way for self-hosted __Ghost Blog__ to use HTTPS is to use __[Nginx](//nginx.org)__ as a front end proxy server. The official guide is __[here](//support.ghost.org/setup-ssl-self-hosted-ghost/)__.
 <!--more-->
 
-### My Way ...
+### My Way
 
 There are many reasons to use a proxy server in front of NodeJS service such as Ghost. However, it seems overkill in my situation. I come up with 2 ways to just use NodeJS to support HTTPS with __[Ghost 0.11.4](//ghost.org/developers/)__.
 

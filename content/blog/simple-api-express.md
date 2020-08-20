@@ -2,8 +2,8 @@
 author: "John Siu"
 date: 2019-08-15
 description: "ExpressJS API handler(NOT middleware)."
-tags: ["angular","service","expressjs","simple-api-express","simple-api-client-ng2","lib"]
-title: "Simple API handler for node.js / ExpressJS"
+tags: ["angular","service","api","lib","expressjs"]
+title: "Node.js ExpressJS API Handler"
 type: blog
 ---
 
