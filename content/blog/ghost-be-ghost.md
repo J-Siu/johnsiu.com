@@ -57,4 +57,4 @@ After this exercise, I can imagine if Ghost Blog include full https support in t
 
 I have to agree, let Ghost be the blogging platform and let front end or wrapper(mine) take care of HTTPS.
 
-__PS: My final solution?__ [___HERE___](/h2ghost)
+__PS: My final solution?__ [___HERE___](/blog/ghost-h2ghost/)

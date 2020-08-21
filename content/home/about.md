@@ -17,13 +17,13 @@ My interests.
 #### Technology
 
 - CI/CD
-  - [Kubernetes](/tags/kubernetes)
-  - [Docker](/tags/docker)
-  - [Jenkins](/tags/jenkins)
-- [Alpine Linux](/tags/alpine)
-- [Angular](/tags/angular)
-- [Elastic Stack](/tags/elk)
-- [Hugo](/tags/hugo)
+  - [Kubernetes](/tags/kubernetes/)
+  - [Docker](/tags/docker/)
+  - [Jenkins](/tags/jenkins/)
+- [Alpine Linux](/tags/alpine/)
+- [Angular](/tags/angular/)
+- [Elastic Stack](/tags/elk/)
+- [Hugo](/tags/hugo/)
 
 #### Others
 

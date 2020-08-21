@@ -9,7 +9,7 @@ tags: ["linux","how-to","ipv6","router","dhcpv6","pd"]
 Using dibbler-client / wide-dhcpv6-client to get dhcpv6-pd.
 <!--more-->
 
-As IPv6 doesn't have NAT as IPv4, new tools and settings are required for Linux base router. In [Linux IPv6 Router How To](/blog/linux-router) I covered using wide-dhcpv6-client to get 2 prefix delegations(PD). However that turn out not working for most ISPs. Most service providers will only give out one /64 PD by default, and give out /56 only when requested in settings.
+As IPv6 doesn't have NAT as IPv4, new tools and settings are required for Linux base router. In [Linux IPv6 Router How To](/blog/linux-router/) I covered using wide-dhcpv6-client to get 2 prefix delegations(PD). However that turn out not working for most ISPs. Most service providers will only give out one /64 PD by default, and give out /56 only when requested in settings.
 
 ---
 

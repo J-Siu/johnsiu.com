@@ -7,7 +7,7 @@ title: "Ghost Blog Custom Theme"
 type: "blog"
 ---
 
-Though I move my blog to __[Ghost](//ghost.org)__ in __[last month](/blog/ghost-blog-from-wordpress)__, I am not satisfy with the default  __[Casper](//github.com/TryGhost/Casper)__ theme come with Ghost.
+Though I move my blog to __[Ghost](//ghost.org)__ in __[last month](/blog/ghost-blog-from-wordpress/)__, I am not satisfy with the default  __[Casper](//github.com/TryGhost/Casper)__ theme come with Ghost.
 <!--more-->
 
 With work load at job under control, I finally have time to customize it to my liking this weekend and deployed it in this site.

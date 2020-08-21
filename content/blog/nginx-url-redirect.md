@@ -12,7 +12,7 @@ Seems URL rewrite/redirect is a never ending story.
 
 When I switched my blogging platform from Ghost to Hugo, I also switched the web serving component.
 
-I used my own [h2ghost](/blog/h2ghost/) with Ghost as both were nodejs applications.
+I used my own [h2ghost](/blog/ghost-h2ghost/) with Ghost as both were nodejs applications.
 
 However Hugo produce static pages and I decided to look into other http server options.
 
