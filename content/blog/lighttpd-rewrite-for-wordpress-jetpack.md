@@ -2,7 +2,7 @@
 author: "John Siu"
 date: 2016-10-13T03:33:00Z
 description: "Lighttpd url.rewrite for latest WordPress Jetpack"
-tags: ["lighttpd","redirect","url.rewrite","wordpress", "jetpack", "mod_rewrite"]
+tags: ["lighttpd","redirect","rewrite","wordpress", "jetpack"]
 title: "Lighttpd Rewrite For WordPress Jetpack"
 type: "blog"
 ---
