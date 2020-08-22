@@ -4,7 +4,7 @@ date: 2019-09-01T20:35:58-04:00
 author: "John Siu"
 title: "Tiny CI/CD - Build Your Own - Part 1 - Introduction"
 description: "CI/CD series covering setup of kubernetes, docker, private (docker)registry, jenkins, git repository."
-tags: ["tiny","ci","cd","kubernetes","docker","registry","jenkins","git"]
+tags: ["tiny","cicd","kubernetes","docker","registry","jenkins","git"]
 draft: true
 ---
 The new tiny series covering setup of docker, kubernetes, private docker registry, jenkins, git repository.

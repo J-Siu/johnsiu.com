@@ -4,7 +4,7 @@ date: 2019-08-29T21:37:42-04:00
 author: "John Siu"
 title: "Tiny CI/CD - Building Your Own - Part 6 - Jenkins"
 description: ""
-tags: ["tiny","ci","cd","kubernetes","docker","jenkins"]
+tags: ["tiny","cicd","kubernetes","docker","jenkins"]
 draft: true
 ---
 <!--more-->

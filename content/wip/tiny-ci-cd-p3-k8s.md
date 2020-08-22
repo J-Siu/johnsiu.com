@@ -4,7 +4,7 @@ date: 2019-09-02T12:36:37-04:00
 author: "John Siu"
 title: "Tiny CI/CD - Building Your Own - Part 3 - Kubernetes"
 description: ""
-tags: ["tiny","ci","cd","kubernetes"]
+tags: ["tiny","cicd","kubernetes"]
 draft: true
 ---
 Installing Kubernetes using kubeadm.

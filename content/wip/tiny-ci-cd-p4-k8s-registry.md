@@ -4,7 +4,7 @@ date: 2019-08-29T21:37:20-04:00
 author: "John Siu"
 title: "Tiny CI/CD - Building Your Own - Part 4 - Docker Registry"
 description: ""
-tags: ["tiny","ci","cd","kubernetes","docker","registry"]
+tags: ["tiny","cicd","kubernetes","docker","registry"]
 draft: true
 ---
 <!--more-->

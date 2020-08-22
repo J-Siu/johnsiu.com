@@ -4,7 +4,7 @@ date: 2019-08-29T21:37:33-04:00
 author: "John Siu"
 title: "Tiny CI/CD - Building Your Own - Part 5 - Gogs (Git Server)"
 description: ""
-tags: ["tiny","ci","cd","kubernetes","docker","git","gogs"]
+tags: ["tiny","cicd","kubernetes","docker","git","gogs"]
 draft: true
 ---
 <!--more-->

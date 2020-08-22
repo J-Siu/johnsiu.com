@@ -4,7 +4,7 @@ date: 2019-08-29T21:52:20-04:00
 author: "John Siu"
 title: "Tiny CI/CD - Building Your Own - Part 8 - Bonus"
 description: ""
-tags: ["tiny","ci","cd","kubernetes","docker","registry","jenkins","git"]
+tags: ["tiny","cicd","kubernetes","docker","registry","jenkins","git"]
 draft: true
 ---
 <!--more-->

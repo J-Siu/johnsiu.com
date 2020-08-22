@@ -4,7 +4,7 @@ date: 2019-09-01T21:48:45-04:00
 author: "John Siu"
 title: "Tiny CI/CD - Build Your Own - Part 2 - Docker"
 description: "Install docker for ci/cd and 2 examples."
-tags: ["tiny","ci","cd","docker"]
+tags: ["tiny","cicd","docker"]
 draft: true
 ---
 Install Docker for CI/CD setup and 2 examples.
