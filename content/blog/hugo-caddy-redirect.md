@@ -13,7 +13,7 @@ If you migrate from wordpress or ghost.
 
 #### Redirections For WordPress Migration
 
-#|From|To
+|#|From|To
 ---|---|---
 1|`/index.php/`|`/`
 2|`/index.php/*`|`/post/*`
@@ -23,7 +23,7 @@ If you migrate from wordpress or ghost.
 
 #### Redirections For Ghost Migration
 
-#|From|To
+|#|From|To
 ---|---|---
 6|`/*`|`/post/*`
 7|`/category/*`|`/tags/*`
