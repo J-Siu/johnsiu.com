@@ -92,3 +92,6 @@ function ip_compare(a, b) {
 	}
 	return 0
 }
+
+myip(4)
+myip(6)

@@ -31,8 +31,4 @@ Show me the IPs.
 - [Hugo - My IP Page With Javascript](/blog/hugo-caddy-myip-js/)
 
 ---
-
-<script>
-myip(4)
-myip(6)
-</script>
+<script async src="/js/myip.js"></script>
