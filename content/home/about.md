@@ -7,7 +7,7 @@ related: false
 title: "About"
 type: "home"
 ---
-My interests.
+My interests. My projects.
 <!--more-->
 
 ---
