@@ -16,6 +16,7 @@ Finally running my own website, hosting my own blog, having my own server to do 
 - Part 2 - [Non-Linux Outgoing SMTP Account](/blog/tiny-vps-postfix-p2-smtp-account/)
 - Part 3 - [GMail As Email Client](/blog/tiny-vps-postfix-p3-gmail/)
 - Part 4 - [Postfix with Docker](/blog/tiny-vps-postfix-docker/)
+- Part 5 - [Docker, Postfix, Journald & Logwatch](/blog/docker-postfix-journald/)
 
 It is so tempting and logical to setup my own email service running on it. Sending and receiving email with my own server, my own email address with my own domain name … So exciting!!
 

@@ -16,6 +16,7 @@ In [Tiny VPS Postfix](/blog/tiny-vps-postfix/) I set up a minimalistic postfix s
 - Part 2 - [Non-Linux Outgoing SMTP Account](/blog/tiny-vps-postfix-p2-smtp-account/)
 - Part 3 - [GMail As Email Client](/blog/tiny-vps-postfix-p3-gmail/) <- You are here
 - Part 4 - [Postfix with Docker](/blog/tiny-vps-postfix-docker/)
+- Part 5 - [Docker, Postfix, Journald & Logwatch](/blog/docker-postfix-journald/)
 
 In [Part 2](/blog/tiny-vps-postfix-p2-smtp-account/) I set up postfix with sasldb2 to enable smtp authentication for outgoing email.
 

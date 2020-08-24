@@ -15,6 +15,7 @@ A refresh of my tiny vps postfix setup.
 - Part 2 - [Non-Linux Outgoing SMTP Account](/blog/tiny-vps-postfix-p2-smtp-account/)
 - Part 3 - [GMail As Email Client](/blog/tiny-vps-postfix-p3-gmail/)
 - Part 4 - [Postfix with Docker](/blog/tiny-vps-postfix-docker/) <- You are here
+- Part 5 - [Docker, Postfix, Journald & Logwatch](/blog/docker-postfix-journald/)
 
 ### The Pain
 

@@ -16,6 +16,7 @@ In the last part I show a minimal setup of Postfix. It allow incoming emails to 
 - Part 2 - [Non-Linux Outgoing SMTP Account](/blog/tiny-vps-postfix-p2-smtp-account/) <- You are here
 - Part 3 - [GMail As Email Client](/blog/tiny-vps-postfix-p3-gmail/)
 - Part 4 - [Postfix with Docker](/blog/tiny-vps-postfix-docker/)
+- Part 5 - [Docker, Postfix, Journald & Logwatch](/blog/docker-postfix-journald/)
 
 ### Replying email with my own domain
 
