@@ -22,7 +22,7 @@ location ~ "^/index.php/\d{4}/\d{2}/\d{2}/(.*)$" { return 301 https://johnsiu.co
 #### /index.php/\<post\> to /blog/\<post\>
 
 ```apache
-location ~ "^/index.php/(.*)$" { return 301 https://johnsiu.com/blog/$1; }```
+location ~ "^/index.php/(.*)$" { return 301 https://johnsiu.com/blog/$1; }
 ```
 
 ### Ghost Permalink Redirect

@@ -14,15 +14,15 @@ I have multiple posts about using mod_rewrite / redirect in various web servers 
 
 From|URL|To|URL|Http Server|Rules
 ---|---|---|---|---|---
-WordPress|/index.php/YYYY/MM/DD/\<article\>|Hugo|/blog/\<article\>|Nginx|location ~ "^/index.php/\d{4}/\d{2}/\d{2}/(.*)$" { return 301 https://johnsiu.com/blog/$1; }
-WordPress|/index.php/\<article\>|Hugo|/blog/\<article\>|Nginx|location ~ "^/index.php/(.*)$" { return 301 https://johnsiu.com/blog/$1; }
-WordPress|/index.php/YYYY/MM/DD/\<article\>|WordPress|/index.php/\<article\>|Lighttpd|url.redirect = ("^/index.php/\d{4}/\d{2}/\d{2}/(.*)$" => "/index.php/$1")
+WordPress|`/index.php/YYYY/MM/DD/<article>|Hugo|/blog/<article>`|Nginx|`location ~ "^/index.php/\d{4}/\d{2}/\d{2}/(.*)$" { return 301 https://johnsiu.com/blog/$1; }`
+WordPress|`/index.php/<article>|Hugo|/blog/<article>`|Nginx|`location ~ "^/index.php/(.*)$" { return 301 https://johnsiu.com/blog/$1; }`
+WordPress|`/index.php/YYYY/MM/DD/<article>`|WordPress|`/index.php/<article>`|Lighttpd|`url.redirect = ("^/index.php/\d{4}/\d{2}/\d{2}/(.*)$" => "/index.php/$1")`
 
 However I encountered something that can't be (or too risky) generalized into rules:
 
 From|URL|To|URL|
 ---|---|---|---
-Ghost|/\<article\>|Hugo|/blog/\<article\>
+Ghost|`/<article>`|Hugo|`/blog/<article>`
 
 It looks simple by itself but it can be a big mess. The risk is high and I opted for static rules like following:
 
