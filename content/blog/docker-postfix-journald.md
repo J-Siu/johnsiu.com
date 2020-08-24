@@ -88,7 +88,7 @@ The reason for all the `-t`(search terms) instead of `-u postfix` is because the
 
 The output is just like normal postfix log:
 
-```apache
+```cobol
 Aug 23 00:02:02 example.com postfix/smtpd[82]: connect from unknown[xxx.xxx.xxx.xxx]
 Aug 23 00:02:02 example.com postfix/smtpd[84]: connect from unknown[xxx.xxx.xxx.xxx]
 Aug 23 00:02:02 example.com postfix/smtpd[82]: lost connection after CONNECT from unknown[xxx.xxx.xxx.xxx]
@@ -160,7 +160,7 @@ sudo journalctl -t postfix_container
 
 Setting `container_name` with log tagging become handy here as a single search term `-t postfix_container` is enough. Output should be similar as below:
 
-```apache
+```cobol
 Aug 23 00:02:02 example.com postfix_container[468]: Aug 23 00:02:02 example postfix/smtpd[82]: connect from unknown[xxx.xxx.xxx.xxx]
 Aug 23 00:02:02 example.com postfix_container[468]: Aug 23 00:02:02 example postfix/smtpd[84]: connect from unknown[xxx.xxx.xxx.xxx]
 Aug 23 00:02:02 example.com postfix_container[468]: Aug 23 00:02:02 example postfix/smtpd[82]: lost connection after CONNECT from unknown[xxx.xxx.xxx.xxx]
