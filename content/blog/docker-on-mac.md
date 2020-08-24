@@ -6,9 +6,9 @@ tags: ["docker","macos","how-to"]
 title: "Docker on MacOS"
 type: "blog"
 ---
-Running Docker on Mac and create first container.
+Running Docker on MacOS and create first container.
 <!--more-->
-There are multiple ways to install docker on Mac. We will use [Homebrew for Mac](//brew.sh/).
+There are multiple ways to install docker on MacOS. We will use [Homebrew for MacOS](//brew.sh/).
 
 ---
 

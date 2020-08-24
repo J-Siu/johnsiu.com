@@ -30,7 +30,7 @@ New features are great but keeping the site up and running is more important.
 
 It is easy fix for linux, just install hugo 0.56.3 with package manager of your distro.
 
-However it is a bit messy on Mac with Homebrew. Following is the steps for rolling back on Mac using Homebrew:
+However it is a bit messy on MacOS with Homebrew. Following is the steps for rolling back on MacOS using Homebrew:
 
 ```sh
 brew uninstall hugo

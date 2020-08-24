@@ -11,7 +11,7 @@ MacOS packages I use.
 ### System
 
 - [Spectacle](//github.com/eczarny/spectacle) / [Rectangle](//github.com/rxhanson/Rectangle) - Organize windows with keyboard.
-- [Barrier](//github.com/debauchee/barrier) (replaced [Synergy](//symless.com/)) - Keyboard and mouse sharing between Mac, Windows and Linux.
+- [Barrier](//github.com/debauchee/barrier) (replaced [Synergy](//symless.com/)) - Keyboard and mouse sharing between MacOS, Windows and Linux.
 
 ### Development
 

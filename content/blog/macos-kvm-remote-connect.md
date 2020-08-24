@@ -42,7 +42,7 @@ virsh -c 'qemu+ssh://user@hostname/system' list
 virsh -c 'qemu+ssh://user@hostname/system' net-list --all
 ```
 
-On Mac, however, we have to append `?socket=/var/run/libvirt/libvirt-sock` to the connection string. `/var/run/libvirt/libvirt-sock` is where the file `libvirt-sock` located on your KVM host. Though unlikely, you may have to modify it according to your environment.
+On MacOS, however, we have to append `?socket=/var/run/libvirt/libvirt-sock` to the connection string. `/var/run/libvirt/libvirt-sock` is where the file `libvirt-sock` located on your KVM host. Though unlikely, you may have to modify it according to your environment.
 
 ```sh
 virt-manager -c 'qemu+ssh://user@hostname/system?socket=/var/run/libvirt/libvirt-sock'
@@ -78,7 +78,7 @@ spice://192.168.0.10:5901
 
 ### Bonus - ZSH Functions
 
-If you want to manage KVM from a Mac and using `zsh`, add following to the end of `.zshrc`:
+If you want to manage KVM from a MacOS and using `zsh`, add following to the end of `.zshrc`:
 
 ```zsh
 kvm(){
