@@ -11,7 +11,7 @@ All Google IP addresses.
 
 ### Auto Update
 
-> Update using javascript + DoH at browser. Will not work if DoH(dns.google) is blocked.
+> Update using javascript + DoH(doh.jsiu.dev) at browser. Will not work if DoH traffic is blocked.
 
 IPv4|IPv6
 ---|---

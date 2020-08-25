@@ -6,9 +6,12 @@ function myip(ipv) {
 		.then(t => document.getElementById('myip' + ipv).innerHTML = t)
 }
 
+// --- /blog/google-ip/
+
 // Get SPF result
 function googleIp2table() {
-	fetch('//dns.google/resolve?name=_spf.google.com&type=txt')
+	doh='//doh.jsiu.dev'
+	fetch(doh+'/resolve?name=_spf.google.com&type=txt')
 		.then(j => j.json())
 		.then(j => spf2blocks(JSON.parse(j.Answer[0].data)))
 		.then(b => {
@@ -16,7 +19,7 @@ function googleIp2table() {
 			ip.v4 = []
 			ip.v6 = []
 			for (i = 0; i < b.length; i++) {
-				fetch('//dns.google/resolve?name=' + b[i] + '&type=txt')
+				fetch(doh+'/resolve?name=' + b[i] + '&type=txt')
 					.then(k => k.json())
 					.then(k => block2ip(JSON.parse(k.Answer[0].data)))
 					.then(c => {
@@ -92,6 +95,3 @@ function ip_compare(a, b) {
 	}
 	return 0
 }
-
-myip(4)
-myip(6)
