@@ -104,10 +104,19 @@ rsync -vahpt --size-only --stats --del <source> <target>
 
 `<source>` is put/sync INTO `<target>` directory, not replacing `<target>`.
 
-### Curl skip certificate checking
+### Curl
+
+#### Skip certificate checking
 
 ```sh
 curl -k ... # Use -k to skip certificate check.
+```
+
+#### DNS Over HTTPS
+
+```sh
+curl -sH 'accept: application/dns-json' 'https://dns.google/resolve?name=google.com' | jq .
+curl -sH 'accept: application/dns-json' 'https://cloudflare-dns.com/dns-query?name=google.com' | jq .
 ```
 
 ### Resize Filesystem
