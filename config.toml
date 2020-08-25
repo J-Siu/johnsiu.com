@@ -65,8 +65,8 @@ user_canonical = true
 
 	[Params.color]
 	bg     = "#181a1b"
-	border = "white"
-	link   = "#3d84ff"
+	border = "#f2f2f2"
+	link   = "#44a2ff"
 	text   = "white"
 
 [menu]
