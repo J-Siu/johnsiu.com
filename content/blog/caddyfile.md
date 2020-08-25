@@ -148,7 +148,7 @@ Also check out example in [CROS](#cros).
 
 ### CROS
 
-- Single CROS
+#### Single
 
 ```nginx
 api.example.com {
@@ -159,7 +159,7 @@ api.example.com {
 }
 ```
 
-- Multiple CROS
+#### Multiple
 
 > Caddy v2.1+
 
@@ -175,5 +175,21 @@ api.example.com {
   import cors https://example.com
   import cors https://www.example.com
   import cors https://another.example.com
+}
+```
+
+#### Reverse-Proxy
+
+When hosting service behind reverse-proxy, some service by default set `Access-Control-Allow-Origin` to `*`. To change that:
+
+```nginx
+api.example.com {
+  import cors https://example.com
+  import cors https://www.example.com
+  import cors https://another.example.com
+	reverse_proxy http://backend.example.com {
+    # Remove Access-Control-Allow-Origin from backend response
+		header_down -Access-Control-Allow-Origin
+	}
 }
 ```
