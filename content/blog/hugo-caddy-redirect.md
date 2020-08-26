@@ -2,7 +2,7 @@
 author: "John Siu"
 date: 2020-08-23T00:00:00-04:00
 description: "Hugo Caddy redirect after migration"
-tags: ["hugo","caddy","redirect","migrate","wordpress","ghost"]
+tags: ["hugo","caddy","caddyfile","redirect","migrate","wordpress","ghost"]
 title: "Hugo - Caddy Redirect"
 type: "blog"
 ---

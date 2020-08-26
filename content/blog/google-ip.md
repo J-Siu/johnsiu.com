@@ -2,7 +2,7 @@
 author: "John Siu"
 date: 2019-08-22T15:54:28-04:00
 description: "A list of Google IP addresses."
-tags: ["google","cheatsheet","ip","javascript"]
+tags: ["google","cheatsheet","ip"]
 title: "Google IP Addresses"
 type: blog
 ---
@@ -11,7 +11,7 @@ All Google IP addresses.
 
 ### Auto Update
 
-> Update using javascript + DoH(doh.jsiu.dev) at browser. Will not work if DoH traffic is blocked.
+> Update via DoH at browser. Will not work if DoH traffic is blocked.
 
 IPv4|IPv6
 ---|---
