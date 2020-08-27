@@ -2,7 +2,7 @@
 author: "John Siu"
 date: 2020-08-24T10:43:02-04:00
 description: "Hugo site link checker for migration checking."
-tags: ["hugo","go","migrate"]
+tags: ["lib","hugo","go","migrate"]
 title: "Hugo - Link Checker"
 type: "blog"
 ---

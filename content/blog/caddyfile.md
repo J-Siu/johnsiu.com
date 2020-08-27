@@ -4,7 +4,7 @@ date: 2020-06-26T05:10:33-04:00
 author: "John Siu"
 title: "Caddy 2 Caddyfile Usage"
 description: "Caddy 2 Caddyfile usage examples."
-tags: ["caddy","caddyfile","cheatsheet"]
+tags: ["caddy","caddyfile","cheatsheet","redirect","proxy"]
 ---
 Some Caddy 2 Caddyfile examples.
 <!--more-->
