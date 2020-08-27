@@ -25,7 +25,11 @@ Handy for checking internal link breakage after migration.
 
 All 3 may improve in future.
 
-### Install
+### Binary
+
+https://github.com/J-Siu/go-hugo-lc/releases
+
+### Compile
 
 ```sh
 go get github.com/J-Siu/go-hugo-lc
@@ -70,6 +74,8 @@ go-hugo-lc https://example.com content/post/post.md public
 
 - 0.5
   - Initial Commit
+- 0.5.1
+  - Use mod
 
 ### License
 
