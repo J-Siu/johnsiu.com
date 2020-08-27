@@ -23,7 +23,11 @@ PNG to ICO in GoLang. ICO store use PNG format.
 - Check file extension
 - Transform PNG
 
-### Install
+### Binary
+
+https://github.com/J-Siu/go-png2ico/releases
+
+### Compile
 
 ```sh
 go get github.com/J-Siu/go-png2ico
@@ -46,11 +50,11 @@ Debug: export _DEBUG=true
 
 ### Repository
 
-- [go-png2ico](//github.com/J-Siu/go-png2ico)
+- [go-png2ico](https://github.com/J-Siu/go-png2ico)
 
 ### Contributors
 
-- [John Sing Dao Siu](//github.com/J-Siu)
+- [John Sing Dao Siu](https://github.com/J-Siu)
 
 ### Change Log
 
@@ -61,6 +65,8 @@ Debug: export _DEBUG=true
     - debug log msg
     - error check
     - png detection
+- 1.0.2
+  - Use mod
 
 ### License
 
