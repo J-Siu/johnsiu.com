@@ -29,7 +29,7 @@ A new section requires:
 - A `_index.md` inside section folder.
 - A `[menu]` entry in `config.toml`.
 
-Following example creates a section call `section9`<sup>(1)</sup>.
+Following example creates a section call `section9`[^1].
 
 #### Archetype
 
@@ -100,4 +100,4 @@ rsync -az --delete public <user@hostname>:<dir containing public>
 
 ---
 
-(1) https://en.wikipedia.org/wiki/Public_Security_Section_9
+[^1]: [Wikipedia - Section 9](//en.wikipedia.org/wiki/Public_Security_Section_9)

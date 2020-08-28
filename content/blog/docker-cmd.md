@@ -313,7 +313,7 @@ volumes:
 
 #### daemon.json
 
-From: https://docs.docker.com/engine/reference/commandline/dockerd/#daemon-configuration-file
+From: [Docker daemon configuration file](//docs.docker.com/engine/reference/commandline/dockerd/#daemon-configuration-file)
 
 ```json
 {

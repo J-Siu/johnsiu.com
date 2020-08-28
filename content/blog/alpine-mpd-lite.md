@@ -11,7 +11,7 @@ Didn't get my hand dirty for a long time.
 
 ---
 
-> Music Player Daemon (MPD) is a flexible, powerful, server-side application for playing music. Through plugins and libraries it can play a variety of sound files while being controlled by its network protocol. - (https://www.musicpd.org/)
+> Music Player Daemon (MPD) is a flexible, powerful, server-side application for playing music. Through plugins and libraries it can play a variety of sound files while being controlled by its network protocol. - [www.musicpd.org](//www.musicpd.org/)
 
 Above is a short description from MPD developer site. Indeed too short. MPD is powerful and feature rich. On one hand it has too many features I don't need. I just want a music player that can be control remotely. On the other hand the `mpd` package from Alpine repository some how has a high cpu usage and I have no clue how to debug it. Eventually I decided to just roll my own version and cut everything to the bare minimum.
 

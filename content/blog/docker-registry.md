@@ -325,9 +325,9 @@ Stopping registry-compose_registry_1 ... done
 
 Now our private registry is ready!
 
-[^1]: https://hub.docker.com/_/registry
-[^2]: https://docs.docker.com/registry/configuration/
-[^3]: https://hub.docker.com/_/registry?tab=tags
-[^4]: https://docs.docker.com/compose/
-[^5]: https://docs.docker.com/compose/compose-file/
-[^6]: https://docs.docker.com/compose/env-file/
+[^1]: [docker hub Registry](//hub.docker.com/_/registry)
+[^2]: [docker Registry Configuration](//docs.docker.com/registry/configuration/)
+[^3]: [docker hub Registry tags](//hub.docker.com/_/registry?tab=tags)
+[^4]: [docker compose](//docs.docker.com/compose/)
+[^5]: [docker compose file](//docs.docker.com/compose/compose-file/)
+[^6]: [docker compose env](//docs.docker.com/compose/env-file/)

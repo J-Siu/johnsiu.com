@@ -50,11 +50,11 @@ Debug: export _DEBUG=true
 
 ### Repository
 
-- [go-png2ico](https://github.com/J-Siu/go-png2ico)
+- [go-png2ico](//github.com/J-Siu/go-png2ico)
 
 ### Contributors
 
-- [John Sing Dao Siu](https://github.com/J-Siu)
+- [John Sing Dao Siu](//github.com/J-Siu)
 
 ### Change Log
 

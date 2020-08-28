@@ -248,4 +248,4 @@ There are `modern` email solutions for container, with all the bell and whistles
 
 With the final piece in place, this complete my Tiny VPS Postfix series.
 
-[^1]: [Docker Postfix](https://hub.docker.com/repository/docker/jsiu/postfix)
+[^1]: [Docker Postfix](//hub.docker.com/repository/docker/jsiu/postfix)

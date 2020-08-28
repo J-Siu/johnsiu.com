@@ -42,7 +42,7 @@ Gogs|Gogs plugin
 - Go to `Webhooks`
 - Go to `Add webhook`
 - Fill in following
-  - `Payload URL`: https://\<your jenkins url\>/github-webhook/
+  - `Payload URL`: `https://<your jenkins url>/github-webhook/`
   - `Content type`: both `application/json` and `application/x-www-from-urlencoded` work.
   - `Secret`: Leave empty.
   - `Just the push event`: This is properly what you want.
@@ -75,7 +75,7 @@ You will be back to `Webhooks` page and see your new webhook listed there. There
 - Go to `Webhooks`
 - Go to `Add a new webhook:`, choose `Gogs`
 - Fill in following
-  - `Payload URL`: https://\<your jenkins url\>/gogs-webhook/?job=\<project name / pipeline name\>
+  - `Payload URL`: `https://<your jenkins url>/gogs-webhook/?job=<project name / pipeline name>`
     - Gogs webhook will fail without `?job=<project name /pipeline name>`
   - `Content type`: `application/json`. Jenkins Gogs plugin does not support `application/x-www-from-urlencoded`.
   - `Secret`: Fill in same secret as in Jenkins if used.

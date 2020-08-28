@@ -42,7 +42,7 @@ Hostname:
 
 ### Download Chef packages
 
-Download Chef packages from <https://downloads.chef.io/> or use following links. Choose packages base on your OS version.
+Download Chef packages from [chef.io](//downloads.chef.io/) or use following links. Choose packages base on your OS version.
 
 You will need:
 

@@ -13,7 +13,7 @@ How to configure Lighttpd to handle all the domains the way I want?
 
 I own [johnsiu.com](//johnsiu.com), [johnsiu.org](//johnsiu.org), [johnsiu.info](//johnsiu.info), [johnsiu.net](//johnsiu.net) and they all point to this server.
 
-That is already setup in dns. But I want all of them, with or with www, redirect to [http://johnsiu.com](//johnsiu.com/). Lighttpd give you an easy way to do it.
+That is already setup in dns. But I want all of them, with or with www, redirect to `http://johnsiu.com`. Lighttpd give you an easy way to do it.
 
 In __/etc/lighttpd/lighttpd.conf__, I added the following section
 
@@ -43,6 +43,6 @@ $HTTP["scheme"] == "http" {
 
 You can see __.com__ is separated from __.net__, __.org__, __.info__ redirection. Why?
 
-That is because I only need to redirect [http://www.johnsiu.com](//www.johnsiu.com) to [http://johnsiu.com](//johnsiu.com).
+That is because I only need to redirect `http://www.johnsiu.com` to `http://johnsiu.com`.
 
-I don’t need an infinite loop of [http://johnsiu.com](//johnsiu.com) to [http://johnsiu.com](//johnsiu.com) redirection.
+I don’t need an infinite loop of `http://johnsiu.com` to `http://johnsiu.com` redirection.

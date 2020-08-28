@@ -138,9 +138,9 @@ PS: At this point kubectl can communicate with the cluster(authenticated), but f
 
 Kubernetes RBAC has `Role` and `ClusterRole`. A simple `Role` example is shown below.
 
-Ref: <https://kubernetes.io/docs/reference/access-authn-authz/rbac/>
+Ref: [Kubernetes Using RBAC](https://kubernetes.io/docs/reference/access-authn-authz/rbac/)
 
-For Helm RBAC: <https://github.com/helm/helm/blob/master/docs/rbac.md>
+For Helm RBAC: [Helm RBAC](https://github.com/helm/helm/blob/master/docs/rbac.md)
 
 #### RBAC Terms
 

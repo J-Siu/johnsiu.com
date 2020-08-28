@@ -44,8 +44,8 @@ systemctl status ${ELK_PKG}
 
 Application|URL
 ---|---
-elasticsearch|http://localhost:9200
-kibana|http://localhost:5601
+elasticsearch|`http://localhost:9200`
+kibana|`http://localhost:5601`
 
 ### Filebeat and Nginx
 
@@ -58,7 +58,7 @@ filebeat setup
 
 ### Browser
 
-Connect browser to http://localhost:5601 if installing in local machine.
+Connect browser to `http://localhost:5601` if installing in local machine.
 
 Use ssh tunnel if installing on remote server:
 
@@ -66,4 +66,4 @@ Use ssh tunnel if installing on remote server:
 ssh <remote server> -L 5601:localhost:5601
 ```
 
-Then connect browser to http://localhost:5601 .
+Then connect browser to `http://localhost:5601`.

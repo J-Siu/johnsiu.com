@@ -10,9 +10,9 @@ type: blog
 __ng2-simple-global__ is a global variable service for Angular.
 <!--more-->
 
-> __ng2-simple-global__ uses Angular CLI starting 8.2.0. New repository https://github.com/J-Siu/ng2-simple-global-lib/ contains both library and example.
+> __ng2-simple-global__ uses Angular CLI starting 8.2.0. New repository [github.com/J-Siu/ng2-simple-global-lib](//github.com/J-Siu/ng2-simple-global-lib/) contains both library and example.
 >
-> Version < 8.2.0 are in old repository https://github.com/J-Siu/ng2-simple-global/
+> Version < 8.2.0 are in old repository [github.com/J-Siu/ng2-simple-global](//github.com/J-Siu/ng2-simple-global/)
 
 ### Install
 

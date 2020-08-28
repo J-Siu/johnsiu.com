@@ -64,11 +64,11 @@ go-hugo-lc https://example.com content/post/post.md public
 
 ### Repository
 
-- [go-hugo-lc](https://github.com/J-Siu/go-hugo-lc)
+- [go-hugo-lc](//github.com/J-Siu/go-hugo-lc)
 
 ### Contributors
 
-- [John Sing Dao Siu](https://github.com/J-Siu)
+- [John Sing Dao Siu](//github.com/J-Siu)
 
 ### Change Log
 

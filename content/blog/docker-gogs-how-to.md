@@ -278,8 +278,8 @@ Stopping gogs_gogs_1 ... done
 
 Now Gogs is ready!
 
-[^1]: https://hub.docker.com/r/gogs/gogs
-[^2]: https://hub.docker.com/r/gogs/gogs/tags
-[^3]: https://docs.docker.com/compose/
-[^4]: https://docs.docker.com/compose/compose-file/
-[^5]: https://docs.docker.com/compose/env-file/
+[^1]: [docker hub gogs](//hub.docker.com/r/gogs/gogs)
+[^2]: [docker hub gogs tags](//hub.docker.com/r/gogs/gogs/tags)
+[^3]: [docker compose](//docs.docker.com/compose/)
+[^4]: [docker compose file](//docs.docker.com/compose/compose-file/)
+[^5]: [docker compose env](//docs.docker.com/compose/env-file/)

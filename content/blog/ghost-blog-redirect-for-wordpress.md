@@ -54,8 +54,8 @@ The `redirects.json` for my site is as follow
 
 The above will take care of the following redirects:
 
-- https://johnsiu.com/index.php/YYYY/MM/DD/\<post\>/ to https://johnsiu.com/\<post\>/
-- https://johnsiu.com/index.php/category/\<tag\>/ to https://johnsiu.com/tag/\<tag\>/
-- https://johnsiu.com/index.php/\<post\>/ to https://johnsiu.com/\<post\>/
+- `https://johnsiu.com/index.php/YYYY/MM/DD/<post>/` to `https://johnsiu.com/<post>/`
+- `https://johnsiu.com/index.php/category/<tag>/` to `https://johnsiu.com/tag/<tag>/`
+- `https://johnsiu.com/index.php/<post>/` to `https://johnsiu.com/<post>/`
 
 Done!! ✌️

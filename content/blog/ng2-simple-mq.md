@@ -13,9 +13,9 @@ Name/ID(string) base API. RxJS object not exposed.
 
 (This package does not communicate with RabbitMQ or any other message queue software/service.)
 
-> __ng2-simple-mq__ uses Angular CLI starting 8.2.0. New repository https://github.com/J-Siu/ng2-simple-mq-lib/ contains both library and example.
+> __ng2-simple-mq__ uses Angular CLI starting 8.2.0. New repository [//github.com/J-Siu/ng2-simple-mq-lib](//github.com/J-Siu/ng2-simple-mq-lib/) contains both library and example.
 >
-> Version < 8.2.0 are in old repository https://github.com/J-Siu/ng2-simple-mq/
+> Version < 8.2.0 are in old repository [github.com/J-Siu/ng2-simple-mq](//github.com/J-Siu/ng2-simple-mq/)
 
 ### Install
 

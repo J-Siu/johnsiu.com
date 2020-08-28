@@ -11,9 +11,9 @@ type: blog
 
 <!--more-->
 
-> __simple-api-client-ng2__ uses Angular CLI starting 8.2.0. New repository https://github.com/J-Siu/ng2-simple-api-lib/ contains both library and server example.
+> __simple-api-client-ng2__ uses Angular CLI starting 8.2.0. New repository [github.com/J-Siu/ng2-simple-api-lib](//github.com/J-Siu/ng2-simple-api-lib/) contains both library and server example.
 >
-> Version < 8.2.0 are in old repository https://github.com/J-Siu/simple-api-client-ng2/
+> Version < 8.2.0 are in old repository [github.com/J-Siu/simple-api-client-ng2](//github.com/J-Siu/simple-api-client-ng2/).
 
 ### Install
 
@@ -67,8 +67,8 @@ export class ChildComponent implement OnInit {
 
 #### SimpleApiClient.get
 
-`SimpleApiClient.get(baseUrl: string = '/'): SimpleApiObj`
-will return a SimpleApiObj configure with `baseUrl`.
+`SimpleApiClient.get(baseUrl: string = '/'): SimpleApiObj` will return a SimpleApiObj configure with `baseUrl`.
+
 Previous created SimpleApiObj will be returned if the same baseUrl is used.
 
 ```javascript
@@ -141,7 +141,7 @@ cd server
 node server.js
 ```
 
-Connect your browser to http://localhost:4000 .
+Connect your browser to `http://localhost:4000`.
 
 ### Repository
 

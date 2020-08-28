@@ -58,4 +58,4 @@ As shown above, we will always add our rules to `my_chain`, and it will be autom
 
 ---
 
-Reference: https://docs.docker.com/network/iptables/
+Reference: [Docker and IPTables](//docs.docker.com/network/iptables/)

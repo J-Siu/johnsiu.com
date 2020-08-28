@@ -361,6 +361,6 @@ Now we are ready to start installing our CI/CD tools.
 
 Next: [Part 4 - Docker Registry](/blog/tiny-ci-cd-p4-k8s-registry/)
 
-[^1]: https://github.com/cloudnativelabs/kube-router/blob/master/docs/kubeadm.md
-[^2]: https://kubernetes.io/docs/concepts/overview/working-with-objects/namespaces/
-[^3]: https://kubernetes.io/docs/tasks/access-application-cluster/web-ui-dashboard/
+[^1]: [Kubernetes kubeadm](//github.com/cloudnativelabs/kube-router/blob/master/docs/kubeadm.md)
+[^2]: [Kubernetes namespace](//kubernetes.io/docs/concepts/overview/working-with-objects/namespaces/)
+[^3]: [Kubernetes dashboard](//kubernetes.io/docs/tasks/access-application-cluster/web-ui-dashboard/)

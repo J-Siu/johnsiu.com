@@ -32,5 +32,5 @@ dig TXT +short o-o.myaddr.l.google.com @ns1.google.com
 
 ### Web Base
 
-- [https://johnsiu.com/home/myip/](/home/myip/)
-- [https://myip.jsiu.dev/](/home/myip/)
+- [johnsiu.com/home/myip](/home/myip/)
+- [myip.jsiu.dev](/home/myip/)

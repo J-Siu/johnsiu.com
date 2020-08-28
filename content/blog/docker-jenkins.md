@@ -33,7 +33,7 @@ JENKINS_OPTS|Usage
 --httpsPort|https ports if defined. Must also define
 --httpsCertificate|Full path of certification file inside container
 --httpsPrivateKey|Full path of key file inside container
---prefix|Site URL prefix. eg. http://mydomain.com/jenkins, then --prefix=/jenkins
+--prefix|Site URL prefix. eg. `http://mydomain.com/jenkins`, then --prefix=/jenkins
 
 ---
 
@@ -161,7 +161,7 @@ This may also be found at: /var/jenkins_home/secrets/initialAdminPassword
 2019-09-15 07:46:56.832+0000 [id=20]    INFO    hudson.WebAppMain$3#run: Jenkins is fully up and running
 ```
 
-Access the jenkins site in browser with http://\<hostname|ip\>:8080/ or http://\<hostname|ip\>:8443/, depending on your setup.
+Access the jenkins site in browser with `http://<hostname|ip>:8080/` or `http://<hostname|ip>:8443/`, depending on your setup.
 
 Use the password shown in your terminal to login the site, choose plugins and setup your first administrator account.
 
@@ -284,7 +284,7 @@ Stopping my_jenkins ... done
 
 Now our jenkins is ready!
 
-[^1]: https://hub.docker.com/r/jenkins/jenkins
-[^2]: https://docs.docker.com/compose/
-[^3]: https://docs.docker.com/compose/compose-file/
-[^4]: https://docs.docker.com/compose/env-file/
+[^1]: [docker hub Jenkins](//hub.docker.com/r/jenkins/jenkins)
+[^2]: [docker compose](//docs.docker.com/compose/)
+[^3]: [docker compose file](//docs.docker.com/compose/compose-file/)
+[^4]: [docker compose env](//docs.docker.com/compose/env-file/)
