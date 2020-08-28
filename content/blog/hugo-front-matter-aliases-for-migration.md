@@ -2,7 +2,7 @@
 author: "John Siu"
 date: 2019-08-17T20:59:28-04:00
 description: "Use Hugo front matter aliases for migration from Ghost or WordPress."
-tags: ["hugo","blog","redirect","permalink","migrate","front matter"]
+tags: ["gohugo","hugo","blog","redirect","permalink","migrate","front matter"]
 title: "Hugo Front Matter Aliases for Migration"
 type: "blog"
 ---

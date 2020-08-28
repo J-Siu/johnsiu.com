@@ -2,7 +2,7 @@
 author: "John Siu"
 date: 2019-07-30T22:01:22-04:00
 description: "Hugo command and config cheat sheet."
-tags: ["hugo","cheatsheet"]
+tags: ["gohugo","hugo","cheatsheet"]
 title: "Hugo Commands and Config"
 type: blog
 ---

@@ -2,7 +2,7 @@
 author: "John Siu"
 date: 2019-07-21T18:28:57-04:00
 description: "My Hugo blog zsh workflow."
-tags: ["hugo","blog","zsh","command-line"]
+tags: ["gohugo","hugo","blog","zsh","command-line"]
 title: "Hugo Blog Workflow"
 type: "blog"
 ---

@@ -2,7 +2,7 @@
 author: "John Siu"
 date: 2020-08-10T17:00:00-04:00
 description: "Hugo Theme SK1 Walk Through"
-tags: ["hugo","theme","how-to","lib"]
+tags: ["gohugo","hugo","theme","how-to","lib"]
 title: "Hugo Theme SK1 Walk Through"
 type: "blog"
 ---

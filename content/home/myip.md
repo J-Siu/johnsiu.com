@@ -4,7 +4,7 @@ date: 2020-08-06T15:29:03-04:00
 description: "MyIP page using Hugo and Caddy."
 prevnext : false
 related: false
-tags: ["caddy","hugo","myip","ip"]
+tags: ["caddy","gohugo","hugo","myip","ip"]
 title: "My IP"
 type: "home"
 ---

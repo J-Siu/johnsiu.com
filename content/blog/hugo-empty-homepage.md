@@ -4,7 +4,7 @@ date: 2019-08-17T08:26:04-04:00
 author: "John Siu"
 title: "Hugo Empty Homepage"
 description: "Hugo homepage empty list or wrong post list after upgrade."
-tags: ["hugo","blog","macos","brew","rollback"]
+tags: ["gohugo","hugo","blog","macos","brew","rollback"]
 ---
 Hugo homepage list empty or wrong post list after upgrading to 0.57.x.
 <!--more-->

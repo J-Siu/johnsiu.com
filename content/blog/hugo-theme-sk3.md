@@ -4,7 +4,7 @@ date: 2020-07-29T14:28:06-04:00
 author: "John Siu"
 title: "Hugo Theme SK3 with AdSense"
 description: "Full feature Hugo theme with AdSense support."
-tags: ["hugo","theme","adsense","lib"]
+tags: ["gohugo","hugo","theme","adsense","lib"]
 ---
 Full feature Hugo theme build on top of [hugo-theme-sk2](//github.com/J-Siu/hugo-theme-sk2) with Google AdSense support.
 <!--more-->
@@ -66,6 +66,8 @@ hugo server -D --bind :: \
 ### Features
 
 - [x] Blog
+- [x] Custom CSS
+- [x] Custom Javascript
 - [x] Customizable
 - [x] Disqus
 - [x] Google Adsense
@@ -77,88 +79,171 @@ hugo server -D --bind :: \
 
 ### Layout
 
+#### Markdown Style
+
+Headline in markdown should start at level 3 (###), as site title is H1 and page title is H2.
+
 #### Site
 
-- Main section type
+##### Main Section Type
 
-  For generating homepage list. Hugo default to section with most entries.
+For generating homepage list. Hugo default to section with most entries.
 
-  ```toml
-  [Params]
-  mainSections = "post"
-  ```
+```toml
+[Params]
+mainSections = "post"
+```
 
-- Favicon
+##### Table of Content(Toc) Open By Default
 
-  Path of favicon of the published site.
+```toml
+[Params]
+openToc = true
+```
 
-  If favicon `logo.svg` is put inside `static` like following:
+##### Favicon
 
-  ```sh
-  ./
-  ├── archetypes/
-  ├── content/
-  ├── public/
-  ├── resources/
-  ├── static/
-  │   └── logo.svg
-  ├── themes/
-  └── config.toml
-  ```
+Path of favicon of the published site.
 
-  The final path will be `/logo.svg`:
+If favicon `logo.svg` is put inside `static` like following:
 
-  ```toml
-  [Params]
-  favicon = "/logo.svg"
-  ```
+```sh
+./
+├── archetypes/
+├── content/
+├── public/
+├── resources/
+├── static/
+│   └── logo.svg
+├── themes/
+└── config.toml
+```
 
-  SK themes come with default favicon. To disable it:
+The final path will be `/logo.svg`:
 
-  ```sh
-  # At Hugo site root
-  touch static/favicon.ico
-  ```
+```toml
+[Params]
+favicon = "/logo.svg"
+```
 
-- Sub-title
+SK themes come with default favicon. To disable it:
 
-  If defined, sub-title appear after site title in smaller font.
+```sh
+# At Hugo site root
+touch static/favicon.ico
+```
 
-  ```toml
-  [Params]
-  subtitle  = "A Hugo Themes"
-  ```
+##### Sub-Title
 
-- Copyright start year
+If defined, sub-title appear after site title in smaller font.
 
-  Year is extracted from `startdate` and generate copyright in format "2012-(current year)".
+```toml
+[Params]
+subtitle  = "A Hugo Themes"
+```
 
-  > Site `copyright` override this behavior.
+##### Copyright Start Year
 
-  ```toml
-  [Params]
-  startdate = "2012-12-02"
-  ```
+Year is extracted from `startdate` and generate copyright in format "2012-(current year)".
 
-- Page width (default: 1200px)
+> Site `copyright` override this behavior.
 
-  ```toml
-  [Params]
-  pagewidth = "1200px"
-  ```
+```toml
+[Params]
+startdate = "2012-12-02"
+```
 
-  > Page width will automatically set to 100% on small screen.
+##### Page Width
 
-- List Last Modify Date
+> default: 1200px
 
-  Use last modify date in list page.
+```toml
+[Params]
+pagewidth = "1200px"
+```
 
-  ```toml
-  [Params]
-  listlastmod	= true
-  ```
+> Page width will automatically set to 100% on small screen.
 
-- Social links
+##### List Last Modify Date
+
+Use last modify date in list page.
+
+```toml
+[Params]
+listlastmod	= true
+```
+
+##### Custom CSS
+
+If you add custom css files like following:
+
+```sh
+./
+├── archetypes/
+├── content/
+├── public/
+├── resources/
+├── static/
+│   └── css/
+│       ├── abc.css
+│       └── def.css
+├── themes/
+└── config.toml
+```
+
+The final path of your css files will be `/css/abc.css` and `/css/def.css`:
+
+```toml
+[Params]
+custom_css = ["/css/abc.css", "/css/def.css"]
+```
+
+##### Custom Javascript
+
+If you add custom javascript like following:
+
+```sh
+./
+├── archetypes/
+├── content/
+├── public/
+├── resources/
+├── static/
+│   └── js/
+│       ├── abc.js
+│       └── def.js
+├── themes/
+└── config.toml
+```
+
+The final path of your javascript files will be `/js/abc.js` and `/js/def.js`:
+
+```toml
+[Params]
+custom_js = ["/js/abc.js", "/js/def.js"]
+```
+
+##### User-declared Canonical
+
+> Only use this if site require __user-declared canonical__ meta. This is not related to [Hugo Canonicalization](//gohugo.io/content-management/urls/#canonicalization) nor `canonifyurls`.
+
+```toml
+[Params]
+user_canonical = true
+```
+
+A `rel="canonical"` meta link with absolute URL will be added to each page.
+
+##### SVG External
+
+Set `svg_ext` to `true` will load social icon using Font Awesome external css.
+
+```toml
+[Params]
+svg_ext = true
+```
+
+#### Social Links
 
   Social link buttons appear at the bottom of card/list page:
 
@@ -170,6 +255,7 @@ hugo server -D --bind :: \
 	linkedin       = ""
 	pinterest      = ""
 	reddit         = ""
+  rss            = true
 	tumblr         = ""
 	twitter        = ""
 	vimeo          = ""
@@ -177,7 +263,7 @@ hugo server -D --bind :: \
 	youtubeuser    = ""
   ```
 
-- Social share
+#### Social Share
 
   Social share buttons appear at the bottom of regular page:
 
@@ -193,16 +279,7 @@ hugo server -D --bind :: \
 	vk        = true
   ````
 
-- SVG External
-
-  Set `svg_ext` to `true` will load social icon using Font Awesome external css.
-
-  ```toml
-  [Params]
-  svg_ext			= true
-  ```
-
-#### Color theme
+#### Color Theme
 
 - Default dark theme
 
@@ -278,13 +355,15 @@ title       = "site title"
 
 - Disable Disqus
 - Disable Prev/Next
-- Disable table of content
+- Disable Related
+- Disable Table of Content
 
   To disable the above, in front matter:
 
-  ```toml
+  ```yaml
   comment = false
   prevnext = false
+  related = false
   toc = false
   ```
 
@@ -307,14 +386,17 @@ paginate               = 15
 #googleAnalytics = ""
 
 [Params]
-#adsense_id   = ""
-#favicon      = ""
-#listlastmod  = true
-#mainSections = "post"
-#pagewidth    = "1200px"
-#startdate    = "2012-12-02"
-#subtitle     = "A Hugo Theme"
-#svg_ext			= true
+#adsense_id     = ""
+#custom_css     = ["/css/abc.css", "/css/def.css"]
+#custom_js      = ["/js/abc.js", "/js/def.js"]
+#favicon        = "/favicon.ico"
+#listlastmod    = true
+#mainSections   = "post"
+#pagewidth      = "1200px"
+#startdate      = "2012-12-02"
+#subtitle       = "A Hugo Theme"
+#svg_ext        = true
+#user_canonical = false
 
 # Fill in following if using opengraph / twitter card
 #opengraph   = true
@@ -325,7 +407,7 @@ paginate               = 15
   [Params.card]
   date    = true
   summary = true
-  #width   = "32%"
+  #width  = "32%"
 
 	# [Params.color]
 	# bg     = "#181a1b"
@@ -369,10 +451,11 @@ paginate               = 15
 
 Social buttons provided by [Font Awesome](//github.com/FortAwesome/Font-Awesome) Brands([free](//fontawesome.com/how-to-use/on-the-web/referencing-icons/basic-use)).
 
-`fa-svg-extract.sh` is used to extract icon from Font Awesome sprites/brands.svg.
+`fa-svg-extract.sh` is used to extract icon from Font Awesome sprites/brands.svg and sprites/solid.svg.
 
 ```sh
-./fa-svg-extract.sh brands.svg > sk3-fa-brands.svg
+./fa-svg-extract.sh brands.svg > sk3-fa.svg
+./fa-svg-extract.sh solid.svg >> sk3-fa.svg
 ```
 
 ### Thank You
@@ -442,6 +525,24 @@ Social buttons provided by [Font Awesome](//github.com/FortAwesome/Font-Awesome)
   - Remove H1 from header.html & menu.html (Bing SEO)
   - Standardize .Site. -> site.
   - Update README.md
+- 0.9.7
+  - Add custom css and js support
+  - Add open toc by default
+  - Add page related (enable/disable)
+  - Add user-declared canonical support
+  - Fix footer alignment
+  - Update favicon instructions
+- 0.9.8
+  - Add box to current list page button
+  - Add external link open in new tab
+  - Add rss
+  - CSS cleanup
+  - Center images
+  - Fix \<head\> description, title
+  - Fix html issues
+  - Homepage title larger
+  - Sort tags list / in page
+  - Sticky menu button
 
 ### License
 

@@ -2,7 +2,7 @@
 author: "John Siu"
 date: 2020-08-15T03:12:50-04:00
 description: "My IP page with javascript for both IPv4 and IPv6."
-tags: ["caddy","hugo","cheatsheet","myip","javascript","how-to","ip"]
+tags: ["caddy","gohugo","hugo","cheatsheet","myip","javascript","how-to","ip"]
 title: "Hugo - My IP Page With Javascript"
 type: "blog"
 ---

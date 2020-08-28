@@ -2,7 +2,7 @@
 author: "John Siu"
 date: 2020-06-17T18:04:07-04:00
 description: "Blog automation using Jenkins."
-tags: ["jenkins","cicd","hugo"]
+tags: ["jenkins","cicd","gohugo","hugo"]
 title: "Jenkins Blog Automation"
 type: "blog"
 ---
