@@ -12,6 +12,8 @@ All Google IP addresses.
 ### Auto Update
 
 > Update via DoH at browser. Will not work if DoH traffic is blocked.
+>
+> May need a few seconds for result to show.
 
 IPv4|IPv6
 ---|---
@@ -67,4 +69,5 @@ dig @8.8.8.8 _netblocks3.google.com txt
 
 [Google IP address ranges for outbound SMTP](//support.google.com/a/answer/60764)
 
+<script src="/js/my.js"></script>
 <script>googleIp2table()</script>

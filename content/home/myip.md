@@ -13,6 +13,10 @@ Show me the IPs.
 
 ### IP via Caddy Templates
 
+#### IPv4/6
+
+This maybe IPv4 or IPv6.
+
 {{.RemoteIP}}
 
 ### IP via Javascript
@@ -31,6 +35,8 @@ Show me the IPs.
 - [Hugo - My IP Page With Javascript](/blog/hugo-caddy-myip-js/)
 
 ---
+
+<script src="/js/my.js"></script>
 <script>
 myip(4)
 myip(6)
