@@ -6,12 +6,12 @@ function myip(ipv) {
 		.then(t => document.getElementById('myip' + ipv).innerHTML = t)
 }
 
-// --- /blog/google-ip/
+// --- /blog/google-ip.md
 
 // Get SPF result
 function googleIp2table() {
-	doh='//doh.jsiu.dev'
-	fetch(doh+'/resolve?name=_spf.google.com&type=txt')
+	doh = '//doh.jsiu.dev'
+	fetch(doh + '/resolve?name=_spf.google.com&type=txt')
 		.then(j => j.json())
 		.then(j => spf2blocks(JSON.parse(j.Answer[0].data)))
 		.then(b => {
@@ -19,7 +19,7 @@ function googleIp2table() {
 			ip.v4 = []
 			ip.v6 = []
 			for (i = 0; i < b.length; i++) {
-				fetch(doh+'/resolve?name=' + b[i] + '&type=txt')
+				fetch(doh + '/resolve?name=' + b[i] + '&type=txt')
 					.then(k => k.json())
 					.then(k => block2ip(JSON.parse(k.Answer[0].data)))
 					.then(c => {
@@ -32,9 +32,7 @@ function googleIp2table() {
 		})
 }
 
-// --- /blog/google-ip.md
-
-// Get blocks from SPF
+// Extract IP blocks from SPF
 function spf2blocks(msg) {
 	// split by space
 	var str = msg.split(" ")
@@ -50,7 +48,7 @@ function spf2blocks(msg) {
 	return blocks
 }
 
-// IPv4/6 list
+// Extract IPs from block
 function block2ip(msg) {
 	// split by space
 	var str = msg.split(" ")
@@ -81,11 +79,9 @@ function ip2table(title, list) {
 	return str
 }
 
+// Compare function for IP sorting
 function ip_compare(a, b) {
-	var delimiter = "." // IPv4
-	if (a.indexOf(":") > -1) {
-		delimiter = ":" // IPv6
-	}
+	delimiter = (a.indexOf(":") > -1) ? ":" : "."
 	var ip1 = a.split(delimiter)
 	var ip2 = b.split(delimiter)
 	for (i = 0; i < ip1.length; i++) {
