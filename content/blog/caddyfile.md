@@ -11,43 +11,43 @@ Some Caddy 2 Caddyfile examples.
 
 ### Global Options
 
-```nginx
+```nix
 {
   # Turn on all debug log
   debug
   # Setup default sni
   default_sni example.com
-	# Turn off admin port
-	admin off
-	# Turn on http3
-	experimental_http3
+  # Turn off admin port
+  admin off
+  # Turn on http3
+  experimental_http3
 }
 ```
 
 ### Multiple Domains
 
-```nginx
+```nix
 www.example.com test.example.com {
-	...
+  ...
 }
 ```
 
-```nginx
+```nix
 old.example.com other.example.com {
-	redir https://example.com{uri}
+  redir https://example.com{uri}
 }
 ```
 
 ### Error Handling
 
-```nginx
+```nix
 www.example.com {
-	root * /www/example.com
-	file_server
-	handle_errors {
-		rewrite * /{http.error.status_code}.html
-		file_server
-	}
+  root * /www/example.com
+  file_server
+  handle_errors {
+    rewrite * /{http.error.status_code}.html
+    file_server
+}
 }
 ```
 
@@ -63,37 +63,37 @@ Create your own `myip` page.
 
 Caddy will parse all files:
 
-```nginx
+```nix
 www.example.com {
-	root * /www/example.com
-	file_server
-	templates
+  root * /www/example.com
+  file_server
+  templates
 }
 ```
 
 Caddy will parse files in `/www/example.com/myip/`:
 
-```nginx
+```nix
 www.example.com {
-	root * /www/example.com
-	file_server
-	templates /www/example.com/myip/
+  root * /www/example.com
+  file_server
+  templates /www/example.com/myip/
 }
 ```
 
 Caddy will only parse `/www/example.com/myip/index.html`:
 
-```nginx
+```nix
 www.example.com {
-	root * /www/example.com
-	file_server
-	templates /www/example.com/myip/index.html
+  root * /www/example.com
+  file_server
+  templates /www/example.com/myip/index.html
 }
 ```
 
 ### Header
 
-```nginx
+```nix
 www.example.com {
   root * /www/example.com
   file_server
@@ -109,30 +109,31 @@ Caddy v2.1+ allow common section to be factored out (snippet) and re-used by dif
 
 Following is a snippet for Cache-Control:
 
-```nginx
+```nix
 (cache_ctl) {
-	header /css/* Cache-Control max-age=3600
-	header /img/* Cache-Control max-age=3600
-	header /js/* Cache-Control max-age=3600
+  header /css/* Cache-Control max-age=3600
+  header /img/* Cache-Control max-age=3600
+  header /js/* Cache-Control max-age=3600
 }
 ```
 
 Following is a snippet for site options:
 
-```nginx
+```nix
 (site_option) {
-	encode gzip
-	file_server
-	handle_errors {
-		rewrite * /{http.error.status_code}.html
-		file_server
-	}
+  encode gzip
+  file_server
+  handle_errors {
+    rewrite * /{http.error.status_code}.html
+    file_server
+  }
+  root * /www/{host}
 }
 ```
 
 Use above in site sections:
 
-```nginx
+```nix
 example1.com {
   import site_option
   import cache_ctl
@@ -144,18 +145,27 @@ example2.com {
 }
 ```
 
+Combine the two:
+
+```nix
+example1.com example2.com {
+  import site_option
+  import cache_ctl
+}
+```
+
 Also check out example in [CORS](#cors).
 
 ### CORS
 
 #### Single
 
-```nginx
+```nix
 api.example.com {
   root * /www/api.example.com
   file_server
-	@site2 header Origin https://w3.example.com
-	header @site2 Access-Control-Allow-Origin https://w3.example.com
+  @site2 header Origin https://w3.example.com
+  header @site2 Access-Control-Allow-Origin https://w3.example.com
 }
 ```
 
@@ -163,10 +173,10 @@ api.example.com {
 
 > Caddy v2.1+
 
-```nginx
+```nix
 (cors) {
-	@{args.0} header Origin {args.0}
-	header @{args.0} Access-Control-Allow-Origin {args.0}
+  @{args.0} header Origin {args.0}
+  header @{args.0} Access-Control-Allow-Origin {args.0}
 }
 
 api.example.com {
@@ -181,10 +191,10 @@ api.example.com {
 
 Use regular expression to cover domain and sub-domains.
 
-```nginx
+```nix
 (cors_reg) {
-	@{args.0} header_regexp Origin {args.0}
-	header @{args.0} Access-Control-Allow-Origin {http.request.header.origin}
+  @{args.0} header_regexp Origin {args.0}
+  header @{args.0} Access-Control-Allow-Origin {http.request.header.origin}
 }
 
 api.example.com {
@@ -199,28 +209,28 @@ api.example.com {
 
 When hosting service behind reverse-proxy, some service by default set `Access-Control-Allow-Origin` to `*`. To change that:
 
-```nginx
+```nix
 api.example.com {
   import cors https://example.com
   import cors https://www.example.com
   import cors https://another.example.com
 
-	reverse_proxy http://backend.example.com {
+  reverse_proxy http://backend.example.com {
     # Remove Access-Control-Allow-Origin from backend response
-		header_down -Access-Control-Allow-Origin
-	}
+    header_down -Access-Control-Allow-Origin
+  }
 }
 ```
 
 With `cors_reg`:
 
-```nginx
+```nix
 api.example.com {
   import cors_reg https://([[:alnum:]-]+\.)*example.com
 
-	reverse_proxy http://backend.example.com {
+  reverse_proxy http://backend.example.com {
     # Remove Access-Control-Allow-Origin from backend response
-		header_down -Access-Control-Allow-Origin
-	}
+    header_down -Access-Control-Allow-Origin
+  }
 }
 ```
