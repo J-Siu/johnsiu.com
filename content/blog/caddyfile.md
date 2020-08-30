@@ -103,7 +103,7 @@ www.example.com {
 }
 ```
 
-### Import
+### Snippet / Import
 
 Caddy v2.1+ allow common section to be factored out (snippet) and re-used by different sections.
 
@@ -144,9 +144,9 @@ example2.com {
 }
 ```
 
-Also check out example in [CROS](#cros).
+Also check out example in [CORS](#cors).
 
-### CROS
+### CORS
 
 #### Single
 
@@ -172,9 +172,26 @@ api.example.com {
 api.example.com {
   root * /www/api.example.com
   file_server
+
   import cors https://example.com
   import cors https://www.example.com
   import cors https://another.example.com
+}
+```
+
+Use regular expression to cover domain and sub-domains.
+
+```nginx
+(cors_reg) {
+	@{args.0} header_regexp Origin {args.0}
+	header @{args.0} Access-Control-Allow-Origin {http.request.header.origin}
+}
+
+api.example.com {
+  root * /www/api.example.com
+  file_server
+
+  import cors_reg https://([[:alnum:]-]+\.)*example.com
 }
 ```
 
@@ -187,6 +204,20 @@ api.example.com {
   import cors https://example.com
   import cors https://www.example.com
   import cors https://another.example.com
+
+	reverse_proxy http://backend.example.com {
+    # Remove Access-Control-Allow-Origin from backend response
+		header_down -Access-Control-Allow-Origin
+	}
+}
+```
+
+With `cors_reg`:
+
+```nginx
+api.example.com {
+  import cors_reg https://([[:alnum:]-]+\.)*example.com
+
 	reverse_proxy http://backend.example.com {
     # Remove Access-Control-Allow-Origin from backend response
 		header_down -Access-Control-Allow-Origin
