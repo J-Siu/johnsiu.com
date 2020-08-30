@@ -13,21 +13,18 @@ Show me the IPs.
 
 ### IP via Caddy Templates
 
-#### IPv4/6
-
 This maybe IPv4 or IPv6.
 
-{{.RemoteIP}}
+|||
+|---|---|
+|IP|{{.RemoteIP}}|
 
 ### IP via Javascript
 
-#### IPv4
-
-<div id="myip4">Not Available</div>
-
-#### IPv6
-
-<div id="myip6">Not Available</div>
+|||
+|---|---|
+|IPv4|<div id="myip4">Not Available</div>|
+|IPv6|<div id="myip6">Not Available</div>|
 
 ### How This Is Done
 
