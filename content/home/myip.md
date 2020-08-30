@@ -15,16 +15,15 @@ Show me the IPs.
 
 This maybe IPv4 or IPv6.
 
-|||
-|---|---|
-|IP|{{.RemoteIP}}|
+|IP|
+|---|
+|{{.RemoteIP}}|
 
 ### IP via Javascript
 
-|||
+|IPv4|IPv6|
 |---|---|
-|IPv4|<div id="myip4">Not Available</div>|
-|IPv6|<div id="myip6">Not Available</div>|
+|<div id="myip4">Not Available</div>|<div id="myip6">Not Available</div>|
 
 ### How This Is Done
 

@@ -1,5 +1,6 @@
 // --- /home/myip.md
 
+// ipv = 4 or 6
 function myip(ipv) {
 	fetch('//myip' + ipv + '.jsiu.dev')
 		.then(r => r.text())
@@ -10,17 +11,15 @@ function myip(ipv) {
 
 // Get SPF result
 function googleIp2table() {
-	doh = '//doh.jsiu.dev'
-	fetch(doh + '/resolve?name=_spf.google.com&type=txt')
-		.then(j => j.json())
+	host = '//doh.jsiu.dev'
+	doh(host, '_spf.google.com', 'txt')
 		.then(j => spf2blocks(JSON.parse(j.Answer[0].data)))
 		.then(b => {
 			var ip = []
 			ip.v4 = []
 			ip.v6 = []
 			for (i = 0; i < b.length; i++) {
-				fetch(doh + '/resolve?name=' + b[i] + '&type=txt')
-					.then(k => k.json())
+				doh(host, b[i], 'txt')
 					.then(k => block2ip(JSON.parse(k.Answer[0].data)))
 					.then(c => {
 						ip.v4 = ip.v4.concat(c.v4).sort(ip_compare)
