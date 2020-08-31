@@ -92,6 +92,9 @@ user_canonical = true
 	[[menu.main]]
 	name = "My IP"
 	url  = "/home/myip/"
+	[[menu.main]]
+	name = "Nslookup"
+	url  = "/home/nslookup/"
 
 [markup]
 defaultMarkdownHandler = "goldmark"
