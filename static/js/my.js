@@ -90,3 +90,38 @@ function ip_compare(a, b) {
 	}
 	return 0
 }
+
+
+// --- DoH
+function doh(host, name, type) {
+	var req = host + '/resolve?name=' + name + '&type=' + type
+	console.log("req:" + req)
+	return fetch(req)
+		.then(j => j.json())
+}
+
+function doh2html(host, name, type) {
+	doh(host, name, type)
+		.then(j => {
+			console.log("j:", j)
+			if (j.Answer) {
+				var output = ''
+				j.Answer.forEach(a => {
+					console.log("data:", a)
+					output += a.data + "<br>"
+				})
+				document.getElementById(type).innerHTML = output
+			}
+		})
+}
+
+function nslookup() {
+	var hostip = document.getElementById("hostip").value
+	console.log(hostip)
+	host = '//doh.jsiu.dev'
+	doh2html(host, hostip, 'ptr')
+	doh2html(host, hostip, 'a')
+	doh2html(host, hostip, 'aaaa')
+	doh2html(host, hostip, 'mx')
+	doh2html(host, hostip, 'txt')
+}
