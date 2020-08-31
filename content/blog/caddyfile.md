@@ -6,7 +6,7 @@ title: "Caddy 2 Caddyfile Usage"
 description: "Caddy 2 Caddyfile usage examples."
 tags: ["caddy","caddyfile","cheatsheet","redirect","proxy"]
 ---
-Some Caddy 2 Caddyfile examples.
+Some Caddy v2 Caddyfile examples.
 <!--more-->
 
 ### Global Options
@@ -47,7 +47,7 @@ www.example.com {
   handle_errors {
     rewrite * /{http.error.status_code}.html
     file_server
-}
+  }
 }
 ```
 
@@ -107,7 +107,7 @@ www.example.com {
 
 Caddy v2.1+ allow common section to be factored out (snippet) and re-used by different sections.
 
-Following is a snippet for Cache-Control:
+#### Cache-Control
 
 ```nix
 (cache_ctl) {
@@ -117,7 +117,7 @@ Following is a snippet for Cache-Control:
 }
 ```
 
-Following is a snippet for site options:
+#### Site Option
 
 ```nix
 (site_option) {
@@ -135,13 +135,13 @@ Use above in site sections:
 
 ```nix
 example1.com {
-  import site_option
   import cache_ctl
+  import site_option
 }
 
 example2.com {
-  import site_option
   import cache_ctl
+  import site_option
 }
 ```
 
@@ -149,8 +149,59 @@ Combine the two:
 
 ```nix
 example1.com example2.com {
-  import site_option
   import cache_ctl
+  import site_option
+}
+```
+
+#### My IP
+
+This snippet allow creation of a text only "MY IP" page.
+
+```nix
+(myip) {
+	header {args.0} Content-Type text/plain
+	respond {args.0} "{{.RemoteIP}}"
+	templates {args.0}
+}
+```
+
+Following site use the snippet to create a "MY IP" page at `/myip` and `/myip/`.
+
+```nix
+example.com {
+  import myip /myip
+  import myip /myip/
+  import site_option
+}
+```
+
+If you want to use a sub-domain for this purpose, then one line is enough.
+
+```nix
+myip.example.com {
+  import myip /
+}
+```
+
+#### Favicon
+
+Provide a `favicon.ico` to any site:
+
+```nix
+(favicon) {
+	file_server /favicon.ico {
+		root {args.0}
+	}
+}
+```
+
+Use as follow:
+
+```nix
+example.com {
+  import favicon /var/www/static
+  import site_option
 }
 ```
 
@@ -162,10 +213,10 @@ Also check out example in [CORS](#cors).
 
 ```nix
 api.example.com {
-  root * /www/api.example.com
-  file_server
   @site2 header Origin https://w3.example.com
   header @site2 Access-Control-Allow-Origin https://w3.example.com
+  file_server
+  root * /www/api.example.com
 }
 ```
 

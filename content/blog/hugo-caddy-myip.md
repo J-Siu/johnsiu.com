@@ -3,7 +3,7 @@ author: "John Siu"
 date: 2020-08-06T18:28:51-04:00
 description: "Hugo - Create My IP page with Caddy"
 tags: ["caddy","gohugo","hugo","cheatsheet","myip","how-to","ip"]
-title: "Hugo - My IP Page With Caddy"
+title: "Hugo - MY IP Page With Caddy"
 type: "blog"
 ---
 There are websites that show your internet IP, ever want to create your own?
@@ -43,19 +43,19 @@ url = "/home/myip/"
 
 Generate and deploy your site.
 
-### Caddy Server
+### Caddyfile
 
-In `caddyfile`, add following line inside your site config:
+In `Caddyfile`, add following line inside your site config:
 
-```apache
+```nix
 templates /home/myip/
 ```
 
 The `templates` line tell caddy server to treat `/home/myip/` as a template[^2].
 
-Take this site `caddyfile` as example:
+Take this site `Caddyfile` as example:
 
-```apache
+```nix
 johnsiu.com {
 	encode gzip
 	root * /www/site/johnsiu.com
@@ -74,15 +74,17 @@ Restart caddy server.
 
 You can also create a plain text version to be used by `curl` command as I shown in [How to Find My Public IP](/blog/myip/).
 
+#### With File
+
 In Hugo site root, create `static/myip/intex.html`:
 
 ```Handlebars
 {{.RemoteIP}}
 ```
 
-Again, add templates line in `caddyfile`:
+Again, add templates line in `Caddyfile`:
 
-```apache
+```nix
 templates /myip/
 ```
 
@@ -94,6 +96,22 @@ Test from command line:
 curl -4 https://johnsiu.com/myip/
 curl -6 https://johnsiu.com/myip/
 ```
+
+#### Caddyfile Only
+
+[This](//caddy.community/t/caddy-server-that-returns-only-ip-address-as-text/6928) post on Caddy forum shown it can be done with just Caddyfile.
+
+```nix
+myip.example.com {
+  header Content-Type text/plain
+  respond "{{.RemoteIP}}"
+  templates
+}
+```
+
+The `template` text is embedded directly in `respond`, no extra file required.
+
+I turned it into a snippet [here](/blog/caddyfile/#my-ip).
 
 ### Simultaneous IPv4 IPv6
 
