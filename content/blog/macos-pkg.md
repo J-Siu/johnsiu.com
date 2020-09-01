@@ -11,7 +11,7 @@ MacOS packages I use.
 ### System
 
 - [Spectacle](//github.com/eczarny/spectacle) / [Rectangle](//github.com/rxhanson/Rectangle) - Organize windows with keyboard.
-- [Barrier](//github.com/debauchee/barrier) (replaced [Synergy](//symless.com/)) - Keyboard and mouse sharing between MacOS, Windows and Linux.
+- [Barrier](//github.com/debauchee/barrier) (replaced [Synergy](//symless.com/) - Keyboard and mouse sharing between MacOS, Windows and Linux.
 
 ### Development
 
@@ -22,7 +22,7 @@ MacOS packages I use.
 ### Media
 
 - [Cantata](//github.com/cdrummond/cantata) - Graphical mpd client.
-- [mpc](//github.com/MusicPlayerDaemon/mpc) - Command line mpd client.
+- [MPC](//github.com/MusicPlayerDaemon/mpc) - Command line mpd client.
 - [LyricsX](//github.com/ddddxxx/LyricsX) - iTunes lyrics plugin.
 - [VLC](//github.com/videolan/vlc) - Media player.
 - Final Cut Pro X - Video Editing.

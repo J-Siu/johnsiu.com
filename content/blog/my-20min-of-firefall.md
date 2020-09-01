@@ -12,7 +12,7 @@ I am never good at point and shoot game. But after seeing FireFall trailer and g
 
 ### Red 5 FireFall Beta Test Weekend
 
-[FireFall](//www.firefallthegame.com/) has a distinct graphic style, very much like watching a Japan 3D animation. That was what draw my attention.
+[FireFall](http://www.firefallthegame.com/) has a distinct graphic style, very much like watching a Japan 3D animation. That was what draw my attention.
 
 That was months ago, and this week finally got an invite for its beta test weekend. And here is what happen … this morning 😛
 

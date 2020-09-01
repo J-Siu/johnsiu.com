@@ -111,7 +111,7 @@ If creating a lot of Dockerfile with similar base packages like `tzdata`, `ca-ce
     adduser -D -h ${PHOME} -G ${PUSR} -u ${PUID} ${PUSR}
     ```
 
-    Full example [here](//github.com/J-Siu/docker_compose/tree/master/docker/mpd_lite).
+    Full example [here](//github.com/J-Siu/docker_mpd_lite).
 
 2. Docker Option
 
@@ -193,7 +193,7 @@ RUN_CMD() {
 RUN_CMD "git submodule update --init --recursive"
 ```
 
-Full example [here](//github.com/J-Siu/docker_compose/tree/master/docker/hugo).
+Full example [here](//github.com/J-Siu/docker_hugo).
 
 #### Override ENTRYPOINT
 

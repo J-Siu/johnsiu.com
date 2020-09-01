@@ -12,6 +12,6 @@ type: "blog"
 
 I booked ticket for 4/24.
 
-You can see more detail here: [TED Cinema](//tedcinema.com)
+You can see more detail here: [TED Cinema](//www.ted.com/search?q=cinema)
 
 {{< youtube frwwE9PCILU >}}

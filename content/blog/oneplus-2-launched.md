@@ -32,7 +32,3 @@ I am a OnePlus One user. However the touch screen start to act strange since I d
 ### Spec
 
 I am not going to repeat their spec., you can check it out [here](//oneplus.net/2/specs).
-
-### How to Get
-
-To reserve one, click [here](//oneplus.net/invites?kolid=UQY0CZ).

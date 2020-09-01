@@ -19,7 +19,7 @@ How to mix them together?
 
 ### The Journey Continue
 
-After completing [Tiny VPS Postfix with Docker](//localhost:1313/blog/tiny-vps-postfix-docker/),  I have been looking for ways to make `logwatch` process log for postfix container.
+After completing [Tiny VPS Postfix with Docker](/blog/tiny-vps-postfix-docker/),  I have been looking for ways to make `logwatch` process log for postfix container.
 
 It is common for containerized environment shipping logs to centralize server and processed by analytic tools like Elastic Stack. However those type of setup are for multiple servers, and most importantly, by no means tiny!
 

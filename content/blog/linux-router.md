@@ -460,7 +460,7 @@ systemctl restart hostapd
 
 Reference:
 
-- [Multiple SSID with hostapd](//wiki.stocksy.co.uk/wiki/Multiple_SSIDs_with_hostapd)
+- [Multiple SSID with hostapd](http://wiki.stocksy.co.uk/wiki/Multiple_SSIDs_with_hostapd)
 - [single radio interface, BSS count 2](//lists.infradead.org/pipermail/hostap/2010-February/021127.html)
 
 ---

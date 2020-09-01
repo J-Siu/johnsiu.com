@@ -16,7 +16,7 @@ I used my own [h2ghost](/blog/ghost-h2ghost/) with Ghost as both were nodejs app
 
 However Hugo produce static pages and I decided to look into other http server options.
 
-I was debating between [Monkey Server](//monkey-project.com/) and [Nginx](//nginx.org/). And finally pick Nginx as it is more actively developed.
+I was debating between [Monkey Server](http://monkey-project.com/) and [Nginx](//nginx.org/). And finally pick Nginx as it is more actively developed.
 
 ### Logwatch
 
@@ -40,4 +40,4 @@ location ~ "^/index.php/\d{4}/\d{2}/\d{2}/(.*)$" { return 301 https://johnsiu.co
 location ~ "^/index.php/(.*)$" { return 301 https://johnsiu.com/blog/$1; }
 ```
 
-Now [/index.php/tiny-vps-postfix/](/index.php/tiny-vps-postfix/) works again!!
+Now [/index.php/tiny-vps-postfix/](https://johnsiu.com/index.php/tiny-vps-postfix/) works again!!

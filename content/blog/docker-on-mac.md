@@ -187,6 +187,6 @@ docker container stop 260ee2c31f37
 
 [^1]: [Docker Getting Started](//docs.docker.com/get-started/)
 
-[^2]: [docker-unbound](//github.com/J-Siu/docker-unbound)
+[^2]: [docker_unbound](//github.com/J-Siu/docker_unbound)
 
 [^3]: [Dockerfile Reference](//docs.docker.com/engine/reference/builder/)

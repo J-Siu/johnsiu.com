@@ -14,14 +14,14 @@ It is cheaper than getting a new machine (or old one), running it year round at 
 
 ### Picking a provider …
 
-[CrownCloud](//crowncloud.net/openvz.html) was my original choice as my colleague is using one. But they ran out of stock. After some googling, I settle with [VPSCheap.net](//vpscheap.net/) 128M 10G storage plan. I thought if my colleague can do it, I can too … not really …
+[CrownCloud](//crowncloud.net/) was my original choice as my colleague is using one. But they ran out of stock. After some googling, I settle with [VPSCheap.net](//vpscheap.net/) 128M 10G storage plan. I thought if my colleague can do it, I can too … not really …
 
 ### What will be running?
 
 - WordPress for this blog
 - Apache Web Server
 - MySQL for WordPress
-- [Collectd](//collectd.org/) with [CollectdWeb](//collectdweb.appspot.com/)for performance monitoring
+- [Collectd](//collectd.org/) with CollectdWeb for performance monitoring
 - fail2ban for ssh protection
 - sendmail/postfix for email handling
 
