@@ -123,10 +123,10 @@ Log to standard out:
 
 ```nix
 (log_stdout) {
-	log {
-		format json
-		output stdout
-	}
+  log {
+    format json
+    output stdout
+  }
 }
 ```
 
@@ -134,12 +134,12 @@ Auto name log file base on hostname:
 
 ```nix
 (log_file) {
-	log {
-		format logfmt
-		output file /var/log/caddy/{host}.access.log {
+  log {
+    format logfmt
+    output file /var/log/caddy/{host}.access.log {
       roll_keep 7
     }
-	}
+  }
 }
 ```
 
