@@ -117,6 +117,34 @@ Caddy v2.1+ allow common section to be factored out (snippet) and re-used by dif
 }
 ```
 
+#### Log
+
+Log to standard out:
+
+```nix
+(log_stdout) {
+	log {
+		format json
+		output stdout
+	}
+}
+```
+
+Auto name log file base on hostname:
+
+```nix
+(log_file) {
+	log {
+		format logfmt
+		output file /var/log/caddy/{host}.access.log {
+      roll_keep 7
+    }
+	}
+}
+```
+
+Log setting is per site. See site option below.
+
 #### Site Option
 
 ```nix
@@ -127,6 +155,7 @@ Caddy v2.1+ allow common section to be factored out (snippet) and re-used by dif
     rewrite * /{http.error.status_code}.html
     file_server
   }
+  import log_file
   root * /www/{host}
 }
 ```
