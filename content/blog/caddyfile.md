@@ -145,6 +145,31 @@ Auto name log file base on hostname:
 
 Log setting is per site. See site option below.
 
+#### Redirect
+
+```nix
+(_redir) {
+	@{args.0} {
+		not file /{path} /{path}/ /{path}index.html /{path}/index.html
+		not path_regexp r {args.1}/.*
+		path_regexp r ^{args.0}/?(?P<goto>.*)$
+	}
+	redir @{args.0} {args.1}/{re.r.goto}
+}
+```
+
+Usage:
+
+```nix
+int.jsiu.dev {
+  # import _redir <from> <to>
+  import _redir /\d{4}/\d{2}(/\d{2})? /blog
+  import _redir /category /tags
+}
+```
+
+`<from>` and `<to>` should always start with `/`, but no trailing `/`.
+
 #### Site Option
 
 ```nix
@@ -174,7 +199,7 @@ example2.com {
 }
 ```
 
-Combine the two:
+Multiple domains:
 
 ```nix
 example1.com example2.com {
