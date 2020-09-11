@@ -8,7 +8,6 @@ type: "blog"
 ---
 Hugo site link checker written in Golang.
 <!--more-->
-
 Handy for checking internal link breakage after migration.
 
 ### Highlight
@@ -64,11 +63,11 @@ go-hugo-lc https://example.com content/post/post.md public
 
 ### Repository
 
-- [go-hugo-lc](//github.com/J-Siu/go-hugo-lc)
+- [go-hugo-lc](https://github.com/J-Siu/go-hugo-lc)
 
 ### Contributors
 
-- [John Sing Dao Siu](//github.com/J-Siu)
+- [John Sing Dao Siu](https://github.com/J-Siu)
 
 ### Change Log
 
@@ -76,6 +75,10 @@ go-hugo-lc https://example.com content/post/post.md public
   - Initial Commit
 - 0.5.1
   - Use mod
+- 0.5.2
+  - Use github.com/J-Siu/go-helper
+- 0.5.3
+  - Use Go routine
 
 ### License
 
