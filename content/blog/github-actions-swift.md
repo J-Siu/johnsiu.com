@@ -2,7 +2,6 @@
 author: "John Siu"
 date: 2020-10-15T19:15:21-04:00
 description: "Github actions for swift program."
-draft: true
 tags: ["github","actions","swift","how-to"]
 title: "Github Actions For Swift"
 type: "blog"
