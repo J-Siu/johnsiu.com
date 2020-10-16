@@ -147,10 +147,25 @@ Log setting is per site. See site option below.
 
 #### Redirect
 
+Caddy < 2.2
+
 ```nix
 (_redir) {
 	@{args.0} {
 		not file /{path} /{path}/ /{path}index.html /{path}/index.html
+		not path_regexp r {args.1}/.*
+		path_regexp r ^{args.0}/?(?P<goto>.*)$
+	}
+	redir @{args.0} {args.1}/{re.r.goto}
+}
+```
+
+Caddy >= 2.2
+
+```nix
+(_redir) {
+	@{args.0} {
+		not file /{path} /{path}/
 		not path_regexp r {args.1}/.*
 		path_regexp r ^{args.0}/?(?P<goto>.*)$
 	}
