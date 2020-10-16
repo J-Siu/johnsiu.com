@@ -43,10 +43,11 @@ go-hugo-lc
 ```
 
 ```sh
-go-hugo-lc MIT License  Copyright (c) 2020 John Siu
-Support: https://github.com/J-Siu/go-hugo-lc/issues
-Debug  : export _DEBUG=true
-Usage  : go-hugo-lc <baseURL> <content> <public>
+go-hugo-lc v0.5.4
+License : MIT License Copyright (c) 2020 John Siu
+Support : https://github.com/J-Siu/go-hugo-lc/issues
+Debug   : export _DEBUG=true
+Usage   : go-hugo-lc <baseURL> <content dir> <public dir>
 ```
 
 In Hugo site root:
@@ -79,6 +80,9 @@ go-hugo-lc https://example.com content/post/post.md public
   - Use github.com/J-Siu/go-helper
 - 0.5.3
   - Use Go routine
+- 0.5.4
+  - Use github.com/J-Siu/go-ver
+  - Remove site struct
 
 ### License
 
