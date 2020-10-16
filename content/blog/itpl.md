@@ -2,7 +2,7 @@
 author: "John Siu"
 date: 2020-04-04T03:07:24-05:00
 description: "itpl - iTunes Playlist command line tool written in swift."
-tags: ["itunes","playlist","macos","command-line","lib"]
+tags: ["itunes","playlist","macos","command-line","lib","swift"]
 title: "itpl - iTunes Playlist Tool"
 type: "blog"
 ---
@@ -142,6 +142,10 @@ ls -lh iTunes/iTunes\ Media/Music/U2/Songs\ of\ Innocence/11\ The\ Troubles.m4a
 
 - 1.0
   - Initial release
+- 1.0.1
+  - Add GitHub workflow
+  - Remove test
+  - Update swift-argument-parser to 0.3.0
 
 ### License
 
