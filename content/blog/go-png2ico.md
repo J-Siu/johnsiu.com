@@ -6,7 +6,7 @@ tags: ["lib","command-line","golang","favicon"]
 title: "go-png2ico - Create Icon from PNG"
 type: "blog"
 ---
-PNG to ICO in GoLang. ICO store use PNG format.
+PNG to ICO command line tool in GoLang. ICO store use PNG format.
 <!--more-->
 
 ### What It Does
