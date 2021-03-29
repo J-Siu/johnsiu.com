@@ -117,6 +117,18 @@ Caddy v2.1+ allow common section to be factored out (snippet) and re-used by dif
 }
 ```
 
+#### Force Https ACME
+
+```nix
+(acme_https) {
+	tls {
+		issuer acme {
+			disable_http_challenge
+		}
+	}
+}
+```
+
 #### Log
 
 Log to standard out:
@@ -189,12 +201,13 @@ int.jsiu.dev {
 
 ```nix
 (site_option) {
-  encode gzip
+  encode zstd gzip
   file_server
   handle_errors {
     rewrite * /{http.error.status_code}.html
     file_server
   }
+  import acme_https
   import log_file
   root * /www/{host}
 }
