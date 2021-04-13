@@ -21,7 +21,7 @@ Shortcut|Description
 <kbd>Command</kbd>+<kbd>w</kbd>|Close active tab of an app
 <kbd>Command</kbd>+<kbd>q</kbd>|Close active app
 <kbd>Command</kbd>+<kbd>b</kbd>|Toggle sidebar in app
-<kbd>Command</kbd>+<kbd>shift</kbd>+<kbd>left/right</kbd>|Switch tab in app
+<kbd>Command</kbd>+<kbd>option</kbd>+<kbd>left/right</kbd>|Switch tab in app
 <kbd>Command</kbd>+<kbd>shift</kbd>+<kbd>.</kbd>|Show hidden file in finder
 
 ### Run Application from Command Line
