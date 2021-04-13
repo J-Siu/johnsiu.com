@@ -6,8 +6,22 @@ tags: ["macos","command-line","cheatsheet"]
 title: "MacOS Command Line"
 type: blog
 ---
-Some MacOS commands.
+Some MacOS commands and keyboard shortcuts.
 <!--more-->
+
+### Keyboard Shortcut
+
+Shortcut|Description
+---|---
+<kbd>Command</kbd>+<kbd>.</kbd> or <kbd>esc</kbd>|Click cancel in dialog
+<kbd>Command</kbd>+<kbd>d</kbd>|Click `Don't Save` in dialog
+<kbd>Command</kbd>+<kbd>tab</kbd>|Switch app
+<kbd>Command</kbd>+<kbd>`</kbd>|Switch window of the same app
+<kbd>Command</kbd>+<kbd>,</kbd>|Open preference of most app
+<kbd>Command</kbd>+<kbd>w</kbd>|Close active tab of an app
+<kbd>Command</kbd>+<kbd>q</kbd>|Close active app
+<kbd>Command</kbd>+<kbd>b</kbd>|Toggle sidebar in lot of apps, eg. Firefox, VSCode
+<kbd>Command</kbd>+<kbd>Shift</kbd>+<kbd>.</kbd>|Show hidden file in finder
 
 ### Run Application from Command Line
 
@@ -17,10 +31,6 @@ Some MacOS commands.
 open -a <application>
 open -a Google\ Earth\ Pro
 ```
-
-### Show Hidden File in Finder
-
-- <kbd>Command</kbd>+<kbd>Shift</kbd>+<kbd>.</kbd>
 
 ### Launch Control
 
