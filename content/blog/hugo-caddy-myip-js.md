@@ -9,7 +9,7 @@ type: "blog"
 Get both IPv4 and IPv6.
 <!--more-->
 
-[Hugo - Create My IP page with Caddy"](/blog/hugo-caddy-myip/) showed how to use Caddy templates with Hugo to create a my-ip page.
+[Hugo - Create My IP page with Caddy](/blog/hugo-caddy-myip/) showed how to use Caddy templates with Hugo to create a my-ip page.
 
 However that can only display either IPv4 or IPv6 at a time. To get both at the same time, we have to cheat(if you are a markdown purist) a bit with html and javascript, with DNS settings.
 
