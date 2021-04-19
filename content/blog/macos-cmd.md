@@ -16,6 +16,8 @@ Shortcut|Description
 <kbd>Command</kbd>+<kbd>.</kbd> or <kbd>esc</kbd>|Click cancel in dialog
 <kbd>Command</kbd>+<kbd>d</kbd>|Click `Don't Save` in dialog
 <kbd>Command</kbd>+<kbd>tab</kbd>|Switch app
+<kbd>Command</kbd>+<kbd>m</kbd>|Minimize app
+<kbd>Command</kbd>+<kbd>h</kbd>|Hide app (not minimize)
 <kbd>Command</kbd>+<kbd>`</kbd>|Switch window of the same app
 <kbd>Command</kbd>+<kbd>,</kbd>|Open preference of most app
 <kbd>Command</kbd>+<kbd>w</kbd>|Close active tab of an app
@@ -23,6 +25,12 @@ Shortcut|Description
 <kbd>Command</kbd>+<kbd>b</kbd>|Toggle sidebar in app
 <kbd>Command</kbd>+<kbd>option</kbd>+<kbd>left/right</kbd>|Switch tab in app
 <kbd>Command</kbd>+<kbd>shift</kbd>+<kbd>.</kbd>|Show hidden file in finder
+
+Un-minimize:
+
+Shortcut|Description
+---|---
+<kbd>Command</kbd>+<kbd>tab</kbd> -> (do not release <kbd>Command</kbd>) -> <kbd>Command</kbd>+<kbd>option</kbd>+<kbd>return</kbd>|Un-minimize app
 
 ### Run Application from Command Line
 
