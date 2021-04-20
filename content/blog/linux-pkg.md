@@ -2,7 +2,7 @@
 author: "John Siu"
 date: 2019-07-30T12:52:01-04:00
 description: "Linux packages that I use."
-tags: ["alpine","cheatsheet"]
+tags: ["linux","alpine","cheatsheet"]
 title: "Linux Packages"
 type: blog
 ---
