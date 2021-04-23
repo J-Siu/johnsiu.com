@@ -224,6 +224,8 @@ sudo zfs destroy mypool/files
 
 > Always create snapshot or bookmark before sending.
 
+##### Full Stream
+
 Send to file:
 ```sh
 sudo zfs send <pool>/<fs|vol>@<snapshort> > <file>
@@ -238,9 +240,44 @@ sudo zfs receive mypool/new-fs < /backup/files-snap01.img
 
 Send to remote:
 ```sh
-sudo zfs send <pool>/<fs|vol>@<snapshort> | ssh <remote> "sudo zfs receive <pool>/<new fs|vol>"
+sudo zfs send <pool>/<new fs|vol>@<snapshort> | ssh <remote> "sudo zfs receive <pool>/<new fs|vol>"
 sudo zfs send mypool/files@snap01 | ssh user@remote "sudo zfs receive mypool/new-fs"
 ```
+
+When receiving full stream from file or pipe, a new filesystem or vol will be created. The receive operation will fail if filesystem or volume already exist.
+
+##### Incremental
+
+Zfs stream can be created incrementally with `-i` option during send. Two snapshots or bookmarks are needed.
+
+```sh
+sudo zfs snapshot mypool/files@snap01
+# Some file changes in mypool/files
+sudo zfs snapshot mypool/files@snap02
+```
+
+Send to file:
+```sh
+sudo zfs send -i <pool>/<fs|vol>@<snapshort#1> <pool>/<fs|vol>@<snapshort#2> > <file>
+sudo zfs send -i mypool/files@snap01 mypool/files@snap02 > /backup/files-snap01-02.img
+```
+
+Receive from file:
+```sh
+sudo zfs receive <pool>/<fs|vol> < <file>
+sudo zfs receive mypool/fs < /backup/files-snap01-02.img
+```
+
+Send to remote:
+```sh
+sudo zfs send -i <pool>/<fs|vol>@<snapshort#1> <pool>/<fs|vol>@<snapshort#2> | \
+ssh <remote> "sudo zfs receive <pool>/<fs|vol>"
+
+sudo zfs send -i mypool/files@snap01 mypool/files@snap02 | \
+ssh user@remote "sudo zfs receive mypool/fs"
+```
+
+As oppose to full stream, when receiving incremental stream, the receiving filesystem or volume must exist.
 
 ---
 Reference:
