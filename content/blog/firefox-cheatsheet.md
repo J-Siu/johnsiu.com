@@ -16,6 +16,7 @@ Customization|Entry
 \> 4 rows of Top Sites on new tab page|browser.newtabpage.activity-stream.topSitesRows
 Enable <kbd>backspace</kbd> for page back|browser.backspace_action = 0 (default 2)
 Enable compact mode in Customize (ver. 89)|browser.compactmode.show = true (default false)
+Disable full screen warning message|full-screen-api.warning.timeout = 0 (default 3000)
 
 ### Desktop shortcut
 
