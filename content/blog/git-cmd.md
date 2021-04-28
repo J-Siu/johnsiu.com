@@ -69,6 +69,27 @@ git show <version> # Show tagged commit
 git push --tags
 ```
 
+### Branch
+
+#### List
+```sh
+git branch
+git branch -l
+```
+#### Create
+```sh
+git branch <new branch>
+git branch <new branch> <from branch>
+git branch <new branch> <from tag>
+git branch <new branch> <from commit>
+```
+
+#### Switch
+```sh
+git switch <branch>
+# switch & create
+git switch -c <branch>
+```
 ### Submodule
 
 #### Add
