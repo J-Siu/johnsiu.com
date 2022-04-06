@@ -11,7 +11,9 @@ Misc. Linux commands.
 
 ---
 
-### Find x-days before and action
+### Find
+
+Find x-days before and action
 
 > In actuality, it should be (x-1).
 
@@ -19,25 +21,26 @@ Misc. Linux commands.
 /bin/find <path> -maxdepth 1 -mtime +<x> -type f -name "<pattern>" -exec rm -f {} \;
 ```
 
-### Find x-minutes before and action
+Find x-minutes before and action
 
 ```sh
 /bin/find <path> -maxdepth 1 -mmin +<x> -type f -name "<pattern>" -exec rm -f {} \;
 ```
 
-### Change password last modify
+### Password
+Change password last modify
 
 ```sh
 chage -d YYYY-MM-DD <user>
 ```
 
-### Change password never expire
+Change password never expire
 
 ```sh
 chage -I -1 -m 0 -M 99999 -E -1 <user>
 ```
 
-### Lock/Unlock Account
+Lock/Unlock Account
 
 ```sh
 passwd -l <user>  # Lock
@@ -51,7 +54,7 @@ pam_tally2 -r -u <user> # Reset fail login count
 
 ### Ban IP
 
-#### IPTable
+#### IPTables
 
 ```sh
 iptable -A INPUT -s <IP> -j DROP
@@ -65,12 +68,6 @@ fail2ban-client status # show jail list
 fail2ban-client -vvv set <jail from list> banip <ip>
 ```
 
-### Disable journal on ext4
-
-```sh
-tune2fs -O ^has_journal /dev/<disk>
-```
-
 ### Rotate frame buffer
 
 Number can be 1, 2, 3
@@ -80,7 +77,23 @@ echo 1 > /sys/class/graphics/fbcon/rotate_all
 echo 1 > /sys/class/graphics/fbcon/rotate
 ```
 
-### Create Sparse File
+### File System
+#### Resize Filesystem
+
+> Usually use after a partition / image resize
+
+```sh
+resize2fs <device>
+resize2fs /dev/sda1
+```
+
+#### Disable journal on ext4
+
+```sh
+tune2fs -O ^has_journal /dev/<disk>
+```
+
+#### Create Sparse File
 
 `truncate -s <size> <filename>`
 
@@ -119,15 +132,6 @@ curl -sH 'accept: application/dns-json' 'https://dns.google/resolve?name=google.
 curl -sH 'accept: application/dns-json' 'https://cloudflare-dns.com/dns-query?name=google.com' | jq .
 ```
 
-### Resize Filesystem
-
-> Usually use after a partition / image resize
-
-```sh
-resize2fs <device>
-resize2fs /dev/sda1
-```
-
 ### Avahi/MDNS
 
 #### Show All Entries
@@ -153,6 +157,13 @@ avahi-resolve -n6 door.local
 
 ```sh
 ethtool <nic>
+```
+
+### Check WiFi SSID
+
+```sh
+iw dev <wifi nic> scan
+iw dev wlan0 scan
 ```
 
 ### Enable BBR
