@@ -7,6 +7,7 @@ enableGitInfo          = true
 enableInlineShortcodes = true
 languageCode           = "en-us"
 paginate               = 24
+enableEmoji            = true
 #relativeURLs           = true
 
 disqusShortname = "https-johnsiu-com"

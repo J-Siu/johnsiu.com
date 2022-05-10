@@ -23,7 +23,7 @@ Command line tools for easy mass configuration of git remote, and github/gites r
   - [x] remotes
   - [x] groups
   - [x] secrets
-- Selector
+- Selector for git servers
   - [x] -g/--group
   - [x] -r/--remote
 - Base(git) Commands
@@ -34,24 +34,20 @@ Command line tools for easy mass configuration of git remote, and github/gites r
     - [x] list
     - [x] remove
 - repository(api)
+  - [x] list all repo on server
+  - [x] create repo on server
+  - [x] get/set
+    - [x] description
+    - [x] private
+    - [x] publickey(get only)
+    - [x] secret
+    - [x] topic
+    - [x] visibility
   - [x] delete
     - [x] repository
     - [x] secret
-  - [x] get
-    - [x] all
-    - [x] description
-    - [x] private
-    - [x] publickey
-    - [x] topics
-    - [x] visibility
-  - [x] list
-  - [x] new
-  - [x] set
-    - [x] description
-    - [x] private
-    - [x] secrets
-    - [x] topics
-    - [x] visibility
+
+All repo and base commands support processing multiple repos/dirs, with the exception of `description` and `topic`.
 
 ### Limitation
 
