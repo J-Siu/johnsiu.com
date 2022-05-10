@@ -3,7 +3,7 @@ author: "John Siu"
 date: 2020-08-18T01:43:45-04:00
 description: "go-png2ico create Icon from PNG with min. overhead"
 tags: ["lib","command-line","golang","favicon"]
-title: "go-png2ico - Create Icon from PNG"
+title: "Go-Png2ico Command Line"
 type: "blog"
 ---
 PNG to ICO command line tool in GoLang. ICO store use PNG format.

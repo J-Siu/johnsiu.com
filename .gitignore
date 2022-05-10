@@ -1,4 +1,5 @@
 .DS_Store
+.hugo_build.lock
 _tmp
 public
 resources/_gen

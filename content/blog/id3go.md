@@ -3,7 +3,7 @@ author: "John Siu"
 date: 2019-09-14
 description: "id3go view and update file id3v2 tags from command line."
 tags: ["id3v2","command-line","golang","lib"]
-title: "id3go - ID3v2 Tag Editor"
+title: "Id3go - ID3v2 Tag Editor"
 type: "blog"
 ---
 Provide easy viewing and updating of media file tags from command line.
