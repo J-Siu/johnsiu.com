@@ -48,7 +48,8 @@ name: Go
 on:
   push:
     tags:
-      - "*"
+      - "v*"
+  workflow_dispatch:
 ```
 
 #### Jobs
@@ -58,10 +59,11 @@ on:
 ```yml
 jobs:
   release:
+    name: Release
     strategy:
       matrix:
         os: [ubuntu-latest]
-        go: ["1.16"]
+        go: ["1.18"]
     runs-on: ${{ matrix.os }}
 ```
 
@@ -112,28 +114,15 @@ Prepare variables `version_tag` and `go_cache` for steps follow.
           echo "::set-output name=go_cache::$(go env GOCACHE)"
 ```
 
-##### Cache
-
-Caching dependencies and build outputs[^1].
-
-```yml
-      - name: Cache the build cache
-        uses: actions/cache@v2
-        with:
-          path: ${{ steps.vars.outputs.go_cache }}
-          key: ${{ runner.os }}-go${{ matrix.go }}-release-${{ hashFiles('**/go.sum') }}
-          restore-keys: |
-            ${{ runner.os }}-go${{ matrix.go }}-release
-```
-
 ##### GoReleaser
 
-GoReleaser[^2] take care of publishing artifacts into the release.
+GoReleaser[^1] take care of publishing artifacts into the release.
 
 ```yml
-      - name: GoReleaser
+      - name: Run GoReleaser
         uses: goreleaser/goreleaser-action@v2
         with:
+          distribution: goreleaser
           version: latest
           args: release --rm-dist
         env:
@@ -145,6 +134,7 @@ GoReleaser[^2] take care of publishing artifacts into the release.
 
 Following is the complete listing:
 
+`go.yml`
 ```yml
 name: go
 
@@ -152,15 +142,18 @@ on:
   push:
     tags:
       - "*"
-  repository_dispatch:
-    types: manual
+  workflow_dispatch:
+
+permissions:
+  contents: write
 
 jobs:
   release:
+    name: Release
     strategy:
       matrix:
         os: [ubuntu-latest]
-        go: ["1.16"]
+        go: ["1.18"]
     runs-on: ${{ matrix.os }}
 
     steps:
@@ -181,17 +174,10 @@ jobs:
           echo "::set-output name=version_tag::${GITHUB_REF/refs\/tags\//}"
           echo "::set-output name=go_cache::$(go env GOCACHE)"
 
-      - name: Cache the build cache
-        uses: actions/cache@v2
-        with:
-          path: ${{ steps.vars.outputs.go_cache }}
-          key: ${{ runner.os }}-go${{ matrix.go }}-release-${{ hashFiles('**/go.sum') }}
-          restore-keys: |
-            ${{ runner.os }}-go${{ matrix.go }}-release
-
-      - name: GoReleaser
+      - name: Run GoReleaser
         uses: goreleaser/goreleaser-action@v2
         with:
+          distribution: goreleaser
           version: latest
           args: release --rm-dist
         env:
@@ -201,5 +187,4 @@ jobs:
 
 [go-png2ico](https://github.com/J-Siu/go-png2ico) is Golang command line utility for creating ICO file from PNG files. It used the above workflow on GitHub.
 
-[^1]: GitHub [action/cache](https://github.com/actions/cache)
-[^2]: [GoReleaser](https://github.com/goreleaser/goreleaser)
+[^1]: [GoReleaser](https://github.com/goreleaser/goreleaser)
