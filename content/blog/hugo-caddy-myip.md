@@ -1,9 +1,9 @@
 ---
 author: "John Siu"
 date: 2020-08-06T18:28:51-04:00
-description: "Hugo - Create My IP page with Caddy"
+description: "Hugo - Create My IP with Caddy"
 tags: ["caddy","gohugo","hugo","cheatsheet","myip","how-to","ip"]
-title: "Hugo - MY IP Page With Caddy"
+title: "Hugo - My IP With Caddy"
 type: "blog"
 ---
 There are websites that show your internet IP, ever want to create your own?
