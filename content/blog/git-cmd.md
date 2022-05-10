@@ -8,11 +8,14 @@ tags: ["git","cheatsheet"]
 ---
 Some git commands.
 <!--more-->
-### Push Master
+### Push
+
+#### Branch
 
 ```sh
+git push -u <name> <branch>
 git push -u origin master
-git push -u <name> master
+git push -u origin main
 ```
 
 ### Remote
@@ -63,10 +66,25 @@ git tag -a <version> -m '<comment>'
 git show <version> # Show tagged commit
 ```
 
-#### Push
+#### Push to server
 
 ```sh
 git push --tags
+```
+
+#### Delete
+
+```sh
+git tag -d <version>
+git tag -d v1.0.1
+```
+
+#### Delete from server
+
+Yes, it is a push command.
+```sh
+git push -d <version>
+git push -d v1.0.1
 ```
 
 ### Branch
