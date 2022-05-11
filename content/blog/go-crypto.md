@@ -8,7 +8,7 @@ type: "blog"
 ---
 A command line tool for crypto function.
 <!--more-->
-
+> This tool is not a crypto currency tool.
 ### Purpose
 
 Provide crypto function for command line scripting, eg. [mygit](https://github.com/J-Siu/mygit). Currently only box seal anonymous is implemented, which is used for calculating github repository secret.
