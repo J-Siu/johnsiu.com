@@ -5,6 +5,8 @@ author: "John Siu"
 title: "LVM Commands"
 description: "LVM commands cheat sheet."
 tags: ["lvm","cheatsheet"]
+aliases:
+    - /blog/lvm-cmd
 ---
 Some LVM commands.
 <!--more-->

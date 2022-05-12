@@ -5,6 +5,8 @@ description: "Some avahi config I find useful."
 tags: ["avahi","cheatsheet"]
 title: "Avahi Config"
 type: blog
+aliases:
+    - /blog/avahi-cfg
 ---
 Some Avahi config.
 <!--more-->

@@ -5,6 +5,8 @@ description: "Linux zfs cheatsheet."
 tags: ["linux","cheatsheet"]
 title: "Linux ZFS Command"
 type: "blog"
+aliases:
+    - /blog/linux-zfs-cmd
 ---
 Cheatsheet for Linux OpenZFS.
 <!--more-->

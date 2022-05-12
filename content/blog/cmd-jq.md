@@ -5,11 +5,13 @@ description: "My personal jq cheat sheet."
 tags: ["jq","cheatsheet"]
 title: "JQ - Json Parser"
 type: "blog"
+aliases:
+- /blog/jq
 ---
 Cheat sheet for simple usage.
 <!--more-->
 
-simple.json
+### simple.json
 
 ```json
 {

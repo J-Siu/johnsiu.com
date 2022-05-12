@@ -5,6 +5,8 @@ description: "John Siu's MacOS command cheat sheet."
 tags: ["macos","command-line","cheatsheet"]
 title: "MacOS Command Line"
 type: blog
+aliases:
+    - /blog/macos-cmd
 ---
 Some MacOS commands and keyboard shortcuts.
 <!--more-->

@@ -5,6 +5,8 @@ author: "John Siu"
 title: "KVM Command"
 description: "Some kvm frequently used commands."
 tags: ["kvm","cheatsheet"]
+aliases:
+    - /blog/kvm-cmd
 ---
 Some KVM frequently used commands.
 <!--more-->

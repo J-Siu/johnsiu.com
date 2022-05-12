@@ -5,6 +5,8 @@ description: "Some quick nginx configuration."
 tags: ["nginx","cheatsheet","redirect","rewrite","permalink"]
 title: "Nginx Config"
 type: blog
+aliases:
+    - /blog/nginx-cfg
 ---
 Some quick nginx config.
 <!--more-->

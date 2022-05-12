@@ -5,6 +5,8 @@ description: "Quick samba config to share home directory."
 tags: ["samba","cheatsheet"]
 title: "Samba Config"
 type: blog
+aliases:
+    - /blog/samba-cfg
 ---
 Quick samba config to share home directory only.
 <!--more-->

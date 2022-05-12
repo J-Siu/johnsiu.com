@@ -5,6 +5,8 @@ description: "A personal docker cheat sheet."
 tags: ["docker","command-line","cheatsheet"]
 title: "Docker Commands"
 type: blog
+aliases:
+    - /blog/docker-cmd
 ---
 Docker misc.
 <!--more-->

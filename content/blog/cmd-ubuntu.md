@@ -5,6 +5,8 @@ description: "Ubuntu commands I find useful."
 tags: ["ubuntu","cheatsheet"]
 title: "Ubuntu Commands"
 type: blog
+aliases:
+    - /blog/ubuntu-cmd
 ---
 Misc. Ubuntu commands.
 <!--more-->

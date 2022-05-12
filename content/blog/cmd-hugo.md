@@ -5,6 +5,8 @@ description: "Hugo command and config cheat sheet."
 tags: ["gohugo","hugo","cheatsheet"]
 title: "Hugo Commands and Config"
 type: blog
+aliases:
+    - /blog/hugo-cmd
 ---
 Some Hugo commands and config.
 <!--more-->

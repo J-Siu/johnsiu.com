@@ -5,6 +5,8 @@ author: "John Siu"
 title: "Screen Command"
 description: "Screen command cheat sheet"
 tags: ["screen","cheatsheet","command-line"]
+aliases:
+    - /blog/screen-cmd
 ---
 Cheat sheet.
 <!--more-->
