@@ -2,7 +2,7 @@
 author: "John Siu"
 date: 2019-11-21T16:19:53-05:00
 description: "My personal jq cheat sheet."
-tags: ["jq","cheatsheet"]
+tags: ["jq","cheatsheet","command-line"]
 title: "JQ - Json Parser"
 type: "blog"
 aliases:

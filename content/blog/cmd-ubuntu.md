@@ -2,7 +2,7 @@
 author: "John Siu"
 date: 2019-08-23T00:10:00-04:00
 description: "Ubuntu commands I find useful."
-tags: ["ubuntu","cheatsheet"]
+tags: ["ubuntu","cheatsheet","command-line"]
 title: "Ubuntu Commands"
 type: blog
 aliases:

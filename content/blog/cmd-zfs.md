@@ -2,7 +2,7 @@
 author: "John Siu"
 date: 2021-04-19T00:00:00-04:00
 description: "Linux zfs cheatsheet."
-tags: ["linux","cheatsheet"]
+tags: ["linux","cheatsheet","command-line"]
 title: "Linux ZFS Command"
 type: "blog"
 aliases:

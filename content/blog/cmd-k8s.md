@@ -4,7 +4,7 @@ date: 2018-09-30T23:39:45-04:00
 author: "John Siu"
 title: "Kubernetes Commands"
 description: "Some Kubernetes commands."
-tags: ["kubernetes","cheatsheet"]
+tags: ["kubernetes","cheatsheet","command-line"]
 aliases:
     - /blog/k8s-cmd
 ---

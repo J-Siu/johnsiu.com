@@ -4,7 +4,7 @@ date: 2019-09-17T23:32:33-04:00
 author: "John Siu"
 title: "KVM Command"
 description: "Some kvm frequently used commands."
-tags: ["kvm","cheatsheet"]
+tags: ["kvm","cheatsheet","command-line"]
 aliases:
     - /blog/kvm-cmd
 ---
