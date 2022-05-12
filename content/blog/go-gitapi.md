@@ -19,10 +19,66 @@ go-gitapi - A github/gitea api library in golang
   - [x] Post
   - [x] Put
 
+#### gitApi.go
+- type GitApiReq struct
+- type GitApiRes struct
+- type GitApi struct
+- func GitApiNew(
+- func (self *GitApi) EndpointUserRepos() *GitApi
+- func (self *GitApi) EndpointRepos() *GitApi
+- func (self *GitApi) EndpointReposTopics() *GitApi
+- func (self *GitApi) EndpointReposSecrets() *GitApi
+- func (self *GitApi) EndpointReposSecretsPubkey() *GitApi
+- func (self *GitApi) HeaderGithub() *GitApi
+- func (self *GitApi) HeaderInit() *GitApi
+- func (self *GitApi) Do() *GitApi
+- func (self *GitApi) Get() *GitApi
+- func (self *GitApi) Del() *GitApi
+- func (self *GitApi) Patch() *GitApi
+- func (self *GitApi) Post() *GitApi
+- func (self *GitApi) Put() *GitApi
+- func (self *GitApi) ProcessOutput() *GitApi
+- func (self *GitApiReq) UrlValInit()
+- func (self *GitApiRes) Ok() bool
+#### gitApiDataStruct.go
+- type RepoEncryptedPair struct
+- func (self *RepoEncryptedPair) StringP() *string
+- func (self *RepoEncryptedPair) String() string
+- type RepoPublicKey struct
+- func (self *RepoPublicKey) StringP() *string
+- func (self *RepoPublicKey) String() string
+- type RepoPrivate struct
+- func (self *RepoPrivate) StringP() *string
+- func (self *RepoPrivate) String() string
+- type RepoVisibility struct
+- func (self *RepoVisibility) StringP() *string
+- func (self *RepoVisibility) String() string
+- type RepoDescription struct
+- func (self *RepoDescription) StringP() *string
+- func (self *RepoDescription) String() string
+- type RepoTopics struct
+- func (self *RepoTopics) StringP() *string
+- func (self *RepoTopics) String() string
+- type RepoInfo struct
+- func (self *RepoInfo) StringP() *string
+- func (self *RepoInfo) String() string
+- type RepoInfoList []RepoInfo
+- func (self *RepoInfoList) StringP() *string
+- func (self *RepoInfoList) String() string
+- type NilType struct
+- func (self *NilType) StringP() *string
+- func (self *NilType) String() string
+- func Nil() *NilType
+- type GitApiInfo interface
+
 ### Pro
 
 - Easy to extend
 - Small size
+
+### Doc
+
+- https://pkg.go.dev/github.com/J-Siu/go-gitapi
 
 ### Dependency
 
@@ -116,6 +172,8 @@ helper.Debug = true
   - Member GitApi.Out -> GitApi.Res
   - Type GitApiIn -> GitApiReq
   - Type GitApiOut -> GitApiRes
+- v1.3.1
+  - Improve README.md
 
 ### License
 

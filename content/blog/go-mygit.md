@@ -33,13 +33,13 @@ Command line tools for easy mass configuration of git remote, and github/gites r
     - [x] add
     - [x] list
     - [x] remove
-- repository(api)
+- Repository(api)
   - [x] list all repo on server
   - [x] create repo on server
-  - [x] get/set
+  - [x] get / set
     - [x] description
     - [x] private
-    - [x] publickey(get only)
+    - [x] public key(get only)
     - [x] secret
     - [x] topic
     - [x] visibility
