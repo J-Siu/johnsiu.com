@@ -4,7 +4,7 @@ date: 2019-07-23T00:00:00-04:00
 author: "John Siu"
 title: "Alpine iSCSI Target"
 description: "Sharing a file base iSCSI disk from Alpine."
-tags: ["alpine","iscsi","command-line","how-to"]
+tags: ["alpine-linux","iscsi","command-line","how-to"]
 ---
 
 Sharing a file base iSCSI disk from Alpine.

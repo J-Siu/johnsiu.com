@@ -4,7 +4,7 @@ date: 2019-07-27T02:32:48-04:00
 author: "John Siu"
 title: "Alpine MPD Lite"
 description: "Compiling MPD (Music Player Daemon), a lite version."
-tags: ["alpine","mpd"]
+tags: ["alpine-linux","mpd"]
 ---
 Didn't get my hand dirty for a long time.
 <!--more-->

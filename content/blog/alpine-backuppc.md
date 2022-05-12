@@ -2,7 +2,7 @@
 author: "John Siu"
 date: 2019-08-03T00:10:20-04:00
 description: "Install BackupPC 4.x on Alpine Linux with Nginx"
-tags: ["alpine","backuppc","nginx","how-to"]
+tags: ["alpine-linux","backuppc","nginx","how-to"]
 title: "Alpine BackupPC 4 With Nginx"
 type: "blog"
 ---
