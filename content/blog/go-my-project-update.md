@@ -45,7 +45,7 @@ Right now it support the following features:
 
 All repo and base commands support processing multiple repos/dirs, with the exception of `description` and `topic`.
 
-A minor drawback is the binary is 11M vs 15k for [mygit](/blog/mygit). :face_palm:
+A minor drawback is the 11M binary size vs 15k for [mygit](/blog/mygit). :face_palm:
 
 Github: https://github.com/J-Siu/go-mygit
 
