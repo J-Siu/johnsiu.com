@@ -11,11 +11,54 @@ Command line tools for easy mass configuration of git remote, and github/gites r
 
 > This is a major upgrade of [mygit](https://github.com/J-Siu/mygit) which was written in bash.
 
-### Who & Why
+### Highlight
 
-- Creating repositories for same set of remote servers repeatedly
-- Setting up repositories on multiple machines repeatedly
-- Working with repositories that push to same set of git servers
+Following are highlight of some `go-mygit` functions.
+
+#### Push multiple repository
+
+```sh
+# Push to all remotes
+go-mygit push
+# Support path operation
+go-mygit push docker_*
+```
+
+#### Set Private
+
+```sh
+# Set current repository to private on server
+go-mygit repo set private true
+# Support path operation
+go-mygit repo set private false docker_*
+```
+
+#### Update Description
+
+```sh
+# Update description on server of current repository/directory
+go-mygit repo set description "This is a new description"
+```
+
+#### Update Topics
+
+```sh
+# Update topics on server of current repository/directory
+go-mygit repo set topic golang go project
+```
+
+### What It Does
+
+> These are the reasons "mygit" got created.
+
+- Set up same set of git remote repeatedly
+- Pushing same repo to multiple git servers which are not mirrored
+- Update some repository info on git server
+
+### What It Does Not
+
+- Replacing `git` command. (`git` command is required for git function to work.)
+- Replacing Github cli `gh` (`go-mygit` only cover very few api in comparison.)
 
 ### Features
 
@@ -47,19 +90,17 @@ Command line tools for easy mass configuration of git remote, and github/gites r
     - [x] repository
     - [x] secret
 
-All repo and base commands support processing multiple repos/dirs, with the exception of `description` and `topic`.
+All repo and base commands support processing multiple repos/dirs, except `description` and `topic`.
 
 ### Limitation
 
 - Current supported git servers
-  - gitea
   - github
-  - gogs
-- API commands must be executed at root of repository
+  - gitea
+  - gogs(not tested)
 
 ### Usage
 
-#### go-mygit
 ```sh
 Git automation script support group action.
 
@@ -68,7 +109,7 @@ Usage:
 
 Available Commands:
   completion  Generate the autocompletion script for the specified shell
-  config      Print configurations
+  config       Print configurations
   help        Help about any command
   init        Git init and set remotes
   push        Push to all remote repositories
@@ -84,171 +125,7 @@ Flags:
 
 Use "go-mygit [command] --help" for more information about a command.
 ```
-#### go-mygit config
-```sh
-Print configurations
 
-Usage:
-  go-mygit config [command]
-
-Aliases:
-  config, c, conf
-
-Available Commands:
-  all         Print all configurations
-  group       Print groups configuration
-  remote      Print remotes configuration
-  secret      Print secret configuration
-
-Flags:
-  -h, --help   help for config
-
-Global Flags:
-      --config string        config file (default is $HOME/.go-mygit.json)
-  -d, --debug                Enable debug
-  -g, --group stringArray    Specify group
-  -r, --remote stringArray   Specify remotes
-
-Use "go-mygit config [command] --help" for more information about a command.
-```
-#### go-mygit remote
-```sh
-remote(git) commands
-
-Usage:
-  go-mygit remote [command]
-
-Aliases:
-  remote, rmt
-
-Available Commands:
-  add         Add git remotes base on configuration and flags
-  list        List git remotes in current repository
-  remove      Delete remotes in current repository
-
-Flags:
-  -h, --help   help for remote
-
-Global Flags:
-      --config string        config file (default is $HOME/.go-mygit.json)
-  -d, --debug                Enable debug
-  -g, --group stringArray    Specify group
-  -r, --remote stringArray   Specify remotes
-
-Use "go-mygit remote [command] --help" for more information about a command.
-```
-#### go-mygit repository
-```sh
-Repository commands
-
-Usage:
-  go-mygit repository [command]
-
-Aliases:
-  repository, repo
-
-Available Commands:
-  del         Delete
-  get         get info
-  list        List all remote repositories
-  new         Create remote repository
-  set         set info
-
-Flags:
-  -h, --help   help for repository
-
-Global Flags:
-      --config string        config file (default is $HOME/.go-mygit.json)
-  -d, --debug                Enable debug
-  -g, --group stringArray    Specify group
-  -r, --remote stringArray   Specify remotes
-
-Use "go-mygit repository [command] --help" for more information about a command.
-```
-
-#### go-mygit repository del
-```sh
-Delete
-
-Usage:
-  go-mygit repository del [command]
-
-Aliases:
-  del, delete
-
-Available Commands:
-  repository  Delete remote repository
-  secret      Delete remote repository secret
-
-Flags:
-  -h, --help   help for del
-
-Global Flags:
-      --config string        config file (default is $HOME/.go-mygit.json)
-  -d, --debug                Enable debug
-  -g, --group stringArray    Specify group
-  -r, --remote stringArray   Specify remotes
-
-Use "go-mygit repository del [command] --help" for more information about a command.
-```
-
-#### go-mygit repository get
-```sh
-get info
-
-Usage:
-  go-mygit repository get [command]
-
-Aliases:
-  get, g
-
-Available Commands:
-  all         get all info(json)
-  description get description
-  private     get private status
-  publickey   get public key
-  topics      get topics
-  visibility  get visibility
-
-Flags:
-  -h, --help   help for get
-
-Global Flags:
-      --config string        config file (default is $HOME/.go-mygit.json)
-  -d, --debug                Enable debug
-  -g, --group stringArray    Specify group
-  -r, --remote stringArray   Specify remotes
-
-Use "go-mygit repository get [command] --help" for more information about a command.
-```
-#### go-mygit repository set
-```sh
-set info
-
-Usage:
-  go-mygit repository set [command]
-
-Aliases:
-  set, s
-
-Available Commands:
-  description set description
-  private     set private status
-  secrets     set action secrets
-  topics      set topics
-  visibility  set visibility status
-
-Flags:
-  -h, --help   help for set
-
-Global Flags:
-      --config string        config file (default is $HOME/.go-mygit.json)
-  -d, --debug                Enable debug
-  -g, --group stringArray    Specify group
-  -r, --remote stringArray   Specify remotes
-
-Use "go-mygit repository set [command] --help" for more information about a command.
-```
 #### Debug
 
 Use `-d` for debug output.
@@ -375,46 +252,9 @@ If `--all` is used, `mygit push` will push all branches(`--all`).
 go-mygit -r gh push --all
 ```
 
-### Configuration File
+### Configuration
 
-Following configuration will be used in all examples:
-
-```json
-{
-	"secrets": [
-		{
-			"name": "",
-			"value": ""
-		},
-		{
-			"name": "",
-			"value": ""
-		}
-	],
-	"remotes": [
-		{
-			"group": "",
-			"name": "GitHub",
-			"private": false,
-			"ssh": "",
-			"token": "",
-			"entrypoint": "https://api.github.com",
-			"vendor": "github"
-		},
-		{
-			"group": "",
-			"name": "MyServer",
-			"private": true,
-			"ssh": "",
-			"token": "",
-			"entrypoint": "https://gitea.myserver.com/api/v1",
-			"user": "",
-			"vendor": "gitea"
-		}
-	]
-}
-```
-
+See [go-mygit.json.md](go-mygit.json.md)
 ### Packages Used
 
 - [go-gitapi](https://github.com/J-Siu/go-gitapi)
@@ -460,6 +300,8 @@ https://github.com/J-Siu/go-mygit/releases
   - lib.GitApiFromRemote() -> Remote.GetGitApi()
 - v2.4.1
   - Fix goreleaser
+- v2.4.2
+  - Proper go mod path for v2
 
 ### License
 
