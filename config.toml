@@ -8,7 +8,6 @@ enableGitInfo          = true
 enableInlineShortcodes = true
 languageCode           = "en-us"
 paginate               = 24
-#relativeURLs           = true
 
 disqusShortname = "https-johnsiu-com"
 googleAnalytics = "G-989EXZE534"
@@ -17,22 +16,22 @@ googleAnalytics = "G-989EXZE534"
 name = "John Siu"
 
 [Params]
-#custom_js     = ["/js/my.js"]
-adsense_id         = "ca-pub-8176479711832264"
-adsense_page_level = true
-description        = "John Siu technology blog."
-favicon            = "/favicon.ico"
-listlastmod        = true
-mainSections       = "blog"
-openToc            = true
-opengraph          = true
-pageinfobox        = true
-startdate          = "2012-12-02"
-subtitle           = "Tech - Business Tool, Personal Toys"
-svg_ext            = false
-title              = "John Siu Blog"
-twitercards        = true
-user_canonical     = true
+#custom_js           = ["/js/my.js"]
+description          = "John Siu technology blog."
+enableExternalSvg    = false
+enableInfoBox        = true
+enableListLastModify = true
+enableOpenToc        = true
+enableUserCanonical  = false
+favicon              = "/favicon.ico"
+mainSections         = "blog"
+startdate            = "2012-12-02"
+subtitle             = "Tech - Business Tool, Personal Toys"
+title                = "John Siu Blog"
+
+	[Params.google]
+	AdsenseId         = "ca-pub-8176479711832264"
+	enablePageLevelAd = true
 
 	[Params.sociallink]
 	#instagram      = "john.sd.siu"
