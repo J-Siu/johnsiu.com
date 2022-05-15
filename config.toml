@@ -29,6 +29,12 @@ startdate            = "2012-12-02"
 subtitle             = "Tech - Business Tool, Personal Toys"
 title                = "John Siu Blog"
 
+	[Params.paypal]
+	# amount          = "5"
+	businessId      = "HZF49NM9D35SJ"
+	currency        = "CAD"
+	enableRecurring = true
+
 	[Params.google]
 	AdsenseId         = "ca-pub-8176479711832264"
 	enablePageLevelAd = true
