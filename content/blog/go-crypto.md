@@ -8,7 +8,8 @@ type: "blog"
 ---
 A command line tool for crypto function.
 <!--more-->
-> This tool is not a crypto currency tool.
+> This is not crypto currency program.
+
 ### Purpose
 
 Provide crypto function for command line scripting, eg. [mygit](https://github.com/J-Siu/mygit). Currently only box seal anonymous is implemented, which is used for calculating github repository secret.
@@ -50,7 +51,7 @@ F4XDi4ZPCwRAizgVry3CbBLaX9GDbwGXkf/SRoLCEX2veSZKdHtIFMSDGPwIB/h/V0Vodu4k1h0FSMdk
 - 1.0.0
   - Implement box seal anonymous
 - v1.0.1
-  - Fix goreleaser
+  - Fix `goreleaser`
 
 ### License
 

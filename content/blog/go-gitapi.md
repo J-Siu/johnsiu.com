@@ -8,7 +8,6 @@ type: "blog"
 ---
 go-gitapi - A github/gitea api library in golang
 <!--more-->
-
 ### Features
 
 - API action
@@ -174,6 +173,8 @@ helper.Debug = true
   - Type GitApiOut -> GitApiRes
 - v1.3.1
   - Improve README.md
+- v1.3.2
+  - Fix `GitApi.Do()` wiping `GitApi.Req.Data` if `GitApi.Info` is `nil`
 
 ### License
 

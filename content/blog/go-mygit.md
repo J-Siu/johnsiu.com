@@ -9,7 +9,7 @@ type: "blog"
 Command line tools for easy mass configuration of git remote, and github/gites repositories API.
 <!--more-->
 
-> This is a major upgrade of [mygit](https://github.com/J-Siu/mygit) which was written in bash.
+> This replaces [mygit](https://github.com/J-Siu/mygit), implemented in Bash.
 
 ### Highlight
 
@@ -22,6 +22,15 @@ Following are highlight of some `go-mygit` functions.
 go-mygit push
 # Support path operation
 go-mygit push docker_*
+```
+
+#### Set Archived
+
+```sh
+# Set archived to true
+go-mygit repo set archived true
+# Set archived to false
+go-mygit repo set archived false
 ```
 
 #### Set Private
@@ -50,15 +59,15 @@ go-mygit repo set topic golang go project
 ### What It Does
 
 > These are the reasons "mygit" got created.
-
-- Set up same set of git remote repeatedly
+- Parallel processing multiple repository, eg. pushing 10 repos at the same time
 - Pushing same repo to multiple git servers which are not mirrored
-- Update some repository info on git server
+- Set up same set of git remote repeatedly
+- Update repository info on git server(api)
 
 ### What It Does Not
 
-- Replacing `git` command. (`git` command is required for git function to work.)
-- Replacing Github cli `gh` (`go-mygit` only cover very few api in comparison.)
+- Replace `git` command. (`git` command is required for git function to work.)
+- Replace Github cli `gh` (`go-mygit` only cover very few api in comparison.)
 
 ### Features
 
@@ -70,7 +79,9 @@ go-mygit repo set topic golang go project
   - [x] -g/--group
   - [x] -r/--remote
 - Base(git) Commands
+  - [x] clone
   - [x] init
+  - [x] pull
   - [x] push
   - [x] remote
     - [x] add
@@ -80,6 +91,7 @@ go-mygit repo set topic golang go project
   - [x] list all repo on server
   - [x] create repo on server
   - [x] get / set
+    - [x] archived
     - [x] description
     - [x] private
     - [x] public key(get only)
@@ -90,8 +102,6 @@ go-mygit repo set topic golang go project
     - [x] repository
     - [x] secret
 
-All repo and base commands support processing multiple repos/dirs, except `description` and `topic`.
-
 ### Limitation
 
 - Current supported git servers
@@ -99,21 +109,29 @@ All repo and base commands support processing multiple repos/dirs, except `descr
   - gitea
   - gogs(not tested)
 
+### Go Install
+
+```sh
+go install github.com/J-Siu/go-mygit/v2@latest
+```
+
 ### Usage
 
 ```sh
-Git automation script support group action.
+Git and Repo automation made easy.
 
 Usage:
   go-mygit [command]
 
 Available Commands:
+  clone       Git clone
   completion  Generate the autocompletion script for the specified shell
-  config       Print configurations
+  config      Print configurations
   help        Help about any command
-  init        Git init and set remotes
-  push        Push to all remote repositories
-  remote      remote(git) commands
+  init        Git init and reset remotes
+  pull        Git pull
+  push        Git push
+  remote      Git remote commands
   repository  Repository commands
 
 Flags:
@@ -121,6 +139,9 @@ Flags:
   -d, --debug                Enable debug
   -g, --group stringArray    Specify group
   -h, --help                 help for go-mygit
+      --no-parallel          Don't process in parallel
+      --no-skip              Don't skip empty output
+      --no-title             Don't print title for most output
   -r, --remote stringArray   Specify remotes
 
 Use "go-mygit [command] --help" for more information about a command.
@@ -299,9 +320,23 @@ https://github.com/J-Siu/go-mygit/releases
   - Improve repo/dir handling from command line
   - lib.GitApiFromRemote() -> Remote.GetGitApi()
 - v2.4.1
-  - Fix goreleaser
+  - Fix `goreleaser`
 - v2.4.2
   - Proper go mod path for v2
+- v2.5.0
+  - Add global flag
+    - `--no-parallel`, don't process in parallel
+    - `--no-title`, don't print title in output
+  - Add support for handling `archived` status
+  - Fix exiting on non-git directory
+  - Fix remote listing not work for current directory
+  - Fix push to use git directory remotes
+- v2.5.1
+  - Remove Go workspace file
+- v2.6.0
+  - Detect if no configuration file
+  - Add git clone
+  - Add git pull
 
 ### License
 

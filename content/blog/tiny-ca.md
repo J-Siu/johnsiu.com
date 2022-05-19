@@ -9,8 +9,6 @@ type: blog
 Bite the bullet and create a Root CA for local network.
 <!--more-->
 
----
-
 ### Background
 
 As browsers are getting more secure and packed with more safeguards to prevent malicious actors from doing their biddings, they become less friendly with self-signed certificates. This is a pain in small labs and other wall off networks. While using http for non-prod/testing can be a solution, it is not ideal and can create other issues.
@@ -24,7 +22,7 @@ As browsers are getting more secure and packed with more safeguards to prevent m
 
 The result is a simple script with an openssl config file that will generate a CA and a wildcard certificate.
 
-GitHub: [tiny_ca](//github.com/J-Siu/tiny_ca)
+GitHub: [tiny_ca](https://github.com/J-Siu/tiny_ca)
 
 > ***WARNING:*** This is intended for testing/throw-away environment. Don't use it for production.
 
@@ -104,7 +102,7 @@ Data Base Updated
 
 Install CA certificate into browser or OS.
 
-Install server certificate and key into web server.
+Install server certificate and key into webserver.
 
 > **Notes**
 >
@@ -112,7 +110,7 @@ Install server certificate and key into web server.
 
 ### Install CA in Ubuntu
 
-Copy ca certificate to `/usr/local/share/ca-certificates` and change extension to `.crt`. Then run `update-ca-certificates`.
+Copy ca certificate to `/usr/local/share/ca-certificates` and change extension to crt. Then run `update-ca-certificates`.
 
 Example:
 
@@ -126,7 +124,7 @@ update-ca-certificates
 - 1.0.0
   - Take domain name from command line.
   - Each domain in own directory under ca directory.
-  - Automatically generate DER format for both ca and server cert.
+  - Automatically generate der format for both ca and server cert.
   - Check if ca and server cert exist.
   - Remove OSCP and CRL extension from ca.cnf.template.
 - 1.1.0
@@ -134,6 +132,6 @@ update-ca-certificates
 
 ### Reference
 
-[OpenSSL Certificate Authority](//jamielinux.com/docs/openssl-certificate-authority/index.html) by Jamie Nguyen.
+[OpenSSL Certificate Authority](https://jamielinux.com/docs/openssl-certificate-authority/index.html) by Jamie Nguyen.
 
-[openssl-ca](//www.openssl.org/docs/manmaster/man1/ca.html) man page.
+[openssl-ca](https://www.openssl.org/docs/manmaster/man1/ca.html) man page.

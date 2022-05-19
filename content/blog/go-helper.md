@@ -8,7 +8,6 @@ type: "blog"
 ---
 Simple helper functions for Golang program.
 <!--more-->
-
 ### Features
 
 File|Description
@@ -35,9 +34,13 @@ string.go|string/array functions
 - func CurrentDirBase() *string
 - func FullPath(workpathP *string) *string
 #### gitCmd.go
+- func Git(workpathP *string, optionsP *[]string) *MyCmd
+- func GitBranchCurrent(workpathP *string) *MyCmd
+- func GitClone(workpathP *string, optionsP *[]string) *MyCmd
 - func GitExecExist() bool
 - func GitExecPath() string
 - func GitInit(workpathP *string) *MyCmd
+- func GitPull(workpathP *string, optionsP *[]string) *MyCmd
 - func GitPush(workpathP *string, optionsP *[]string) *MyCmd
 - func GitRemote(workpathP *string, v bool) *[]string
 - func GitRemoteAdd(workpathP *string, name string, git string) *MyCmd
@@ -76,7 +79,6 @@ string.go|string/array functions
 - func StrArrayPtrPrintln(saP *[]string)
 - func StrArrayPtrPrintlnSp(saP *[]string) *string
 - func StrPtrToArrayPtr(sP *string) *[]string
-
 
 ### Doc
 
@@ -168,6 +170,8 @@ go test report_test.go
     - func name StrPToArrayP -> StrPtrToArrayPtr
 - v1.0.1
   - Improve comment for godoc
+- v1.1.1
+  - Add Git(), GitBranchCurrent(), GitClone(), GitPull()
 
 ### License
 

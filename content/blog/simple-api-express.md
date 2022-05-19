@@ -152,7 +152,7 @@ apiDemo.registerObject(DemoObj);
 
 `SimpleApi.response(req, res)` is a handle function for incoming api post request. Api parameter will be passed to corresponding callback. Callback result will be passed back to api client.
 
-`req, res` are request and response object pass in from expressjs post.
+`req, res` are request and response object pass in from ExpressJs post.
 
 ```js
 // Post request + API response
@@ -165,7 +165,7 @@ app.post(path.join(apiDemoUrl, '*'), (req, res) => apiDemo.response(req, res))
 
 IT WILL NOT send out the result.
 
-IT IS NOT a expressjs post handler function. It needed to be called INSIDE the post handler function.
+IT IS NOT a ExpressJs post handler function. It needed to be called INSIDE the post handler function.
 
 Api handler can be use if additional action(eg: customizing response header or error page) is required:
 
@@ -203,7 +203,7 @@ When `handle()` is called with an non-exist api url, it will throw an error, whi
 
 When `response()` is called, and the invoked api callback throw an error, which will be passed to remote client.
 
-The remote client, using [simple-api-client-ng2](//github.com/J-Siu/ng2-simple-api-lib), will throw an exception with the error.
+The remote client, using [simple-api-client-ng2](https://github.com/J-Siu/ng2-simple-api-lib), will throw an exception with the error.
 
 When `handle()` is called, and the invoked api callback throw an error, the error can be inspected from the result object.
 
@@ -219,21 +219,21 @@ if(result.error) {
 res.json(result);
 ```
 
-The remote client, using [simple-api-client-ng2](//github.com/J-Siu/ng2-simple-api-lib), will throw an exception with the error.
+The remote client, using [simple-api-client-ng2](https://github.com/J-Siu/ng2-simple-api-lib), will throw an exception with the error.
 
 ### Example
 
-A detail example for how [simple-api-express](//github.com/J-Siu/simple-api-express) and [simple-api-client-ng2](//github.com/J-Siu/ng2-simple-api-lib) work is in:
+A detail example for how [simple-api-express](https://github.com/J-Siu/simple-api-express) and [simple-api-client-ng2](https://github.com/J-Siu/ng2-simple-api-lib) work is in:
 
-- [ng2-simple-api-lib](//github.com/J-Siu/ng2-simple-api-lib)
+- [ng2-simple-api-lib](https://github.com/J-Siu/ng2-simple-api-lib)
 
 ### Repository
 
-- [simple-api-express](//github.com/J-Siu/simple-api-express)
+- [simple-api-express](https://github.com/J-Siu/simple-api-express)
 
 ### Contributors
 
-- [John Sing Dao Siu](//github.com/J-Siu)
+- [John Sing Dao Siu](https://github.com/J-Siu)
 
 ### Changelog
 
@@ -249,15 +249,20 @@ A detail example for how [simple-api-express](//github.com/J-Siu/simple-api-expr
   - README.md clean up
   - package.json clean up
   - simple-api.ts uses typescript import
+- 5.0.0
+  - Move target from ES5 to ES2015
 
 ### License
 
 The MIT License
 
-Copyright (c) 2019
+Copyright (c) 2021
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
 The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+l be included in all copies or substantial portions of the Software.
 
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.

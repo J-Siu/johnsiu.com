@@ -8,9 +8,6 @@ tags: ["docker","mpd","lib"]
 ---
 Base on my [Alpine MPD Lite](/blog/alpine-mpd-lite/) with UID/GID + audio GID handling.
 <!--more-->
-Docker MPD Lite with UID/GID + audio GID handling.
-
-> MPD Lite is custom compile of MPD which trim down all functions except audio playing.
 
 ### Minimal Compilation
 
@@ -49,8 +46,8 @@ Library|Usage
 ### Build
 
 ```sh
-git clone https://github.com/J-Siu/docker_compose.git
-cd docker/mpd
+git clone https://github.com/J-Siu/docker_mpd_lite.git
+cd docker_mpd_lite
 docker build -t jsiu/mpd .
 ```
 
@@ -172,11 +169,11 @@ docker-compose up
 
 ### Repository
 
-- [docker_compose](//github.com/J-Siu/docker_compose)
+- [docker_mpd_lite](https://github.com/J-Siu/docker_mpd_lite)
 
 ### Contributors
 
-- [John Sing Dao Siu](//github.com/J-Siu)
+- [John Sing Dao Siu](https://github.com/J-Siu)
 
 ### Change Log
 
@@ -197,12 +194,25 @@ docker-compose up
     - Use exec so start.sh can exit
     - Add exit code 1
     - Remove delgroup/deluser ${PUSR}
+- 0.21.25
+  - mpd version: 0.21.25
+- 0.22
+  - mpd version: 0.22
+- 0.22.3
+  - mpd version: 0.22.3
+- 0.22.6
+  - mpd version: 0.22.6
+- 0.23.6
+  - mpd version: 0.23.6
+- 0.23.6-p1
+  - Add docker push github workflow
+<!--CHANGE-LOG-END-->
 
 ### License
 
 The MIT License
 
-Copyright (c) 2020
+Copyright (c) 2022
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 

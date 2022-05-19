@@ -41,6 +41,9 @@ Migrated all my ZSH git functions into a standalone bash script.
     - [x] vis/visibility
     - [x] desc/description
     - [x] topic/topics
+  - [x] disp/dispatch
+    - [x] list
+    - [x] dispatch
 
 ### Limitation
 
@@ -53,6 +56,29 @@ Migrated all my ZSH git functions into a standalone bash script.
 - API commands must be executed at root of repository
 
 ### Usage
+
+```sh
+mygit version 0.2.3
+License : MIT License Copyright (c) 2020 John Siu
+Support : https://github.com/J-Siu/mygit/issues
+Debug   : export _DEBUG=true
+Usage   :
+mygit remote                                                       # Show remotes in config
+mygit group                                                        # Show groups in config
+mygit [-g <group>] [-r <remote>] fetch                             # Git fetch
+mygit [-g <group>] [-r <remote>] init [<repository name>]          # Git init
+mygit [-g <group>] [-r <remote>] push [--all|--master]             # Git push
+mygit [-g <group>] [-r <remote>] repo                              # API get remote repository information
+mygit [-g <group>] [-r <remote>] repo del                          # API delete remote repository
+mygit [-g <group>] [-r <remote>] repo desc "<description>"         # API change remote repository description
+mygit [-g <group>] [-r <remote>] repo ls [--archive]               # API list all remote repository
+mygit [-g <group>] [-r <remote>] repo new [--pri|--pub]            # API create remote repository
+mygit [-g <group>] [-r <remote>] repo topic "<topics...>"          # API change remote repository topic
+mygit [-g <group>] [-r <remote>] repo vis/visibility [--pri|--pub] # API change remote repository visibility
+-- GitHub only --
+mygit [-g <group>] [-r <remote>] wf|workflow                       # API workflow list
+mygit [-g <group>] [-r <remote>] wf|workflow disp|dispatch <event> # API workflow dispatch
+```
 
 #### Configuration File
 
@@ -277,7 +303,7 @@ mygit fetch
 mygit -r gh fetch
 ```
 
-#### API Base Commands
+#### API Repo Commands
 
 `mygit repo <command>` are API base command. With exception of `mygit repo ls/list`, all API commands must be ran at root of repository.
 
@@ -383,6 +409,44 @@ mygit -g internal repo ls
 mygit -r gh repo ls
 ```
 
+#### API Workflow Commands
+
+`mygit wf|workflow <command>` are API base workflow commands.
+
+All workflow commands must be ran at root of repository.
+
+> Workflow commands only work on GitHub repositories.
+
+##### List Workflow
+
+`mygit wf` will get all workflow information of a repository
+
+```sh
+mygit wf
+mygit workflow
+```
+
+##### Dispatch
+
+`mygit wf disp|dispatch <event>` will trigger a `repository_dispatch` event. Workflows file must configure accordingly.
+
+Workflow file:
+
+```yml
+name: Release
+on:
+  push:
+    tags:
+      - "*"
+  repository_dispatch:
+    types: <event>
+...
+```
+
+```sh
+mygit workflow <event>
+```
+
 ### New Repository Workflow
 
 Assuming `~/.mygit.conf` is setup.
@@ -395,11 +459,11 @@ mygit push --master
 
 ### Repository
 
-- [mygit](//github.com/J-Siu/mygit)
+- [mygit](https://github.com/J-Siu/mygit)
 
 ### Contributors
 
-- [John Sing Dao Siu](//github.com/J-Siu)
+- [John Sing Dao Siu](https://github.com/J-Siu)
 
 ### Change Log
 
@@ -428,6 +492,10 @@ mygit push --master
   - fix _in_group call missing "" for group
   - fix _in_group call wrapped with $() incorrectly
   - fix _in_group var conflict, change _g -> _x
+- 0.2.2
+  - fix repo new visibility
+- 0.2.3
+  - add workflow list and event dispatch for GitHub
 
 ### License
 

@@ -11,8 +11,8 @@ Docker MPD Lite with UID/GID + audio GID handling.
 ### Build
 
 ```sh
-git clone https://github.com/J-Siu/docker_compose.git
-cd docker/mpd
+git clone https://github.com/J-Siu/docker_mpd.git
+cd docker_mpd
 docker build -t jsiu/mpd .
 ```
 
@@ -118,11 +118,11 @@ docker-compose up
 
 ### Repository
 
-- [docker_compose](//github.com/J-Siu/docker_compose)
+- [docker_mpd](https://github.com/J-Siu/docker_mpd)
 
 ### Contributors
 
-- [John Sing Dao Siu](//github.com/J-Siu)
+- [John Sing Dao Siu](https://github.com/J-Siu)
 
 ### Change Log
 
@@ -142,12 +142,39 @@ docker-compose up
     - Use exec so start.sh can exit
     - Add exit code 1
     - Remove delgroup/deluser ${PUSR}
+- 0.21.25-r0
+  - Auto update to 0.21.25-r0
+- 0.22-r1
+  - Auto update to 0.22-r1
+- 0.22.3-r1
+  - Auto update to 0.22.3-r1
+- 0.22.4-r0
+  - Auto update to 0.22.4-r0
+- 0.22.6-r0
+  - Auto update to 0.22.6-r0
+- 0.22.6-r1
+  - Auto update to 0.22.6-r1
+- 0.22.8-r2
+  - Auto update to 0.22.8-r2
+- 0.22.9-r0
+  - Auto update to 0.22.9-r0
+- 0.23.6-r1
+  - Auto update to 0.23.6-r1
+- 0.23.6-r1-p1
+  - Add docker push github workflow
+- 0.23.6-r2
+  - Auto update to 0.23.6-r2
+- 0.23.7-r0
+  - Auto update to 0.23.7-r0
+- 0.23.7-r1
+  - Auto update to 0.23.7-r1
+<!--CHANGE-LOG-END-->
 
 ### License
 
 The MIT License
 
-Copyright (c) 2020
+Copyright (c) 2022
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 

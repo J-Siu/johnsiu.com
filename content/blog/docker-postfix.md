@@ -11,8 +11,8 @@ Docker - Postfix with sasldb2 support
 ### Build
 
 ```sh
-git clone https://github.com/J-Siu/docker_compose.git
-cd docker/postfix
+git clone https://github.com/J-Siu/docker_postfix.git
+cd docker_postfix
 docker build -t jsiu/postfix .
 ```
 
@@ -32,7 +32,7 @@ ${TZ}|${P_TZ}|no|time zone
 
 Container will automatically exit if no configuration volume (`${POSTFIX_CNF}`), or if configuration volume is empty.
 
-The permission and ownership of `${POSTFIX_CNF}` is not important. Container `start.sh` copies `/postfix` to `/etc/` and applies ownership and permission to `/etec/postfix` accordingly.
+The permission and ownership of `${POSTFIX_CNF}` is not important. Container `start.sh` copies `/postfix` to `/etc/` and applies ownership and permission to `/etc/postfix` accordingly.
 
 Postfix configuration come with Alpine package install is included in the container at `/postfix.pkg.tgz`. Retrieve it with following commands:
 
@@ -126,11 +126,11 @@ docker-compose up
 
 ### Repository
 
-- [docker_compose](//github.com/J-Siu/docker_compose)
+- [docker_postfix](https://github.com/J-Siu/docker_postfix)
 
 ### Contributors
 
-- [John Sing Dao Siu](//github.com/J-Siu)
+- [John Sing Dao Siu](https://github.com/J-Siu)
 
 ### Change Log
 
@@ -143,12 +143,45 @@ docker-compose up
 - 3.5.3-r0
   - Adopt Postfix version
   - Postfix version 3.5.3-r0
+- 3.5.4-r0
+  - Auto update to 3.5.4-r0
+- 3.5.4-r0-p0
+  - Remove cyrus-sasl-plain
+- 3.5.6-r0
+  - Auto update to 3.5.6-r0
+- 3.5.7-r0
+  - Auto update to 3.5.7-r0
+- 3.5.7-r2
+  - Auto update to 3.5.7-r2
+- 3.5.8-r0
+  - Auto update to 3.5.8-r0
+- 3.5.8-r0-p1
+  - Create /etc/sasl2 directory
+- 3.5.8-r0-p2
+  - Fix start.sh
+- 3.5.9-r0
+  - Auto update to 3.5.9-r0
+- 3.5.9-r0-p0
+  - Force rebuild to use cyrus-sasl 2.1.27-r12
+- 3.6.0-r0
+  - Auto update to 3.6.0-r0
+- 3.6.1-r0
+  - Auto update to 3.6.1-r0
+- 3.7.0-r2
+  - Auto update to 3.7.0-r2
+- 3.7.0-r2-p1
+  - Add docker push github workflow
+- 3.7.1-r1
+  - Auto update to 3.7.1-r1
+- 3.7.2-r0
+  - Auto update to 3.7.2-r0
+<!--CHANGE-LOG-END-->
 
 ### License
 
 The MIT License
 
-Copyright (c) 2020
+Copyright (c) 2022
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
