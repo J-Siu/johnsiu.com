@@ -7,8 +7,8 @@ title: "Go Module/Package v2 and after"
 type: "blog"
 ---
 Create Golang Module/package v2 and after with example.
-<!--more-->
 <!--skip-sync-->
+<!--more-->
 ### Sample Package
 
 We will start with example project [go-mod-v2@v0.0.0](https://github.com/J-Siu/go-mod-v2/tree/v0.0.0) hosted on Github.
