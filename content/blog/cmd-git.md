@@ -137,13 +137,16 @@ git submodule update --recursive --remote
 git status
 ```
 
-### Log show
+### Log
 
-```sh
-git log
-git reflog
-```
+`git log` option|Description
+---|---
+`--name-only`|Show file in commit, following commit line
+`--oneline`|(Compact)Show ref and commit message in one line
+`<tag>..HEAD`|Show log since \<tag\>
+||(Long)Default format
 
+`git reflog`: Compact mode, one commit per line.
 ### Reset
 
 ```sh
