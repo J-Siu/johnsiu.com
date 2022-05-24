@@ -2,7 +2,7 @@
 author: "John Siu"
 date: 2022-05-12T01:50:44-04:00
 description: "Alpine Linux and VS Code remote ssh how-to"
-tags: ["alpine-linux","vscode","ssh","how-to"]
+tags: ["alpine-linux","vscode","ssh","how-to","git"]
 title: "Alpine Linux and VS Code Remote SSH"
 type: "blog"
 ---
@@ -49,6 +49,24 @@ AllowTcpForwarding yes
 PermitTunnel       yes
 Subsystem sftp /usr/lib/ssh/sftp-server
 ```
+
+### VS Code and Alpine Git
+
+Though Alpine Linux git install in `/usr/bin/git`, same location as most other Linux and Mac OS, VS Code cannot load the default environment and had to be set manually.
+
+To have Alpine Linux git work with VS Code, we need a custom setting. Go to your `Remote [SSH: <hostname>]` tab in settings:
+
+![alpine-vscode-git](/img/alpine-vscode.png)
+
+Click upper right icon to open json file, and put following:
+
+```json
+{
+	"git.path": "/usr/bin/git",
+}
+```
+
+Then restart 
 
 ### BusyBox
 
