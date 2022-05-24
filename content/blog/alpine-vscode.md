@@ -22,9 +22,9 @@ Then I hit on the actual `glibc`/`libstdc++` issue. `libstdc++` was solved by a 
 So it turned out to make VS Code remote ssh to Alpine box is as simple as running following on the Alpine box:
 
 ```sh
-apk add gcompat libstdc++ curl git
+apk add gcompat libstdc++ curl bash git
 ```
-You can replace `curl` with `wget`.
+You can replace `curl` with `wget`. And aside from that, VS Code is also looking for `bash`.
 
 I had the above discovery post in [vscode-remote-release](https://github.com/microsoft/vscode-remote-release/issues/6347#issuecomment-1079430646) back in Mar. But the story didn't end there.
 
@@ -75,7 +75,7 @@ However, if you are doing lot of shell scripting and rely on some "standard" com
 I installed following in my Alpine box:
 
 ```sh
-apk add bash zsh grep curl wget git jq git util-linux-misc procps
+apk add zsh grep curl wget git jq git util-linux-misc procps
 ```
 
 ### Conclusion
