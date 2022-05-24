@@ -5,6 +5,7 @@ description: "Alpine Linux and VS Code remote ssh how-to"
 tags: ["alpine-linux","vscode","ssh","how-to","git"]
 title: "Alpine Linux and VS Code Remote SSH"
 type: "blog"
+images: ["/img/alpine-vscode.png"]
 ---
 How to do it in 2022.
 <!--more-->
