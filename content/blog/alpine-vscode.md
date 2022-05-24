@@ -52,7 +52,7 @@ PermitTunnel       yes
 
 Though Alpine Linux git install in `/usr/bin/git`, same location as most other Linux and Mac OS, VS Code cannot load the default environment and has to be set manually.
 
-Connect VS Code to the Alpine box, then open the remote tab(`Remote [SSH: <hostname>]`) in settings:
+Connect VS Code to the Alpine box, then in settings, open the remote tab(`Remote [SSH: <hostname>]`):
 
 ![alpine-vscode-git](/img/alpine-vscode.png)
 
