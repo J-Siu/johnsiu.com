@@ -64,7 +64,7 @@ Click upper right icon to open json file, and put following:
 }
 ```
 
-Then restart 
+Git will start working after reconnect.
 
 ### BusyBox
 
