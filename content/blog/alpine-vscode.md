@@ -44,17 +44,15 @@ Unlike Ubuntu, following need to be set manually for `sshd` on Alpine.
 `/etc/ssh/sshd-config`
 
 ```sh
-AuthorizedKeysFile .ssh/authorized_keys
 AllowTcpForwarding yes
 PermitTunnel       yes
-Subsystem sftp /usr/lib/ssh/sftp-server
 ```
 
 ### VS Code and Alpine Git
 
-Though Alpine Linux git install in `/usr/bin/git`, same location as most other Linux and Mac OS, VS Code cannot load the default environment and had to be set manually.
+Though Alpine Linux git install in `/usr/bin/git`, same location as most other Linux and Mac OS, VS Code cannot load the default environment and has to be set manually.
 
-To have Alpine Linux git work with VS Code, we need a custom setting. Go to your `Remote [SSH: <hostname>]` tab in settings:
+Connect VS Code to the Alpine box, then open the remote tab(`Remote [SSH: <hostname>]`) in settings:
 
 ![alpine-vscode-git](/img/alpine-vscode.png)
 
