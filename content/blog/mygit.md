@@ -9,6 +9,8 @@ type: "blog"
 Migrated all my ZSH git functions into a standalone bash script.
 <!--more-->
 
+> [go-mygit](https://github.com/J-Siu/go-mygit) replaced this project.
+
 ### Who & Why
 
 - Creating repositories for same set of remote servers repeatedly
