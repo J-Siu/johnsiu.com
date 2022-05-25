@@ -56,3 +56,13 @@ Add function in `.zshrc` and use as follow:
 ```zsh
 create_new_repo <repo_name>
 ```
+
+
+### Implementation
+
+I have two fully functional implementations, please check them out:
+
+Language|Project
+---|---
+bash|[mygit](/blog/mygit/)
+golang|[go-mygit](/blog/go-mygit/)
