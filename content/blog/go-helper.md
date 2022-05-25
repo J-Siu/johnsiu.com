@@ -8,6 +8,7 @@ type: "blog"
 ---
 Simple helper functions for Golang program.
 <!--more-->
+
 ### Features
 
 File|Description
@@ -15,45 +16,72 @@ File|Description
 common.go|Debug flag
 crypto.go|Crypto function
 debug.go|Debug functions
+err.go|Basic error type
 file.go|File/directory functions
 gitCmd.go|Git functions
 myCmd.go|exec.Command shell wrapper
 report.go|report/log functions auto detect and apply json marshal indent
 string.go|string/array functions
+warning.go|warning type
 
 #### common.go
 - var Debug bool = false
+- var DebugReport bool = false
+- var Errs ErrsT
+- var Warns Warnings
+- var NIL_SPRINT string = fmt.Sprint(nil)
+- var NIL_JSON string
+- func init()
 #### crypto.go
-- func BoxSealAnonymous(base64Pubkey, msg *string) *string
+- func BoxSealAnonymous(base64PublicKey, msg *string) *string
 #### debug.go
 - func DebugEnv() bool
 - func DebugLog(msg ...interface{})
 - func ErrCheck(e error)
+#### err.go
+- type Err string
+- type ErrsT []error
+- func (self Err) Error() string
+- func (self *Err) String() string
+- func (self *Err) StringP() *string
+- func (self *ErrsT) Empty() bool
+- func (self *ErrsT) NotEmpty() bool
+- func (self *ErrsT) Clear()
 #### file.go
 - func CurrentPath() *string
 - func CurrentDirBase() *string
-- func FullPath(workpathP *string) *string
+- func FullPath(workPathP *string) *string
+- func FullPathStr(workPath string) *string
+- func IsRegularFile(workPath string) bool
+- func IsDir(workPath string) bool
+- func SameDir(path1, path2 string) bool
+- func FileHasExt(name, ext string) bool
+- func FileRemoveExt(filename string) string
+- func FileInDir(dir, filename string) string
+- func FileSimplifyName(filename string) string
 #### gitCmd.go
-- func Git(workpathP *string, optionsP *[]string) *MyCmd
-- func GitBranchCurrent(workpathP *string) *MyCmd
-- func GitClone(workpathP *string, optionsP *[]string) *MyCmd
+- func Git(workPathP *string, optionsP *[]string) *MyCmd
+- func GitClone(workPathP *string, optionsP *[]string) *MyCmd
 - func GitExecExist() bool
 - func GitExecPath() string
-- func GitInit(workpathP *string) *MyCmd
-- func GitPull(workpathP *string, optionsP *[]string) *MyCmd
-- func GitPush(workpathP *string, optionsP *[]string) *MyCmd
-- func GitRemote(workpathP *string, v bool) *[]string
-- func GitRemoteAdd(workpathP *string, name string, git string) *MyCmd
-- func GitRemoteExist(workpathP *string, name string) bool
-- func GitRemoteRemove(workpathP *string, name string) *MyCmd
-- func GitRemoteRemoveAll(workpathP *string)
-- func GitRoot(workpathP *string) string
-- func GitRootSubmodule(workpathP *string) string
+- func GitInit(workPathP *string) *MyCmd
+- func GitBranchCurrent(workPathP *string) *MyCmd
+- func GitPull(workPathP *string, optionsP *[]string) *MyCmd
+- func GitPush(workPathP *string, optionsP *[]string) *MyCmd
+- func GitRemote(workPathP *string, v bool) *[]string
+- func GitRemoteAdd(workPathP *string, name string, git string) *MyCmd
+- func GitRemoteExist(workPathP *string, name string) bool
+- func GitRemoteRemove(workPathP *string, name string) *MyCmd
+- func GitRemoteRemoveAll(workPathP *string)
+- func GitRoot(workPathP *string) string
+- func GitRootSubmodule(workPathP *string) string
 #### myCmd.go
 - type MyCmd struct
-- func MyCmdRun(cmdName string, argsP *[]string, workpathP *string) *MyCmd
-- func MyCmdRunWg(cmdName string, argsP *[]string, workpathP *string, title *string, wgP *sync.WaitGroup, output bool) *MyCmd
-- func MyCmdInit(name string, argsP *[]string, workpathP *string) *MyCmd
+- func MyCmdRun(cmdName string, argsP *[]string, workPathP *string) *MyCmd
+- func MyCmdRunWg(cmdName string, argsP *[]string, workPathP *string, title *string, wgP *sync.WaitGroup, output bool) *MyCmd
+- func MyCmdInit(name string, argsP *[]string, workPathP *string) *MyCmd
+- func (self *MyCmd) Init(name string, argsP *[]string, workPathP *string) *MyCmd
+- func (self *MyCmd) Reset() *MyCmd
 - func (self *MyCmd) Run() error
 - func (self *MyCmd) ExitCode() int
 #### report.go
@@ -73,16 +101,29 @@ string.go|string/array functions
 - func BoolString(b bool) string
 - func BoolStatus(b bool) string
 - func BoolYesNo(b bool) string
-- func JsonIndentSp(baP *[]byte, endLn bool) *string
 - func StrArrayPtrContain(aP *[]string, sP *string) bool
 - func StrArrayPtrRemoveEmpty(saP *[]string) *[]string
 - func StrArrayPtrPrintln(saP *[]string)
 - func StrArrayPtrPrintlnSp(saP *[]string) *string
 - func StrPtrToArrayPtr(sP *string) *[]string
+- func JsonIndentSp(baP *[]byte, endLn bool) *string
+- func numToStr(data any) *string
+- func AnyToJsonMarshalIndentSp(data any, endLn bool) *string
+- func AnyToJsonMarshalSp(data any, endLn bool) *string
+- func StrPtrToJsonIndentSp(strP *string, endLn bool) *string
+- func StrToJsonIndentSp(str string, endLn bool) *string
+#### warning.go
+- type Warning string
+- type Warnings []Warning
+- func (self Warning) Error() string
+- func (self *Warning) String() string
+- func (self *Warning) StringP() *string
+- func (self *Warnings) NotEmpty() bool
 
 ### Doc
 
 - https://pkg.go.dev/github.com/J-Siu/go-helper
+
 ### Usage
 
 ```go
@@ -146,7 +187,7 @@ go test report_test.go
   - Fix ReportT.SpringP() logical bug
   - Add report_test.go
 - v0.9.9
-  - Add workpath support for gitCmd and myCmd
+  - Add workPath support for gitCmd and myCmd
   - Add GitRoot(), GitRootSubmodule(), GitExecExist(), GitExecPath()
   - Add test
 - v1.0.0
@@ -157,7 +198,7 @@ go test report_test.go
     - GitPush() correct optionP param type
   - myCmd.go
     - MyCmd.Run() improve debug output
-    - MyCmdInit() use fullpath for WorkDir
+    - MyCmdInit() use full path for WorkDir
   - report.go
     - ReportT.StringP()
       - Add *[]string case
@@ -172,6 +213,22 @@ go test report_test.go
   - Improve comment for godoc
 - v1.1.1
   - Add Git(), GitBranchCurrent(), GitClone(), GitPull()
+- v1.1.2
+  - Add IsRegularFile(), IsDir(), SameDir()
+  - Add StrPtrToJsonIndentSp(), StrToJsonIndentSp(), AnyToJsonMarshalIndentSp()
+  - Add basic error type
+  - Add warning type
+  - If !Debug, short circuit ReportDebug() ReportSpDebug()
+  - Report() support error type
+- v1.1.3
+  - Add ErrsT.Empty(), ErrsT.Clear()
+  - Add FullPathStr(), FileRemoveExt(), FileInDir(), FileSimplifyName(), FileHasExt()
+  - Add MyCmd.Reset(), MyCmd.Init()
+  - Add number types/pointers support in ReportT.StringP()
+  - Fix #6 - ReportT().StringP add space after title ":"
+  - Fix BoxSealAnonymous() decoding length checking
+- v1.1.4
+  - ReportT.StringP() handle nil *[]string
 
 ### License
 
