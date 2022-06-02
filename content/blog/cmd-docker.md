@@ -72,6 +72,20 @@ ssh target_server 'docker save image:latest | bzip2' | pv | bunzip2 | docker loa
 
 ---
 
+#### Pull All
+
+Pull all images latest version.
+```sh
+docker images|grep -v ^REPO|cut -d' ' -f1|xargs -L1 docker pull
+```
+
+#### Prune
+
+Prune (remove) old versions of all images. Images in used will not be removed. Running containers will use new images after restart.
+```sh
+docker image prune -f
+```
+
 ### Dockerfile
 
 #### Alpine Base
@@ -221,6 +235,11 @@ docker-compose -f <filename> up -d
 ```
 
 This will also start compose container if docker is auto start during reboot.
+
+#### Restart
+```sh
+docker-compose down;docker-compose up -d
+```
 
 #### Enter shell of running compose container
 
