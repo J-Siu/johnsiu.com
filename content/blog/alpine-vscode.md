@@ -5,14 +5,16 @@ description: "Alpine Linux and VS Code remote ssh how-to"
 tags: ["alpine-linux","vscode","ssh","how-to","git"]
 title: "Alpine Linux and VS Code Remote SSH"
 type: "blog"
-images: ["/img/alpine-vscode.png"]
+images: ["//raw.githubusercontent.com/J-Siu/johnsiu.com/master/static/img/alpine-vscode.png"]
 ---
 How to do it in 2022.
 <!--more-->
 
 ### Back Story
 
-Have been trying to do this on and off for years. VS Code always complains "The remote host may not meet VS Code Server's prerequisites for glibc and libstdc++" when doing remote ssh to an Alpine box. Then the connection will fail.
+Have been trying to do VS Code remote ssh to alpine box for years. The connection always failed with following error:
+
+> The remote host may not meet VS Code Server's prerequisites for glibc and libstdc++
 
 A few month ago I finally seat down and went through VS Code logs on both ends. The first thing I notice was Alpine box didn't install `wget` nor `curl` by default, and VS Code server need at least one of them. Installing `wget` solved half the problem and I got more logs.
 
@@ -55,7 +57,7 @@ Though Alpine Linux git install in `/usr/bin/git`, same location as most other L
 
 Connect VS Code to the Alpine box, then in settings, open the remote tab(`Remote [SSH: <hostname>]`):
 
-![alpine-vscode-git](/img/alpine-vscode.png)
+![alpine-vscode-git](//raw.githubusercontent.com/J-Siu/johnsiu.com/master/static/img/alpine-vscode.png)
 
 Click upper right icon to open json file, and put following:
 
