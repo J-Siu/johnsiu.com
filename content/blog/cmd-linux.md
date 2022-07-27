@@ -228,3 +228,14 @@ Identifier value can be used in `-t`.
 ```sh
 journalctl -F SYSLOG_IDENTIFIE
 ```
+
+### Check File
+
+#### Content Type
+```sh
+file <filename>
+```
+#### Image Info
+```sh
+magick identify <filename>
+```
