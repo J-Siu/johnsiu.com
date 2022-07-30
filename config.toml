@@ -104,6 +104,9 @@ title                = "John Siu Blog"
 	[[menu.main]]
 	name = "Nslookup"
 	url  = "/home/nslookup/"
+	[[menu.main]]
+	name = "Privacy Policy"
+	url  = "/privacy_policy/"
 
 [markup]
 defaultMarkdownHandler = "goldmark"
