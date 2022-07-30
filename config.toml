@@ -107,6 +107,9 @@ title                = "John Siu Blog"
 	[[menu.main]]
 	name = "Privacy Policy"
 	url  = "/privacy_policy/"
+	[[menu.main]]
+	name = "Project"
+	url  = "/project/"
 
 [markup]
 defaultMarkdownHandler = "goldmark"
