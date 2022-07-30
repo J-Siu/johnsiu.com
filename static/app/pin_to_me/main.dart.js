@@ -20625,9 +20625,9 @@ _.d=d},
 ai8:function ai8(a){this.a=a},
 ai9:function ai9(a,b){this.a=a
 this.b=b},
-aia:function aia(a,b){this.a=a
+aia:function aia(a){this.a=a},
+aib:function aib(a,b){this.a=a
 this.b=b},
-aib:function aib(a){this.a=a},
 aic:function aic(a,b){this.a=a
 this.b=b},
 aid:function aid(a,b){this.a=a
@@ -69818,7 +69818,7 @@ $0(){return A.ef(this.a,!1).c0(0)},
 $S:0}
 A.ai5.prototype={
 $1(a){var s=A.apD(a,4,80),r=A.rk(a,!0,t.dy),q=$.v5()
-return A.TM(A.b([A.tr(B.uU,new A.ai6(a),null)],t.p),new A.ai7(s,r,a,q).$0(),B.LL)},
+return A.TM(A.b([A.tr(B.uU,new A.ai6(a),null)],t.p),new A.ai7(s,r,q,a).$0(),B.LL)},
 $S:7}
 A.ai7.prototype={
 $0(){var s,r=this,q=null,p=A.b([],t.p),o=A.b([],t.G2),n=r.b
@@ -69826,11 +69826,11 @@ o.push(new A.jX(q,q,r.a,B.cT,"Debug",q,q,!1,n.gpZ(),new A.ai8(n)))
 p.push(A.apC(o))
 n=r.c
 s=r.d
-p.push(A.HG(B.LK,new A.ai9(n,s)))
-p.push(A.HG(B.LP,new A.aia(s,n)))
-p.push(A.HG(B.uV,new A.aib(n)))
-p.push(A.HG(B.LJ,new A.aic(s,n)))
-p.push(A.HG(B.LQ,new A.aid(s,n)))
+p.push(A.HG(B.LP,new A.ai9(n,s)))
+p.push(A.HG(B.uV,new A.aia(s)))
+p.push(A.HG(B.LJ,new A.aib(n,s)))
+p.push(A.HG(B.LQ,new A.aic(n,s)))
+p.push(A.HG(B.LK,new A.aid(s,n)))
 return A.w1(p,B.bl,B.br,B.bs)},
 $S:41}
 A.ai8.prototype={
@@ -69838,25 +69838,25 @@ $1(a){this.a.spZ(a)
 return $.a0G=a},
 $S:9}
 A.ai9.prototype={
-$0(){A.ef(this.a,!1).c0(0)
-this.b.aF(0)},
-$S:0}
-A.aia.prototype={
 $0(){this.a.DE()
 A.ef(this.b,!1).c0(0)},
 $S:0}
-A.aib.prototype={
+A.aia.prototype={
 $0(){var s=this.a
 A.ef(s,!1).c0(0)
 A.aHA(s)},
 $S:0}
-A.aic.prototype={
+A.aib.prototype={
 $0(){this.a.a93($.an1(),1)
 A.ef(this.b,!1).c0(0)},
 $S:0}
-A.aid.prototype={
+A.aic.prototype={
 $0(){this.a.a94()
 A.ef(this.b,!1).c0(0)},
+$S:0}
+A.aid.prototype={
+$0(){A.ef(this.a,!1).c0(0)
+this.b.aF(0)},
 $S:0}
 A.ai6.prototype={
 $0(){return A.ef(this.a,!1).c0(0)},
@@ -76547,7 +76547,7 @@ B.LM=new A.dq("Help",null,null,null,null,null,null,null,null)
 B.LN=new A.dq("Delete",null,null,null,null,null,null,null,null)
 B.LO=new A.dq("Options",null,null,null,null,null,null,null,null)
 B.uU=new A.dq("Close",null,null,null,null,null,null,null,null)
-B.LP=new A.dq("Refresh Icons",null,null,null,null,null,null,null,null)
+B.LP=new A.dq("Refresh All Icons",null,null,null,null,null,null,null,null)
 B.LQ=new A.dq("Del Default Sites",null,null,null,null,null,null,null,null)
 B.LR=new A.dq("Advance",null,null,null,null,null,null,null,null)
 B.LS=new A.dq("OK",null,null,null,null,null,null,null,null)
