@@ -1,23 +1,25 @@
 {
-    "name": "Pin To Me",
-    "short_name": "PinToMe",
-    "start_url": ".",
-    "display": "standalone",
-    "background_color": "#0175C2",
-    "theme_color": "#0175C2",
-    "description": "Pin site to home tab.",
-    "orientation": "portrait-primary",
-    "prefer_related_applications": false,
-    "icons": [
-        {
-            "src": "icons/Icon-192.png",
-            "sizes": "192x192",
-            "type": "image/png"
-        },
-        {
-            "src": "icons/Icon-512.png",
-            "sizes": "512x512",
-            "type": "image/png"
-        }
-    ]
+	"manifest_version": 2,
+	"name": "PinToMe",
+	"version": "1.0.2",
+	"description": "Pin site to home tab.",
+	"author": "JSiu.Dev",
+	"chrome_url_overrides": {
+		"newtab": "index.html"
+	},
+	"permissions": [
+		"storage"
+	],
+	"icons": [
+		{
+			"src": "icons/Icon-192.png",
+			"sizes": "192x192",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/Icon-512.png",
+			"sizes": "512x512",
+			"type": "image/png"
+		}
+	]
 }

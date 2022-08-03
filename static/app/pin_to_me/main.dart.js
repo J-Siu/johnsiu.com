@@ -69741,7 +69741,7 @@ q.d="Copyright \xa9 2022"
 q.r="MIT License"
 q.x="https://johnsiu.com/privacy_policy/pin_to_me/"
 q.as="PinToMe"
-q.at="v1.0.1"
+q.at="v1.0.2"
 s=A.b([A.HM(r,$.an1(),t.dy),A.HM(r,$.an2(),t.ko),A.HM(r,$.aw0(),t.l7),A.HM(r,$.ik(),t.iH),new A.Av($.ajE().d,r,r,t.AK),A.aCH(new A.a1O(),t.ud)],t.Ds)
 q.toString
 return A.aC1(A.aIZ(new A.yA(r),b,!1),s)}}
