@@ -1,25 +1,17 @@
 {
 	"author": "JSiu.Dev",
-	"chrome_url_overrides": { "newtab": "index.html" },
-	"content_security_policy": { "extension_pages": "default-src 'self' ; img-src chrome://favicon/" },
-	"description": "Pin site to home tab.",
-	"display": "standalone",
-	"host_permissions": [ "chrome://favicon/" ],
+	"chrome_url_overrides": {
+		"newtab": "index.html"
+	},
+	"content_security_policy": {
+		"extension_pages": "script-src 'self' https://unpak.com; object-src 'self'"
+	},
+	"icons": {
+		"192": "icons/Icon-192.png",
+		"512": "icons/Icon-512.png"
+	},
 	"manifest_version": 3,
 	"name": "PinToMe",
-	"permissions": [ "storage" ],
-	"start_url": ".",
-	"version": "1.0.2",
-	"icons": [
-		{
-			"src": "icons/Icon-192.png",
-			"sizes": "192x192",
-			"type": "image/png"
-		},
-		{
-			"src": "icons/Icon-512.png",
-			"sizes": "512x512",
-			"type": "image/png"
-		}
-	]
+	"short_name": "PinToMe",
+	"version": "1.0.2"
 }
