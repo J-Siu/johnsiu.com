@@ -6,6 +6,7 @@
 	"content_security_policy": {
 		"extension_pages": "script-src 'self' https://unpak.com; object-src 'self'"
 	},
+	"description":"Pin website anywhere, any browser.",
 	"icons": {
 		"192": "icons/Icon-192.png",
 		"512": "icons/Icon-512.png"
