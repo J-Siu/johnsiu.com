@@ -3,15 +3,15 @@ const MANIFEST = 'flutter-app-manifest';
 const TEMP = 'flutter-temp-cache';
 const CACHE_NAME = 'flutter-app-cache';
 const RESOURCES = {
-  "version.json": "8c825c8147dcf10c11179d789cc964df",
-"index.html": "4f8f110591f975322627e32aad4f12b8",
-"/": "4f8f110591f975322627e32aad4f12b8",
-"main.dart.js": "ec3b4ec48f33ea88c209ba3852557d54",
+  "version.json": "5d1b2cc637f51673d5c04f14829d19d5",
+"index.html": "bf3ac5a022e3a96c0642aa6996e63b9d",
+"/": "bf3ac5a022e3a96c0642aa6996e63b9d",
+"main.dart.js": "f38e80ff92111a2d3830cfa1cf655b92",
 "flutter.js": "eb2682e33f25cd8f1fc59011497c35f8",
 "favicon.png": "b86780667950fad38001b62fc320194c",
 "icons/Icon-192.png": "29b9dbbe1ebce3861577a38ab278bdc8",
 "icons/Icon-512.png": "b86780667950fad38001b62fc320194c",
-"manifest.json": "c897e89de0fa4247221258148a9125fb",
+"manifest.json": "db31e34a31070a7f6f6684aca5fd11f0",
 "assets/AssetManifest.json": "5cb9b23a41a2c3ce5c4e108342105903",
 "assets/NOTICES": "b1b052cc1b0c91db821417f86cc4e4f3",
 "assets/img/jsiu.dev.black-192.png": "29b9dbbe1ebce3861577a38ab278bdc8",
