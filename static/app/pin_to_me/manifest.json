@@ -3,7 +3,10 @@
 	"chrome_url_overrides": {
 		"newtab": "index.html"
 	},
-	"description":"Pin website anywhere, any browser.",
+	"content_security_policy": {
+		"extension_pages": "script-src 'self' https://apis.google.com https://www.gstatic.com https://www.googleapis.com https://securetoken.googleapis.com; object-src 'self'"
+	},
+	"description": "Pin website anywhere, any browser.",
 	"icons": {
 		"192": "icons/Icon-192.png",
 		"512": "icons/Icon-512.png"
