@@ -4,15 +4,23 @@
 		"newtab": "index.html"
 	},
 	"content_security_policy": {
-		"extension_pages": "script-src 'self' https://apis.google.com https://www.gstatic.com https://www.googleapis.com https://securetoken.googleapis.com; object-src 'self'"
+		"extension_pages": "script-src 'self'; object-src 'self'"
 	},
 	"description": "Pin website anywhere, any browser.",
 	"icons": {
-		"192": "icons/Icon-192.png",
-		"512": "icons/Icon-512.png"
+		"128": "favicon.png"
 	},
 	"manifest_version": 3,
 	"name": "PinToMe",
+	"oauth2": {
+		"client_id": "455194234164-csq92u7ldggmococsfnfnvl4lntpj0ae.apps.googleusercontent.com",
+		"scopes": [
+			"https://www.googleapis.com/auth/userinfo.email"
+		]
+	},
+	"permissions": [
+		"identity"
+	],
 	"short_name": "PinToMe",
-	"version": "1.0.6"
+	"version": "1.0.7"
 }
