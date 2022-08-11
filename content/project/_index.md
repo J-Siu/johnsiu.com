@@ -4,4 +4,4 @@ tags: ["project"]
 description: "Projects"
 ---
 
-- [PinToTab](/app/pin_to_me) - Pin your sites from any browser!
+- [PinToTab](//pin2me.dev/) - Pin your sites from any browser!
