@@ -40,7 +40,7 @@ saslauthd -a sasldb -d &
 
 Only bring this up when needed. `Postfix` does not need it.
 
-### Test
+#### Test
 
 ```sh
 testsaslauthd -f /run/saslauthd/mux  -u <id> -r <domain> -p <password>
