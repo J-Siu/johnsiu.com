@@ -239,3 +239,9 @@ file <filename>
 ```sh
 magick identify <filename>
 ```
+
+### Test Connection UDP
+```sh
+nc -z -v -u [hostname/IP address] [port number]
+nc -z -v -u 8.8.8.8 53
+```
