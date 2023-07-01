@@ -35,7 +35,8 @@ openssl x509 -in <file> -noout -issuer
 ```sh
 openssl x509 -in <file> -noout -serial
 ```
-Subject: `-subject`
+#### Subject
+`-subject`
 ```sh
 openssl x509 -in <file> -noout -subject
 ```
