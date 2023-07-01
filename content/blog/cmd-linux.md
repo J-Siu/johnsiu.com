@@ -1,10 +1,10 @@
 ---
-type: blog
-date: 2019-07-30T18:06:21-04:00
 author: "John Siu"
-title: "Linux Commands"
+date: 2019-07-30T18:06:21-04:00
 description: "Linux command cheat sheet."
 tags: ["linux","command-line","cheatsheet"]
+title: "Linux Commands"
+type: blog
 aliases:
     - /blog/linux-cmd
 ---
@@ -13,67 +13,52 @@ Misc. Linux commands.
 
 ---
 
-### Find
-
-Find x-days before and action
-
-> In actuality, it should be (x-1).
-
-```sh
-/bin/find <path> -maxdepth 1 -mtime +<x> -type f -name "<pattern>" -exec rm -f {} \;
-```
-
-Find x-minutes before and action
-
-```sh
-/bin/find <path> -maxdepth 1 -mmin +<x> -type f -name "<pattern>" -exec rm -f {} \;
-```
-
-### Password
-Change password last modify
-
+### Account
+#### Last Modify
 ```sh
 chage -d YYYY-MM-DD <user>
 ```
-
-Change password never expire
-
+#### Password Never Expire
 ```sh
 chage -I -1 -m 0 -M 99999 -E -1 <user>
 ```
-
-Lock/Unlock Account
-
+#### Lock/Unlock
 ```sh
 passwd -l <user>  # Lock
 passwd -u <user>  # Unlock
 
 usermod -L <user> # Lock
 usermod -U <user> # Unlock
-
-pam_tally2 -r -u <user> # Reset fail login count
 ```
-
-### Ban IP
-
-#### IPTables
-
+#### Reset Fail Login
 ```sh
-iptable -A INPUT -s <IP> -j DROP
-ip6table -A INPUT -s <IP> -j DROP
+pam_tally2 -r -u <user>
 ```
-
-#### Fail2ban
-
+#### Sudo NOPASSWD
+In `/etc/sudoers`, add `NOPASSWD` to sudo group.
 ```sh
-fail2ban-client status # show jail list
-fail2ban-client -vvv set <jail from list> banip <ip>
+%sudo   ALL=(ALL:ALL) NOPASSWD:ALL
 ```
 
-### Rotate frame buffer
+### SSH
+#### Remove Known Hosts
+```sh
+ssh-keygen -R <hostname/ip>
+ssh-keygen -f "~/.ssh/known_hosts" -R <hostname/ip>
+```
+#### ProxyCommand
+```conf
+host test
+ProxyCommand ssh -W %h:%p jumpserver
+```
+#### ProxyJump
+```conf
+host test
+ProxyJump jumpserver
+```
 
-Number can be 1, 2, 3
-
+### Rotate Frame Buffer
+Number can be `1`, `2`, `3`
 ```sh
 echo 1 > /sys/class/graphics/fbcon/rotate_all
 echo 1 > /sys/class/graphics/fbcon/rotate
@@ -81,24 +66,17 @@ echo 1 > /sys/class/graphics/fbcon/rotate
 
 ### File System
 #### Resize Filesystem
-
 > Usually use after a partition / image resize
-
 ```sh
 resize2fs <device>
 resize2fs /dev/sda1
 ```
-
 #### Disable journal on ext4
-
 ```sh
 tune2fs -O ^has_journal /dev/<disk>
 ```
-
 #### Create Sparse File
-
 `truncate -s <size> <filename>`
-
 ```sh
 $ truncate -s 10G 10G.txt
 
@@ -108,129 +86,28 @@ $ ls -lah 10G.txt
 $ du -sh 10G.txt
 0       10G.txt
 ```
-
 Ref: [Sparse file wikipedia](//wiki.archlinux.org/index.php/Sparse_file)
 
-### Rsync
-
+### File
+#### Find
+Find x-days before and action
+> In actuality, it should be (x-1).
 ```sh
-rsync -vahpt --size-only --stats --del <source> <target>
+/bin/find <path> -maxdepth 1 -mtime +<x> -type f -name "<pattern>" -exec rm -f {} \;
 ```
-
-`<source>` is put/sync INTO `<target>` directory, not replacing `<target>`.
-
-### Curl
-
-#### Skip certificate checking
-
+Find x-minutes before and action
 ```sh
-curl -k ... # Use -k to skip certificate check.
+/bin/find <path> -maxdepth 1 -mmin +<x> -type f -name "<pattern>" -exec rm -f {} \;
 ```
-
-#### DNS Over HTTPS
-
-```sh
-curl -sH 'accept: application/dns-json' 'https://dns.google/resolve?name=google.com' | jq .
-curl -sH 'accept: application/dns-json' 'https://cloudflare-dns.com/dns-query?name=google.com' | jq .
-```
-
-### Avahi/MDNS
-
-#### Show All Entries
-
-```sh
-avahi-browse -a
-avahi-browse -a -d <domain> # specify domain other than .local
-```
-
-#### IPv4 Lookup
-
-```sh
-avahi-resolve -n4 door.local
-```
-
-#### IPv6 Lookup
-
-```sh
-avahi-resolve -n6 door.local
-```
-
-### Check NIC status
-
-```sh
-ethtool <nic>
-```
-
-### Check WiFi SSID
-
-```sh
-iw dev <wifi nic> scan
-iw dev wlan0 scan
-```
-
-### Enable BBR
-
-Create file `/etc/sysctl.d/10-network-bbr.conf` with following content and reboot:
-
-```ini
-net.core.default_qdisc=fq
-net.ipv4.tcp_congestion_control=bbr
-```
-
-### Detect Text File Charset/Encoding
-
+#### Detect Text File Charset/Encoding
 ```sh
 uchardet <file.txt>
 ```
-
-### Convert Text File Charset/Encoding
-
+#### Convert Text File Charset/Encoding
 ```sh
 iconv iconv -f <file charset> -t <output charset> <file.txt>
 iconv iconv -f jis -t utf8 readme.txt
 ```
-
-### SSH
-
-#### Remove Known Hosts
-
-```sh
-ssh-keygen -R <hostname/ip>
-ssh-keygen -f "~/.ssh/known_hosts" -R <hostname/ip>
-```
-
-#### ProxyCommand
-
-```conf
-host test
-ProxyCommand ssh -W %h:%p jumpserver
-```
-
-#### ProxyJump
-
-```conf
-host test
-ProxyJump jumpserver
-```
-
-### Journalctl
-
-#### List Field
-
-```sh
-journalctl -N
-```
-
-#### List Identifier
-
-Identifier value can be used in `-t`.
-
-```sh
-journalctl -F SYSLOG_IDENTIFIE
-```
-
-### Check File
-
 #### Content Type
 ```sh
 file <filename>
@@ -240,8 +117,74 @@ file <filename>
 magick identify <filename>
 ```
 
-### Test Connection UDP
+### Rsync
+```sh
+rsync -vahpt --size-only --stats --del <source> <target>
+```
+`<source>` is put/sync INTO `<target>` directory, not replacing `<target>`.
+
+### Network
+#### Avahi/MDNS
+##### Show All Entries
+```sh
+avahi-browse -a
+avahi-browse -a -d <domain> # specify domain other than .local
+```
+##### Lookup
+```sh
+avahi-resolve -n4 door.local
+avahi-resolve -n6 door.local
+```
+#### Ban IP
+##### IPTables
+```sh
+iptables -A INPUT -s <IP> -j DROP
+ip6tables -A INPUT -s <IP> -j DROP
+```
+##### Fail2ban
+```sh
+fail2ban-client status # show jail list
+fail2ban-client -vvv set <jail from list> banip <ip>
+```
+#### Check NIC status
+```sh
+ethtool <nic>
+```
+#### Check WiFi SSID
+```sh
+iw dev <wifi nic> scan
+iw dev wlan0 scan
+```
+#### Enable BBR
+Create file `/etc/sysctl.d/10-network-bbr.conf` with following content and reboot:
+```ini
+net.core.default_qdisc=fq
+net.ipv4.tcp_congestion_control=bbr
+```
+#### Test Connection UDP
 ```sh
 nc -z -v -u [hostname/IP address] [port number]
 nc -z -v -u 8.8.8.8 53
+```
+
+### Curl
+#### Skip certificate checking
+```sh
+curl -k ... # Use -k to skip certificate check.
+```
+#### DNS Over HTTPS
+```sh
+curl -sH 'accept: application/dns-json' 'https://dns.google/resolve?name=google.com' | jq .
+curl -sH 'accept: application/dns-json' 'https://cloudflare-dns.com/dns-query?name=google.com' | jq .
+```
+
+### Journalctl
+#### List Field
+```sh
+journalctl -N
+```
+#### List Identifier
+Identifier value can be used in `-t`.
+```sh
+journalctl -F SYSLOG_IDENTIFIE
 ```
