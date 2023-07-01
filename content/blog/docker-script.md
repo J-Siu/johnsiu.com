@@ -2,7 +2,6 @@
 author: "John Siu"
 date: 2023-07-01T12:39:07-04:00
 description: "Docker Helper Script"
-draft: true
 tags: ["docker"]
 title: "Docker Script"
 type: "blog"
