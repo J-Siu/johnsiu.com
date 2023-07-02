@@ -8,8 +8,8 @@ title: "PinToTab Privacy Policy"
 type: "privacy_policy"
 ---
 <!--more-->
-### PinToMe (https//johnsiu.com/app/pin_to_me)
+### PinToMe (//pin2me.dev/)
 - Does not collect any personal information.
 - Data only store locally in your browser, or your Google Drive [AppDataFolder](https://developers.google.com/drive/api/guides/appdata) if you choose to do so(default off). Developer have no access to these data.
 
-Back to [PinToMe](//johnsiu.com/app/pin_to_me).
+Back to [PinToMe](//pin2me.dev/).
