@@ -36,7 +36,9 @@ brew tap jeffreywildman/homebrew-virt-manager
 
 Then install virt-viewer with following command
 
-`brew install virt-viewer`
+```sh
+brew install virt-viewer
+```
 
 There are two ways to use `virt-viewer`: `virt-viewer` and `remote-viewer`.
 
