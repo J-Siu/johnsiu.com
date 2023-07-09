@@ -9,11 +9,13 @@ tags: ["macos","samba"]
 It suddenly stop working ... and luckily I got it fix.
 <!--more-->
 
+> As of 2023, MacOS 13 (Ventura) samba support is stable and work smoothly by just clicking the network section in finder. If you have issue connecting to a samba share, check [Samba Config](//blog/conf-samba) first.
+
 ---
 
 ### SMB Connection
 
-From time to time I use Finder ⌘-k __Connect to Server__ to connect to the few Samba folders I have around, and all of them are saved in following format:
+From time to time I use Finder ⌘-k __Connect to Server__, or directly from  to connect to the few Samba folders I have around, and all of them are saved in following format:
 
 ```sh
 smb://<hostname>/homes
@@ -30,6 +32,8 @@ smb://<IP>/homes
 They all refused to connect.
 
 ### CIFS:// vs SMB://
+
+> Following is solution for pre-2020 MacOS and samba setup. Newer samba ( > 4.15.x) may not work with connection using `cifs://` from Finder `Connect to Server` dialog.
 
 I did a lot of searches but they either are old (>1yr) issues or doesn't apply in my situation.
 
