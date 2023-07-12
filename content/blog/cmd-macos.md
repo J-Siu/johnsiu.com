@@ -28,7 +28,14 @@ Shortcut|Description
 <kbd>Command</kbd>+<kbd>option</kbd>+<kbd>left/right</kbd>|Switch tab in app
 <kbd>Command</kbd>+<kbd>shift</kbd>+<kbd>.</kbd>|Show hidden file in finder
 
-Un-minimize:
+Desktop Space
+
+Shortcut|Description
+---|---
+<kbd>Ctrl</kbd>+<kbd>Up Arrow</kbd>|Select space
+<kbd>Ctrl</kbd>+<kbd>Down Arrow</kbd>|Return to desktop
+
+Un-minimize
 
 Shortcut|Description
 ---|---
@@ -62,6 +69,14 @@ open -a Google\ Earth\ Pro
 - System Service Location
   - `/Library/LaunchDaemons/`
   - `/System/Library/LaunchDaemons/`
+
+### Memory Usage
+
+Result is in page number. Multiply with page size show at the top.
+
+```sh
+vm_stat
+```
 
 ### Kernel Extension
 
