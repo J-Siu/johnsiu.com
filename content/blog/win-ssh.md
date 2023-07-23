@@ -27,7 +27,7 @@ With Windows 10 and 11, you can ssh into your Windows machine, with ssh key too.
 
     ![Before](//raw.githubusercontent.com/J-Siu/johnsiu.com/master/static/img/win-ssh-04-add.png)
 
-5. Search `Install`
+5. Click `Install`
 
     ![Before](//raw.githubusercontent.com/J-Siu/johnsiu.com/master/static/img/win-ssh-05-install.png)
 
@@ -37,7 +37,7 @@ OpenSSH service not enable by default.
 
 1. Open service manager
 2. Double click `OpenSSH SSH Server`
-3. In `General Tab`
+3. In `General` Tab
     - Select `Automatic` for `Startup type`
     - Click `Start`
     - Click `Apply`
@@ -58,7 +58,7 @@ To use ssh key with Windows, you do the same as Linux, almost.
 
 For standard Windows user, you do the same as Linux. Put the public key inside
 
-`C:\Users\<username>\.ssh\authorized_key`
+`C:\Users\<username>\.ssh\authorized_keys`
 
 #### Administrator
 
