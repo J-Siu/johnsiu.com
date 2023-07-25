@@ -9,7 +9,7 @@ type: "blog"
 How to make Anaconda and Homebrew play nicely together.
 <!--more-->
 
-Anaconda is a popular python development environment across platforms. However, on MacOS, though Homebrew by default install python as `python3`, it may still create issue sometimes. This blog present a simple way to minimize potential conflict between the two.
+Anaconda is a popular python development environment across platforms. However, on MacOS, though Homebrew by default install python as `python3`, it may still create issue sometimes. This blog will look at the official and unofficial way to minimize potential conflict between the two.
 
 ### Install Anaconda
 
@@ -64,11 +64,23 @@ unset __conda_setup
 # <<< conda initialize <<<
 ```
 
-> The above is created by a homebrew installation. Direct install will see `/opt/homebrew/` changed to your home directory.
+The above is created by a homebrew installation. Direct install will see `/opt/homebrew/` changed to your home directory.
 
 ### Activate Anaconda On Demand
 
-To minimize conflict with Homebrew, we can wrap the conda initialization code in a zsh function `condaOn()` like following:
+There are situation we want to minimize Anaconda conflict with Homebrew or other non-anaconda base python projects. There are two ways to do it.
+
+#### Official Way
+
+Prevent anaconda to automatically activate the `base` project when a shell start, while command `conda` still works.
+
+```sh
+conda config --set auto_activate_base false
+```
+
+#### Unofficial Way
+
+However there are are cases we want to remove any doubt and don't want anaconda script to run at all. In such case, we can wrap the conda initialization code in a zsh function `condaOn()` like following:
 
 ```sh
 condaOn() {
@@ -89,7 +101,7 @@ unset __conda_setup
 }
 ```
 
-Pay attention not to add any indent to the conda initialization code. Just add `condaOn() {` before it, and `}` after it like above.
+DO NOT add any indent to the conda initialization code. Just add `condaOn() {` before it, and `}` after it like above.
 
 When you need to use Anaconda, just type `condaOn`:
 
