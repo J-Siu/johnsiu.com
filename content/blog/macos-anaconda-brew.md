@@ -80,7 +80,9 @@ conda config --set auto_activate_base false
 
 #### Unofficial Way
 
-However there are are cases we want to remove any doubt and don't want anaconda script to run at all. In such case, we can wrap the conda initialization code in a zsh function `condaOn()` like following:
+However there are are cases we want to remove any doubt and don't want anaconda script to run at all.
+
+In `~/.zshrc`, wrap anaconda initialization code in a zsh function `condaOn()` like following:
 
 ```sh
 condaOn() {
