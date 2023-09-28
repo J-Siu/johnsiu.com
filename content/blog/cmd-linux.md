@@ -117,6 +117,13 @@ file <filename>
 magick identify <filename>
 ```
 
+### Timeout
+```sh
+timeout <duration> <command ...... >
+timeout 1d tcpdump -n -i eth0 port 22 -s 65535 -w ssh_dump.cap &
+nohup timeout 1d tcpdump -n -i eth0 port 22 -s 65535 -w ssh_dump.cap &
+```
+
 ### Rsync
 ```sh
 rsync -vahpt --size-only --stats --del <source> <target>
