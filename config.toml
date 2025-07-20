@@ -42,6 +42,10 @@ businessId      = "HZF49NM9D35SJ"
 currency        = "CAD"
 enableRecurring = true
 
+[Params.iubenda]
+siteId         = "4167467"
+cookiePolicyId = "37238584"
+
 [Params.google]
 AdsenseId         = "ca-pub-8176479711832264"
 enablePageLevelAd = true
