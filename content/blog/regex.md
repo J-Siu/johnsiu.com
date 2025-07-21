@@ -42,3 +42,17 @@ Match `](/`...`)`, while `...` don'e contain `)#` and link not closed with `/`.
 `](/blog/test/)` : Match
 
 `\]\(/[^/][^)#]*[^/]\)`
+
+### Replace 1 but not 2 consecutive characters
+
+General form:
+
+`(?<!x)x(?!x)`
+
+Match 1 newline but not 2 in a row:
+
+`(?<!\n)\n(?!\n)`
+
+Match 1 newline but not 2 in a row and also not following a `.` or `"`:
+
+`(?<!(\n|”|"|\.))\n(?!\n)`

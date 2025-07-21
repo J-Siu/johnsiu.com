@@ -97,7 +97,7 @@ This is not a test.
 `${string:<position>:<length>}`. If no `:<length>`, default till end of string.
 
 ```sh
-   0123
+#  0123
 a="This"
 echo ${a:2}
 is
