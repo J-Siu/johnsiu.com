@@ -2,7 +2,6 @@
 author: "John Siu"
 date: 2025-07-28T03:55:15-04:00
 description: ""
-draft: true
 tags: ["linux"]
 title: "Avahi and Multiple Alias"
 type: "blog"
