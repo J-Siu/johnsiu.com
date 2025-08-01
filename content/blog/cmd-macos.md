@@ -15,18 +15,19 @@ Some MacOS commands and keyboard shortcuts.
 
 Shortcut|Description
 ---|---
-<kbd>Command</kbd>+<kbd>.</kbd> or <kbd>esc</kbd>|Click cancel in dialog
-<kbd>Command</kbd>+<kbd>d</kbd>|Click `Don't Save` in dialog
-<kbd>Command</kbd>+<kbd>tab</kbd>|Switch app
-<kbd>Command</kbd>+<kbd>m</kbd>|Minimize app
-<kbd>Command</kbd>+<kbd>h</kbd>|Hide app (not minimize)
-<kbd>Command</kbd>+<kbd>`</kbd>|Switch window of the same app
 <kbd>Command</kbd>+<kbd>,</kbd>|Open preference of most app
-<kbd>Command</kbd>+<kbd>w</kbd>|Close active tab of an app
-<kbd>Command</kbd>+<kbd>q</kbd>|Close active app
+<kbd>Command</kbd>+<kbd>.</kbd> or <kbd>ESC</kbd>|Click cancel in dialog
+<kbd>Command</kbd>+<kbd>Option</kbd>+<kbd>Left/Right</kbd>|Switch tab in app
+<kbd>Command</kbd>+<kbd>Shift</kbd>+<kbd>.</kbd>|Show hidden file in finder
+<kbd>Command</kbd>+<kbd>`</kbd>|Switch window of the same app
 <kbd>Command</kbd>+<kbd>b</kbd>|Toggle sidebar in app
-<kbd>Command</kbd>+<kbd>option</kbd>+<kbd>left/right</kbd>|Switch tab in app
-<kbd>Command</kbd>+<kbd>shift</kbd>+<kbd>.</kbd>|Show hidden file in finder
+<kbd>Command</kbd>+<kbd>d</kbd>|Click `Don't Save` in dialog
+<kbd>Command</kbd>+<kbd>h</kbd>|Hide app (not minimize)
+<kbd>Command</kbd>+<kbd>m</kbd>|Minimize app
+<kbd>Command</kbd>+<kbd>q</kbd>|Close active app
+<kbd>Command</kbd>+<kbd>tab</kbd>|Switch app
+<kbd>Command</kbd>+<kbd>w</kbd>|Close active tab of an app
+<kbd>Option</kbd>+<kbd>ESC</kbd>|TTS selected text
 
 Desktop Space
 
@@ -145,6 +146,14 @@ Hold down <kbd>Shift</kbd> during boot.
 sudo scutil --set HostName <hostname>
 ```
 
+### dns-sd (mdns/avahi/bonjour)
+
+Get address of hostname
+
+```sh
+dns-sd -G v4v6 <hostname>
+```
+
 ### Mouse Speed
 
 - Get
@@ -161,16 +170,28 @@ sudo scutil --set HostName <hostname>
   defaults write -g com.apple.mouse.scaling your_mouse_speed
   ```
 
-### dns-sd (mdns/avahi/bonjour)
-
-Get address of hostname
-
-```sh
-dns-sd -G v4v6 <hostname>
-```
-
 ### Play Audio
 
 ```sh
 afplay <file>
+```
+
+### Play Text (TTS)
+
+Check available voices and languages
+
+```sh
+say -v \?
+```
+
+TTS
+
+```sh
+say <text>
+```
+
+Specify voice and language
+
+```sh
+say -v Flo\ \(Chinese\ \(Taiwan\)\) 你好
 ```
