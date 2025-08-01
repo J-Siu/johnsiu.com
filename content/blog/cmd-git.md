@@ -137,6 +137,19 @@ git submodule update --recursive --remote
 git status
 ```
 
+#### Delete
+
+```sh
+git rm <submodule path>
+```
+
+May need to do following to reuse the same submodule path:
+
+```sh
+rm -rf .git/modules/<submodule path>
+git config --remove-section submodule.<submodule path>
+```
+
 ### Log
 
 `git log` option|Description
