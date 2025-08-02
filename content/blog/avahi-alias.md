@@ -17,15 +17,31 @@ Ref:
 
 Create the two files below.
 
-`/etc/systemd/system/avahi-alias@.service`:
+`/etc/systemd/system/avahi-alias4@.service`:
 
 ```sh
 [Unit]
-Description=Publish %I as alias for %H via mdns
+Description=Publish %I as alias for %H via mdns (IPv4)
 
 [Service]
 Type=simple
-ExecStart=/bin/bash -c "/etc/systemd/system/avahi-alias.sh %I"
+ExecStart=/bin/bash -c "/home/js/.script/avahi-alias.sh 4 %I"
+Restart=on-failure
+RestartSec=5s
+
+[Install]
+WantedBy=multi-user.target
+```
+
+`/etc/systemd/system/avahi-alias6@.service`:
+
+```sh
+[Unit]
+Description=Publish %I as alias for %H via mdns (IPv6)
+
+[Service]
+Type=simple
+ExecStart=/bin/bash -c "/home/js/.script/avahi-alias.sh 6 %I"
 Restart=on-failure
 RestartSec=5s
 
@@ -38,22 +54,35 @@ WantedBy=multi-user.target
 ```sh
 #!/usr/bin/bash
 
-mdns_domain="local"
-IP=$(avahi-resolve -4 -n $(hostname -s).$(mdns_domain) | cut -f2)
-ALIAS=$1
+ALIAS=$2
+IP_VER=$1
 
-if [ $IP != "127.0.0.1" ]
-then
-	echo "Aliasing $IP as $ALIAS."
-	avahi-publish -a -R $ALIAS $IP
-else
-	echo "Exiting, local address is $IP."
-	exit 1
-fi
+MDNS_DOMAIN="vms.local"
+HOSTNAME=$(hostname -s).$MDNS_DOMAIN
+
+avahi_alias() {
+	IP=$(avahi-resolve -$IP_VER -n $HOSTNAME | cut -f2)
+	echo "IPv$IP_VER=$IP"
+	if [ $IP != "127.0.0.1" ] && [ $IP != "::1" ]; then
+		echo "Aliasing $ALIAS -> $IP."
+		avahi-publish -a -R $ALIAS.$MDNS_DOMAIN $IP
+	else
+		echo "Exiting, local address is $IP."
+		exit 1
+	fi
+}
+
+avahi_alias
 ```
 
 ### Enable Alias
 
+Enable Alias for IPv4
 ```sh
-systemctl enable --now avahi-alias@<alias>.local.service
+systemctl enable --now avahi-alias4@<alias>.service
+```
+
+Enable Alias for IPv6
+```sh
+systemctl enable --now avahi-alias6@<alias>.service
 ```
