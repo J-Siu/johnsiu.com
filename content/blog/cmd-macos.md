@@ -195,3 +195,18 @@ Specify voice and language
 ```sh
 say -v Flo\ \(Chinese\ \(Taiwan\)\) 你好
 ```
+
+### Disable Spotlight Index
+
+Index status for a directory
+
+```sh
+mdutil -s .
+```
+
+Disable indexing for a directory
+
+```sh
+cd <dir>
+touch .metadata_never_index
+```
