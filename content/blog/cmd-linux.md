@@ -49,12 +49,12 @@ ssh-keygen -f "~/.ssh/known_hosts" -R <hostname/ip>
 #### ProxyCommand
 ```conf
 host test
-ProxyCommand ssh -W %h:%p jumpserver
+ProxyCommand ssh -W %h:%p jump_server
 ```
 #### ProxyJump
 ```conf
 host test
-ProxyJump jumpserver
+ProxyJump jump_server
 ```
 
 ### Rotate Frame Buffer
@@ -99,15 +99,6 @@ Find x-minutes before and action
 ```sh
 /bin/find <path> -maxdepth 1 -mmin +<x> -type f -name "<pattern>" -exec rm -f {} \;
 ```
-#### Detect Text File Charset/Encoding
-```sh
-uchardet <file.txt>
-```
-#### Convert Text File Charset/Encoding
-```sh
-iconv iconv -f <file charset> -t <output charset> <file.txt>
-iconv iconv -f jis -t utf8 readme.txt
-```
 #### Content Type
 ```sh
 file <filename>
@@ -115,6 +106,22 @@ file <filename>
 #### Image Info
 ```sh
 magick identify <filename>
+```
+#### Text File Charset/Encoding
+##### Detect
+```sh
+uchardet <file.txt>
+```
+##### Convert
+```sh
+iconv iconv -f <file charset> -t <output charset> <file.txt>
+iconv iconv -f jis -t utf8 readme.txt
+```
+
+#### Symlink Dereference
+```sh
+readlink <filename>
+readlink -f <filename> # Dereference full path
 ```
 
 ### Timeout
@@ -126,7 +133,7 @@ nohup timeout 1d tcpdump -n -i eth0 port 22 -s 65535 -w ssh_dump.cap &
 
 ### Rsync
 ```sh
-rsync -vahpt --size-only --stats --del <source> <target>
+rsync -v -a -h -p -t --size-only --stats --del <source> <target>
 ```
 `<source>` is put/sync INTO `<target>` directory, not replacing `<target>`.
 
@@ -186,12 +193,11 @@ curl -sH 'accept: application/dns-json' 'https://cloudflare-dns.com/dns-query?na
 ```
 
 ### Journalctl
-#### List Field
+List all field names
 ```sh
 journalctl -N
 ```
-#### List Identifier
-Identifier value can be used in `-t`.
+List all values for a field name
 ```sh
-journalctl -F SYSLOG_IDENTIFIE
+journalctl -F <field name>
 ```
