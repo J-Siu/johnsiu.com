@@ -8,6 +8,19 @@ type: blog
 ---
 Zsh cheat sheet.
 <!--more-->
+
+### Reload Config
+
+```sh
+exec zsh
+```
+
+`oh-my-zsh` alias
+
+```sh
+omz reload
+```
+
 ### Split String ${=STR}
 
 Zsh do not auto split string into words like bash.
