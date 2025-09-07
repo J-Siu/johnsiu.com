@@ -14,9 +14,11 @@ Using Linux command line.
 ```sh
 curl https://myip4.johnsiu.com/
 curl https://myip4.jsiu.dev/
+```
 
-curl ifconfig.me
-curl ipecho.net/plain
+Alias
+```sh
+alias my_ip4="echo \$(curl -s https://myip4.jsiu.dev)"
 ```
 
 ### IPv6
@@ -24,10 +26,11 @@ curl ipecho.net/plain
 ```sh
 curl https://myip6.johnsiu.com/
 curl https://myip6.jsiu.dev/
+```
 
-curl icanhazip.com
-curl ifconfig.co
-dig TXT +short o-o.myaddr.l.google.com @ns1.google.com
+Alias
+```sh
+alias my_ip6="echo \$(curl -s https://myip6.jsiu.dev)"
 ```
 
 ### Web Base
