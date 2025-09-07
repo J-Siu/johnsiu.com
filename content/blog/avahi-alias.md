@@ -57,7 +57,7 @@ WantedBy=multi-user.target
 ALIAS=$2
 IP_VER=$1
 
-MDNS_DOMAIN="vms.local"
+MDNS_DOMAIN="local"
 HOSTNAME=$(hostname -s).$MDNS_DOMAIN
 
 avahi_alias() {
