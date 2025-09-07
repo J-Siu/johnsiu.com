@@ -10,7 +10,7 @@ Configure Avahi to broadcast multiple names.
 <!--more-->
 
 Ref:
-- [Configure Zeroconf to broadcast multiple names - answer](https://serverfault.com/a/986437/138643)
+- [Configure ZeroConf to broadcast multiple names - answer](https://serverfault.com/a/986437/138643)
 - [Avahi alias systemd service](https://gist.github.com/tomslominski/9d507acd4036952d65b2364d3750fb36)
 
 ### Configuration Files
@@ -25,7 +25,7 @@ Description=Publish %I as alias for %H via mdns (IPv4)
 
 [Service]
 Type=simple
-ExecStart=/bin/bash -c "/home/js/.script/avahi-alias.sh 4 %I"
+ExecStart=/bin/bash -c "/etc/systemd/system/avahi-alias.sh 4 %I"
 Restart=on-failure
 RestartSec=5s
 
@@ -41,7 +41,7 @@ Description=Publish %I as alias for %H via mdns (IPv6)
 
 [Service]
 Type=simple
-ExecStart=/bin/bash -c "/home/js/.script/avahi-alias.sh 6 %I"
+ExecStart=/bin/bash -c "/etc/systemd/system/avahi-alias.sh 6 %I"
 Restart=on-failure
 RestartSec=5s
 
@@ -61,15 +61,15 @@ MDNS_DOMAIN="vms.local"
 HOSTNAME=$(hostname -s).$MDNS_DOMAIN
 
 avahi_alias() {
-	IP=$(avahi-resolve -$IP_VER -n $HOSTNAME | cut -f2)
-	echo "IPv$IP_VER=$IP"
-	if [ $IP != "127.0.0.1" ] && [ $IP != "::1" ]; then
-		echo "Aliasing $ALIAS -> $IP."
-		avahi-publish -a -R $ALIAS.$MDNS_DOMAIN $IP
-	else
-		echo "Exiting, local address is $IP."
-		exit 1
-	fi
+  IP=$(avahi-resolve -$IP_VER -n $HOSTNAME | cut -f2)
+  echo "IPv$IP_VER=$IP"
+  if [ $IP != "127.0.0.1" ] && [ $IP != "::1" ]; then
+    echo "Aliasing $ALIAS -> $IP."
+    avahi-publish -a -R $ALIAS.$MDNS_DOMAIN $IP
+  else
+    echo "Exiting, local address is $IP."
+    exit 1
+  fi
 }
 
 avahi_alias
