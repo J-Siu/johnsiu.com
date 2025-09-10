@@ -40,54 +40,6 @@ In `/etc/sudoers`, add `NOPASSWD` to sudo group.
 %sudo   ALL=(ALL:ALL) NOPASSWD:ALL
 ```
 
-### SSH
-#### Remove Known Hosts
-```sh
-ssh-keygen -R <hostname/ip>
-ssh-keygen -f "~/.ssh/known_hosts" -R <hostname/ip>
-```
-#### ProxyCommand
-```conf
-host test
-ProxyCommand ssh -W %h:%p jump_server
-```
-#### ProxyJump
-```conf
-host test
-ProxyJump jump_server
-```
-
-### Rotate Frame Buffer
-Number can be `1`, `2`, `3`
-```sh
-echo 1 > /sys/class/graphics/fbcon/rotate_all
-echo 1 > /sys/class/graphics/fbcon/rotate
-```
-
-### File System
-#### Resize Filesystem
-> Usually use after a partition / image resize
-```sh
-resize2fs <device>
-resize2fs /dev/sda1
-```
-#### Disable journal on ext4
-```sh
-tune2fs -O ^has_journal /dev/<disk>
-```
-#### Create Sparse File
-`truncate -s <size> <filename>`
-```sh
-$ truncate -s 10G 10G.txt
-
-$ ls -lah 10G.txt
--rw-r--r--    1 user user   10.0G Apr  1 00:00 10G.txt
-
-$ du -sh 10G.txt
-0       10G.txt
-```
-Ref: [Sparse file wikipedia](//wiki.archlinux.org/index.php/Sparse_file)
-
 ### File
 #### Find
 Find x-days before and action
@@ -117,25 +69,58 @@ uchardet <file.txt>
 iconv iconv -f <file charset> -t <output charset> <file.txt>
 iconv iconv -f jis -t utf8 readme.txt
 ```
-
 #### Symlink Dereference
 ```sh
 readlink <filename>
 readlink -f <filename> # Dereference full path
 ```
 
-### Timeout
+### File System
+#### Resize Filesystem
+> Usually use after a partition / image resize
 ```sh
-timeout <duration> <command ...... >
-timeout 1d tcpdump -n -i eth0 port 22 -s 65535 -w ssh_dump.cap &
-nohup timeout 1d tcpdump -n -i eth0 port 22 -s 65535 -w ssh_dump.cap &
+resize2fs <device>
+resize2fs /dev/sda1
 ```
+#### Disable journal on ext4
+```sh
+tune2fs -O ^has_journal /dev/<disk>
+```
+#### Create Sparse File
+`truncate -s <size> <filename>`
+```sh
+$ truncate -s 10G 10G.txt
+
+$ ls -lah 10G.txt
+-rw-r--r--    1 user user   10.0G Apr  1 00:00 10G.txt
+
+$ du -sh 10G.txt
+0       10G.txt
+```
+Ref: [Sparse file wikipedia](//wiki.archlinux.org/index.php/Sparse_file)
 
 ### Rsync
 ```sh
 rsync -v -a -h -p -t --size-only --stats --del <source> <target>
 ```
 `<source>` is put/sync INTO `<target>` directory, not replacing `<target>`.
+
+### SSH
+#### Remove Known Hosts
+```sh
+ssh-keygen -R <hostname/ip>
+ssh-keygen -f "~/.ssh/known_hosts" -R <hostname/ip>
+```
+#### ProxyCommand
+```conf
+host test
+ProxyCommand ssh -W %h:%p jump_server
+```
+#### ProxyJump
+```conf
+host test
+ProxyJump jump_server
+```
 
 ### Network
 #### Avahi/MDNS
@@ -169,6 +154,16 @@ ethtool <nic>
 iw dev <wifi nic> scan
 iw dev wlan0 scan
 ```
+#### Curl
+##### Skip certificate checking
+```sh
+curl -k ... # Use -k to skip certificate check.
+```
+##### DNS Over HTTPS
+```sh
+curl -sH 'accept: application/dns-json' 'https://dns.google/resolve?name=google.com' | jq .
+curl -sH 'accept: application/dns-json' 'https://cloudflare-dns.com/dns-query?name=google.com' | jq .
+```
 #### Enable BBR
 Create file `/etc/sysctl.d/10-network-bbr.conf` with following content and reboot:
 ```ini
@@ -181,17 +176,6 @@ nc -z -v -u [hostname/IP address] [port number]
 nc -z -v -u 8.8.8.8 53
 ```
 
-### Curl
-#### Skip certificate checking
-```sh
-curl -k ... # Use -k to skip certificate check.
-```
-#### DNS Over HTTPS
-```sh
-curl -sH 'accept: application/dns-json' 'https://dns.google/resolve?name=google.com' | jq .
-curl -sH 'accept: application/dns-json' 'https://cloudflare-dns.com/dns-query?name=google.com' | jq .
-```
-
 ### Journalctl
 List all field names
 ```sh
@@ -200,4 +184,26 @@ journalctl -N
 List all values for a field name
 ```sh
 journalctl -F <field name>
+```
+
+### Terminal
+
+#### Get Size
+Return ROW x COL
+```sh
+stty size
+```
+
+### Timeout
+```sh
+timeout <duration> <command ...... >
+timeout 1d tcpdump -n -i eth0 port 22 -s 65535 -w ssh_dump.cap &
+nohup timeout 1d tcpdump -n -i eth0 port 22 -s 65535 -w ssh_dump.cap &
+```
+
+### Rotate Frame Buffer
+Number can be `1`, `2`, `3`
+```sh
+echo 1 > /sys/class/graphics/fbcon/rotate_all
+echo 1 > /sys/class/graphics/fbcon/rotate
 ```
