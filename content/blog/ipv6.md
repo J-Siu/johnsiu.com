@@ -1,9 +1,9 @@
 ---
 author: "John Siu"
 date: 2025-08-03T22:59:32-04:00
-description: ""
+description: "Some old notes on Ipv6"
 draft: true
-tags: [""]
+tags: ["ipv6"]
 title: "IPv6"
 type: "blog"
 ---
@@ -11,13 +11,11 @@ Some old notes on Ipv6
 <!--more-->
 ### RFC
 
-- IPv6 RFC2460
-- IPv4 RFC791
-
-128bit / 32byte / 8 "hextet"
-
-Global Unicast Address (GUA): public routable addresses 2000::/3
-
+Item|IPv4|IPv6
+---|---|---
+RFC|RFC791| RFC2460
+Length|4 byte|32 byte
+Global Unicast Address (GUA)||2000::/3
 Link-local Unicast address start with fe80: only usable within same network segment, not routable.
 
 Multicast address: start with ff02:, eg RA usually use ff02::1
@@ -48,9 +46,9 @@ ICMPv6
 - Neighbor Advertisement (NA) Messages
 - Router Solicitation (RS)
 - Router Advertisement (RA) Messages
-  - SLAAC
-  - SLACC and stateless DHCPv6
-  - Statefull DHCPv6
+  - SLAAC
+  - SLACC and stateless DHCPv6
+  - Statefull DHCPv6
 
 Prefix : network portion of the address
 Prefix length: The prefix length is the number of most-significant or leftmost bits that define the prefix, the network portion of the address. This is equivalent to the subnet mask in IPv4. IPv6 addresses are 128 bits, so the prefix length can be /0 to /128.
