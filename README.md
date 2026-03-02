@@ -6,9 +6,9 @@ My Blog!
 
 |||
 |---|---|
-URL|https://johnsiu.com/
-Platform|[Hugo](//gohugo.io/)
-Theme|[SK3](//github.com/J-Siu/hugo-theme-sk3)
+|URL|https://johnsiu.com/|
+|Platform|[Hugo](//gohugo.io/)|
+|Theme|[SK3](//github.com/J-Siu/hugo-theme-sk3)|
 
 Update theme:
 
