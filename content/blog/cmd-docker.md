@@ -96,7 +96,23 @@ docker image prune -f
 
 If creating a lot of Dockerfile with similar base packages like `tzdata`, `ca-certificates`, they should be moved to the top and separate from container specific steps.
 
-### Container & Startup Script
+### Run and Connect
+
+Start, connect to shell then auto remove
+
+```sh
+docker run -it --rm IMAGE SHELL
+docker run -it --rm golang:1.26 sh
+```
+
+Connect to running container
+
+```sh
+docker exec it <CONTAINER ID/NAME> sh
+docker exec it caddy sh
+```
+
+### Container Startup Script
 
 #### GID/UID
 
@@ -196,14 +212,14 @@ This work for `su <cmd>` also.
 
 # Run cmd with error check
 RUN_CMD() {
-	CMD=$1
-	$CMD
-	RTN=$?
-	if [ ${RTN} -ne 0 ]; then
-		echo \"$CMD\" error:${RTN}
-		exit ${RTN}
-	fi
-	return ${RTN}
+  CMD=$1
+  $CMD
+  RTN=$?
+  if [ ${RTN} -ne 0 ]; then
+    echo \"$CMD\" error:${RTN}
+    exit ${RTN}
+  fi
+  return ${RTN}
 }
 
 RUN_CMD "git submodule update --init --recursive"
@@ -244,7 +260,7 @@ docker-compose down;docker-compose up -d
 #### Enter shell of running compose container
 
 ```sh
-docker-compose -f <filename> exec <appname> sh
+docker-compose -f <filename> exec <AppName> sh
 ```
 
 ### Docker Daemon Configuration
@@ -355,7 +371,7 @@ From: [Docker daemon configuration file](//docs.docker.com/engine/reference/comm
   "log-opts": {
     "max-size": "10m",
     "max-file":"5",
-    "labels": "somelabel",
+    "labels": "some_label",
     "env": "os,customer"
   },
   "mtu": 0,
