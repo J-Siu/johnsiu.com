@@ -71,12 +71,22 @@ open -a Google\ Earth\ Pro
   - `/Library/LaunchDaemons/`
   - `/System/Library/LaunchDaemons/`
 
-### Memory Usage
+### Memory
+
+#### Usage
 
 Result is in page number. Multiply with page size show at the top.
 
 ```sh
 vm_stat
+```
+
+#### Max VRam
+
+Set maximum vram.
+
+```sh
+sudo sysctl iogpu.wired_limit_mb=20480
 ```
 
 ### Kernel Extension
