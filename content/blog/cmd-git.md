@@ -85,8 +85,16 @@ git tag -d v1.0.1
 
 Yes, it is a push command.
 ```sh
-git push -d <version>
-git push -d v1.0.1
+git push --delete tag <version>
+git push --delete tag v1.0.1
+```
+
+#### Fetch from server
+
+```sh
+git fetch --tags --prune --prune-tags
+git fetch --tags --prune --prune-tags <remote>
+git fetch --tags --prune --prune-tags github.com
 ```
 
 ### Branch
